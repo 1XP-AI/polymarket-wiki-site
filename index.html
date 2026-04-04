@@ -238,6 +238,51 @@ body {
 .breadcrumb span { cursor: pointer; color: var(--link); }
 .breadcrumb span:hover { text-decoration: underline; }
 
+/* Tabs */
+.tabs {
+  display: flex;
+  border-bottom: 1px solid var(--border);
+}
+.tab {
+  flex: 1;
+  padding: 6px 0;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+.tab:hover { color: var(--text); }
+.tab.active { color: var(--accent); border-bottom-color: var(--accent); font-weight: 600; }
+
+/* History */
+.history-container {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0.5rem 0;
+}
+.history-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  gap: 8px;
+  transition: background 0.15s;
+  border-bottom: 1px solid var(--border);
+}
+.history-item:hover { background: var(--bg-secondary); }
+.history-time {
+  color: var(--text-secondary);
+  font-size: 0.7rem;
+  white-space: nowrap;
+  min-width: 60px;
+}
+.history-name { color: var(--text); }
+.history-path { color: var(--text-secondary); font-size: 0.7rem; }
+
 /* Stats */
 .stats-bar {
   padding: 0.6rem 1rem;
@@ -307,7 +352,12 @@ body {
       <input class="search-input" type="text" placeholder="검색..." oninput="onSearch(this.value)">
       <button class="theme-toggle" onclick="toggleTheme()" title="테마 전환">🌗</button>
     </div>
+    <div class="tabs">
+      <button class="tab active" onclick="switchTab('tree')">📁 트리</button>
+      <button class="tab" onclick="switchTab('history')">🕐 최신</button>
+    </div>
     <div class="tree-container" id="tree"></div>
+    <div class="history-container" id="history" style="display:none"></div>
     <div class="stats-bar" id="stats"></div>
   </aside>
   <main class="content">
@@ -451,11 +501,16 @@ function renderMarkdown(md) {
     `<pre><code>${escapeHtml(code.trim())}</code></pre>`
   );
   
-  // Tables
-  html = html.replace(/^(\|.+\|)\n(\|[\s:-]+\|)\n((?:\|.+\|\n?)*)/gm, (_, header, sep, body) => {
-    const ths = header.split('|').filter(c=>c.trim()).map(c => `<th>${c.trim()}</th>`).join('');
-    const rows = body.trim().split('\n').map(row => {
-      const tds = row.split('|').filter(c=>c.trim()).map(c => `<td>${c.trim()}</td>`).join('');
+  // Tables — match header, separator, and body rows
+  html = html.replace(/^(\|[^\n]+\|)\n(\|[\s:|-]+\|)\n((?:\|[^\n]+\|\n?)*)/gm, (match) => {
+    const lines = match.trim().split('\n');
+    if (lines.length < 3) return match;
+    const parseRow = (line) => line.split('|').slice(1, -1).map(c => c.trim());
+    const headers = parseRow(lines[0]);
+    const ths = headers.map(h => `<th>${h}</th>`).join('');
+    const rows = lines.slice(2).filter(l => l.trim()).map(line => {
+      const cells = parseRow(line);
+      const tds = cells.map(c => `<td>${c}</td>`).join('');
       return `<tr>${tds}</tr>`;
     }).join('');
     return `<table><thead><tr>${ths}</tr></thead><tbody>${rows}</tbody></table>`;
@@ -521,6 +576,50 @@ function toggleTheme() {
 function toggleSidebar() {
   document.querySelector('.sidebar').classList.toggle('open');
   document.querySelector('.overlay').classList.toggle('open');
+}
+
+function switchTab(tab) {
+  document.querySelectorAll('.tab').forEach((el, i) => {
+    el.classList.toggle('active', (tab === 'tree' && i === 0) || (tab === 'history' && i === 1));
+  });
+  document.getElementById('tree').style.display = tab === 'tree' ? '' : 'none';
+  document.getElementById('history').style.display = tab === 'history' ? '' : 'none';
+  if (tab === 'history') renderHistory();
+}
+
+function renderHistory() {
+  const sorted = [...DOCS]
+    .filter(d => d.mtime && !d.path.startsWith('_'))
+    .sort((a, b) => new Date(b.mtime) - new Date(a.mtime));
+  
+  const html = sorted.map(doc => {
+    const name = doc.path.split('/').pop().replace('.md', '');
+    const folder = doc.path.split('/').slice(0, -1).join('/');
+    const date = new Date(doc.mtime);
+    const timeStr = formatRelativeTime(date);
+    return `<div class="history-item" onclick="showDoc(DOCS.find(d=>d.path==='${doc.path.replace(/'/g, "\\'")}'))">
+      <div class="history-time">${timeStr}</div>
+      <div>
+        <div class="history-name">📄 ${name}</div>
+        ${folder ? `<div class="history-path">${folder}</div>` : ''}
+      </div>
+    </div>`;
+  }).join('');
+  
+  document.getElementById('history').innerHTML = html || '<div style="padding:1rem;color:var(--text-secondary)">변경 기록 없음</div>';
+}
+
+function formatRelativeTime(date) {
+  const now = new Date();
+  const diff = now - date;
+  const min = Math.floor(diff / 60000);
+  const hr = Math.floor(diff / 3600000);
+  const day = Math.floor(diff / 86400000);
+  if (min < 1) return '방금';
+  if (min < 60) return `${min}분 전`;
+  if (hr < 24) return `${hr}시간 전`;
+  if (day < 7) return `${day}일 전`;
+  return date.toLocaleDateString('ko-KR', { month: 'short', day: 'numeric' });
 }
 
 function updateStats() {
