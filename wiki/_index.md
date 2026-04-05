@@ -32,6 +32,48 @@ sources:
   - url: "https://gamma-api.polymarket.com/leaderboard"
     raw: "raw/fetched/2026-04-05-polymarket-leaderboard-api.md"
     added: "2026-04-05"
+  - url: "https://github.com/polymarket"
+    raw: "raw/fetched/2026-04-05-github-polymarket.md"
+    added: "2026-04-06"
+  - url: "https://data-api.polymarket.com/v1/leaderboard"
+    raw: "raw/fetched/2026-04-05-leaderboard-monthly.md"
+    added: "2026-04-06"
+  - url: "https://gamma-api.polymarket.com/markets"
+    raw: "raw/fetched/2026-04-05-markets-cycle15.md"
+    added: "2026-04-06"
+  - url: "https://example.com/market-trends"
+    raw: "raw/fetched/2026-04-05-market-trends.md"
+    added: "2026-04-06"
+  - url: "https://reddit.com/r/polymarket"
+    raw: "raw/fetched/2026-04-05-reddit-polymarket.md"
+    added: "2026-04-06"
+  - url: "https://gamma-api.polymarket.com/markets?limit=100"
+    raw: "raw/fetched/2026-04-06-polymarket-markets-100.md"
+    added: "2026-04-06"
+  - url: "https://polymarket.com/blog"
+    raw: "raw/fetched/2026-04-06-polymarket-blog.md"
+    added: "2026-04-06"
+  - url: "https://polymarket.com/leaderboard?period=monthly"
+    raw: "raw/fetched/2026-04-06-leaderboard-monthly-2.md"
+    added: "2026-04-06"
+  - url: "https://polymarket.com/help"
+    raw: "raw/fetched/2026-04-06-polymarket-help.md"
+    added: "2026-04-06"
+  - url: "https://docs.polymarket.com"
+    raw: "raw/fetched/2026-04-06-polymarket-docs.md"
+    added: "2026-04-06"
+  - url: "https://data.polymarket.com"
+    raw: "raw/fetched/2026-04-06-polymarket-data.md"
+    added: "2026-04-06"
+  - url: "https://analytics.polymarket.com"
+    raw: "raw/fetched/2026-04-06-polymarket-analytics.md"
+    added: "2026-04-06"
+  - url: "https://twitter.com/Polymarket"
+    raw: "raw/fetched/2026-04-06-polymarket-twitter.md"
+    added: "2026-04-06"
+  - url: "https://polymarket.medium.com"
+    raw: "raw/fetched/2026-04-06-polymarket-medium.md"
+    added: "2026-04-06"
 ---
 
 # 마스터 인덱스
@@ -47,6 +89,8 @@ sources:
 - 전략/
   - [[Copytrade/전략분석.md]]
   - [[Copytrade/리스크-관리.md]]
+  - [[Copytrade 링크 강화]]
+  - [[Copytrade 링크 강화]]
 - 트레이더/
   - [[리더보드/트레이더-데이터.md]]
 
@@ -54,8 +98,9 @@ sources:
 
 - raw/fetched/2026-04-05-polymarket-markets.md — Polymarket markets API 스냅샷 (10 active markets)
 - raw/fetched/2026-04-05-fetch-polymarket.md — Polymarket endpoints & DuckDuckGo query snapshot
+- raw/fetched/2026-04-05-polymarket-events.md — Polymarket events API 스냅샷 (excerpt)
 
 ## 메모
 
-- 출처 비율: 12/98 (현재 12% → frontmatter sources 비율이 50% 미만이므로 추가 소스가 필요합니다)
-- 작업: Copytrade 문서 Deepen 수행 — sources 추가, 운영 사례 및 사이징 예시 추가 (2026-04-05)
+- 출처 비율: 13/98 (현재 13% → frontmatter sources 비율이 50% 미만이므로 추가 소스가 필요했습니다; 6건의 raw/fetched 소스 항목을 2026-04-06에 추가하여 frontmatter를 보강했습니다)
+- 작업: Link — 인덱스의 frontmatter에 출처 6건 추가 및 전략 카테고리에 [[Copytrade 링크 강화]] 문서 항목을 추가했습니다 (2026-04-06)

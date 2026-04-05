@@ -3,6 +3,7 @@
 |--------|------|----------|
 | CLOB | [[개념-CLOB]] | 개념 |
 | CTF | [[CTF]] | 개념 |
+| Negative-Risk | [[Negative-Risk]] | 개념 |
 | copytrade | [[Copytrade-심화]] | 전략 |
 | API | [[API-예제-샘플]] | 기술 |
 | 리더보드 | [[리더보드-트레이더-데이터]] | 데이터 |

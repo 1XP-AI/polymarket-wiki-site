@@ -2,9 +2,9 @@
   "total_docs": 98,
   "duplicates": [
     {
-      "a": "개념/CLOB.md",
-      "b": "개념/CTF.md",
-      "similarity": 0.9767,
+      "a": "개념/CTF.md",
+      "b": "개념/Negative-Risk.md",
+      "similarity": 0.99,
       "action": "merge"
     },
     {
@@ -17,12 +17,6 @@
       "a": "전략/Copytrade/전략분석.md",
       "b": "전략/카피트레이드-전략분석.md",
       "similarity": 0.9756,
-      "action": "merge"
-    },
-    {
-      "a": "개념/CLOB.md",
-      "b": "개념/Negative-Risk.md",
-      "similarity": 0.975,
       "action": "merge"
     },
     {
@@ -73,12 +67,6 @@
       "a": "전략/마켓메이커-리베이트.md",
       "b": "트레이더/Theo/프로필.md",
       "similarity": 0.9496,
-      "action": "link"
-    },
-    {
-      "a": "개념/CTF.md",
-      "b": "개념/Negative-Risk.md",
-      "similarity": 0.9491,
       "action": "link"
     },
     {
@@ -436,12 +424,6 @@
       "action": "link"
     },
     {
-      "a": "개념/CTF.md",
-      "b": "전략/Copytrade-전략분석.md",
-      "similarity": 0.8997,
-      "action": "link"
-    },
-    {
       "a": "전략/Copytrade/트레이더-선별-체크리스트.md",
       "b": "전략/Copytrade/포지션-관리.md",
       "similarity": 0.8995,
@@ -610,12 +592,6 @@
       "action": "link"
     },
     {
-      "a": "개념/CTF.md",
-      "b": "기술/WebSocket-실시간데이터.md",
-      "similarity": 0.8909,
-      "action": "link"
-    },
-    {
       "a": "전략/Copytrade/전략분석.md",
       "b": "전략/Copytrade/포지션-관리.md",
       "similarity": 0.89,
@@ -643,12 +619,6 @@
       "a": "전략/Copytrade/알파-지표-선별.md",
       "b": "전략/카피트레이드-전략분석.md",
       "similarity": 0.8892,
-      "action": "link"
-    },
-    {
-      "a": "개념/CTF.md",
-      "b": "기술/웹소켓/실시간데이터.md",
-      "similarity": 0.8889,
       "action": "link"
     },
     {
@@ -712,21 +682,9 @@
       "action": "link"
     },
     {
-      "a": "개념/CLOB.md",
-      "b": "트레이더/리더보드/트레이더-데이터.md",
-      "similarity": 0.8849,
-      "action": "link"
-    },
-    {
       "a": "전략/Copytrade/리밸런싱.md",
       "b": "전략/Copytrade/포지션-사이즈-전략.md",
       "similarity": 0.8847,
-      "action": "link"
-    },
-    {
-      "a": "개념/CLOB.md",
-      "b": "기술/웹소켓/실시간데이터.md",
-      "similarity": 0.8846,
       "action": "link"
     },
     {
@@ -750,13 +708,7 @@
     {
       "a": "개념/CLOB.md",
       "b": "전략/Copytrade-전략분석.md",
-      "similarity": 0.8831,
-      "action": "link"
-    },
-    {
-      "a": "개념/CLOB.md",
-      "b": "기술/Polymarket/개요.md",
-      "similarity": 0.8827,
+      "similarity": 0.8834,
       "action": "link"
     },
     {

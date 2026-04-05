@@ -2,12 +2,15 @@
 title: "Copytrade 링크 강화"
 category: "strategy"
 created: "2026-04-05"
-source: "auto"
+sources:
+  - url: "https://polymarket.com"
+    raw: "raw/fetched/2026-04-06-polymarket-home.md"
+    added: "2026-04-06"
 related:
-  - "[[Copytrade 전략분석]]"
-  - "[[리더보드]]"
-  - "[[CLOB]]"
-  - "[[API-레퍼런스]]"
+  - "[[Copytrade/전략분석.md]]"
+  - "[[리더보드/리더보드.md]]"
+  - "[[개념/CLOB.md]]"
+  - "[[기술/API 레퍼런스.md]]"
 ---
 
 # Copytrade 링크 강화
@@ -16,7 +19,7 @@ related:
 
 ## 내용
 
-이 문서는 `_registry.md`의 키워드(CLOB, orderbook, 리더보드, copytrade 등)를 스캔하여 관련 문서들에 교차 링크를 추가하는 작업 예시를 보여준다.
+이 문서는 `_registry.md`의 키워드(CLOB, orderbook, 리더보드, copytrade 등)를 스캔하여관련 문서들에 교차 링크를 추가하는 작업 예시를 보여준다.
 
 - Copytrade 전략 문서에서 `CLOB` 관련 논의가 있으면 `[[CLOB]]`로 링크
 - 트레이더 분석에서 리더보드를 언급하면 `[[리더보드]]`로 링크
