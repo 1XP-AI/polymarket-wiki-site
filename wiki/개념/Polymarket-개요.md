@@ -25,6 +25,7 @@ related:
   - "[[CLOB]]"
   - "[[리더보드-트레이더-데이터]]"
   - "[[Theo]]"
+  - "[[기술/Polymarket/개요.md]]"
 ---
 
 # Polymarket 개요

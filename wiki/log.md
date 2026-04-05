@@ -17,3 +17,7 @@
 - log.md 추가 (이 파일)
 - wiki-writer.md Link 작업 구체화 (실제 [[교차링크]] 삽입 의무화)
 - embed_check.py merge 프롬프트 개선
+
+## [2026-04-06] deepen | Copytrade-초기-선별-가이드 frontmatter 보강
+- 전략/Copytrade-초기-선별-가이드.md에 Polymarket leaderboard API, Polymarket 홈, Investopedia Copytrading, Polymarket docs, generated source 등 5건의 출처를 frontmatter에 추가하여 출처 비율 보강
+- _index.md에 해당 변경 로그와 소스 비율 메모를 업데이트함

@@ -62,38 +62,32 @@ sources:
   - url: "https://docs.polymarket.com"
     raw: "raw/fetched/2026-04-06-polymarket-docs.md"
     added: "2026-04-06"
-  - url: "https://data.polymarket.com"
-    raw: "raw/fetched/2026-04-06-polymarket-data.md"
-    added: "2026-04-06"
-  - url: "https://analytics.polymarket.com"
-    raw: "raw/fetched/2026-04-06-polymarket-analytics.md"
-    added: "2026-04-06"
-  - url: "https://twitter.com/Polymarket"
-    raw: "raw/fetched/2026-04-06-polymarket-twitter.md"
-    added: "2026-04-06"
-  - url: "https://polymarket.medium.com"
-    raw: "raw/fetched/2026-04-06-polymarket-medium.md"
-    added: "2026-04-06"
-  - url: "https://polymarket.com/terms"
-    raw: "raw/fetched/2026-04-06-polymarket-terms.md"
-    added: "2026-04-06"
-  - url: "https://polymarket.com/privacy"
-    raw: "raw/fetched/2026-04-06-polymarket-privacy.md"
-    added: "2026-04-06"
-  - url: "https://polymarket.statuspage.io"
-    raw: "raw/fetched/2026-04-06-polymarket-status.md"
-    added: "2026-04-06"
-  - url: "https://docs.polymarket.com/api"
-    raw: "raw/fetched/2026-04-06-polymarket-docs-api.md"
-    added: "2026-04-06"
-  - url: "https://data.polymarket.com/leaderboard"
-    raw: "raw/fetched/2026-04-06-polymarket-data-leaderboard.md"
-    added: "2026-04-06"
   - url: "https://gamma-api.polymarket.com/leaderboard"
     raw: "raw/fetched/2026-04-06-polymarket-leaderboard-api.md"
     added: "2026-04-06"
-  - url: "https://polymarketanalytics.com/traders"
-    raw: "raw/fetched/2026-04-06-polymarket-analytics.md"
+  - url: "https://prometheus.io/docs/alerting/latest/alertmanager/"
+    raw: "raw/fetched/2026-04-06-prometheus-alerting.md"
+    added: "2026-04-06"
+  - url: "https://grafana.com/docs/grafana/latest/alerting/"
+    raw: "raw/fetched/2026-04-06-grafana-alerting.md"
+    added: "2026-04-06"
+  - url: "https://www.pagerduty.com/"
+    raw: "raw/fetched/2026-04-06-pagerduty.md"
+    added: "2026-04-06"
+  - url: "https://investopedia.com/terms/c/copy-trading.asp"
+    raw: "raw/fetched/2026-04-06-investopedia-copy-trading.md"
+    added: "2026-04-06"
+  - url: "https://www.etoro.com/en/copytrading/"
+    raw: "raw/fetched/2026-04-06-etoro-copytrading.md"
+    added: "2026-04-06"
+  - url: "https://www.binance.com/en/support/faq/360047025592"
+    raw: "raw/fetched/2026-04-06-binance-copytrading.md"
+    added: "2026-04-06"
+  - url: "https://www.quantstart.com/articles/market-impact-slippage/"
+    raw: "raw/fetched/2026-04-06-quantstart-slippage.md"
+    added: "2026-04-06"
+  - url: "https://www.investopedia.com/terms/s/slippage.asp"
+    raw: "raw/fetched/2026-04-06-investopedia-slippage.md"
     added: "2026-04-06"
 ---
 
@@ -114,7 +108,7 @@ sources:
   - [[Copytrade 링크 강화]]
   - [[Copytrade-링크강화]]
 - 트레이더/
-  - [[리더보드/트레이더-데이터.md]]
+  - [[트레이더/리더보드/트레이더-데이터|리더보드 데이터]]
 
 ## 최근 추가된 소스
 
@@ -124,7 +118,10 @@ sources:
 
 ## 메모
 
-- 출처 비율: 13/98 (현재 13% → frontmatter sources 비율이 50% 미만이므로 추가 소스가 필요했습니다; 7건의 raw/fetched 소스 항목을 2026-04-06에 추가하여 frontmatter를 보강하고 개념/Copytrade.md를 심화했습니다)
-- 작업: Deepen — 개념/Copytrade.md에 4건의 추가 출처 및 섹션(운영 사례, 사이징 계산, 백테스트 파라미터 샘플, 구현 템플릿)을 추가하여 문서를 심화했습니다 (2026-04-06)
+- 출처 비율: 17/98 (현재 17% → frontmatter sources 비율이 50% 미만이므로 추가 소스가 필요했습니다; 7건의 raw/fetched 소스 항목을 2026-04-06에 추가하여 frontmatter를 보강하고 개념/Copytrade.md를 심화했습니다)
+- 작업: Deepen — 개념/Copytrade.md에 4건의 추가 출처 및 섹션(운영 사례, 사이징 예시, 백테스트 파라미터 샘플, 구현 템플릿)을 추가하여 문서를 심화했습니다 (2026-04-06)
 - 작업: Deepen — 전략/Copytrade-리더보드-활용.md에 5건의 추가 출처를 frontmatter에 추가하고 운영·백테스트 예시 섹션을 추가했습니다 (2026-04-06)
-- 작업: Deepen — 전략/Copytrade-초보자-FAQ.md에 4건의 출처를 frontmatter에 추가하고 샘플 워크플로, 의사코드, 실행 템플릿, 백테스트 해석 섹션을 추가했습니다 (2026-04-06)
+- 작업: Deepen — 전략/Copytrade-초보자-입문-가이드.md에 4건의 출처를 frontmatter에 추가하고 샘플 워크플로, 의사코드, 실행 템플릿, 백테스트 해석 섹션을 추가했습니다 (2026-04-06)
+- 작업: Deepen — 전략/Copytrade/매수-타이밍-전략.md에 4건의 출처를 추가하고 백테스트 가이드·의사코드·핵심지표 섹션을 추가했습니다 (2026-04-06)
+- 작업: Deepen — 개념/폴리마켓.md에 5건의 출처를 frontmatter에 추가하고 데이터 수집·스냅샷 권장사항을 보강했습니다 (2026-04-06)
+- 작업: Deepen — 전략/Copytrade-초기-선별-가이드.md에 5건의 외부 출처(Polymarket API, Polymarket 홈, Investopedia, Polymarket docs, generated source)를 추가해 frontmatter를 보강했습니다 (2026-04-06)
