@@ -5,6 +5,7 @@ created: "2026-04-05"
 source: "raw/01-Polymarket-개요.md"
 related:
   - "[[Polymarket 개요]]"
+  - "[[API-레퍼런스]]"
 ---
 
 # 주문장(CLOB) 개념

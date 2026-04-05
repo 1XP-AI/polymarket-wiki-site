@@ -19,3 +19,8 @@
 | requests | [[API-레퍼런스]] | 기술 |
 | orderbook | [[CLOB]] | 개념 |
 | 분할매수 | [[실행-비용]] | 전략 |
+| leaderboard | [[리더보드-트레이더-데이터]] | 트레이더 |
+| events | [[API-레퍼런스]] | 기술 |
+| markets | [[API-레퍼런스]] | 기술 |
+| leaderboard | [[리더보드-트레이더-데이터]] | 트레이더 |
+| requests | [[API-예제-샘플]] | 기술 |

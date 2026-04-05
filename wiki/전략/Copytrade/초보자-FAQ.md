@@ -9,6 +9,7 @@ related:
   - "[[CLOB]]"
   - "[[API-레퍼런스]]"
   - "[[리더보드-트레이더-데이터]]"
+  - "[[orderbook]]"
 ---
 
 # Copytrade 초보자 FAQ

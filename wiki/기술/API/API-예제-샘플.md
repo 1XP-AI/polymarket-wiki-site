@@ -6,6 +6,8 @@ source: "raw/02-API-레퍼런스.md"
 related:
   - "[[Polymarket API 레퍼런스]]"
   - "[[Polymarket 개요]]"
+  - "[[리더보드-트레이더-데이터]]"
+  - "[[CLOB]]"
 ---
 
 # Polymarket API 예제 (샘플)

@@ -6,6 +6,8 @@ source: "raw/02-API-레퍼런스.md"
 related:
   - "[[Polymarket 개요]]"
   - "[[WebSocket-실시간데이터]]"
+  - "[[리더보드-트레이더-데이터]]"
+  - "[[CLOB]]"
 ---
 
 # API 레퍼런스
