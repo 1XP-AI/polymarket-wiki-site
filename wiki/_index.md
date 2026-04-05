@@ -21,10 +21,16 @@ sources:
     raw: "raw/sources.md"
     added: "2026-04-05"
   - url: "https://polymarket.com"
-    raw: "raw/fetched/2026-04-06-polymarket-home.md"
-    added: "2026-04-06"
+    raw: "raw/fetched/2026-04-05-polymarket-home.md"
+    added: "2026-04-05"
   - url: "https://gamma-api.polymarket.com/events"
     raw: "raw/fetched/2026-04-05-polymarket-events.md"
+    added: "2026-04-05"
+  - url: "https://polymarket.com/faq"
+    raw: "raw/fetched/2026-04-05-polymarket-faq.md"
+    added: "2026-04-05"
+  - url: "https://gamma-api.polymarket.com/leaderboard"
+    raw: "raw/fetched/2026-04-05-polymarket-leaderboard-api.md"
     added: "2026-04-05"
 ---
 
@@ -51,4 +57,5 @@ sources:
 
 ## 메모
 
-- 출처 비율: 9/103 (현재 9% → frontmatter sources 비율이 50% 미만이므로 추가 소스가 필요합니다)
+- 출처 비율: 12/98 (현재 12% → frontmatter sources 비율이 50% 미만이므로 추가 소스가 필요합니다)
+- 작업: Copytrade 문서 Deepen 수행 — sources 추가, 운영 사례 및 사이징 예시 추가 (2026-04-05)

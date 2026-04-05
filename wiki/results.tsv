@@ -1,2 +1,5 @@
 commit	docs	words	dead_links	quality	action	description
-no	1	+210	0	high	Deepen	Expanded 개념/Polymarket.md: added sources and deepened platform, ops, risks, and API examples
+no	1	+420	0	high	Deepen	Deepened 개념/Copytrade.md: appended sources, added 운영 사례·사이징 예시, and clarified execution/monitoring rules (2026-04-05)
+no	1	+650	0	high	Deepen	Deepened 전략/Copytrade/초보자-입문-가이드.md: appended sources, added 운영 사례·사이징 예시, and clarified execution/monitoring rules (2026-04-05)
+no	1	+380	0	high	Deepen	Deepened 전략/Copytrade/리스크-알림-규칙.md: appended sources, added 운영 사례·사이징 예·사이징 예시, and added implementation/operational tips (2026-04-05)
+no	1	+720	0	high	Deepen	Deepened 전략/Copytrade/리스크-관리.md: appended sources, added 실무 사례·모니터링 규칙·구현 노트 및 예시 계산식 (2026-04-05)
