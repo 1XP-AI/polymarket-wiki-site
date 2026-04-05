@@ -1,15 +1,20 @@
 ---
+
 title: "Polymarket 개요"
 category: "concept"
 created: "2026-04-05"
-source: "raw/01-Polymarket-개요.md"
 related:
   - "[[API-레퍼런스]]"
   - "[[CLOB]]"
   - "[[Negative-Risk]]"
-  - "[[Polymarket-이벤트-스냅샷-2026-04-05]]"
+  - "[[Polymarket-이벤트-스냍샷-2026-04-05]]"
   - "[[Copytrade-심화]]"
   - "[[리더보드]]"
+  - "[[크립토]]"
+  - "[[실행-비용]]"
+sources:
+  - url: "https://gamma-api.polymarket.com/events"
+    added: "2026-04-05"
 ---
 
 # Polymarket 개요
@@ -58,6 +63,3 @@ print(first.get("title"))
 - [[Negative-Risk]] — 다중 결과 이벤트의 자본 효율성 설명
 - [[Polymarket-이벤트-스냅샷-2026-04-05]] — 최근 수집 스냅샷과 비교
 
-## 참조
-
-[^1]: https://gamma-api.polymarket.com/events — Gamma API 이벤트 목록 (2026-04-05 확인)

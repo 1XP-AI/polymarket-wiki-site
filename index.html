@@ -280,11 +280,34 @@ async function showDoc(path) {
   if (fmMatch) {
     content = content.slice(fmMatch[0].length);
     const entries = fmMatch[1].split('\n').filter(l => l.includes(':'));
+    // sources 배열 파싱
+    let sourceCount = 0;
+    let sourceUrls = [];
+    const fmLines = fmMatch[1].split('\n');
+    let inSources = false;
+    for (const line of fmLines) {
+      if (line.match(/^sources:/)) { inSources = true; continue; }
+      if (inSources && line.match(/^\s+-\s*url:/)) {
+        sourceCount++;
+        const url = line.replace(/.*url:\s*["']?/, '').replace(/["']?\s*$/, '');
+        if (url) sourceUrls.push(url);
+      }
+      if (inSources && line.match(/^\w/) && !line.match(/^\s/)) inSources = false;
+    }
+    
+    const sourceBadge = sourceCount > 0
+      ? `<span style="display:inline-block;background:#2563eb22;color:#2563eb;border-radius:12px;padding:2px 10px;font-size:0.75rem;font-weight:600;margin-left:8px">📎 출처 ${sourceCount}건</span>`
+      : `<span style="display:inline-block;background:#ef444422;color:#ef4444;border-radius:12px;padding:2px 10px;font-size:0.75rem;font-weight:600;margin-left:8px">⚠️ 출처 없음</span>`;
+    
+    const simpleEntries = entries.filter(l => !l.match(/^\s+-/) && !l.match(/^sources:/));
     frontmatter = '<dl class="frontmatter">' +
-      entries.map(l => {
+      simpleEntries.map(l => {
         const [k, ...v] = l.split(':');
         return `<dt>${k.trim()}:</dt><dd>${v.join(':').trim().replace(/^["']|["']$/g,'')}</dd>`;
-      }).join('') + '</dl>';
+      }).join('') + sourceBadge + '</dl>' +
+      (sourceUrls.length > 0 ? '<details style="margin-bottom:1rem;font-size:0.78rem"><summary style="cursor:pointer;color:var(--text-secondary)">📎 출처 목록</summary><ul>' +
+        sourceUrls.map(u => `<li><a href="${u}" target="_blank" rel="noopener" style="color:var(--accent)">${u.length>60?u.slice(0,60)+'…':u}</a></li>`).join('') +
+        '</ul></details>' : '');
   }
   
   // Breadcrumb

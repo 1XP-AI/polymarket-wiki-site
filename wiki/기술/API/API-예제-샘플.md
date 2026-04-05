@@ -1,14 +1,19 @@
 ---
+
 title: "Polymarket API 예제 (심화 샘플)"
 category: "api"
 created: "2026-04-05"
-source: "raw/02-API-레퍼런스.md"
 related:
   - "[[Polymarket API 레퍼런스]]"
   - "[[Polymarket 개요]]"
   - "[[리더보드-트레이더-데이터]]"
   - "[[CLOB]]"
   - "[[Copytrade-리더보드-심화]]"
+sources:
+  - url: "https://gamma-api.polymarket.com/markets?limit=10"
+    added: "2026-04-05"
+  - url: "https://clob.polymarket.com/rewards/leaderboard"
+    added: "2026-04-05"
 ---
 
 # Polymarket API 예제 (심화 샘플)
@@ -59,7 +64,3 @@ related:
 - [[CLOB]] — 주문장부 관련 개념 및 용어
 - [[Copytrade-리더보드-심화]] — 리더보드 분석을 Copytrade 파이프라인에 연결
 
-## 참조
-
-[^1]: https://gamma-api.polymarket.com/markets?limit=10 — 마켓 목록 API (샘플 호출)
-[^2]: https://clob.polymarket.com/rewards/leaderboard — 리더보드 엔드포인트 (샘플 호출)

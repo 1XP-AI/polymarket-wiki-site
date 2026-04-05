@@ -16,3 +16,9 @@ related:
 CTF는 한 이벤트의 결과에 따라 조건부 토큰을 발행하는 구조입니다. 사용자는 USDC.e를 Split하여 Yes/No 토큰을 받고, 결과에 따라 승리 토큰을 Redeem해 USDC.e를 회수합니다. Merge, Split, Redeem 등의 온체인 흐름과 예시를 포함합니다.
 
 원본: raw/01-Polymarket-개요.md
+
+## 관련 문서
+
+- [[Polymarket 개요]] — 플랫폼의 CTF 활용 사례
+- [[온체인 컨트랙트]] — Merge/Split/ Redeem의 스마트 컨트랙트 구현 예시
+- [[CLOB]] — 주문장부와 CTF의 차이점 설명

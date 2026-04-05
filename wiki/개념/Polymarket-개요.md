@@ -1,14 +1,19 @@
 ---
+
 title: "Polymarket 개요"
 category: "concept"
 created: "2026-04-05"
-source: "raw/01-Polymarket-개요.md"
 related:
   - "[[Copytrade-전략분석]]"
   - "[[Polymarket-API-레퍼런스]]"
   - "[[CLOB]]"
   - "[[리더보드-트레이더-데이터]]"
   - "[[Theo]]"
+sources:
+  - url: "https://gamma-api.polymarket.com/events"
+    added: "2026-04-05"
+  - url: "https://gamma-api.polymarket.com/markets"
+    added: "2026-04-05"
 ---
 
 # Polymarket 개요
@@ -95,11 +100,3 @@ else:
 - [[Copytrade-전략분석]] — 추종 전략과 성과 비교
 - [[리더보드-트레이더-데이터]] — 트레이더 데이터 수집 및 지표
 
-## 참조
-
-본문의 API 예제와 관련된 참조:
-
-[^1]: https://gamma-api.polymarket.com/events — Polymarket events API (curl로 200 응답 확인 가능)
-[^2]: https://gamma-api.polymarket.com/markets — Polymarket markets API (curl로 200 응답 확인 가능)
-
-(문서 끝)
