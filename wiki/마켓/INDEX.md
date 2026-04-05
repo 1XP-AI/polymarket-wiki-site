@@ -5,6 +5,8 @@ created: "2026-04-05"
 source: "raw/00-INDEX.md"
 related:
   - "[[Polymarket-개요]]"
+  - "[[CLOB]]"
+  - "[[Copytrade-전략분석]]"
 ---
 
 # Polymarket 인덱스
@@ -18,3 +20,5 @@ related:
 ## 관련 문서
 
 - [[Polymarket-개요]] — 원본 개요 참조
+- [[CLOB]] — 주문장부 관련 개념 문서 (교차 카테고리 링크 보강)
+- [[Copytrade-전략분석]] — Copytrade 전략 문서와의 연결 (교차 카테고리 링크 보강)

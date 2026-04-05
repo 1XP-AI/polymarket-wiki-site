@@ -164,6 +164,7 @@ body {
 
 <script>
 let MANIFEST = [];
+let SIMILAR = null;
 let docCache = {};
 let currentPath = null;
 let searchQuery = '';
@@ -185,6 +186,12 @@ async function init() {
   
   const res = await fetch('manifest.json');
   MANIFEST = await res.json();
+  
+  // 임베딩 유사도 데이터 로드 (없으면 무시)
+  try {
+    const simRes = await fetch('wiki/_similar.json');
+    if (simRes.ok) SIMILAR = await simRes.json();
+  } catch(e) {}
   
   renderTree(MANIFEST);
   updateStats();
@@ -300,7 +307,26 @@ async function showDoc(path) {
   
   const html = marked.parse(content);
   
-  document.getElementById('article').innerHTML = breadcrumb + frontmatter + '<div class="article">' + html + '</div>';
+  // 임베딩 기반 관련 문서 추천
+  let relatedHtml = '';
+  if (SIMILAR && SIMILAR.related) {
+    const relPath = path;
+    const matches = SIMILAR.related
+      .filter(r => r.a === relPath || r.b === relPath)
+      .map(r => ({ path: r.a === relPath ? r.b : r.a, sim: r.similarity }))
+      .slice(0, 5);
+    if (matches.length > 0) {
+      relatedHtml = '<div style="margin-top:2rem;padding:1rem;background:var(--bg-secondary);border-radius:var(--radius);border:1px solid var(--border)">' +
+        '<div style="font-size:0.82rem;font-weight:600;margin-bottom:0.5rem;color:var(--text-secondary)">🔗 AI 추천 관련 문서</div>' +
+        matches.map(m => {
+          const name = m.path.split('/').pop().replace('.md','');
+          const pct = Math.round(m.sim * 100);
+          return `<div style="padding:3px 0"><span class="wikilink" onclick="showDoc('${m.path.replace(/'/g,"\\'")}')">${name}</span> <span style="font-size:0.7rem;color:var(--text-secondary)">${pct}%</span></div>`;
+        }).join('') + '</div>';
+    }
+  }
+  
+  document.getElementById('article').innerHTML = breadcrumb + frontmatter + '<div class="article">' + html + relatedHtml + '</div>';
   renderTree(MANIFEST, searchQuery);
   
   if (window.innerWidth <= 768) toggleSidebar();

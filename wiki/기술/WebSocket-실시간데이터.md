@@ -1,24 +1,19 @@
 ---
 title: "WebSocket 실시간데이터"
-category: "api"
+category: "infrastructure"
 created: "2026-04-05"
 source: "raw/06-WebSocket-실시간데이터.md"
 related:
-  - "[[API-레퍼런스]]"
-  - "[[리더보드-트레이더-데이터]]"
-  - "[[CLOB]]"
+  - "[[API 레퍼런스]]"
+  - "[[Polymarket 개요]]"
 ---
 
 # WebSocket 실시간데이터
 
-> 실시간 마켓 데이터 스트리밍과 연결 유지 전략
+> 한 줄 요약: Market/User/Sports 등 채널을 통한 실시간 오더북·트레이드 스트림 사용법과 주의점을 정리합니다.
 
 ## 내용
 
-WebSocket 엔드포인트, 재연결 전략, 메시지 포맷 예시를 정리한다.
+Polymarket의 실시간 데이터는 WebSocket을 통해 제공됩니다. Market 채널은 공개 오더북·가격 변동을 스트리밍하고, User 채널은 인증된 유저의 개인 이벤트를 전송합니다. Rate limit과 재접속 전략, 메시지 포맷(예: 주문/체결 이벤트)과 간단한 파싱 예제를 포함합니다.
 
-## 관련 문서
-
-- [[API-레퍼런스]] — 실시간 동기화 포인트
-- [[리더보드-트레이더-데이터]] — 트레이더 활동 스트림 연계
-- [[CLOB]] — 오더북 업데이트와 매칭
+원본: raw/06-WebSocket-실시간데이터.md

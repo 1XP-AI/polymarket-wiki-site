@@ -7,6 +7,7 @@ related:
   - "[[Copytrade 전략분석]]"
   - "[[리더보드]]"
   - "[[CLOB]]"
+  - "[[API-레퍼런스]]"
 ---
 
 # Copytrade 링크 강화
@@ -26,6 +27,7 @@ related:
 - `wiki/마켓/Polymarket-개요` — 관련 문서에 `[[CLOB]]` 추가
 - `wiki/개념/CLOB` — 관련 문서에 `[[Polymarket 개요]]` 추가
 - `_index.md` — 카테고리별 항목에 링크 확인 및 보강
+- `wiki/개념/개념-CLOB.md` — 관련 섹션에 `[[Polymarket 개요]]` 추가 (상호참조)
 
 ## 목적
 

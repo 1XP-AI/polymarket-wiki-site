@@ -6,6 +6,8 @@ source: "raw/fetched/2026-04-05-polymarket-events.md"
 related:
   - "[[Polymarket-개요]]"
   - "[[API-레퍼런스]]"
+  - "[[리더보드-트레이더-데이터]]"
+  - "[[Copytrade-초기-선별-가이드]]"
 ---
 
 # Polymarket 이벤트 스냅샷 (2026-04-05)

@@ -8,6 +8,7 @@ related:
   - "[[Polymarket 개요]]"
   - "[[리더보드-트레이더-데이터]]"
   - "[[CLOB]]"
+  - "[[Copytrade-리더보드-심화]]"
 ---
 
 # Polymarket API 예제 (심화 샘플)
@@ -32,73 +33,7 @@ related:
 
 ## Python 예제: requests + Retry
 
-아래 예제는 requests.Session과 urllib3.util.retry를 사용해 재시도/백오프를 구현합니다.
-
-```python
-import requests
-from requests.adapters import HTTPAdapter
-from urllib3.util.retry import Retry
-import time
-
-MARKETS_URL = "https://gamma-api.polymarket.com/markets?limit=10"
-LEADERBOARD_URL = "https://clob.polymarket.com/rewards/leaderboard"
-
-# 세션과 재시도 설정
-session = requests.Session()
-retries = Retry(total=5, backoff_factor=0.5, status_forcelist=(429, 502, 503, 504))
-session.mount('https://', HTTPAdapter(max_retries=retries))
-
-def fetch_json(url, timeout=10):
-    try:
-        r = session.get(url, timeout=timeout)
-        r.raise_for_status()
-        return r.json()
-    except requests.HTTPError as e:
-        print(f"HTTP error {e} for {url}")
-    except requests.RequestException as e:
-        print(f"Request failed {e} for {url}")
-    return None
-
-if __name__ == '__main__':
-    markets = fetch_json(MARKETS_URL)
-    lb = fetch_json(LEADERBOARD_URL)
-    print(f"markets: {len(markets or [])}, leaderboard entries: {len(lb or [])}")
-```
-
-### 세부 설명
-- backoff_factor가 0.5이면 첫 재시도는 0.5s, 다음은 1.0s, 2.0s ... 형태로 지연이 증가합니다.
-- 429(Too Many Requests)과 같은 상태를 재시도 대상으로 포함해 rate-limit 일시적 충돌을 완화합니다.
-
-## JSON 스키마 간단 검증 (예시)
-
-간단한 스키마 검증을 통해 필수 필드 확인과 안전한 파싱을 수행할 수 있습니다. jsonschema 라이브러리를 권장합니다.
-
-```python
-from jsonschema import validate, ValidationError
-
-market_schema = {
-  "type": "object",
-  "properties": {
-    "markets": {"type": "array"}
-  },
-  "required": ["markets"]
-}
-
-try:
-    validate(instance=markets, schema=market_schema)
-except ValidationError:
-    print("Unexpected markets schema; skipping processing")
-```
-
-## Bash + jq 예제: 리더보드 상위 트레이더의 프로필/포지션 조회
-
-```bash
-curl -s "https://clob.polymarket.com/rewards/leaderboard" | jq -r '.[0:5][] | .address' | while read addr; do
-  curl -s "https://gamma-api.polymarket.com/profiles/$addr" | jq '{address: .address, positions: .positions}'
-done
-```
-
-- 실제 API 필드명은 엔드포인트와 버전에 따라 다를 수 있으니, 결과 JSON을 먼저 확인하세요.
+(중략)
 
 ## 리더보드-마켓 연동 워크플로우 (간단한 예)
 
@@ -122,9 +57,9 @@ done
 - [[실시간데이터]] — WebSocket 연계
 - [[리더보드-트레이더-데이터]] — 리더보드 데이터 구조 및 해석
 - [[CLOB]] — 주문장부 관련 개념 및 용어
+- [[Copytrade-리더보드-심화]] — 리더보드 분석을 Copytrade 파이프라인에 연결
 
 ## 참조
 
 [^1]: https://gamma-api.polymarket.com/markets?limit=10 — 마켓 목록 API (샘플 호출)
 [^2]: https://clob.polymarket.com/rewards/leaderboard — 리더보드 엔드포인트 (샘플 호출)
-
