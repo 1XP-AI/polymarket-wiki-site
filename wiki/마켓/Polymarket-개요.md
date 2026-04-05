@@ -7,6 +7,8 @@ related:
   - "[[API-레퍼런스]]"
   - "[[CLOB]]"
   - "[[Negative-Risk]]"
+  - "[[WebSocket]]"
+  - "[[리더보드]]"
 ---
 
 # Polymarket 개요

@@ -344,9 +344,11 @@ function renderHistory() {
     const diff = Date.now() - d;
     const min = Math.floor(diff/60000), hr = Math.floor(diff/3600000), day = Math.floor(diff/86400000);
     const t = min < 1 ? '방금' : min < 60 ? `${min}분 전` : hr < 24 ? `${hr}시간 전` : day < 7 ? `${day}일 전` : d.toLocaleDateString('ko-KR',{month:'short',day:'numeric'});
+    const isNew = m.ctime && m.mtime && m.ctime === m.mtime;
+    const badge = isNew ? '<span style="color:#40c057;font-size:0.7rem;font-weight:600">NEW</span>' : '<span style="color:#fab005;font-size:0.7rem;font-weight:600">UPD</span>';
     return `<div class="history-item" onclick="showDoc('${m.path.replace(/'/g,"\\'")}')">
       <div class="history-time">${t}</div>
-      <div><div>${name}</div>${folder ? `<div style="font-size:0.7rem;color:var(--text-secondary)">${folder}</div>` : ''}</div>
+      <div><div>${badge} ${name}</div>${folder ? `<div style="font-size:0.7rem;color:var(--text-secondary)">${folder}</div>` : ''}</div>
     </div>`;
   }).join('') || '<div style="padding:1rem;color:var(--text-secondary)">변경 기록 없음</div>';
 }

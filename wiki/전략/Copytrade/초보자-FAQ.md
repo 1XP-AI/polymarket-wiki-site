@@ -6,6 +6,9 @@ source: "raw/03-Copytrade-전략분석.md"
 related:
   - "[[Copytrade-초기-선별-가이드]]"
   - "[[초보자-입문-가이드]]"
+  - "[[CLOB]]"
+  - "[[API-레퍼런스]]"
+  - "[[리더보드-트레이더-데이터]]"
 ---
 
 # Copytrade 초보자 FAQ
