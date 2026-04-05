@@ -40,7 +40,7 @@ created: "2026-04-05"
 source: "raw/02-API-레퍼런스.md"
 related:
   - "[[Polymarket 개요]]"
-  - "[[WebSocket-실시간데이터]]"
+  - "[[실시간데이터(WebSocket)]]"
   - "[[리더보드-트레이더-데이터]]"
   - "[[CLOB]]"
   - "[[Theo]]"

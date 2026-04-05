@@ -1,5 +1,1255 @@
 {
-  "total_docs": 102,
-  "duplicates": [],
-  "related": []
+  "total_docs": 98,
+  "duplicates": [
+    {
+      "a": "개념/CLOB.md",
+      "b": "개념/CTF.md",
+      "similarity": 0.9767,
+      "action": "merge"
+    },
+    {
+      "a": "전략/Copytrade/트레이더-검증-체크리스트.md",
+      "b": "전략/Copytrade/트레이더-선별-체크리스트.md",
+      "similarity": 0.9759,
+      "action": "merge"
+    },
+    {
+      "a": "전략/Copytrade/전략분석.md",
+      "b": "전략/카피트레이드-전략분석.md",
+      "similarity": 0.9756,
+      "action": "merge"
+    },
+    {
+      "a": "개념/CLOB.md",
+      "b": "개념/Negative-Risk.md",
+      "similarity": 0.975,
+      "action": "merge"
+    },
+    {
+      "a": "기술/온체인/컨트랙트.md",
+      "b": "전략/Copytrade-전략.md",
+      "similarity": 0.9725,
+      "action": "merge"
+    },
+    {
+      "a": "전략/Copytrade-전략.md",
+      "b": "전략/마켓메이커-리베이트.md",
+      "similarity": 0.9681,
+      "action": "merge"
+    },
+    {
+      "a": "개념/개념-CTF.md",
+      "b": "전략/Copytrade-전략.md",
+      "similarity": 0.9624,
+      "action": "merge"
+    },
+    {
+      "a": "기술/온체인/컨트랙트.md",
+      "b": "전략/마켓메이커-리베이트.md",
+      "similarity": 0.9607,
+      "action": "merge"
+    }
+  ],
+  "related": [
+    {
+      "a": "트레이더/리더보드.md",
+      "b": "트레이더/새로운-트레이더/프로필-템플릿.md",
+      "similarity": 0.9593,
+      "action": "link"
+    },
+    {
+      "a": "개념/개념-CTF.md",
+      "b": "전략/마켓메이커-리베이트.md",
+      "similarity": 0.9524,
+      "action": "link"
+    },
+    {
+      "a": "전략/카피트레이드-전략분석.md",
+      "b": "트레이더/리더보드-데이터.md",
+      "similarity": 0.9516,
+      "action": "link"
+    },
+    {
+      "a": "전략/마켓메이커-리베이트.md",
+      "b": "트레이더/Theo/프로필.md",
+      "similarity": 0.9496,
+      "action": "link"
+    },
+    {
+      "a": "개념/CTF.md",
+      "b": "개념/Negative-Risk.md",
+      "similarity": 0.9491,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/트레이더-검증-체크리스트.md",
+      "b": "전략/Copytrade/트레이더-프로필-분석.md",
+      "similarity": 0.9482,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/트레이더-선별-체크리스트.md",
+      "b": "전략/Copytrade/트레이더-프로필-분석.md",
+      "similarity": 0.9477,
+      "action": "link"
+    },
+    {
+      "a": "개념/개념-CTF.md",
+      "b": "기술/온체인/컨트랙트.md",
+      "similarity": 0.9468,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/트레이더-선별-체크리스트.md",
+      "b": "전략/카피트레이드-전략분석.md",
+      "similarity": 0.9459,
+      "action": "link"
+    },
+    {
+      "a": "개념/개념-Copytrade.md",
+      "b": "트레이더/Theo/프로필.md",
+      "similarity": 0.9451,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/전략분석.md",
+      "b": "트레이더/리더보드-데이터.md",
+      "similarity": 0.9445,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/포지션-관리.md",
+      "b": "전략/Copytrade/포지션-사이즈-전략.md",
+      "similarity": 0.9423,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/알고리즘-선별-체크리스트.md",
+      "b": "전략/Copytrade/트레이더-검증-체크리스트.md",
+      "similarity": 0.9408,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/알파-지표-선별.md",
+      "b": "전략/Copytrade/트레이더-검증-체크리스트.md",
+      "similarity": 0.9382,
+      "action": "link"
+    },
+    {
+      "a": "개념/Polymarket.md",
+      "b": "트레이더/Theo/프로필.md",
+      "similarity": 0.9364,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/리스크-알림-규칙.md",
+      "b": "트레이더/새로운-트레이더/프로필-템플릿.md",
+      "similarity": 0.936,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/알파-지표-선별.md",
+      "b": "전략/Copytrade/트레이더-프로필-분석.md",
+      "similarity": 0.9359,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/리스크-관리.md",
+      "b": "전략/Copytrade/팔로우-선별.md",
+      "similarity": 0.9352,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/알파-지표-선별.md",
+      "b": "전략/Copytrade/트레이더-선별-체크리스트.md",
+      "similarity": 0.9351,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/트레이더-검증-체크리스트.md",
+      "b": "전략/카피트레이드-전략분석.md",
+      "similarity": 0.9327,
+      "action": "link"
+    },
+    {
+      "a": "개념/개념-Copytrade.md",
+      "b": "전략/마켓메이커-리베이트.md",
+      "similarity": 0.9281,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade-초기-선별-가이드.md",
+      "b": "전략/Copytrade/트레이더-검증-체크리스트.md",
+      "similarity": 0.9281,
+      "action": "link"
+    },
+    {
+      "a": "기술/온체인/컨트랙트.md",
+      "b": "트레이더/Theo/프로필.md",
+      "similarity": 0.9254,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/전략분석.md",
+      "b": "전략/Copytrade/트레이더-선별-체크리스트.md",
+      "similarity": 0.9249,
+      "action": "link"
+    },
+    {
+      "a": "전략/카피트레이드-전략분석.md",
+      "b": "트레이더/리더보드-트레이더.md",
+      "similarity": 0.9245,
+      "action": "link"
+    },
+    {
+      "a": "기술/Polymarket/개요.md",
+      "b": "기술/온체인/컨트랙트.md",
+      "similarity": 0.9233,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/알고리즘-선별-체크리스트.md",
+      "b": "전략/Copytrade/트레이더-프로필-분석.md",
+      "similarity": 0.9224,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/트레이더-프로필-분석.md",
+      "b": "전략/카피트레이드-전략분석.md",
+      "similarity": 0.9207,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/알고리즘-선별-체크리스트.md",
+      "b": "전략/Copytrade/트레이더-선별-체크리스트.md",
+      "similarity": 0.9205,
+      "action": "link"
+    },
+    {
+      "a": "트레이더/리더보드-데이터.md",
+      "b": "트레이더/리더보드-트레이더.md",
+      "similarity": 0.9203,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/리스크-관리.md",
+      "b": "전략/Copytrade/매수-타이밍-심화.md",
+      "similarity": 0.9198,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/트레이더-프로필-분석.md",
+      "b": "전략/Copytrade/포지션-사이즈-전략.md",
+      "similarity": 0.9197,
+      "action": "link"
+    },
+    {
+      "a": "기술/Polymarket/개요.md",
+      "b": "트레이더/Theo/프로필.md",
+      "similarity": 0.9196,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/리스크-알림-규칙.md",
+      "b": "트레이더/리더보드.md",
+      "similarity": 0.9182,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade-초기-선별-가이드.md",
+      "b": "전략/Copytrade/트레이더-프로필-분석.md",
+      "similarity": 0.9172,
+      "action": "link"
+    },
+    {
+      "a": "기술/Polymarket/개요.md",
+      "b": "전략/마켓메이커-리베이트.md",
+      "similarity": 0.9169,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade-전략.md",
+      "b": "트레이더/Theo/프로필.md",
+      "similarity": 0.9162,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/전략분석.md",
+      "b": "전략/Copytrade/트레이더-검증-체크리스트.md",
+      "similarity": 0.9159,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/포지션-관리.md",
+      "b": "전략/카피트레이드-전략분석.md",
+      "similarity": 0.9152,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/알고리즘-선별-체크리스트.md",
+      "b": "전략/Copytrade/알파-지표-선별.md",
+      "similarity": 0.9148,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade-초기-선별-가이드.md",
+      "b": "전략/Copytrade/알고리즘-선별-체크리스트.md",
+      "similarity": 0.9141,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade-초기-선별-가이드.md",
+      "b": "전략/Copytrade/트레이더-선별-체크리스트.md",
+      "similarity": 0.9134,
+      "action": "link"
+    },
+    {
+      "a": "개념/개념-CTF.md",
+      "b": "트레이더/Theo/프로필.md",
+      "similarity": 0.9131,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/트레이더-프로필-분석.md",
+      "b": "전략/Copytrade/포지션-관리.md",
+      "similarity": 0.9129,
+      "action": "link"
+    },
+    {
+      "a": "기술/온체인/컨트랙트.md",
+      "b": "트레이더/리더보드/트레이더-데이터.md",
+      "similarity": 0.9126,
+      "action": "link"
+    },
+    {
+      "a": "전략/마켓메이커-리베이트.md",
+      "b": "트레이더/리더보드/트레이더-데이터.md",
+      "similarity": 0.9109,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/리더보드-심층-분석.md",
+      "b": "전략/Copytrade/백테스트-가이드.md",
+      "similarity": 0.9105,
+      "action": "link"
+    },
+    {
+      "a": "기술/Polymarket/개요.md",
+      "b": "전략/Copytrade-전략.md",
+      "similarity": 0.9098,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/알고리즘-선별-체크리스트.md",
+      "b": "전략/Copytrade/포지션-사이즈-전략.md",
+      "similarity": 0.9094,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade-전략.md",
+      "b": "트레이더/리더보드/트레이더-데이터.md",
+      "similarity": 0.9085,
+      "action": "link"
+    },
+    {
+      "a": "기술/온체인-컨트랙트.md",
+      "b": "전략/Copytrade-전략분석.md",
+      "similarity": 0.9082,
+      "action": "link"
+    },
+    {
+      "a": "기술/WebSocket-실시간데이터.md",
+      "b": "전략/Copytrade-전략분석.md",
+      "similarity": 0.9072,
+      "action": "link"
+    },
+    {
+      "a": "개념/개념-CTF.md",
+      "b": "기술/Polymarket/개요.md",
+      "similarity": 0.9069,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/리스크-관리.md",
+      "b": "트레이더/Theo/프로필.md",
+      "similarity": 0.9068,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade-초기-선별-가이드.md",
+      "b": "전략/Copytrade/포지션-사이즈-전략.md",
+      "similarity": 0.9049,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/리더보드-조작-탐지.md",
+      "b": "전략/Copytrade/알고리즘-선별-체크리스트.md",
+      "similarity": 0.9036,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/데이터-기반-트레이더-선별.md",
+      "b": "전략/Copytrade/트레이더-선별-체크리스트.md",
+      "similarity": 0.9033,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/리스크-관리.md",
+      "b": "전략/Copytrade/실행-비용.md",
+      "similarity": 0.9032,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/트레이더-검증-체크리스트.md",
+      "b": "전략/Copytrade/포지션-관리.md",
+      "similarity": 0.9029,
+      "action": "link"
+    },
+    {
+      "a": "개념/개념-Copytrade.md",
+      "b": "전략/Copytrade-전략.md",
+      "similarity": 0.9028,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/리더보드-조작-탐지.md",
+      "b": "전략/Copytrade/백테스트-가이드.md",
+      "similarity": 0.9026,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/트레이더-검증-체크리스트.md",
+      "b": "전략/Copytrade/포지션-사이즈-전략.md",
+      "similarity": 0.9026,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/데이터-기반-트레이더-선별.md",
+      "b": "전략/Copytrade/트레이더-검증-체크리스트.md",
+      "similarity": 0.9023,
+      "action": "link"
+    },
+    {
+      "a": "개념/Polymarket.md",
+      "b": "전략/마켓메이커-리베이트.md",
+      "similarity": 0.9011,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/리더보드-조작-탐지.md",
+      "b": "전략/Copytrade/트레이더-프로필-분석.md",
+      "similarity": 0.9008,
+      "action": "link"
+    },
+    {
+      "a": "개념/폴리마켓.md",
+      "b": "기술/API/Polymarket-API-레퍼런스.md",
+      "similarity": 0.9007,
+      "action": "link"
+    },
+    {
+      "a": "트레이더/Theo/프로필.md",
+      "b": "트레이더/리더보드/트레이더-데이터.md",
+      "similarity": 0.9006,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/전략분석.md",
+      "b": "트레이더/리더보드-트레이더.md",
+      "similarity": 0.9005,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/리스크-알림-규칙.md",
+      "b": "전략/Copytrade/추종-신호-필터링.md",
+      "similarity": 0.9003,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/알파-지표-선별.md",
+      "b": "전략/Copytrade/포지션-사이즈-전략.md",
+      "similarity": 0.8999,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/초보자-입문-가이드.md",
+      "b": "전략/Copytrade/팔로우-선별.md",
+      "similarity": 0.8999,
+      "action": "link"
+    },
+    {
+      "a": "개념/CTF.md",
+      "b": "전략/Copytrade-전략분석.md",
+      "similarity": 0.8997,
+      "action": "link"
+    },
+    {
+      "a": "개념/개념-Copytrade.md",
+      "b": "전략/Copytrade/리스크-관리.md",
+      "similarity": 0.8996,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/트레이더-선별-체크리스트.md",
+      "b": "전략/Copytrade/포지션-관리.md",
+      "similarity": 0.8995,
+      "action": "link"
+    },
+    {
+      "a": "개념/개념-CTF.md",
+      "b": "개념/개념-Copytrade.md",
+      "similarity": 0.8993,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/알파-지표-선별.md",
+      "b": "전략/Copytrade/포지션-관리.md",
+      "similarity": 0.8986,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/리더보드-조작-탐지.md",
+      "b": "전략/Copytrade/알파-지표-선별.md",
+      "similarity": 0.8984,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/Copytrade-리더보드-심화.md",
+      "b": "트레이더/Theo/프로필.md",
+      "similarity": 0.8982,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/리더보드-조작-탐지.md",
+      "b": "전략/Copytrade/포지션-관리.md",
+      "similarity": 0.8979,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/데이터-기반-트레이더-선별.md",
+      "b": "전략/Copytrade/트레이더-프로필-분석.md",
+      "similarity": 0.8977,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade-초기-선별-가이드.md",
+      "b": "전략/Copytrade/알파-지표-선별.md",
+      "similarity": 0.8974,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/실행-비용.md",
+      "b": "전략/Copytrade/팔로우-선별.md",
+      "similarity": 0.8969,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/알고리즘-선별-체크리스트.md",
+      "b": "전략/카피트레이드-전략분석.md",
+      "similarity": 0.8969,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/트레이더-선별-체크리스트.md",
+      "b": "트레이더/리더보드-데이터.md",
+      "similarity": 0.896,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/매수-타이밍-심화.md",
+      "b": "전략/Copytrade/팔로우-선별.md",
+      "similarity": 0.8959,
+      "action": "link"
+    },
+    {
+      "a": "개념/개념-Copytrade.md",
+      "b": "전략/Copytrade/Copytrade-리더보드-심화.md",
+      "similarity": 0.8957,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/전략분석.md",
+      "b": "전략/Copytrade/트레이더-프로필-분석.md",
+      "similarity": 0.8952,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/팔로우-선별.md",
+      "b": "트레이더/Theo/프로필.md",
+      "similarity": 0.895,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/리더보드-조작-탐지.md",
+      "b": "전략/Copytrade/트레이더-검증-체크리스트.md",
+      "similarity": 0.8946,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/알고리즘-선별-체크리스트.md",
+      "b": "전략/Copytrade/포지션-관리.md",
+      "similarity": 0.8945,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/리더보드-조작-탐지.md",
+      "b": "전략/Copytrade/트레이더-선별-체크리스트.md",
+      "similarity": 0.8935,
+      "action": "link"
+    },
+    {
+      "a": "기술/WebSocket-실시간데이터.md",
+      "b": "기술/웹소켓/실시간데이터.md",
+      "similarity": 0.8928,
+      "action": "link"
+    },
+    {
+      "a": "데이터/Polymarket-GitHub-리포트.md",
+      "b": "전략/Copytrade/리더보드-심층-분석.md",
+      "similarity": 0.8924,
+      "action": "link"
+    },
+    {
+      "a": "개념/개념-Copytrade.md",
+      "b": "기술/Polymarket/개요.md",
+      "similarity": 0.8922,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/트레이더-선별-체크리스트.md",
+      "b": "트레이더/리더보드-트레이더.md",
+      "similarity": 0.8918,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/리더보드-조작-탐지.md",
+      "b": "전략/카피트레이드-전략분석.md",
+      "similarity": 0.8916,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade-초기-선별-가이드.md",
+      "b": "전략/Copytrade/데이터-기반-트레이더-선별.md",
+      "similarity": 0.8914,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade-초기-선별-가이드.md",
+      "b": "전략/카피트레이드-전략분석.md",
+      "similarity": 0.8914,
+      "action": "link"
+    },
+    {
+      "a": "개념/개념-Copytrade.md",
+      "b": "전략/Copytrade/팔로우-선별.md",
+      "similarity": 0.891,
+      "action": "link"
+    },
+    {
+      "a": "개념/CTF.md",
+      "b": "기술/WebSocket-실시간데이터.md",
+      "similarity": 0.8909,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/전략분석.md",
+      "b": "전략/Copytrade/포지션-관리.md",
+      "similarity": 0.89,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/트레이더-선별-체크리스트.md",
+      "b": "전략/Copytrade/포지션-사이즈-전략.md",
+      "similarity": 0.89,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/트레이더-검증-체크리스트.md",
+      "b": "트레이더/리더보드-데이터.md",
+      "similarity": 0.8893,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/알파-지표-선별.md",
+      "b": "전략/카피트레이드-전략분석.md",
+      "similarity": 0.8892,
+      "action": "link"
+    },
+    {
+      "a": "개념/CTF.md",
+      "b": "기술/웹소켓/실시간데이터.md",
+      "similarity": 0.8889,
+      "action": "link"
+    },
+    {
+      "a": "개념/개념-Copytrade.md",
+      "b": "전략/Copytrade/팔로우-스코어링-모델.md",
+      "similarity": 0.8888,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/리스크-관리.md",
+      "b": "전략/Copytrade/초보자-입문-가이드.md",
+      "similarity": 0.8886,
+      "action": "link"
+    },
+    {
+      "a": "개념/슬리피지.md",
+      "b": "전략/Copytrade/전략분석.md",
+      "similarity": 0.8876,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/팔로우-스코어링-모델.md",
+      "b": "트레이더/Theo/프로필.md",
+      "similarity": 0.8874,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/데이터-기반-트레이더-선별.md",
+      "b": "전략/Copytrade/알파-지표-선별.md",
+      "similarity": 0.886,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade-초기-선별-가이드.md",
+      "b": "전략/Copytrade/포지션-관리.md",
+      "similarity": 0.8857,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/리더보드-조작-탐지.md",
+      "b": "전략/Copytrade/포지션-사이즈-전략.md",
+      "similarity": 0.8857,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade-초기-선별-가이드.md",
+      "b": "전략/Copytrade/전략분석.md",
+      "similarity": 0.8854,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/데이터-기반-트레이더-선별.md",
+      "b": "전략/Copytrade/알고리즘-선별-체크리스트.md",
+      "similarity": 0.8853,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/팔로우-스코어링-모델.md",
+      "b": "전략/마켓메이커-리베이트.md",
+      "similarity": 0.8853,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/포지션-사이즈-전략.md",
+      "b": "전략/카피트레이드-전략분석.md",
+      "similarity": 0.8851,
+      "action": "link"
+    },
+    {
+      "a": "개념/CLOB.md",
+      "b": "트레이더/리더보드/트레이더-데이터.md",
+      "similarity": 0.8849,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/Copytrade-리더보드-심화.md",
+      "b": "전략/Copytrade/리스크-관리.md",
+      "similarity": 0.8849,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/리밸런싱.md",
+      "b": "전략/Copytrade/포지션-사이즈-전략.md",
+      "similarity": 0.8847,
+      "action": "link"
+    },
+    {
+      "a": "개념/CLOB.md",
+      "b": "기술/웹소켓/실시간데이터.md",
+      "similarity": 0.8846,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/데이터-기반-트레이더-선별.md",
+      "b": "전략/카피트레이드-전략분석.md",
+      "similarity": 0.8844,
+      "action": "link"
+    },
+    {
+      "a": "개념/Polymarket.md",
+      "b": "개념/개념-Copytrade.md",
+      "similarity": 0.8839,
+      "action": "link"
+    },
+    {
+      "a": "개념/개념-CTF.md",
+      "b": "트레이더/리더보드/트레이더-데이터.md",
+      "similarity": 0.8837,
+      "action": "link"
+    },
+    {
+      "a": "개념/CLOB.md",
+      "b": "전략/Copytrade-전략분석.md",
+      "similarity": 0.8831,
+      "action": "link"
+    },
+    {
+      "a": "개념/CLOB.md",
+      "b": "기술/Polymarket/개요.md",
+      "similarity": 0.8827,
+      "action": "link"
+    },
+    {
+      "a": "개념/개념-Copytrade.md",
+      "b": "기술/온체인/컨트랙트.md",
+      "similarity": 0.8826,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/알고리즘-선별-체크리스트.md",
+      "b": "전략/Copytrade/전략분석.md",
+      "similarity": 0.8825,
+      "action": "link"
+    },
+    {
+      "a": "기술/WebSocket-실시간데이터.md",
+      "b": "기술/온체인-컨트랙트.md",
+      "similarity": 0.8824,
+      "action": "link"
+    },
+    {
+      "a": "데이터/Polymarket-GitHub-리포트.md",
+      "b": "전략/Copytrade/백테스트-가이드.md",
+      "similarity": 0.8824,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/리더보드-심층-분석.md",
+      "b": "전략/Copytrade/리더보드-조작-탐지.md",
+      "similarity": 0.8823,
+      "action": "link"
+    },
+    {
+      "a": "개념/폴리마켓.md",
+      "b": "기술/API/레퍼런스.md",
+      "similarity": 0.8822,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/트레이더-프로필-분석.md",
+      "b": "트레이더/리더보드-데이터.md",
+      "similarity": 0.8817,
+      "action": "link"
+    },
+    {
+      "a": "개념/Polymarket-개요.md",
+      "b": "전략/Copytrade/트레이더-프로필-분석.md",
+      "similarity": 0.8814,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/리밸런싱.md",
+      "b": "전략/Copytrade/트레이더-프로필-분석.md",
+      "similarity": 0.8807,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/Copytrade-리더보드-심화.md",
+      "b": "전략/Copytrade/팔로우-스코어링-모델.md",
+      "similarity": 0.8805,
+      "action": "link"
+    },
+    {
+      "a": "개념/INDEX-요약-추가.md",
+      "b": "개념/INDEX-요약.md",
+      "similarity": 0.8797,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade-리더보드-활용.md",
+      "b": "전략/Copytrade/트레이더-프로필-분석.md",
+      "similarity": 0.8793,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade-초기-선별-가이드.md",
+      "b": "전략/Copytrade/리밸런싱.md",
+      "similarity": 0.8786,
+      "action": "link"
+    },
+    {
+      "a": "개념/개념-Copytrade.md",
+      "b": "전략/Copytrade/매수-타이밍-심화.md",
+      "similarity": 0.8784,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/백테스트-가이드.md",
+      "b": "전략/Copytrade/알파-지표-선별.md",
+      "similarity": 0.8782,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/Copytrade-리더보드-심화.md",
+      "b": "전략/Copytrade/자동화-플로우.md",
+      "similarity": 0.878,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade-초보자-FAQ.md",
+      "b": "트레이더/Theo/프로필.md",
+      "similarity": 0.8778,
+      "action": "link"
+    },
+    {
+      "a": "개념/Polymarket.md",
+      "b": "기술/Polymarket/개요.md",
+      "similarity": 0.8777,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/매수-타이밍-심화.md",
+      "b": "트레이더/Theo/프로필.md",
+      "similarity": 0.8775,
+      "action": "link"
+    },
+    {
+      "a": "기술/Polymarket/개요.md",
+      "b": "트레이더/리더보드/트레이더-데이터.md",
+      "similarity": 0.8764,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/리더보드-조작-탐지.md",
+      "b": "전략/Copytrade/전략분석.md",
+      "similarity": 0.8764,
+      "action": "link"
+    },
+    {
+      "a": "개념/슬리피지.md",
+      "b": "전략/카피트레이드-전략분석.md",
+      "similarity": 0.876,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/포지션-관리.md",
+      "b": "트레이더/리더보드-트레이더.md",
+      "similarity": 0.8757,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/트레이더-검증-체크리스트.md",
+      "b": "트레이더/리더보드-트레이더.md",
+      "similarity": 0.8756,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/팔로우-선별.md",
+      "b": "전략/Copytrade/팔로우-스코어링-모델.md",
+      "similarity": 0.8745,
+      "action": "link"
+    },
+    {
+      "a": "전략/마켓메이커/리베이트.md",
+      "b": "트레이더/Theo/프로필.md",
+      "similarity": 0.8745,
+      "action": "link"
+    },
+    {
+      "a": "개념/Polymarket-개요.md",
+      "b": "전략/Copytrade/포지션-사이즈-전략.md",
+      "similarity": 0.8744,
+      "action": "link"
+    },
+    {
+      "a": "개념/Polymarket.md",
+      "b": "전략/Copytrade/리스크-관리.md",
+      "similarity": 0.8739,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/데이터-기반-트레이더-선별.md",
+      "b": "전략/Copytrade/전략분석.md",
+      "similarity": 0.8737,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/리스크-관리.md",
+      "b": "전략/Copytrade/팔로우-스코어링-모델.md",
+      "similarity": 0.8737,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/백테스트-가이드.md",
+      "b": "전략/Copytrade/트레이더-프로필-분석.md",
+      "similarity": 0.8737,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/리스크-관리.md",
+      "b": "전략/Copytrade/추종-중단-규칙.md",
+      "similarity": 0.8736,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/포지션-관리.md",
+      "b": "트레이더/리더보드-데이터.md",
+      "similarity": 0.8735,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/팔로우-선별.md",
+      "b": "전략/마켓메이커-리베이트.md",
+      "similarity": 0.8732,
+      "action": "link"
+    },
+    {
+      "a": "개념/CTF.md",
+      "b": "트레이더/리더보드/트레이더-데이터.md",
+      "similarity": 0.8731,
+      "action": "link"
+    },
+    {
+      "a": "개념/Polymarket.md",
+      "b": "기술/온체인/컨트랙트.md",
+      "similarity": 0.8729,
+      "action": "link"
+    },
+    {
+      "a": "개념/Polymarket-개요.md",
+      "b": "전략/Copytrade/백테스트-사례-2026-04.md",
+      "similarity": 0.8722,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/매수-타이밍-심화.md",
+      "b": "전략/Copytrade/팔로우-스코어링-모델.md",
+      "similarity": 0.8722,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/리밸런싱.md",
+      "b": "전략/Copytrade/트레이더-검증-체크리스트.md",
+      "similarity": 0.872,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/데이터-기반-트레이더-선별.md",
+      "b": "전략/Copytrade/리더보드-조작-탐지.md",
+      "similarity": 0.8714,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/리스크-관리.md",
+      "b": "전략/Copytrade/리스크-시나리오.md",
+      "similarity": 0.8713,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/알파-지표-선별.md",
+      "b": "전략/Copytrade/전략분석.md",
+      "similarity": 0.8712,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/매수-타이밍-심화.md",
+      "b": "전략/Copytrade/추종-중단-규칙.md",
+      "similarity": 0.8711,
+      "action": "link"
+    },
+    {
+      "a": "개념/Polymarket-개요.md",
+      "b": "전략/Copytrade/백테스트-가이드.md",
+      "similarity": 0.8708,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/리더보드-조작-탐지.md",
+      "b": "트레이더/리더보드-데이터.md",
+      "similarity": 0.8705,
+      "action": "link"
+    },
+    {
+      "a": "기술/Polymarket/개요.md",
+      "b": "전략/Copytrade/리스크-관리.md",
+      "similarity": 0.8704,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/리더보드-심층-분석.md",
+      "b": "전략/Copytrade/알파-지표-선별.md",
+      "similarity": 0.8703,
+      "action": "link"
+    },
+    {
+      "a": "개념/CTF.md",
+      "b": "기술/온체인-컨트랙트.md",
+      "similarity": 0.87,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/백테스트-가이드.md",
+      "b": "전략/Copytrade/포지션-관리.md",
+      "similarity": 0.8699,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/백테스트-가이드.md",
+      "b": "전략/Copytrade/포지션-사이즈-전략.md",
+      "similarity": 0.8699,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/리밸런싱.md",
+      "b": "전략/Copytrade/알고리즘-선별-체크리스트.md",
+      "similarity": 0.8695,
+      "action": "link"
+    },
+    {
+      "a": "개념/Polymarket-개요.md",
+      "b": "전략/Copytrade-리더보드-활용.md",
+      "similarity": 0.8692,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/Copytrade-리더보드-심화.md",
+      "b": "전략/Copytrade/팔로우-선별.md",
+      "similarity": 0.8688,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade-리더보드-활용.md",
+      "b": "전략/Copytrade/포지션-사이즈-전략.md",
+      "similarity": 0.8687,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/리밸런싱.md",
+      "b": "전략/Copytrade/포지션-관리.md",
+      "similarity": 0.8686,
+      "action": "link"
+    },
+    {
+      "a": "개념/Polymarket-개요.md",
+      "b": "전략/Copytrade/알고리즘-선별-체크리스트.md",
+      "similarity": 0.8685,
+      "action": "link"
+    },
+    {
+      "a": "기술/API/레퍼런스.md",
+      "b": "기술/Polymarket/개요-심화.md",
+      "similarity": 0.8685,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/리밸런싱.md",
+      "b": "전략/Copytrade/트레이더-선별-체크리스트.md",
+      "similarity": 0.8684,
+      "action": "link"
+    },
+    {
+      "a": "개념/슬리피지.md",
+      "b": "전략/Copytrade/시장-충격-완화.md",
+      "similarity": 0.8683,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/Copytrade-리더보드-심화.md",
+      "b": "전략/Copytrade/매수-타이밍-심화.md",
+      "similarity": 0.8679,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/자동화-플로우.md",
+      "b": "전략/Copytrade/추종-실행-속도-최적화.md",
+      "similarity": 0.8675,
+      "action": "link"
+    },
+    {
+      "a": "개념/CLOB.md",
+      "b": "트레이더/Theo/프로필.md",
+      "similarity": 0.8674,
+      "action": "link"
+    },
+    {
+      "a": "개념/Polymarket-개요.md",
+      "b": "전략/Copytrade/포지션-관리.md",
+      "similarity": 0.8672,
+      "action": "link"
+    },
+    {
+      "a": "데이터/수집-파이프라인.md",
+      "b": "전략/Copytrade/데이터-수집-가이드.md",
+      "similarity": 0.8672,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/백테스트-가이드.md",
+      "b": "전략/Copytrade/트레이더-검증-체크리스트.md",
+      "similarity": 0.8672,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/Copytrade-리더보드-자동화.md",
+      "b": "전략/Copytrade/리더보드-조작-탐지.md",
+      "similarity": 0.8671,
+      "action": "link"
+    },
+    {
+      "a": "개념/Copytrade.md",
+      "b": "전략/Copytrade/추종-신호-필터링.md",
+      "similarity": 0.8662,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/매수-타이밍-심화.md",
+      "b": "전략/Copytrade/실행-비용.md",
+      "similarity": 0.866,
+      "action": "link"
+    },
+    {
+      "a": "개념/개념-Copytrade.md",
+      "b": "전략/Copytrade/자동화-플로우.md",
+      "similarity": 0.8658,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade-리더보드-활용.md",
+      "b": "전략/Copytrade-초기-선별-가이드.md",
+      "similarity": 0.8656,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade-리더보드-활용.md",
+      "b": "전략/Copytrade/리더보드-조작-탐지.md",
+      "similarity": 0.8656,
+      "action": "link"
+    },
+    {
+      "a": "개념/Polymarket-개요.md",
+      "b": "전략/Copytrade/알파-지표-선별.md",
+      "similarity": 0.8653,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/실행-비용.md",
+      "b": "전략/Copytrade/초보자-입문-가이드.md",
+      "similarity": 0.8651,
+      "action": "link"
+    },
+    {
+      "a": "개념/Negative-Risk.md",
+      "b": "전략/Copytrade-전략분석.md",
+      "similarity": 0.8649,
+      "action": "link"
+    },
+    {
+      "a": "개념/Polymarket-개요.md",
+      "b": "전략/Copytrade/트레이더-검증-체크리스트.md",
+      "similarity": 0.8648,
+      "action": "link"
+    }
+  ]
 }

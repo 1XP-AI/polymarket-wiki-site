@@ -59,7 +59,7 @@ sources:
 ## 관련 문서
 
 - [[Polymarket API 레퍼런스]] — 엔드포인트 설명
-- [[실시간데이터]] — WebSocket 연계
+- [[실시간데이터(WebSocket)]] — WebSocket 연계
 - [[리더보드-트레이더-데이터]] — 리더보드 데이터 구조 및 해석
 - [[CLOB]] — 주문장부 관련 개념 및 용어
 - [[Copytrade-리더보드-심화]] — 리더보드 분석을 Copytrade 파이프라인에 연결
