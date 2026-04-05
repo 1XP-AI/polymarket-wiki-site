@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Polymarket Copytrade Wiki</title>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <style>
 :root {
   --bg: #ffffff;
@@ -17,7 +18,6 @@
   --link: #4263eb;
   --code-bg: #f1f3f5;
   --search-bg: #ffffff;
-  --highlight: #fff3bf;
   --shadow: 0 1px 3px rgba(0,0,0,0.08);
   --radius: 8px;
 }
@@ -33,7 +33,6 @@
   --link: #7aa2f7;
   --code-bg: #292e42;
   --search-bg: #24283b;
-  --highlight: #3d3410;
   --shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
 * { margin:0; padding:0; box-sizing:border-box; }
@@ -44,315 +43,96 @@ body {
   line-height: 1.7;
   transition: background 0.3s, color 0.3s;
 }
-
-/* Layout */
 .app { display: flex; height: 100vh; overflow: hidden; }
 .sidebar {
-  width: 280px;
-  min-width: 280px;
+  width: 280px; min-width: 280px;
   background: var(--bg-sidebar);
   border-right: 1px solid var(--border);
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.3s, background 0.3s;
-  z-index: 100;
+  display: flex; flex-direction: column;
+  transition: transform 0.3s; z-index: 100;
 }
-.content {
-  flex: 1;
-  overflow-y: auto;
-  padding: 2rem 3rem;
-  max-width: 100%;
-}
+.content { flex: 1; overflow-y: auto; padding: 2rem 3rem; }
 .content-inner { max-width: 780px; margin: 0 auto; }
-
-/* Header */
-.sidebar-header {
-  padding: 1.2rem 1rem;
-  border-bottom: 1px solid var(--border);
-}
-.sidebar-header h1 {
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--accent);
-  letter-spacing: -0.02em;
-}
-.sidebar-header .subtitle {
-  font-size: 0.72rem;
-  color: var(--text-secondary);
-  margin-top: 2px;
-}
-
-/* Controls */
-.controls {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 0.6rem 1rem;
-  border-bottom: 1px solid var(--border);
-}
-.search-input {
-  flex: 1;
-  padding: 6px 10px;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: var(--search-bg);
-  color: var(--text);
-  font-size: 0.82rem;
-  outline: none;
-  transition: border-color 0.2s;
-}
+.sidebar-header { padding: 1.2rem 1rem; border-bottom: 1px solid var(--border); }
+.sidebar-header h1 { font-size: 1rem; font-weight: 700; color: var(--accent); }
+.sidebar-header .subtitle { font-size: 0.72rem; color: var(--text-secondary); margin-top: 2px; }
+.controls { display: flex; align-items: center; gap: 6px; padding: 0.6rem 1rem; border-bottom: 1px solid var(--border); }
+.search-input { flex: 1; padding: 6px 10px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--search-bg); color: var(--text); font-size: 0.82rem; outline: none; }
 .search-input:focus { border-color: var(--accent); }
-.search-input::placeholder { color: var(--text-secondary); }
-.theme-toggle {
-  background: none;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 5px 8px;
-  cursor: pointer;
-  font-size: 1rem;
-  color: var(--text);
-  transition: background 0.2s;
-}
+.theme-toggle { background: none; border: 1px solid var(--border); border-radius: var(--radius); padding: 5px 8px; cursor: pointer; font-size: 1rem; color: var(--text); }
 .theme-toggle:hover { background: var(--bg-secondary); }
-
-/* Tree */
-.tree-container {
-  flex: 1;
-  overflow-y: auto;
-  padding: 0.5rem 0;
-}
-.tree-folder {
-  user-select: none;
-}
-.tree-folder-header {
-  display: flex;
-  align-items: center;
-  padding: 4px 12px 4px 0;
-  cursor: pointer;
-  font-size: 0.82rem;
-  font-weight: 600;
-  color: var(--text-secondary);
-  transition: color 0.15s;
-  gap: 2px;
-}
+.tree-container { flex: 1; overflow-y: auto; padding: 0.5rem 0; }
+.tree-folder-header { display: flex; align-items: center; padding: 4px 12px 4px 0; cursor: pointer; font-size: 0.82rem; font-weight: 600; color: var(--text-secondary); gap: 2px; }
 .tree-folder-header:hover { color: var(--text); }
-.tree-folder-header .arrow {
-  display: inline-block;
-  width: 16px;
-  text-align: center;
-  font-size: 0.7rem;
-  transition: transform 0.2s;
-  flex-shrink: 0;
-}
+.tree-folder-header .arrow { display: inline-block; width: 16px; text-align: center; font-size: 0.7rem; transition: transform 0.2s; }
 .tree-folder-header .arrow.open { transform: rotate(90deg); }
-.tree-folder-header .folder-icon { margin-right: 4px; font-size: 0.9rem; }
 .tree-children { display: none; }
 .tree-children.open { display: block; }
-.tree-file {
-  display: block;
-  padding: 3px 12px 3px 0;
-  font-size: 0.8rem;
-  color: var(--text-secondary);
-  text-decoration: none;
-  cursor: pointer;
-  transition: color 0.15s, background 0.15s;
-  border-radius: 4px;
-}
+.tree-file { display: block; padding: 3px 12px 3px 0; font-size: 0.8rem; color: var(--text-secondary); cursor: pointer; border-radius: 4px; }
 .tree-file:hover { color: var(--accent); background: var(--bg-secondary); }
 .tree-file.active { color: var(--accent); font-weight: 600; background: var(--bg-secondary); }
-.tree-file .file-icon { margin-right: 4px; font-size: 0.85rem; }
+.tabs { display: flex; border-bottom: 1px solid var(--border); }
+.tab { flex: 1; padding: 6px 0; background: none; border: none; border-bottom: 2px solid transparent; color: var(--text-secondary); font-size: 0.78rem; cursor: pointer; }
+.tab.active { color: var(--accent); border-bottom-color: var(--accent); font-weight: 600; }
+.history-container { flex: 1; overflow-y: auto; padding: 0.5rem 0; }
+.history-item { display: flex; align-items: flex-start; padding: 6px 12px; cursor: pointer; font-size: 0.8rem; gap: 8px; border-bottom: 1px solid var(--border); }
+.history-item:hover { background: var(--bg-secondary); }
+.history-time { color: var(--text-secondary); font-size: 0.7rem; white-space: nowrap; min-width: 60px; }
 
-/* Article */
-.article h1 { font-size: 1.8rem; font-weight: 800; margin-bottom: 0.5rem; letter-spacing: -0.03em; }
+/* Article (marked.js output) */
+.article h1 { font-size: 1.8rem; font-weight: 800; margin-bottom: 0.5rem; }
 .article h2 { font-size: 1.3rem; font-weight: 700; margin: 1.8rem 0 0.6rem; padding-bottom: 0.3rem; border-bottom: 1px solid var(--border); }
 .article h3 { font-size: 1.05rem; font-weight: 600; margin: 1.4rem 0 0.4rem; }
 .article p { margin: 0.6rem 0; }
 .article ul, .article ol { margin: 0.5rem 0; padding-left: 1.5rem; }
 .article li { margin: 0.25rem 0; }
-.article code {
-  background: var(--code-bg);
-  padding: 2px 6px;
-  border-radius: 4px;
-  font-size: 0.88em;
-  font-family: 'SF Mono', 'Fira Code', monospace;
-}
-.article pre {
-  background: var(--code-bg);
-  padding: 1rem;
-  border-radius: var(--radius);
-  overflow-x: auto;
-  margin: 0.8rem 0;
-  border: 1px solid var(--border);
-}
+.article code { background: var(--code-bg); padding: 2px 6px; border-radius: 4px; font-size: 0.88em; font-family: 'SF Mono', 'Fira Code', monospace; }
+.article pre { background: var(--code-bg); padding: 1rem; border-radius: var(--radius); overflow-x: auto; margin: 0.8rem 0; border: 1px solid var(--border); }
 .article pre code { background: none; padding: 0; }
-.article a, .wikilink {
-  color: var(--link);
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.15s;
-  cursor: pointer;
-}
-.article a:hover, .wikilink:hover { border-bottom-color: var(--link); }
+.article a { color: var(--link); text-decoration: none; border-bottom: 1px solid transparent; }
+.article a:hover { border-bottom-color: var(--link); }
+.wikilink { color: var(--link); cursor: pointer; border-bottom: 1px solid transparent; }
+.wikilink:hover { border-bottom-color: var(--link); }
 .wikilink.broken { color: #e03131; border-bottom: 1px dashed #e03131; }
-.article table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 0.8rem 0;
-  font-size: 0.9rem;
-}
-.article th, .article td {
-  padding: 8px 12px;
-  border: 1px solid var(--border);
-  text-align: left;
-}
+.article table { width: 100%; border-collapse: collapse; margin: 0.8rem 0; font-size: 0.9rem; }
+.article th, .article td { padding: 8px 12px; border: 1px solid var(--border); text-align: left; }
 .article th { background: var(--bg-secondary); font-weight: 600; }
-.article blockquote {
-  border-left: 3px solid var(--accent);
-  padding: 0.5rem 1rem;
-  margin: 0.8rem 0;
-  background: var(--bg-secondary);
-  border-radius: 0 var(--radius) var(--radius) 0;
-  color: var(--text-secondary);
-}
+.article blockquote { border-left: 3px solid var(--accent); padding: 0.5rem 1rem; margin: 0.8rem 0; background: var(--bg-secondary); border-radius: 0 var(--radius) var(--radius) 0; color: var(--text-secondary); }
 .article hr { border: none; border-top: 1px solid var(--border); margin: 1.5rem 0; }
 
+/* Footnotes (marked.js generates these with GFM) */
+.article .footnotes { border-top: 1px solid var(--border); margin-top: 2rem; padding-top: 1rem; font-size: 0.85em; color: var(--text-secondary); }
+.article .footnotes ol { padding-left: 1.2rem; }
+.article .footnotes li { margin: 0.3rem 0; }
+.article sup a { color: var(--accent); text-decoration: none; font-size: 0.8em; }
+
 /* Frontmatter */
-.frontmatter {
-  background: var(--bg-secondary);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 0.8rem 1rem;
-  margin-bottom: 1.5rem;
-  font-size: 0.82rem;
-  color: var(--text-secondary);
-}
+.frontmatter { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius); padding: 0.8rem 1rem; margin-bottom: 1.5rem; font-size: 0.82rem; color: var(--text-secondary); }
 .frontmatter dt { font-weight: 600; display: inline; }
 .frontmatter dd { display: inline; margin-left: 4px; margin-right: 16px; }
-
-/* Breadcrumb */
-.breadcrumb {
-  font-size: 0.78rem;
-  color: var(--text-secondary);
-  margin-bottom: 0.8rem;
-}
+.breadcrumb { font-size: 0.78rem; color: var(--text-secondary); margin-bottom: 0.8rem; }
 .breadcrumb span { cursor: pointer; color: var(--link); }
-.breadcrumb span:hover { text-decoration: underline; }
 
-/* Tabs */
-.tabs {
-  display: flex;
-  border-bottom: 1px solid var(--border);
-}
-.tab {
-  flex: 1;
-  padding: 6px 0;
-  background: none;
-  border: none;
-  border-bottom: 2px solid transparent;
-  color: var(--text-secondary);
-  font-size: 0.78rem;
-  cursor: pointer;
-  transition: color 0.15s, border-color 0.15s;
-}
-.tab:hover { color: var(--text); }
-.tab.active { color: var(--accent); border-bottom-color: var(--accent); font-weight: 600; }
+.stats-bar { padding: 0.6rem 1rem; border-top: 1px solid var(--border); font-size: 0.72rem; color: var(--text-secondary); display: flex; gap: 12px; }
+.welcome { text-align: center; padding: 4rem 1rem; }
+.welcome h2 { font-size: 1.6rem; margin-bottom: 0.5rem; }
+.welcome p { color: var(--text-secondary); }
+.welcome .emoji { font-size: 3rem; margin-bottom: 1rem; }
 
-/* History */
-.history-container {
-  flex: 1;
-  overflow-y: auto;
-  padding: 0.5rem 0;
-}
-.history-item {
-  display: flex;
-  align-items: flex-start;
-  padding: 6px 12px;
-  cursor: pointer;
-  font-size: 0.8rem;
-  gap: 8px;
-  transition: background 0.15s;
-  border-bottom: 1px solid var(--border);
-}
-.history-item:hover { background: var(--bg-secondary); }
-.history-time {
-  color: var(--text-secondary);
-  font-size: 0.7rem;
-  white-space: nowrap;
-  min-width: 60px;
-}
-.history-name { color: var(--text); }
-.history-path { color: var(--text-secondary); font-size: 0.7rem; }
-
-/* Graph */
-.graph-container {
-  flex: 1;
-  overflow: hidden;
-  position: relative;
-}
-.graph-container canvas {
-  width: 100%;
-  height: 100%;
-}
-
-/* Stats */
-.stats-bar {
-  padding: 0.6rem 1rem;
-  border-top: 1px solid var(--border);
-  font-size: 0.72rem;
-  color: var(--text-secondary);
-  display: flex;
-  gap: 12px;
-}
-
-/* Mobile */
-.menu-toggle {
-  display: none;
-  position: fixed;
-  top: 12px;
-  left: 12px;
-  z-index: 200;
-  background: var(--bg-secondary);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 6px 10px;
-  font-size: 1.2rem;
-  cursor: pointer;
-  color: var(--text);
-  box-shadow: var(--shadow);
-}
-.overlay {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.4);
-  z-index: 50;
-}
-
+.menu-toggle { display: none; position: fixed; top: 12px; left: 12px; z-index: 200; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius); padding: 6px 10px; font-size: 1.2rem; cursor: pointer; color: var(--text); }
+.overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 50; }
 @media (max-width: 768px) {
-  .sidebar {
-    position: fixed;
-    left: 0; top: 0; bottom: 0;
-    transform: translateX(-100%);
-    box-shadow: var(--shadow);
-  }
+  .sidebar { position: fixed; left: 0; top: 0; bottom: 0; transform: translateX(-100%); box-shadow: var(--shadow); }
   .sidebar.open { transform: translateX(0); }
   .overlay.open { display: block; }
   .menu-toggle { display: block; }
   .content { padding: 1rem 1.2rem; padding-top: 3rem; }
 }
-
-/* Welcome */
-.welcome { text-align: center; padding: 4rem 1rem; }
-.welcome h2 { font-size: 1.6rem; margin-bottom: 0.5rem; }
-.welcome p { color: var(--text-secondary); }
-.welcome .emoji { font-size: 3rem; margin-bottom: 1rem; }
 </style>
 </head>
 <body>
-
 <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
 <div class="overlay" onclick="toggleSidebar()"></div>
-
 <div class="app">
   <aside class="sidebar">
     <div class="sidebar-header">
@@ -366,13 +146,9 @@ body {
     <div class="tabs">
       <button class="tab active" onclick="switchTab('tree')">📁 트리</button>
       <button class="tab" onclick="switchTab('history')">🕐 최신</button>
-      <button class="tab" onclick="switchTab('graph')">🔗 그래프</button>
     </div>
     <div class="tree-container" id="tree"></div>
     <div class="history-container" id="history" style="display:none"></div>
-    <div class="graph-container" id="graph" style="display:none">
-      <canvas id="graphCanvas"></canvas>
-    </div>
     <div class="stats-bar" id="stats"></div>
   </aside>
   <main class="content">
@@ -387,51 +163,66 @@ body {
 </div>
 
 <script>
-let DOCS = [];
+let MANIFEST = [];
+let docCache = {};
 let currentPath = null;
+let searchQuery = '';
+
+// marked.js 설정
+const renderer = new marked.Renderer();
+const originalLink = renderer.link;
+renderer.link = function({ href, title, text }) {
+  // [[위키링크]] 처리는 pre-process에서 하므로 여기선 일반 링크만
+  return `<a href="${href}" target="_blank" rel="noopener"${title ? ` title="${title}"` : ''}>${text}</a>`;
+};
+marked.setOptions({ renderer, gfm: true, breaks: false });
 
 async function init() {
-  const res = await fetch('docs.json');
-  DOCS = await res.json();
-  
-  // Restore theme
   const saved = localStorage.getItem('wiki-theme');
   if (saved === 'dark' || (!saved && matchMedia('(prefers-color-scheme:dark)').matches)) {
     document.documentElement.setAttribute('data-theme', 'dark');
   }
   
-  renderTree(DOCS);
+  const res = await fetch('manifest.json');
+  MANIFEST = await res.json();
+  
+  renderTree(MANIFEST);
   updateStats();
   
-  // Handle hash navigation
   if (location.hash) {
     const path = decodeURIComponent(location.hash.slice(1));
-    const doc = DOCS.find(d => d.path === path);
-    if (doc) showDoc(doc);
+    if (MANIFEST.find(m => m.path === path)) await showDoc(path);
   }
 }
 
-function buildTreeData(docs) {
+async function fetchDoc(path) {
+  if (docCache[path]) return docCache[path];
+  const res = await fetch('wiki/' + path);
+  const text = await res.text();
+  docCache[path] = text;
+  return text;
+}
+
+function buildTreeData(items) {
   const root = {};
-  for (const doc of docs) {
-    const parts = doc.path.split('/');
+  for (const item of items) {
+    const parts = item.path.split('/');
     let node = root;
     for (let i = 0; i < parts.length - 1; i++) {
       if (!node[parts[i]]) node[parts[i]] = {};
       node = node[parts[i]];
     }
     node['__files__'] = node['__files__'] || [];
-    node['__files__'].push({ name: parts[parts.length-1], doc });
+    node['__files__'].push({ name: parts[parts.length-1], path: item.path, mtime: item.mtime });
   }
   return root;
 }
 
-function renderTree(docs, filter = '') {
-  const tree = buildTreeData(
-    filter
-      ? docs.filter(d => d.path.toLowerCase().includes(filter) || d.content.toLowerCase().includes(filter))
-      : docs
-  );
+function renderTree(items, filter = '') {
+  const filtered = filter
+    ? items.filter(d => d.path.toLowerCase().includes(filter))
+    : items;
+  const tree = buildTreeData(filtered);
   document.getElementById('tree').innerHTML = renderTreeNode(tree, 0);
 }
 
@@ -446,7 +237,7 @@ function renderTreeNode(node, depth) {
     html += `<div class="tree-folder">
       <div class="tree-folder-header" style="padding-left:${pad}px" onclick="toggleFolder('${id}')">
         <span class="arrow open" id="arrow_${id}">▶</span>
-        <span class="folder-icon">📁</span> ${folder}
+        📁 ${folder}
       </div>
       <div class="tree-children open" id="${id}">
         ${renderTreeNode(node[folder], depth + 1)}
@@ -457,30 +248,27 @@ function renderTreeNode(node, depth) {
   for (const file of files) {
     const pad = (depth + 1) * 16 + 18;
     const name = file.name.replace('.md', '');
-    const active = file.doc.path === currentPath ? ' active' : '';
-    html += `<a class="tree-file${active}" style="padding-left:${pad}px" onclick="showDoc(DOCS.find(d=>d.path==='${file.doc.path.replace(/'/g, "\\'")}'))">
-      <span class="file-icon">📄</span>${name}
+    const active = file.path === currentPath ? ' active' : '';
+    html += `<a class="tree-file${active}" style="padding-left:${pad}px" onclick="showDoc('${file.path.replace(/'/g, "\\'")}')">
+      📄 ${name}
     </a>`;
   }
   return html;
 }
 
 function toggleFolder(id) {
-  const el = document.getElementById(id);
-  const arrow = document.getElementById('arrow_' + id);
-  el.classList.toggle('open');
-  arrow.classList.toggle('open');
+  document.getElementById(id).classList.toggle('open');
+  document.getElementById('arrow_' + id).classList.toggle('open');
 }
 
-function showDoc(doc) {
-  if (!doc) return;
-  currentPath = doc.path;
-  location.hash = encodeURIComponent(doc.path);
+async function showDoc(path) {
+  currentPath = path;
+  location.hash = encodeURIComponent(path);
   
-  let content = doc.content;
+  let content = await fetchDoc(path);
   let frontmatter = '';
   
-  // Parse YAML frontmatter
+  // YAML frontmatter
   const fmMatch = content.match(/^---\n([\s\S]*?)\n---\n/);
   if (fmMatch) {
     content = content.slice(fmMatch[0].length);
@@ -493,92 +281,34 @@ function showDoc(doc) {
   }
   
   // Breadcrumb
-  const parts = doc.path.replace('.md','').split('/');
+  const parts = path.replace('.md','').split('/');
   const breadcrumb = '<div class="breadcrumb">' +
     parts.map((p,i) => i < parts.length-1 ? `<span>${p}</span>` : `<strong>${p}</strong>`).join(' / ') +
     '</div>';
   
-  // Render markdown (lightweight)
-  const html = renderMarkdown(content);
-  
-  document.getElementById('article').innerHTML = breadcrumb + frontmatter + '<div class="article">' + html + '</div>';
-  renderTree(DOCS);
-  
-  // Close sidebar on mobile
-  if (window.innerWidth <= 768) toggleSidebar();
-}
-
-function renderMarkdown(md) {
-  let html = md;
-  
-  // Code blocks
-  html = html.replace(/```(\w*)\n([\s\S]*?)```/g, (_, lang, code) =>
-    `<pre><code>${escapeHtml(code.trim())}</code></pre>`
-  );
-  
-  // Tables — match header, separator, and body rows
-  html = html.replace(/^(\|[^\n]+\|)\n(\|[\s:|-]+\|)\n((?:\|[^\n]+\|\n?)*)/gm, (match) => {
-    const lines = match.trim().split('\n');
-    if (lines.length < 3) return match;
-    const parseRow = (line) => line.split('|').slice(1, -1).map(c => c.trim());
-    const headers = parseRow(lines[0]);
-    const ths = headers.map(h => `<th>${h}</th>`).join('');
-    const rows = lines.slice(2).filter(l => l.trim()).map(line => {
-      const cells = parseRow(line);
-      const tds = cells.map(c => `<td>${c}</td>`).join('');
-      return `<tr>${tds}</tr>`;
-    }).join('');
-    return `<table><thead><tr>${ths}</tr></thead><tbody>${rows}</tbody></table>`;
-  });
-  
-  // Headers
-  html = html.replace(/^#### (.+)$/gm, '<h4>$1</h4>');
-  html = html.replace(/^### (.+)$/gm, '<h3>$1</h3>');
-  html = html.replace(/^## (.+)$/gm, '<h2>$1</h2>');
-  html = html.replace(/^# (.+)$/gm, '<h1>$1</h1>');
-  
-  // Horizontal rule
-  html = html.replace(/^---$/gm, '<hr>');
-  
-  // Blockquote
-  html = html.replace(/^> (.+)$/gm, '<blockquote><p>$1</p></blockquote>');
-  
-  // Bold, italic, inline code
-  html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
-  html = html.replace(/\*(.+?)\*/g, '<em>$1</em>');
-  html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
-  
-  // Wikilinks [[target]]
-  html = html.replace(/\[\[([^\]]+)\]\]/g, (_, target) => {
-    const doc = DOCS.find(d => {
-      const name = d.path.split('/').pop().replace('.md','');
+  // Pre-process wikilinks before marked
+  content = content.replace(/\[\[([^\]]+)\]\]/g, (_, target) => {
+    const entry = MANIFEST.find(m => {
+      const name = m.path.split('/').pop().replace('.md','');
       return name === target;
     });
-    if (doc) {
-      return `<span class="wikilink" onclick="showDoc(DOCS.find(d=>d.path==='${doc.path.replace(/'/g, "\\'")}'))">${target}</span>`;
+    if (entry) {
+      return `<span class="wikilink" onclick="showDoc('${entry.path.replace(/'/g, "\\'")}')">${target}</span>`;
     }
     return `<span class="wikilink broken">${target}</span>`;
   });
   
-  // Links
-  html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+  const html = marked.parse(content);
   
-  // Lists
-  html = html.replace(/^- (.+)$/gm, '<li>$1</li>');
-  html = html.replace(/(<li>.*<\/li>\n?)+/g, m => `<ul>${m}</ul>`);
+  document.getElementById('article').innerHTML = breadcrumb + frontmatter + '<div class="article">' + html + '</div>';
+  renderTree(MANIFEST, searchQuery);
   
-  // Paragraphs
-  html = html.replace(/^(?!<[hupoltbad]|<\/)(.+)$/gm, '<p>$1</p>');
-  
-  return html;
-}
-
-function escapeHtml(s) {
-  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  if (window.innerWidth <= 768) toggleSidebar();
 }
 
 function onSearch(q) {
-  renderTree(DOCS, q.toLowerCase());
+  searchQuery = q.toLowerCase();
+  renderTree(MANIFEST, searchQuery);
 }
 
 function toggleTheme() {
@@ -595,189 +325,42 @@ function toggleSidebar() {
 
 function switchTab(tab) {
   document.querySelectorAll('.tab').forEach((el, i) => {
-    el.classList.toggle('active',
-      (tab === 'tree' && i === 0) || (tab === 'history' && i === 1) || (tab === 'graph' && i === 2));
+    el.classList.toggle('active', (tab === 'tree' && i === 0) || (tab === 'history' && i === 1));
   });
   document.getElementById('tree').style.display = tab === 'tree' ? '' : 'none';
   document.getElementById('history').style.display = tab === 'history' ? '' : 'none';
-  document.getElementById('graph').style.display = tab === 'graph' ? '' : 'none';
   if (tab === 'history') renderHistory();
-  if (tab === 'graph') renderGraph();
 }
 
 function renderHistory() {
-  const sorted = [...DOCS]
-    .filter(d => d.mtime && !d.path.startsWith('_'))
+  const sorted = [...MANIFEST]
+    .filter(m => m.mtime && !m.path.startsWith('_'))
     .sort((a, b) => new Date(b.mtime) - new Date(a.mtime));
   
-  const html = sorted.map(doc => {
-    const name = doc.path.split('/').pop().replace('.md', '');
-    const folder = doc.path.split('/').slice(0, -1).join('/');
-    const date = new Date(doc.mtime);
-    const timeStr = formatRelativeTime(date);
-    return `<div class="history-item" onclick="showDoc(DOCS.find(d=>d.path==='${doc.path.replace(/'/g, "\\'")}'))">
-      <div class="history-time">${timeStr}</div>
-      <div>
-        <div class="history-name">📄 ${name}</div>
-        ${folder ? `<div class="history-path">${folder}</div>` : ''}
-      </div>
+  document.getElementById('history').innerHTML = sorted.map(m => {
+    const name = m.path.split('/').pop().replace('.md', '');
+    const folder = m.path.split('/').slice(0, -1).join('/');
+    const d = new Date(m.mtime);
+    const diff = Date.now() - d;
+    const min = Math.floor(diff/60000), hr = Math.floor(diff/3600000), day = Math.floor(diff/86400000);
+    const t = min < 1 ? '방금' : min < 60 ? `${min}분 전` : hr < 24 ? `${hr}시간 전` : day < 7 ? `${day}일 전` : d.toLocaleDateString('ko-KR',{month:'short',day:'numeric'});
+    return `<div class="history-item" onclick="showDoc('${m.path.replace(/'/g,"\\'")}')">
+      <div class="history-time">${t}</div>
+      <div><div>${name}</div>${folder ? `<div style="font-size:0.7rem;color:var(--text-secondary)">${folder}</div>` : ''}</div>
     </div>`;
-  }).join('');
-  
-  document.getElementById('history').innerHTML = html || '<div style="padding:1rem;color:var(--text-secondary)">변경 기록 없음</div>';
-}
-
-function formatRelativeTime(date) {
-  const now = new Date();
-  const diff = now - date;
-  const min = Math.floor(diff / 60000);
-  const hr = Math.floor(diff / 3600000);
-  const day = Math.floor(diff / 86400000);
-  if (min < 1) return '방금';
-  if (min < 60) return `${min}분 전`;
-  if (hr < 24) return `${hr}시간 전`;
-  if (day < 7) return `${day}일 전`;
-  return date.toLocaleDateString('ko-KR', { month: 'short', day: 'numeric' });
-}
-
-function renderGraph() {
-  const canvas = document.getElementById('graphCanvas');
-  const container = document.getElementById('graph');
-  const ctx = canvas.getContext('2d');
-  canvas.width = container.clientWidth;
-  canvas.height = container.clientHeight;
-  
-  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-  const bgColor = isDark ? '#1f2335' : '#f1f3f5';
-  const textColor = isDark ? '#c0caf5' : '#1a1a2e';
-  const linkColor = isDark ? 'rgba(122,162,247,0.3)' : 'rgba(66,99,235,0.2)';
-  const nodeColor = isDark ? '#7aa2f7' : '#4263eb';
-  const activeColor = '#f7768e';
-  
-  // Build nodes and edges from wikilinks
-  const nodes = [];
-  const edges = [];
-  const nameToIdx = {};
-  
-  DOCS.filter(d => !d.path.startsWith('_')).forEach((doc, i) => {
-    const name = doc.path.split('/').pop().replace('.md', '');
-    const folder = doc.path.split('/')[0] || '';
-    nameToIdx[name] = i;
-    nodes.push({
-      name, folder, doc,
-      x: canvas.width/2 + (Math.random()-0.5) * canvas.width * 0.6,
-      y: canvas.height/2 + (Math.random()-0.5) * canvas.height * 0.6,
-      vx: 0, vy: 0
-    });
-  });
-  
-  DOCS.filter(d => !d.path.startsWith('_')).forEach((doc, i) => {
-    const links = doc.content.match(/\[\[([^\]]+)\]\]/g) || [];
-    links.forEach(link => {
-      const target = link.slice(2, -2);
-      if (nameToIdx[target] !== undefined && nameToIdx[target] !== i) {
-        edges.push([i, nameToIdx[target]]);
-      }
-    });
-  });
-  
-  // Simple force simulation
-  const W = canvas.width, H = canvas.height;
-  function simulate() {
-    for (let iter = 0; iter < 100; iter++) {
-      // Repulsion
-      for (let i = 0; i < nodes.length; i++) {
-        for (let j = i+1; j < nodes.length; j++) {
-          let dx = nodes[j].x - nodes[i].x;
-          let dy = nodes[j].y - nodes[i].y;
-          let d = Math.sqrt(dx*dx + dy*dy) || 1;
-          let force = 800 / (d * d);
-          nodes[i].vx -= dx/d * force;
-          nodes[i].vy -= dy/d * force;
-          nodes[j].vx += dx/d * force;
-          nodes[j].vy += dy/d * force;
-        }
-      }
-      // Attraction (edges)
-      edges.forEach(([a,b]) => {
-        let dx = nodes[b].x - nodes[a].x;
-        let dy = nodes[b].y - nodes[a].y;
-        let d = Math.sqrt(dx*dx + dy*dy) || 1;
-        let force = (d - 60) * 0.01;
-        nodes[a].vx += dx/d * force;
-        nodes[a].vy += dy/d * force;
-        nodes[b].vx -= dx/d * force;
-        nodes[b].vy -= dy/d * force;
-      });
-      // Center gravity
-      nodes.forEach(n => {
-        n.vx += (W/2 - n.x) * 0.001;
-        n.vy += (H/2 - n.y) * 0.001;
-        n.vx *= 0.9;
-        n.vy *= 0.9;
-        n.x += n.vx;
-        n.y += n.vy;
-        n.x = Math.max(20, Math.min(W-20, n.x));
-        n.y = Math.max(20, Math.min(H-20, n.y));
-      });
-    }
-  }
-  simulate();
-  
-  // Draw
-  ctx.fillStyle = bgColor;
-  ctx.fillRect(0, 0, W, H);
-  
-  // Edges
-  ctx.strokeStyle = linkColor;
-  ctx.lineWidth = 1.5;
-  edges.forEach(([a,b]) => {
-    ctx.beginPath();
-    ctx.moveTo(nodes[a].x, nodes[a].y);
-    ctx.lineTo(nodes[b].x, nodes[b].y);
-    ctx.stroke();
-  });
-  
-  // Nodes
-  const currentName = currentPath ? currentPath.split('/').pop().replace('.md','') : null;
-  nodes.forEach((n, i) => {
-    const linkCount = edges.filter(e => e[0]===i || e[1]===i).length;
-    const r = Math.max(4, Math.min(12, 3 + linkCount * 1.5));
-    ctx.beginPath();
-    ctx.arc(n.x, n.y, r, 0, Math.PI*2);
-    ctx.fillStyle = n.name === currentName ? activeColor : nodeColor;
-    ctx.fill();
-    
-    ctx.fillStyle = textColor;
-    ctx.font = `${Math.max(9, 11-nodes.length*0.1)}px -apple-system, sans-serif`;
-    ctx.textAlign = 'center';
-    ctx.fillText(n.name, n.x, n.y + r + 12);
-  });
-  
-  // Click handler
-  canvas.onclick = (e) => {
-    const rect = canvas.getBoundingClientRect();
-    const mx = e.clientX - rect.left;
-    const my = e.clientY - rect.top;
-    for (const n of nodes) {
-      if (Math.abs(n.x-mx) < 15 && Math.abs(n.y-my) < 15) {
-        showDoc(n.doc);
-        break;
-      }
-    }
-  };
+  }).join('') || '<div style="padding:1rem;color:var(--text-secondary)">변경 기록 없음</div>';
 }
 
 function updateStats() {
-  const totalWords = DOCS.reduce((s, d) => s + d.content.split(/\s+/).length, 0);
+  const total = MANIFEST.filter(m => !m.path.startsWith('_')).length;
+  const totalSize = MANIFEST.reduce((s, m) => s + (m.size || 0), 0);
   document.getElementById('stats').innerHTML =
-    `<span>📄 ${DOCS.length}문서</span><span>📝 ${totalWords.toLocaleString()}단어</span>`;
+    `<span>📄 ${total}문서</span><span>📦 ${(totalSize/1024).toFixed(0)}KB</span>`;
 }
 
 window.addEventListener('hashchange', () => {
   const path = decodeURIComponent(location.hash.slice(1));
-  const doc = DOCS.find(d => d.path === path);
-  if (doc) showDoc(doc);
+  if (MANIFEST.find(m => m.path === path)) showDoc(path);
 });
 
 init();
