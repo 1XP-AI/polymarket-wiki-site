@@ -9,6 +9,7 @@ related:
   - "[[리더보드-트레이더-데이터]]"
   - "[[Copytrade-전략분석]]"
   - "[[CLOB]]"
+  - "[[API-예제-샘플]]"
 ---
 
 # API 레퍼런스
@@ -99,79 +100,125 @@ curl -s "https://gamma-api.polymarket.com/profiles/0xADDRESS" -H "Accept: applic
 
 ---
 
-## 실용 예제: TypeScript로 활성 마켓 가져와 필터링하기
+## 실무 스니펫: 오더북과 리더보드 결합(심화 예제)
 
-```ts
-import fetch from 'node-fetch';
+다음 예제는 리더보드에서 상위 트레이더의 지갑을 가져와 해당 트레이더가 보유한 포지션이 관심 마켓에서 관측되는지 확인하고, 해당 마켓의 오더북 깊이를 함께 조회해 copytrade 실행 가능성을 평가하는 간단한 파이프라인입니다.
 
-type Market = {
-  id: string;
-  title: string;
-  state: string;
-  price: number;
-  volume: number;
-};
-
-async function fetchActiveMarkets(limit = 50): Promise<Market[]> {
-  const res = await fetch(`https://gamma-api.polymarket.com/markets?limit=${limit}`);
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
-  const body = await res.json();
-  // API 응답 구조에 따라 파싱
-  return (body.markets || []).filter((m: Market) => m.state === 'active');
-}
-
-fetchActiveMarkets(20).then(ms => {
-  ms.forEach(m => console.log(`${m.id} ${m.title} ${m.price}`));
-});
-```
-
-- 실무 팁: 대량 조회 시 rate limit을 고려해 `sleep` 또는 `backoff`를 적용한다. 실패 시 재시도 로직을 구현할 것.
-
-## 추가 예제: Python (requests)
+### 파이썬 예제 (requests)
 
 ```py
+# 실무 수준의 간단한 파이프라인 예제입니다.
+# 특징: 세션 재사용, 타임아웃 설정, 재시도(Retry) + 백오프, 간단한 rate-limit 대응
+import time
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
-BASE = 'https://gamma-api.polymarket.com'
+BASE_GAMMA = 'https://gamma-api.polymarket.com'
+BASE_CLOB = 'https://clob.polymarket.com'
+BASE_DATA = 'https://data-api.polymarket.com'
 
-def fetch_active_markets(limit=20):
-    r = requests.get(f"{BASE}/markets?limit={limit}")
-    r.raise_for_status()
-    body = r.json()
-    return [m for m in body.get('markets', []) if m.get('state') == 'active']
+# 세션 설정: 재시도 전략과 커넥션 풀 재사용
+session = requests.Session()
+retries = Retry(
+    total=5,
+    backoff_factor=0.5,
+    status_forcelist=(429, 500, 502, 503, 504),
+    allowed_methods=("GET", "POST")
+)
+adapter = HTTPAdapter(max_retries=retries, pool_maxsize=10)
+session.mount('https://', adapter)
+session.headers.update({'Accept': 'application/json', 'User-Agent': 'autowiki/1.0'})
 
-if __name__ == '__main__':
-    markets = fetch_active_markets(20)
-    for m in markets:
-        print(m['id'], m.get('title'), m.get('price'))
+DEFAULT_TIMEOUT = (3, 10)  # (connect_timeout, read_timeout)
+
+def safe_get(url, params=None, timeout=DEFAULT_TIMEOUT):
+    try:
+        r = session.get(url, params=params, timeout=timeout)
+        # 429(Too Many Requests)에 대해서는 백오프 후 재시도 로직을 추가로 수행할 수 있음
+        if r.status_code == 429:
+            # 간단한 rate-limit 대응: Retry-After 헤더가 있으면 기다림
+            wait = int(r.headers.get('Retry-After', '1'))
+            time.sleep(wait)
+            r = session.get(url, params=params, timeout=timeout)
+        r.raise_for_status()
+        return r.json()
+    except requests.RequestException as e:
+        # 로깅/지표 집계 후 None 반환
+        print('network error', url, e)
+        return None
+
+def fetch_leaderboard(top=10):
+    url = f"{BASE_DATA}/leaderboard"
+    return safe_get(url, params={'limit': top}) or {}
+
+def fetch_profile(address):
+    url = f"{BASE_GAMMA}/profiles/{address}"
+    return safe_get(url) or {}
+
+def fetch_orderbook(market_id):
+    url = f"{BASE_CLOB}/orderbook"
+    return safe_get(url, params={'market_id': market_id}) or {}
+
+# 간단한 결합 로직 (실무 팁 포함)
+# - 병렬화: concurrent.futures를 사용하여 프로파일/오더북 호출 병렬화 권장
+# - 캐시: 동일 market_id 반복 호출을 피하기 위해 메모리 캐시(예: TTL cache) 적용
+# - 관찰: 각 요청의 latency, status_code를 모니터링
+
+leaders = fetch_leaderboard(5).get('results', [])
+for l in leaders:
+    addr = l.get('address')
+    profile = fetch_profile(addr)
+    # profile에서 관심 마켓 id를 추출하는 로직을 작성
+    for pos in profile.get('positions', []):
+        market_id = pos.get('market_id')
+        ob = fetch_orderbook(market_id)
+        bids = ob.get('bids', [])
+        asks = ob.get('asks', [])
+        top_bid = bids[0] if bids else [0, 0]
+        top_ask = asks[0] if asks else [0, 0]
+        print(addr, market_id, 'bid', top_bid, 'ask', top_ask)
+
+# 실무 권고 요약:
+# 1) 민감 정보(키)는 코드에 하드코딩 금지
+# 2) 네트워크 예외 처리 및 재시도, 타임아웃 설정 필수
+# 3) rate-limit 발생 시 Retry-After를 존중하거나 exponential backoff 적용
+# 4) 병렬 호출 시 rate-limit과 API 제공자의 이용 약관을 준수
 ```
 
-- 설명: Python 예제는 requests로 빠르게 마켓 리스트를 가져와 active만 필터링하는 간단한 흐름을 보여준다. 실무에서는 세션 재사용, 타임아웃, 재시도(backoff) 정책을 추가할 것.
+이 스니펫은 개념 증명 수준이며, 실제 운영에서는 병렬화, 캐시, 재시도(backoff), 타임아웃과 rate-limit 제어를 추가해야 합니다.
 
-## 실무 스니펫: 오더북과 리더보드 조회 (curl)
+### TypeScript 예제 (node-fetch)
 
-- 특정 마켓 오더북 조회 (curl)
+```ts
+import fetch from 'node-fetch'
 
-```bash
-curl -s "https://clob.polymarket.com/orderbook?market_id=MARKET_ID" -H "Accept: application/json" | jq '.'
+const BASE_GAMMA = 'https://gamma-api.polymarket.com'
+const BASE_CLOB = 'https://clob.polymarket.com'
+const BASE_DATA = 'https://data-api.polymarket.com'
+
+async function fetchLeaderboard(limit = 10) {
+  const r = await fetch(`${BASE_DATA}/leaderboard?limit=${limit}`)
+  if (!r.ok) throw new Error(`${r.status}`)
+  return r.json()
+}
+
+async function fetchOrderbook(marketId: string) {
+  const r = await fetch(`${BASE_CLOB}/orderbook?market_id=${marketId}`)
+  return r.json()
+}
+
+(async () => {
+  const leaders = await fetchLeaderboard(5)
+  for (const l of leaders.results || []) {
+    const addr = l.address
+    // profile/positions 조회 로직 생략
+    // 각 포지션의 market_id에 대해 fetchOrderbook 호출
+  }
+})()
 ```
 
-- 리더보드 상위 트레이더 조회 (Data API)
-
-```bash
-curl -s "https://data-api.polymarket.com/leaderboard?limit=10" -H "Accept: application/json" | jq '.'
-```
-
-- 활용 팁: 오더북으로부터 bid/ask 깊이와 상위 레벨 사이즈를 읽어 포지션 사이징을 결정할 수 있다. 리더보드 엔드포인트를 주기적으로 가져와 신규 상위 트레이더를 감지하는 파이프라인에 활용하라.
-
-## 결합 사용 예
-
-1. 리더보드에서 상위 트레이더 지갑 주소를 가져온다.
-2. 각 지갑의 프로필/포지션 엔드포인트를 호출하여 최근 포지션을 파싱한다.
-3. 관심 마켓의 오더북 깊이와 매칭하여 copytrade 실행 가능성을 평가한다.
-
-- 보안: 주문(쓰기)은 인증이 필요하므로 키 관리는 안전한 vault(환경변수, 시크릿 매니저 등)를 사용하라.
-
+- 운영 팁: 민감한 키는 절대 코드에 하드코딩하지 말고 안전한 시크릿 매니저를 사용하라. 읽기 전용 엔드포인트도 과도한 호출 시 차단될 수 있으므로 적절한 캐시와 rate control을 설계한다.
 
 ---
 
@@ -201,3 +248,4 @@ curl -s "https://data-api.polymarket.com/leaderboard?limit=10" -H "Accept: appli
 - [[WebSocket-실시간데이터]] — 동기화 포인트
 - [[리더보드-트레이더-데이터]] — 트레이더 메트릭 연계
 - [[Copytrade-전략분석]] — copytrade 데이터 결합 팁
+- [[API-예제-샘플]]
