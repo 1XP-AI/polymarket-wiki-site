@@ -1,0 +1,45 @@
+---
+title: "데이터 수집 파이프라인"
+category: "data"
+created: "2026-04-05"
+source: "raw/fetched/2026-04-05-polymarket-markets.md"
+related:
+  - "[[데이터-수집-가이드]]"
+  - "[[리더보드-트레이더-데이터]]"
+---
+
+# 데이터 수집 파이프라인
+
+> raw 소스에서 위키용 마크다운까지의 표준 파이프라인 요약
+
+## 내용
+
+데이터 수집 파이프라인은 소스 발견 → 수집 → 변환 → 저장 → 인덱싱의 단계로 구성된다. 아래는 권장된 절차이다.
+
+1. 소스 확인
+   - raw/sources.md를 읽어 수집 대상(Polymarket API, Reddit, GitHub, Twitter 등)을 선정한다.
+2. 수집(fetch)
+   - 각 소스별로 curl/ddgr/bird 등 도구를 사용해 JSON/HTML을 가져온다.
+   - 실패 시 로그에 원인 기록하고 다음 소스로 넘어간다.
+3. 변환(transform)
+   - JSON/HTML을 사람이 읽을 수 있는 마크다운으로 변환한다.
+   - 메타데이터(frontmatter): source, fetched, endpoint 필드 추가
+4. 저장(store)
+   - raw/fetched/에 YYYY-MM-DD-소스-주제.md 형식으로 저장한다.
+   - 원본(원문)이 필요하면 raw/fetched/original/에 복사본 저장
+5. 인덱싱(index)
+   - 변환된 마크다운에서 위키에 유용한 항목(트레이더, 키워드, URL)을 추출하여 raw/sources.md에 추가
+   - _fetch-log.md에 수집 결과를 기록하여 중복 수집 방지
+6. 적합성 평가 (Relevance Gate)
+   - wiki-program.md의 평가 기준에 따라 저장 여부 결정
+
+## 운영 팁
+
+- Rate limit을 고려해 같은 API를 연속 호출하지 않고 백오프를 구현한다.
+- 수집 스크립트는 실패해도 중단하지 않도록 설계한다.
+- 수집된 파일은 절대 삭제하지 말고, 변환된 마크다운을 통해 위키 문서로 정리한다.
+
+## 관련 문서
+
+- [[raw/sources.md]] — 소스 레지스트리
+- [[_fetch-log]] — 수집 로그

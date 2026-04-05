@@ -74,6 +74,27 @@ sources:
   - url: "https://polymarket.medium.com"
     raw: "raw/fetched/2026-04-06-polymarket-medium.md"
     added: "2026-04-06"
+  - url: "https://polymarket.com/terms"
+    raw: "raw/fetched/2026-04-06-polymarket-terms.md"
+    added: "2026-04-06"
+  - url: "https://polymarket.com/privacy"
+    raw: "raw/fetched/2026-04-06-polymarket-privacy.md"
+    added: "2026-04-06"
+  - url: "https://polymarket.statuspage.io"
+    raw: "raw/fetched/2026-04-06-polymarket-status.md"
+    added: "2026-04-06"
+  - url: "https://docs.polymarket.com/api"
+    raw: "raw/fetched/2026-04-06-polymarket-docs-api.md"
+    added: "2026-04-06"
+  - url: "https://data.polymarket.com/leaderboard"
+    raw: "raw/fetched/2026-04-06-polymarket-data-leaderboard.md"
+    added: "2026-04-06"
+  - url: "https://gamma-api.polymarket.com/leaderboard"
+    raw: "raw/fetched/2026-04-06-polymarket-leaderboard-api.md"
+    added: "2026-04-06"
+  - url: "https://polymarketanalytics.com/traders"
+    raw: "raw/fetched/2026-04-06-polymarket-analytics.md"
+    added: "2026-04-06"
 ---
 
 # 마스터 인덱스
@@ -91,6 +112,7 @@ sources:
   - [[Copytrade/리스크-관리.md]]
   - [[Copytrade 링크 강화]]
   - [[Copytrade 링크 강화]]
+  - [[Copytrade-링크강화]]
 - 트레이더/
   - [[리더보드/트레이더-데이터.md]]
 
@@ -102,5 +124,7 @@ sources:
 
 ## 메모
 
-- 출처 비율: 13/98 (현재 13% → frontmatter sources 비율이 50% 미만이므로 추가 소스가 필요했습니다; 6건의 raw/fetched 소스 항목을 2026-04-06에 추가하여 frontmatter를 보강했습니다)
-- 작업: Link — 인덱스의 frontmatter에 출처 6건 추가 및 전략 카테고리에 [[Copytrade 링크 강화]] 문서 항목을 추가했습니다 (2026-04-06)
+- 출처 비율: 13/98 (현재 13% → frontmatter sources 비율이 50% 미만이므로 추가 소스가 필요했습니다; 7건의 raw/fetched 소스 항목을 2026-04-06에 추가하여 frontmatter를 보강하고 개념/Copytrade.md를 심화했습니다)
+- 작업: Deepen — 개념/Copytrade.md에 4건의 추가 출처 및 섹션(운영 사례, 사이징 계산, 백테스트 파라미터 샘플, 구현 템플릿)을 추가하여 문서를 심화했습니다 (2026-04-06)
+- 작업: Deepen — 전략/Copytrade-리더보드-활용.md에 5건의 추가 출처를 frontmatter에 추가하고 운영·백테스트 예시 섹션을 추가했습니다 (2026-04-06)
+- 작업: Deepen — 전략/Copytrade-초보자-FAQ.md에 4건의 출처를 frontmatter에 추가하고 샘플 워크플로, 의사코드, 실행 템플릿, 백테스트 해석 섹션을 추가했습니다 (2026-04-06)

@@ -1,12 +1,15 @@
-# 위키 상태 (자동 업데이트)
+# Health report
 
-- 총 문서 수: 98
-- 총 단어 수: 30,159
-- 중복 제거: 개념/CTF.md 및 개념/Negative-Risk.md를 개념/CLOB.md에 병합 (2건)
-- 빈 링크: 0
-- quality_score: 42.10
+- generated_at: 2026-04-05T16:05:17Z
+- total_docs:       92
+- total_words:    31476
+- dead_links:        0
+- avg_links_per_doc: 0
+- docs_with_sources:       13
+- avg_words_per_doc: 342
+- quality_score: 36.08
 
-다음 우선 작업 제안:
-- sources가 없는 문서에 출처 추가 (출처 있는 문서 비율: 9%)
-- 평균 링크 밀도 증가: 문서당 교차 링크 추가로 평균 3개 이상 목표
-- 보완: 중복 가능성 높은 쌍 추가 검토
+## Next steps
+- Review created stubs in wiki/Stubs and expand or delete if incorrect.
+- Inspect merged files with .bak and .bak_replace files and tidy as needed.
+
