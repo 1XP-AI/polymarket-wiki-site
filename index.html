@@ -283,6 +283,17 @@ body {
 .history-name { color: var(--text); }
 .history-path { color: var(--text-secondary); font-size: 0.7rem; }
 
+/* Graph */
+.graph-container {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+.graph-container canvas {
+  width: 100%;
+  height: 100%;
+}
+
 /* Stats */
 .stats-bar {
   padding: 0.6rem 1rem;
@@ -355,9 +366,13 @@ body {
     <div class="tabs">
       <button class="tab active" onclick="switchTab('tree')">📁 트리</button>
       <button class="tab" onclick="switchTab('history')">🕐 최신</button>
+      <button class="tab" onclick="switchTab('graph')">🔗 그래프</button>
     </div>
     <div class="tree-container" id="tree"></div>
     <div class="history-container" id="history" style="display:none"></div>
+    <div class="graph-container" id="graph" style="display:none">
+      <canvas id="graphCanvas"></canvas>
+    </div>
     <div class="stats-bar" id="stats"></div>
   </aside>
   <main class="content">
@@ -580,11 +595,14 @@ function toggleSidebar() {
 
 function switchTab(tab) {
   document.querySelectorAll('.tab').forEach((el, i) => {
-    el.classList.toggle('active', (tab === 'tree' && i === 0) || (tab === 'history' && i === 1));
+    el.classList.toggle('active',
+      (tab === 'tree' && i === 0) || (tab === 'history' && i === 1) || (tab === 'graph' && i === 2));
   });
   document.getElementById('tree').style.display = tab === 'tree' ? '' : 'none';
   document.getElementById('history').style.display = tab === 'history' ? '' : 'none';
+  document.getElementById('graph').style.display = tab === 'graph' ? '' : 'none';
   if (tab === 'history') renderHistory();
+  if (tab === 'graph') renderGraph();
 }
 
 function renderHistory() {
@@ -620,6 +638,134 @@ function formatRelativeTime(date) {
   if (hr < 24) return `${hr}시간 전`;
   if (day < 7) return `${day}일 전`;
   return date.toLocaleDateString('ko-KR', { month: 'short', day: 'numeric' });
+}
+
+function renderGraph() {
+  const canvas = document.getElementById('graphCanvas');
+  const container = document.getElementById('graph');
+  const ctx = canvas.getContext('2d');
+  canvas.width = container.clientWidth;
+  canvas.height = container.clientHeight;
+  
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  const bgColor = isDark ? '#1f2335' : '#f1f3f5';
+  const textColor = isDark ? '#c0caf5' : '#1a1a2e';
+  const linkColor = isDark ? 'rgba(122,162,247,0.3)' : 'rgba(66,99,235,0.2)';
+  const nodeColor = isDark ? '#7aa2f7' : '#4263eb';
+  const activeColor = '#f7768e';
+  
+  // Build nodes and edges from wikilinks
+  const nodes = [];
+  const edges = [];
+  const nameToIdx = {};
+  
+  DOCS.filter(d => !d.path.startsWith('_')).forEach((doc, i) => {
+    const name = doc.path.split('/').pop().replace('.md', '');
+    const folder = doc.path.split('/')[0] || '';
+    nameToIdx[name] = i;
+    nodes.push({
+      name, folder, doc,
+      x: canvas.width/2 + (Math.random()-0.5) * canvas.width * 0.6,
+      y: canvas.height/2 + (Math.random()-0.5) * canvas.height * 0.6,
+      vx: 0, vy: 0
+    });
+  });
+  
+  DOCS.filter(d => !d.path.startsWith('_')).forEach((doc, i) => {
+    const links = doc.content.match(/\[\[([^\]]+)\]\]/g) || [];
+    links.forEach(link => {
+      const target = link.slice(2, -2);
+      if (nameToIdx[target] !== undefined && nameToIdx[target] !== i) {
+        edges.push([i, nameToIdx[target]]);
+      }
+    });
+  });
+  
+  // Simple force simulation
+  const W = canvas.width, H = canvas.height;
+  function simulate() {
+    for (let iter = 0; iter < 100; iter++) {
+      // Repulsion
+      for (let i = 0; i < nodes.length; i++) {
+        for (let j = i+1; j < nodes.length; j++) {
+          let dx = nodes[j].x - nodes[i].x;
+          let dy = nodes[j].y - nodes[i].y;
+          let d = Math.sqrt(dx*dx + dy*dy) || 1;
+          let force = 800 / (d * d);
+          nodes[i].vx -= dx/d * force;
+          nodes[i].vy -= dy/d * force;
+          nodes[j].vx += dx/d * force;
+          nodes[j].vy += dy/d * force;
+        }
+      }
+      // Attraction (edges)
+      edges.forEach(([a,b]) => {
+        let dx = nodes[b].x - nodes[a].x;
+        let dy = nodes[b].y - nodes[a].y;
+        let d = Math.sqrt(dx*dx + dy*dy) || 1;
+        let force = (d - 60) * 0.01;
+        nodes[a].vx += dx/d * force;
+        nodes[a].vy += dy/d * force;
+        nodes[b].vx -= dx/d * force;
+        nodes[b].vy -= dy/d * force;
+      });
+      // Center gravity
+      nodes.forEach(n => {
+        n.vx += (W/2 - n.x) * 0.001;
+        n.vy += (H/2 - n.y) * 0.001;
+        n.vx *= 0.9;
+        n.vy *= 0.9;
+        n.x += n.vx;
+        n.y += n.vy;
+        n.x = Math.max(20, Math.min(W-20, n.x));
+        n.y = Math.max(20, Math.min(H-20, n.y));
+      });
+    }
+  }
+  simulate();
+  
+  // Draw
+  ctx.fillStyle = bgColor;
+  ctx.fillRect(0, 0, W, H);
+  
+  // Edges
+  ctx.strokeStyle = linkColor;
+  ctx.lineWidth = 1.5;
+  edges.forEach(([a,b]) => {
+    ctx.beginPath();
+    ctx.moveTo(nodes[a].x, nodes[a].y);
+    ctx.lineTo(nodes[b].x, nodes[b].y);
+    ctx.stroke();
+  });
+  
+  // Nodes
+  const currentName = currentPath ? currentPath.split('/').pop().replace('.md','') : null;
+  nodes.forEach((n, i) => {
+    const linkCount = edges.filter(e => e[0]===i || e[1]===i).length;
+    const r = Math.max(4, Math.min(12, 3 + linkCount * 1.5));
+    ctx.beginPath();
+    ctx.arc(n.x, n.y, r, 0, Math.PI*2);
+    ctx.fillStyle = n.name === currentName ? activeColor : nodeColor;
+    ctx.fill();
+    
+    ctx.fillStyle = textColor;
+    ctx.font = `${Math.max(9, 11-nodes.length*0.1)}px -apple-system, sans-serif`;
+    ctx.textAlign = 'center';
+    ctx.fillText(n.name, n.x, n.y + r + 12);
+  });
+  
+  // Click handler
+  canvas.onclick = (e) => {
+    const rect = canvas.getBoundingClientRect();
+    const mx = e.clientX - rect.left;
+    const my = e.clientY - rect.top;
+    for (const n of nodes) {
+      if (Math.abs(n.x-mx) < 15 && Math.abs(n.y-my) < 15) {
+        showDoc(n.doc);
+        break;
+      }
+    }
+  };
 }
 
 function updateStats() {
