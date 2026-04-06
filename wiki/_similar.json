@@ -1,14 +1,15 @@
 {
   "total_docs": 89,
   "search_engine": "ir (hybrid: BM25 + vector + rerank)",
-  "duplicates": [],
-  "related": [
+  "duplicates": [
     {
       "a": "개념/개념-Copytrade.md",
       "b": "전략/Copytrade-전략분석.md",
       "similarity": 0.9077,
-      "action": "link"
-    },
+      "action": "merge"
+    }
+  ],
+  "related": [
     {
       "a": "개념/CLOB.md",
       "b": "개념/개념-CLOB.md",
@@ -31,6 +32,42 @@
       "a": "개념/Copytrade.md",
       "b": "전략/Copytrade/전략분석.md",
       "similarity": 0.8432,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/알파-검증.md",
+      "b": "전략/Copytrade/알파-지표-선별.md",
+      "similarity": 0.8189,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/사이클-노트-2026-04-05.md",
+      "b": "전략/Link-사이클-노트-2026-04-05.md",
+      "similarity": 0.8127,
+      "action": "link"
+    },
+    {
+      "a": "트레이더/리더보드-분석.md",
+      "b": "트레이더/리더보드/트레이더-개요.md",
+      "similarity": 0.7952,
+      "action": "link"
+    },
+    {
+      "a": "기술/WebSocket-실시간데이터.md",
+      "b": "기술/웹소켓/실시간데이터.md",
+      "similarity": 0.787,
+      "action": "link"
+    },
+    {
+      "a": "개념/Copytrade.md",
+      "b": "전략/Copytrade-초보자-FAQ.md",
+      "similarity": 0.7805,
+      "action": "link"
+    },
+    {
+      "a": "기술/API/Polymarket-API-레퍼런스.md",
+      "b": "개념/Polymarket.md",
+      "similarity": 0.7802,
       "action": "link"
     }
   ]
