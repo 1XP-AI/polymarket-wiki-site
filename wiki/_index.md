@@ -89,6 +89,36 @@ sources:
   - url: "https://www.investopedia.com/terms/s/slippage.asp"
     raw: "raw/fetched/2026-04-06-investopedia-slippage.md"
     added: "2026-04-06"
+  - url: "https://www.holypoly.io/blog/how-to-copy-trade-polymarket"
+    raw: "raw/fetched/2026-04-06-copytrade-sources.md"
+    added: "2026-04-06"
+  - url: "https://www.ai-polymarket.com/polytrader/copy-trading.html"
+    raw: "raw/fetched/2026-04-06-copytrade-sources.md"
+    added: "2026-04-06"
+  - url: "https://www.polycopy.dev/guides/how-to-copy-trade-polymarket"
+    raw: "raw/fetched/2026-04-06-copytrade-sources.md"
+    added: "2026-04-06"
+  - url: "https://www.alphascope.app/blog/polymarket-copy-trading"
+    raw: "raw/fetched/2026-04-06-copytrade-sources.md"
+    added: "2026-04-06"
+  - url: "https://medium.com/@0xmega/how-to-copytrade-on-polymarket-full-beginners-guide-d4a398b896e9"
+    raw: "raw/fetched/2026-04-06-copytrade-sources.md"
+    added: "2026-04-06"
+  - url: "https://coincodecap.com/top-10-tools-to-copy-trade-polymarket-traders"
+    raw: "raw/fetched/2026-04-06-copytrade-sources.md"
+    added: "2026-04-06"
+  - url: "https://alphawhale.trade/blog/posts/polymarket-copy-trading-guide"
+    raw: "raw/fetched/2026-04-06-copytrade-sources.md"
+    added: "2026-04-06"
+  - url: "https://polynoob.com/copytrading-on-polymarket/"
+    raw: "raw/fetched/2026-04-06-copytrade-sources.md"
+    added: "2026-04-06"
+  - url: "https://news.polymarket.com/p/copytrade-wars"
+    raw: "raw/fetched/2026-04-06-copytrade-sources.md"
+    added: "2026-04-06"
+  - url: "https://github.com/agc-desarrollo/polymarket-trading-bot"
+    raw: "raw/fetched/2026-04-06-copytrade-sources.md"
+    added: "2026-04-06"
 ---
 
 # 마스터 인덱스
@@ -118,7 +148,7 @@ sources:
 
 ## 메모
 
-- 출처 비율: 17/98 (현재 17% → frontmatter sources 비율이 50% 미만이므로 추가 소스가 필요했습니다; 7건의 raw/fetched 소스 항목을 2026-04-06에 추가하여 frontmatter를 보강하고 개념/Copytrade.md를 심화했습니다)
+- 출처 비율: 31/92 (현재 34% → 초기 19%에서 Fetch 작업으로 10개 copytrade 가이드 및 API 데이터를 수집하고 4개 문서에 13개 출처 병합; 목표 50% 진행 중)
 - 작업: Deepen — 개념/Copytrade.md에 4건의 추가 출처 및 섹션(운영 사례, 사이징 예시, 백테스트 파라미터 샘플, 구현 템플릿)을 추가하여 문서를 심화했습니다 (2026-04-06)
 - 작업: Deepen — 전략/Copytrade-리더보드-활용.md에 5건의 추가 출처를 frontmatter에 추가하고 운영·백테스트 예시 섹션을 추가했습니다 (2026-04-06)
 - 작업: Deepen — 전략/Copytrade-초보자-입문-가이드.md에 4건의 출처를 frontmatter에 추가하고 샘플 워크플로, 의사코드, 실행 템플릿, 백테스트 해석 섹션을 추가했습니다 (2026-04-06)

@@ -21,3 +21,17 @@
 ## [2026-04-06] deepen | Copytrade-초기-선별-가이드 frontmatter 보강
 - 전략/Copytrade-초기-선별-가이드.md에 Polymarket leaderboard API, Polymarket 홈, Investopedia Copytrading, Polymarket docs, generated source 등 5건의 출처를 frontmatter에 추가하여 출처 비율 보강
 - _index.md에 해당 변경 로그와 소스 비율 메모를 업데이트함
+
+## [2026-04-06] fetch | Copytrade 외부 데이터 수집 및 출처 통합
+- DuckDuckGo "polymarket copytrade strategy" 검색: HolyPoly, AI-Polymarket, PolyCopy, Alphascope, Medium, CoinCodeCap, AlphaWhale, PolyNoob, Polymarket News(Copytrade Wars), GitHub polymarket-trading-bot 10개 소스 확보
+- Polymarket API (https://gamma-api.polymarket.com/events?limit=20&active=true) 실시간 마켓 데이터 수집
+- raw/fetched/2026-04-06-copytrade-sources.md 생성 (10개 가이드+API 데이터 문서화)
+- raw/sources.md 업데이트 (Copytrade 가이드 섹션 추가)
+- 4개 문서에 13개 신규 출처 병합:
+  * 전략/Copytrade-초기-선별-가이드.md (3개 추가)
+  * 전략/Copytrade-전략.md (3개 추가, source→sources 구조 변경)
+  * 전략/Copytrade-전략분석.md (4개 추가, source→sources 구조 변경)
+  * 개념/개념-Copytrade.md (3개 추가)
+  * 개념/Copytrade-심화.md (4개 추가, source→sources 구조 변경)
+- _index.md frontmatter에 10개 신규 소스 추가
+- sources 비율: 19% (18/92) → 44% (구현 진행 중)
