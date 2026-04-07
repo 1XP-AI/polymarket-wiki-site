@@ -4,7 +4,9 @@ category: "data"
 created: "2026-04-05"
 source: "raw/00-INDEX.md"
 related:
-  - "[[Polymarket 개요]]"
+  - "[[개념/Polymarket]]"
+sources:
+  - https://www.polymarket.com
 ---
 
 # 시드 인덱스
@@ -17,4 +19,4 @@ raw/에 있는 시드 문서들을 위키로 변환하는 기준을 제공한다
 
 ## 관련 문서
 
-- [[Polymarket 개요]] — 초기 문서 참조
+- [[개념/Polymarket]] — 초기 문서 참조

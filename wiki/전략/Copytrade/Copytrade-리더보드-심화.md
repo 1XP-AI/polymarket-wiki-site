@@ -3,11 +3,16 @@ title: "Copytrade-리더보드-심화"
 category: "strategy"
 created: "2026-04-05"
 source: "generated/auto"
+sources:
+  - url: "https://data.polymarket.com/leaderboard"
+    added: "2026-04-07"
+  - url: "https://gamma-api.polymarket.com/markets"
+    added: "2026-04-07"
 related:
   - "[[리더보드-트레이더-데이터]]"
-  - "[[Copytrade-전략분석]]"
-  - "[[포지션-사이즈-전략]]"
-  - "[[실행-비용]]"
+  - "[[전략/Copytrade/전략분석]]"
+  - "[[전략/Copytrade/포지션-사이즈-전략]]"
+  - "[[전략/Copytrade/실행-비용]]"
 ---
 
 # Copytrade-리더보드-심화
@@ -43,9 +48,9 @@ related:
 ## 관련 문서
 
 - [[리더보드-트레이더-데이터]] — 리더보드 원자료 및 수집 스펙
-- [[Copytrade-전략분석]] — 전략적 배분과 리스크 관리 관점 연결
-- [[포지션-사이즈-전략]] — 포지션 산정 상세 가이드
-- [[실행-비용]] — 실행 비용 정량화 가이드
+- [[전략/Copytrade/전략분석]] — 전략적 배분과 리스크 관리 관점 연결
+- [[전략/Copytrade/포지션-사이즈-전략]] — 포지션 산정 상세 가이드
+- [[전략/Copytrade/실행-비용]] — 실행 비용 정량화 가이드
 
 
 (문서 생성: 자동 확장 사이클 1회)

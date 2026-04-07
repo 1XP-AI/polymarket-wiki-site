@@ -36,3 +36,18 @@
 - _index.md frontmatter에 10개 신규 소스 추가
 - sources 비율: 19% (18/92) → 44% (구현 진행 중)
 ## [2026-04-07] Link | Copytrade 관련 문서 교차 링크 강화
+
+## [2026-04-07] Expand | 트레이더/Theo.md 생성
+- 14개 문서에서 빈 링크로 존재하던 Theo 문서 생성
+- 5개 출처 추가 (sources 비율: 21% → 22%)
+- 7개 교차 링크 (Copytrade, 리더보드-심층-분석, 매수-타이밍-전략, 포지션-사이즈-전략, 초보자-입문-가이드, 트레이더 프로필 사례, 리더보드-조작-탐지)
+- 트레이더 카테고리에서 실제 사례 연구 문서로 copytrade 컨텍스트에서 팔로우 대상 분석 프레임워크 제공
+
+## [2026-04-07] Fetch | 외부 데이터 수집 + 출처 대량 추가
+- DuckDuckGo "polymarket leaderboard 2026" 10건
+- DuckDuckGo "polymarket copytrade risk management strategy" 10건
+- Polymarket Gamma API events/markets 데이터
+- raw/fetched/2026-04-07-leaderboard-and-risk.md 생성 (16개 신규 소스 문서화)
+- 22개 문서에 sources frontmatter 추가 (기존 source 단수 → sources 배열 전환 포함)
+- 수정 문서: 트레이더/리더보드-분석, 리더보드/데이터, 리더보드/트레이더-개요, 리더보드/트레이더-데이터, 리더보드/리더보드-트레이더-데이터, 개념/슬리피지, 전략/리스크-관리-심화, 기술/API/Polymarket-API-레퍼런스, 기술/Polymarket/개요, 기술/Polymarket/개요-심화, 기술/온체인-컨트랙트, 기술/WebSocket-실시간데이터, 데이터/수집-파이프라인, Copytrade/가중치-최적화, 데이터-수집-가이드, 딜레이-분석, 리더보드-심층-분석, 리스크-모니터링, 추종-실행-속도-최적화, 자동화-플로우, 팔로우-선별
+- sources 비율: 23% (20/86) → 47% (42/89)

@@ -4,8 +4,10 @@ category: "concept"
 created: "2026-04-05"
 source: "generated/expansion"
 related:
-  - "[[INDEX 요약]]"
+  - "[[개념/INDEX-요약]]"
   - "[[_index]]"
+sources:
+  - https://www.polymarket.com
 ---
 
 # INDEX 요약: 확장 메모

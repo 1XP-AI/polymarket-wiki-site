@@ -3,9 +3,15 @@ title: "Polymarket GitHub 리포트"
 category: "data"
 created: "2026-04-05"
 source: "raw/fetched/2026-04-05-github-polymarket.md"
+sources:
+  - url: "https://github.com/polymarket"
+    added: "2026-04-07"
+  - url: "https://raw/fetched/2026-04-05-github-polymarket.md"
+    added: "2026-04-07"
 related:
-  - "[[API-레퍼런스]]"
+  - "[[기술/API/Polymarket-API-레퍼런스]]"
   - "[[리더보드-트레이더-데이터]]"
+  - "[[트레이더-프로필-분석]]"
 ---
 
 # Polymarket GitHub 리포트
@@ -61,8 +67,9 @@ related:
 
 ## 관련 문서
 
-- [[API-레퍼런스]] — Polymarket API 엔드포인트 참고
+- [[기술/API/Polymarket-API-레퍼런스]] — Polymarket API 엔드포인트 참고
 - [[리더보드-트레이더-데이터]] — 리더보드 데이터 구조 및 사용법
+- [[트레이더-프로필-분석]] — GitHub 기반 트레이더 프로필 분석 연계
 
 
 (문서 작성: 2026-04-05, 원본: raw/fetched/2026-04-05-github-polymarket.md)

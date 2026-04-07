@@ -7,10 +7,10 @@ sources:
     raw: "raw/fetched/2026-04-06-polymarket-home.md"
     added: "2026-04-06"
 related:
-  - "[[Copytrade/전략분석.md]]"
-  - "[[리더보드/리더보드.md]]"
-  - "[[개념/CLOB.md]]"
-  - "[[기술/API 레퍼런스.md]]"
+  - "[[전략/Copytrade/전략분석]]"
+  - "[[트레이더/리더보드/트레이더-개요]]"
+  - "[[개념/CLOB]]"
+  - "[[기술/API/Polymarket-API-레퍼런스]]"
 ---
 
 # Copytrade 링크 강화
@@ -23,14 +23,14 @@ related:
 
 - Copytrade 전략 문서에서 `CLOB` 관련 논의가 있으면 `[[CLOB]]`로 링크
 - 트레이더 분석에서 리더보드를 언급하면 `[[새로운-트레이더/프로필-템플릿|리더보드]]`로 링크
-- API 예제가 있는 문서에는 `[[API 레퍼런스]]` 링크 추가
+- API 예제가 있는 문서에는 `[[기술/API/Polymarket-API-레퍼런스]]` 링크 추가
 
 ## 변경 사항 예시
 
 - `wiki/마켓/Polymarket-개요` — 관련 문서에 `[[CLOB]]` 추가
-- `wiki/개념/CLOB` — 관련 문서에 `[[Polymarket 개요]]` 추가
+- `wiki/개념/CLOB` — 관련 문서에 `[[개념/Polymarket]]` 추가
 - `_index.md` — 카테고리별 항목에 링크 확인 및 보강
-- `wiki/개념/개념-CLOB.md` — 관련 섹션에 `[[Polymarket 개요]]` 추가 (상호참조)
+- `wiki/개념/개념-CLOB.md` — 관련 섹션에 `[[개념/Polymarket]]` 추가 (상호참조)
 
 ## 목적
 

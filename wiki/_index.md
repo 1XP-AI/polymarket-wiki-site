@@ -129,16 +129,17 @@ sources:
   - [[CLOB]]
   - [[Copytrade]]
 - 기술/
-  - [[API 레퍼런스]]
-  - [[실시간데이터(WebSocket)]]
+  - [[기술/API/Polymarket-API-레퍼런스]]
+  - [[기술/WebSocket-실시간데이터]]
 - 전략/
-  - [[Copytrade/전략분석.md]]
-  - [[Copytrade/리스크-관리.md]]
-  - [[Copytrade 링크 강화]]
-  - [[Copytrade 링크 강화]]
+  - [[전략/Copytrade/전략분석]]
+  - [[전략/Copytrade/리스크-관리]]
+  - [[전략/Copytrade-링크강화]]
+  - [[전략/Copytrade-링크강화]]
   - [[Copytrade-링크강화]]
 - 트레이더/
-  - [[트레이더/리더보드/트레이더-데이터|리더보드 데이터]]
+  - [[트레이더/리더보드/트레이더-데이터]]
+  - [[Theo]] — 리더보드 상위 랭커 트레이더 사례 프로필
 
 ## 최근 추가된 소스
 
@@ -155,3 +156,4 @@ sources:
 - 작업: Deepen — 전략/Copytrade/매수-타이밍-전략.md에 4건의 출처를 추가하고 백테스트 가이드·의사코드·핵심지표 섹션을 추가했습니다 (2026-04-06)
 - 작업: Deepen — 개념/폴리마켓.md에 5건의 출처를 frontmatter에 추가하고 데이터 수집·스냅샷 권장사항을 보강했습니다 (2026-04-06)
 - 작업: Deepen — 전략/Copytrade-초기-선별-가이드.md에 5건의 외부 출처(Polymarket API, Polymarket 홈, Investopedia, Polymarket docs, generated source)를 추가해 frontmatter를 보강했습니다 (2026-04-06)
+- 작업: Fetch — DuckDuckGo "polymarket leaderboard 2026" + "copytrade risk management" 20건 검색, Gamma API 데이터 수집; raw/fetched/2026-04-07-leaderboard-and-risk.md 생성; 22개 문서에 sources frontmatter 추가; sources 비율 23%(20/86) → 47%(42/89) (2026-04-07)

@@ -3,9 +3,14 @@ title: "Copytrade-리더보드-자동화"
 category: "strategy"
 created: "2026-04-05"
 source: "generated/auto"
+sources:
+  - https://polymarket.com/leaderboard?period=monthly
+  - https://data.polymarket.com/leaderboard
+  - https://gamma-api.polymarket.com/markets
+  - https://docs.polymarket.com/api
 related:
-  - "[[Copytrade-리더보드-심화]]"
-  - "[[팔로우-선별]]"
+  - "[[전략/Copytrade/Copytrade-리더보드-심화]]"
+  - "[[전략/Copytrade/팔로우-선별]]"
 ---
 
 # Copytrade-리더보드-자동화
@@ -22,7 +27,7 @@ related:
 3. 정성 필터: 트레이더의 소셜 존재감(트윗 빈도, 전략 공개 여부), 과거 큰 변동시의 행동 일관성 등을 평가한다.
 4. 리스크 평가: 포트폴리오로 팔로우할 때 발생할 최대 드로우다운(시뮬레이션), 평균 손실폭, 상관관계 등을 측정한다.
 5. 후보 점수화 & 컷오프: 지표에 가중치를 두어 점수를 합산하고 임계값을 적용해 후보를 최종 선별한다.
-6. 자동화 워크플로우: 새 트레이더 발견 → 프로필 생성([[트레이더/{이름}/프로필.md]]) → 백테스트 태스크 예약 → 결과에 따라 팔로우 권고 또는 보류.
+6. 자동화 워크플로우: 새 트레이더 발견 → 프로필 생성([[트레이더/새로운-트레이더/프로필-템플릿]]) → 백테스트 태스크 예약 → 결과에 따라 팔로우 권고 또는 보류.
 
 ## 체크리스트 (간단)
 - [ ] raw/sources.md에 리더보드 API 엔드포인트 등록
@@ -32,8 +37,9 @@ related:
 - [ ] 데시보드/알림: 새 후보 발생 시 알림 발송
 
 ## 관련 문서
-- [[Copytrade-리더보드-심화]] — 심층 분석 방법과 지표 정의
-- [[팔로우-선별]] — 팔로우 가치 평가의 정책적 가이드
+- [[전략/Copytrade/Copytrade-리더보드-심화]] — 심층 분석 방법과 지표 정의
+- [[전략/Copytrade/팔로우-선별]] — 팔로우 가치 평가의 정책적 가이드
+- [[전략/Copytrade/자동화-플로우]] — Copytrade 자동화 설계
 
 
 ---

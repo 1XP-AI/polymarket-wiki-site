@@ -14,14 +14,15 @@ sources:
     raw: "raw/fetched/2026-04-05-polymarket-markets.md"
     added: "2026-04-05"
 related:
-  - "[[API-레퍼런스]]"
+  - "[[기술/API/Polymarket-API-레퍼런스]]"
   - "[[CLOB]]"
   - "[[CTF]]"
   - "[[Polymarket-이벤트-스냅샷-2026-04-05]]"
   - "[[Copytrade-심화]]"
   - "[[새로운-트레이더/프로필-템플릿|리더보드]]"
   - "[[크립토]]"
-  - "[[실행-비용]]"
+  - "[[전략/Copytrade/실행-비용]]"
+  - "[[기술/API/레퍼런스]]"
 ---
 
 # Polymarket 개요
@@ -71,9 +72,10 @@ print(first.get("title"))
 
 ## 관련 문서
 
-- [[API-레퍼런스]] — API 엔드포인트 및 사용법
+- [[기술/API/Polymarket-API-레퍼런스]] — API 엔드포인트 및 사용법
 - [[CLOB]] — 주문장 구조 및 스코어링 개념
 - [[CTF]] — 다중 결과 이벤트의 자본 효율성 설명
 - [[Polymarket-이벤트-스냅샷-2026-04-05]] — 최근 수집 스냅샷과 비교
+- [[기술/API/레퍼런스]] — API 엔드포인트 상세
 
 

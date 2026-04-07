@@ -2,9 +2,15 @@
 title: "Polymarket API 레퍼런스 요약"
 category: "infrastructure"
 created: "2026-04-05"
-source: "raw/02-API-레퍼런스.md"
+sources:
+  - url: "https://gamma-api.polymarket.com/markets?limit=50"
+    raw: "raw/fetched/2026-04-07-leaderboard-and-risk.md"
+    added: "2026-04-07"
+  - url: "https://www.polyverify.com/leaderboard"
+    raw: "raw/fetched/2026-04-07-leaderboard-and-risk.md"
+    added: "2026-04-07"
 related:
-  - "[[Polymarket 개요]]"
+  - "[[개념/Polymarket]]"
   - "[[CLOB]]"
   - "[[리더보드-트레이더-데이터]]"
   - "[[Polymarket-이벤트-스냅샷-2026-04-05]]"
@@ -28,7 +34,7 @@ GET https://gamma-api.polymarket.com/events?limit=20&active=true
 
 ## 관련 문서
 
-- [[Polymarket 개요]]
+- [[개념/Polymarket]]
 
 ## 참조
 
@@ -39,12 +45,12 @@ category: "api"
 created: "2026-04-05"
 source: "raw/02-API-레퍼런스.md"
 related:
-  - "[[Polymarket 개요]]"
-  - "[[실시간데이터(WebSocket)]]"
+  - "[[개념/Polymarket]]"
+  - "[[기술/WebSocket-실시간데이터]]"
   - "[[리더보드-트레이더-데이터]]"
   - "[[CLOB]]"
   - "[[Theo]]"
-  - "[[Copytrade-리더보드-심화]]"
+  - "[[전략/Copytrade/Copytrade-리더보드-심화]]"
 ---
 
 # API 레퍼런스

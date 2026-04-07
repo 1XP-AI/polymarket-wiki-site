@@ -3,12 +3,17 @@ title: "Polymarket 이벤트 스냅샷 (2026-04-05)"
 category: "market"
 created: "2026-04-05"
 source: "raw/fetched/2026-04-05-polymarket-events.md"
+sources:
+  - url: "https://gamma-api.polymarket.com/markets"
+    added: "2026-04-07"
+  - url: "https://docs.polymarket.com/api"
+    added: "2026-04-07"
 related:
   - "[[Polymarket-개요]]"
-  - "[[API-레퍼런스]]"
+  - "[[기술/API/Polymarket-API-레퍼런스]]"
   - "[[리더보드-트레이더-데이터]]"
   - "[[Copytrade-초기-선별-가이드]]"
-  - "[[리스크-관리]]"
+  - "[[전략/Copytrade/리스크-관리]]"
   - "[[Theo]]"
 ---
 

@@ -7,6 +7,8 @@ related:
   - "[[Polymarket-개요]]"
   - "[[_index]]"
   - "[[_health]]"
+sources:
+  - https://www.polymarket.com
 ---
 
 # INDEX 요약

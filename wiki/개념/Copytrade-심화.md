@@ -16,6 +16,7 @@ sources:
     raw: "raw/fetched/2026-04-06-copytrade-sources.md"
     added: "2026-04-06"
 related:
+  - "[[개념/Copytrade]]"
   - "[[전략분석]]"
   - "[[데이터]]"
   - "[[CTF]]"
