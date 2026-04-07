@@ -6,15 +6,39 @@ source: "raw/01-Polymarket-개요.md"
 sources:
   - url: "https://gamma-api.polymarket.com/markets?limit=10"
     added: "2026-04-05"
+  - url: "https://polymarket-bot.co/polymarket-api-tutorial"
+    raw: "raw/fetched/2026-04-07-negative-risk-and-api.md"
+    added: "2026-04-07"
+  - url: "https://docs.polymarket.com/api-reference/clients-sdks"
+    raw: "raw/fetched/2026-04-07-negative-risk-and-api.md"
+    added: "2026-04-07"
+  - url: "https://polyblock.trade/info/tools/polymarket-api-guide"
+    raw: "raw/fetched/2026-04-07-negative-risk-and-api.md"
+    added: "2026-04-07"
+  - url: "https://rekko.ai/docs/guides/polymarket-api-guide"
+    raw: "raw/fetched/2026-04-07-negative-risk-and-api.md"
+    added: "2026-04-07"
+  - url: "https://pm.wiki/learn/polymarket-api"
+    raw: "raw/fetched/2026-04-07-negative-risk-and-api.md"
+    added: "2026-04-07"
+  - url: "https://www.alphascope.app/blog/polymarket-bot-tutorial"
+    raw: "raw/fetched/2026-04-07-negative-risk-and-api.md"
+    added: "2026-04-07"
+  - url: "https://agentbets.ai/guides/polymarket-api-guide/"
+    raw: "raw/fetched/2026-04-07-negative-risk-and-api.md"
+    added: "2026-04-07"
+  - url: "https://deepwiki.com/polymarket-arbitrage-bot/polymarket-arbitrage-bot/2.2-polymarket-clob-api-client"
+    raw: "raw/fetched/2026-04-07-negative-risk-and-api.md"
+    added: "2026-04-07"
 related:
   - "[[개념/Polymarket]]"
-  - "[[전략/Copytrade/전략분석]]"
+  - "[[전략/Copytrade/자동화-플로우]]"
   - "[[기술/API/Polymarket-API-레퍼런스]]"
-  - "[[리더보드-데이터]]"
-  - "[[CTF]]"
-  - "[[Copytrade]]"
-  - "[[슬리피지]]"
-  - "[[API-예제-샘플]]"
+  - "[[트레이더/리더보드/데이터]]"
+  - "[[개념/CTF]]"
+  - "[[개념/Copytrade]]"
+  - "[[개념/슬리피지]]"
+  - "[[기술/API/Polymarket-API-레퍼런스]]"
 ---
 
 # CLOB (Central Limit Order Book)
@@ -46,7 +70,7 @@ CLOB는 주문이 가격-수량 형태로 쌓이고, 매칭 엔진이 호가를 
 1. 호가 레벨별 잔량(depth)을 L_i라 하고, 목표 진입량을 Q라 하면 단순 누적으로 필요한 가격 수준을 찾을 수 있다.
 2. 기대 체결가를 현재 best bid/ask로 잡고, 누적 잔량을 더해 Q를 충족하는 가격 레벨에서의 가격을 실제 체결가로 간주하여 절대/상대 슬리피지를 계산한다.
 
-> Polymarket의 공개 API 필드와 일치하는지 확인 필요 — [[API-예제-샘플]] 참조
+> Polymarket의 공개 API 필드와 일치하는지 확인 필요 — [[기술/API/Polymarket-API-레퍼런스]] 참조
 
 ### 완화 및 권장사항
 
@@ -57,10 +81,10 @@ CLOB는 주문이 가격-수량 형태로 쌓이고, 매칭 엔진이 호가를 
 ## 관련 문서
 
 - [[개념/Polymarket]] — Polymarket의 전체 구조와 CLOB의 위치 설명
-- [[전략/Copytrade/전략분석]] — CLOB 특성이 Copytrade 실행리스크에 미치는 영향
+- [[전략/Copytrade/자동화-플로우]] — CLOB 특성이 Copytrade 실행리스크에 미치는 영향
 - [[기술/API/Polymarket-API-레퍼런스]] — CLOB 읽기·모니터링을 위한 엔드포인트 참조
-- [[리더보드-데이터]] — 리더보드 트레이더의 대규모 주문이 오더북에 미치는 사례 분석
-- [[Copytrade]] — CLOB 기반 실시간 포지션 복제
-- [[슬리피지]] — 슬리피지 정의와 완화 전략
-- [[API-예제-샘플]] — Polymarket API와 리더보드 연동 예제
+- [[트레이더/리더보드/데이터]] — 리더보드 트레이더의 대규모 주문이 오더북에 미치는 사례 분석
+- [[개념/Copytrade]] — CLOB 기반 실시간 포지션 복제
+- [[개념/슬리피지]] — 슬리피지 정의와 완화 전략
+- [[기술/API/Polymarket-API-레퍼런스]] — Polymarket API와 리더보드 연동 예제
 

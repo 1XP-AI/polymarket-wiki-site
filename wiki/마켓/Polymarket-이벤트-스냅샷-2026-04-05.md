@@ -9,12 +9,12 @@ sources:
   - url: "https://docs.polymarket.com/api"
     added: "2026-04-07"
 related:
-  - "[[Polymarket-개요]]"
+  - "[[개념/Polymarket-개요]]"
   - "[[기술/API/Polymarket-API-레퍼런스]]"
-  - "[[리더보드-트레이더-데이터]]"
-  - "[[Copytrade-초기-선별-가이드]]"
+  - "[[트레이더/리더보드/데이터]]"
+  - "[[개념/Copytrade]]"
   - "[[전략/Copytrade/리스크-관리]]"
-  - "[[Theo]]"
+  - "[[트레이더/Theo]]"
 ---
 
 # Polymarket 이벤트 스냅샷 (2026-04-05)
@@ -43,5 +43,5 @@ related:
 
 ## 관련 문서
 
-- [[Polymarket-개요]] — 플랫폼·이벤트 개념 설명
-- [[리더보드-트레이더-데이터]] — 이벤트 기반 트레이더 행동 분석 연결
+- [[개념/Polymarket-개요]] — 플랫폼·이벤트 개념 설명
+- [[트레이더/리더보드/데이터]] — 이벤트 기반 트레이더 행동 분석 연결

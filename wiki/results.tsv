@@ -1,0 +1,3 @@
+action	docs	words	dead_links	quality	description
+Deepen	1	811	0	high	기술/Polymarket/개요.md 확장 (149→811단어): API 구조, 이벤트/마켓 필드, 토큰 생명주기, 주문 생명주기, Neg-Risk, WebSocket 채널 추가
+Deepen	1	1072	0	high	개념/CTF.md 확장 (48→1072단어): CTF Split/Merge/Join 연산, 토큰 ID 구조, Neg-Risk 비교, Copytrade 관점 분석, 온체인 디코딩 가이드 추가, sources 7개로 확대

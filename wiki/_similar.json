@@ -1,138 +1,120 @@
 {
-  "total_docs": 87,
+  "total_docs": 74,
   "search_engine": "ir (hybrid: BM25 + vector + rerank)",
   "duplicates": [],
   "related": [
     {
-      "a": "전략/Copytrade/알파-검증.md",
-      "b": "전략/Copytrade/알파-지표-선별.md",
-      "similarity": 0.8423,
-      "action": "link"
-    },
-    {
-      "a": "트레이더/리더보드/데이터.md",
-      "b": "트레이더/리더보드/리더보드-트레이더-데이터.md",
-      "similarity": 0.8321,
-      "action": "link"
-    },
-    {
       "a": "개념/Copytrade.md",
-      "b": "전략/Copytrade-전략.md",
-      "similarity": 0.7998,
-      "action": "link"
-    },
-    {
-      "a": "트레이더/리더보드/트레이더-개요.md",
-      "b": "트레이더/리더보드/트레이더-데이터.md",
-      "similarity": 0.7966,
-      "action": "link"
-    },
-    {
-      "a": "트레이더/리더보드-분석.md",
-      "b": "전략/Copytrade/리더보드-심층-분석.md",
-      "similarity": 0.7942,
-      "action": "link"
-    },
-    {
-      "a": "개념/Copytrade.md",
-      "b": "전략/Copytrade/초보자-입문-가이드.md",
-      "similarity": 0.7936,
-      "action": "link"
-    },
-    {
-      "a": "개념/Copytrade.md",
-      "b": "개념/Copytrade-심화.md",
-      "similarity": 0.7917,
-      "action": "link"
-    },
-    {
-      "a": "기술/WebSocket-실시간데이터.md",
-      "b": "기술/웹소켓/실시간데이터.md",
-      "similarity": 0.7864,
-      "action": "link"
-    },
-    {
-      "a": "트레이더/리더보드-분석.md",
-      "b": "트레이더/리더보드-트레이더.md",
-      "similarity": 0.7828,
-      "action": "link"
-    },
-    {
-      "a": "개념/Copytrade.md",
-      "b": "전략/Copytrade-초보자-FAQ.md",
-      "similarity": 0.7827,
+      "b": "전략/Copytrade/리스크-헤징.md",
+      "similarity": 0.8031,
       "action": "link"
     },
     {
       "a": "전략/Copytrade/사이클-노트-2026-04-05.md",
       "b": "전략/Link-사이클-노트-2026-04-05.md",
-      "similarity": 0.7813,
-      "action": "link"
-    },
-    {
-      "a": "전략/Copytrade/리더보드-알파-탐지.md",
-      "b": "전략/Copytrade/팔로우-선별.md",
-      "similarity": 0.7789,
-      "action": "link"
-    },
-    {
-      "a": "트레이더/리더보드/데이터.md",
-      "b": "트레이더/리더보드/트레이더-데이터.md",
-      "similarity": 0.7735,
-      "action": "link"
-    },
-    {
-      "a": "전략/Copytrade/가중치-최적화.md",
-      "b": "개념/Copytrade.md",
-      "similarity": 0.7728,
-      "action": "link"
-    },
-    {
-      "a": "개념/슬리피지.md",
-      "b": "전략/Copytrade/딜레이-분석.md",
-      "similarity": 0.7593,
-      "action": "link"
-    },
-    {
-      "a": "전략/Copytrade/리스크-관리.md",
-      "b": "전략/리스크-관리-심화.md",
-      "similarity": 0.7581,
-      "action": "link"
-    },
-    {
-      "a": "기술/웹소켓/실시간데이터.md",
-      "b": "기술/API/Polymarket-API-레퍼런스.md",
-      "similarity": 0.7577,
+      "similarity": 0.8001,
       "action": "link"
     },
     {
       "a": "개념/Copytrade.md",
       "b": "전략/Copytrade/자동화-플로우.md",
-      "similarity": 0.754,
+      "similarity": 0.7852,
+      "action": "link"
+    },
+    {
+      "a": "개념/Copytrade.md",
+      "b": "전략/Copytrade/백테스트-사례-2026-04.md",
+      "similarity": 0.7851,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/리스크-관리.md",
+      "b": "전략/리스크-관리-심화.md",
+      "similarity": 0.7784,
+      "action": "link"
+    },
+    {
+      "a": "개념/Negative-Risk.md",
+      "b": "전략/Copytrade/리스크-헤징.md",
+      "similarity": 0.7752,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/리스크-관리.md",
+      "b": "전략/Copytrade/리스크-헤징.md",
+      "similarity": 0.768,
       "action": "link"
     },
     {
       "a": "전략/Copytrade/Copytrade-성능-모니터링.md",
       "b": "전략/Copytrade/성과-분석-지표.md",
-      "similarity": 0.7451,
+      "similarity": 0.7659,
       "action": "link"
     },
     {
-      "a": "트레이더/리더보드/데이터.md",
-      "b": "트레이더/리더보드/트레이더-개요.md",
-      "similarity": 0.7435,
+      "a": "개념/슬리피지.md",
+      "b": "전략/Copytrade/딜레이-분석.md",
+      "similarity": 0.7571,
       "action": "link"
     },
     {
-      "a": "트레이더/리더보드/리더보드-트레이더-데이터.md",
-      "b": "트레이더/리더보드/트레이더-개요.md",
-      "similarity": 0.7418,
+      "a": "개념/Copytrade.md",
+      "b": "전략/Copytrade/백테스트-가이드.md",
+      "similarity": 0.7543,
+      "action": "link"
+    },
+    {
+      "a": "개념/Copytrade.md",
+      "b": "전략/Copytrade/가중치-최적화.md",
+      "similarity": 0.7542,
       "action": "link"
     },
     {
       "a": "전략/Copytrade/리밸런싱.md",
       "b": "전략/Copytrade/리스크-헤징.md",
-      "similarity": 0.7414,
+      "similarity": 0.74,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/리밸런싱.md",
+      "b": "전략/Copytrade/포지션-사이즈-전략.md",
+      "similarity": 0.7322,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/리스크-헤징.md",
+      "b": "전략/리스크-관리-심화.md",
+      "similarity": 0.7275,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/Copytrade-성능-모니터링.md",
+      "b": "전략/Copytrade/자동화-플로우.md",
+      "similarity": 0.7272,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/Copytrade-리더보드-자동화.md",
+      "b": "전략/Copytrade/자동화-플로우.md",
+      "similarity": 0.7236,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/리스크-모니터링.md",
+      "b": "전략/Copytrade/리스크-시나리오.md",
+      "similarity": 0.715,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/리밸런싱.md",
+      "b": "전략/Copytrade/Copytrade-리더보드-심화.md",
+      "similarity": 0.7096,
+      "action": "link"
+    },
+    {
+      "a": "전략/Copytrade/트레이더-프로필-분석.md",
+      "b": "트레이더/새로운-트레이더/프로필-템플릿.md",
+      "similarity": 0.7078,
       "action": "link"
     }
   ]

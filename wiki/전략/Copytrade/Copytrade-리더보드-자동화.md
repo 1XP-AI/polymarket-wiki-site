@@ -11,6 +11,7 @@ sources:
 related:
   - "[[전략/Copytrade/Copytrade-리더보드-심화]]"
   - "[[전략/Copytrade/팔로우-선별]]"
+  - "[[전략/Copytrade/자동화-플로우]]"
 ---
 
 # Copytrade-리더보드-자동화
@@ -39,7 +40,7 @@ related:
 ## 관련 문서
 - [[전략/Copytrade/Copytrade-리더보드-심화]] — 심층 분석 방법과 지표 정의
 - [[전략/Copytrade/팔로우-선별]] — 팔로우 가치 평가의 정책적 가이드
-- [[전략/Copytrade/자동화-플로우]] — Copytrade 자동화 설계
+- [[전략/Copytrade/자동화-플로우]] — Copytrade 자동화 설계 (sim 0.7403)
 
 
 ---

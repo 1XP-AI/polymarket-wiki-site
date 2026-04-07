@@ -126,20 +126,19 @@ sources:
 ## 카테고리별 문서
 
 - 개념/
-  - [[CLOB]]
-  - [[Copytrade]]
+  - [[개념/CLOB]]
+  - [[개념/CTF]] — Conditional Token Framework, Split/Merge/Join 연산, Neg-Risk 비교
+  - [[개념/Copytrade]]
 - 기술/
   - [[기술/API/Polymarket-API-레퍼런스]]
   - [[기술/WebSocket-실시간데이터]]
 - 전략/
-  - [[전략/Copytrade/전략분석]]
+  - [[전략/Copytrade/자동화-플로우]]
   - [[전략/Copytrade/리스크-관리]]
-  - [[전략/Copytrade-링크강화]]
-  - [[전략/Copytrade-링크강화]]
-  - [[Copytrade-링크강화]]
 - 트레이더/
-  - [[트레이더/리더보드/트레이더-데이터]]
-  - [[Theo]] — 리더보드 상위 랭커 트레이더 사례 프로필
+  - [[트레이더/리더보드/데이터]]
+  - [[트레이더/Theo]] — 리더보드 상위 랭커 트레이더 사례 프로필
+  - [[트레이더/0x492442eab586f242b53bda933fd5de859c8a3782]] — 월간 리더보드 1위, $848k PnL, 출처 6건, 7개 cross-link
 
 ## 최근 추가된 소스
 
@@ -150,6 +149,7 @@ sources:
 ## 메모
 
 - 출처 비율: 31/92 (현재 34% → 초기 19%에서 Fetch 작업으로 10개 copytrade 가이드 및 API 데이터를 수집하고 4개 문서에 13개 출처 병합; 목표 50% 진행 중)
+- 출처 비율: 31/74 (현재 42% → CTF.md Deepen으로 7개 출처 추가; 목표 50% 진행 중)
 - 작업: Deepen — 개념/Copytrade.md에 4건의 추가 출처 및 섹션(운영 사례, 사이징 예시, 백테스트 파라미터 샘플, 구현 템플릿)을 추가하여 문서를 심화했습니다 (2026-04-06)
 - 작업: Deepen — 전략/Copytrade-리더보드-활용.md에 5건의 추가 출처를 frontmatter에 추가하고 운영·백테스트 예시 섹션을 추가했습니다 (2026-04-06)
 - 작업: Deepen — 전략/Copytrade-초보자-입문-가이드.md에 4건의 출처를 frontmatter에 추가하고 샘플 워크플로, 의사코드, 실행 템플릿, 백테스트 해석 섹션을 추가했습니다 (2026-04-06)
@@ -157,3 +157,8 @@ sources:
 - 작업: Deepen — 개념/폴리마켓.md에 5건의 출처를 frontmatter에 추가하고 데이터 수집·스냅샷 권장사항을 보강했습니다 (2026-04-06)
 - 작업: Deepen — 전략/Copytrade-초기-선별-가이드.md에 5건의 외부 출처(Polymarket API, Polymarket 홈, Investopedia, Polymarket docs, generated source)를 추가해 frontmatter를 보강했습니다 (2026-04-06)
 - 작업: Fetch — DuckDuckGo "polymarket leaderboard 2026" + "copytrade risk management" 20건 검색, Gamma API 데이터 수집; raw/fetched/2026-04-07-leaderboard-and-risk.md 생성; 22개 문서에 sources frontmatter 추가; sources 비율 23%(20/86) → 47%(42/89) (2026-04-07)
+- 작업: Deepen — 기술/Polymarket/개요.md를 149→811단어로 확장: 3개 API 구조표, SDK, Gamma API 필드 예시, 토큰 생명주기, 주문 생명주기, 수수료 구조, Neg-Risk 마켓, WebSocket 채널 표, Copytrade 관점 섹션 추가. 출처 2건 추가 (2026-04-07)
+- 작업: Deepen — 트레이더/리더보드-분석.md 120→645단어 (5.4배): 리더보드 함정, 플랫폼 비교표, 3단계 필터 프레임워크, Follow Score 가중치표, 의사코드 추가. 출처 3건 추가, sources: 2→5건 (2026-04-07)
+- 작업: Deepen — 개념/프로그램-개요.md 105→643단어 (6.1배): 프로젝트 목적 구체화, 사이클 구조표, 디렉토리 구조 상세, 품질 메트릭스/계산식, 핵심 정책, 우선순위 섹션 추가. 출처 1건 추가 (2026-04-07)
+- 작업: Deepen — 트레이더/0x492442eab586f24.md 187→706단어 (3.8배): PnL/거래량 비율 분석, 팔로우 적합성 평가표, 온체인 분석 계획, Theo 비교표, 권장 모니터링 절차 5단계 추가. sources 3→6건, related 3→7건 (2026-04-07)
+- 작업: Deepen — 개념/CTF.md 48→1072단어 (22배): Split/Merge/Join 연산 상세, ERC-1155 토큰 ID 구조, Neg-Risk 비교표, Copytrade 관점 분석, 아비트리지 불변식, 온체인 디코딩 가이드 추가. sources 2→7건 (2026-04-07)
