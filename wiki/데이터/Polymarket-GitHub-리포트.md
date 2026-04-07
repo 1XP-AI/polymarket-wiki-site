@@ -69,7 +69,7 @@ related:
 
 - [[기술/API/Polymarket-API-레퍼런스]] — Polymarket API 엔드포인트 참고
 - [[리더보드-트레이더-데이터]] — 리더보드 데이터 구조 및 사용법
-- [[트레이더-프로필-분석]] — GitHub 기반 트레이더 프로필 분석 연계
+- [[전략/Copytrade/트레이더-프로필-분석]] — GitHub 기반 트레이더 프로필 분석 연계
 
 
 (문서 작성: 2026-04-05, 원본: raw/fetched/2026-04-05-github-polymarket.md)

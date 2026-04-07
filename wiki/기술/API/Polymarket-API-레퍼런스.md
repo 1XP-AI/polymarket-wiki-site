@@ -114,4 +114,5 @@ curl -s "https://gamma-api.polymarket.com/profiles/0x1234.../positions" \
 ## 관련 문서
 
 - [[WebSocket-실시간데이터]] — 실시간 데이터 수집 방법
+- [[기술/웹소켓/실시간데이터]] — WebSocket 실시간 데이터 (중복 병합된 문서)
 - [[온체인-컨트랙트]] — 온체인 연동이 필요한 경우
