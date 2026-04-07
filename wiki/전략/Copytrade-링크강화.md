@@ -12,7 +12,6 @@ related:
   - "[[개념/CLOB]]"
   - "[[기술/API/Polymarket-API-레퍼런스]]"
   - "[[전략/Link-사이클-노트-2026-04-05]]"
-  - "[[전략/Copytrade/사이클-노트-2026-04-05]]"
 ---
 
 # Copytrade 링크 강화

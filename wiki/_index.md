@@ -119,6 +119,18 @@ sources:
   - url: "https://github.com/agc-desarrollo/polymarket-trading-bot"
     raw: "raw/fetched/2026-04-06-copytrade-sources.md"
     added: "2026-04-06"
+  - url: "https://docs.polymarket.com/advanced/neg-risk"
+    raw: "raw/fetched/2026-04-07-negative-risk-and-api.md"
+    added: "2026-04-07"
+  - url: "https://github.com/Polymarket/neg-risk-ctf-adapter/"
+    raw: "raw/fetched/2026-04-07-negative-risk-and-api.md"
+    added: "2026-04-07"
+  - url: "https://cryptoslate.com/polymarket-processes-1-4-billion-as-negrisk-outshines-cft-markets/"
+    raw: "raw/fetched/2026-04-07-negative-risk-and-api.md"
+    added: "2026-04-07"
+  - url: "https://docs.polymarket.com/trading/orders/overview"
+    raw: "raw/fetched/2026-04-07-negative-risk-and-api.md"
+    added: "2026-04-07"
 ---
 
 # 마스터 인덱스
@@ -135,10 +147,15 @@ sources:
 - 전략/
   - [[전략/Copytrade/자동화-플로우]]
   - [[전략/Copytrade/리스크-관리]]
+  - [[전략/Copytrade/팔로우-스코어링-모델]] — Laplace smoothing, 가중치 프로파일(보수/균형/공격), Python 스코어 계산 + 상관관계 페널티
+  - [[전략/Copytrade/성과-분석-지표]] — 수익률/리스크-조정/행동패턴/실행품질 지표 + 트레이더 점수화 함수
+  - [[전략/Copytrade/추종-신호-필터링]] — 2단계 검증 프로세스(정량+컨텍스트), 가중치 조정표
 - 트레이더/
   - [[트레이더/리더보드/데이터]]
   - [[트레이더/Theo]] — 리더보드 상위 랭커 트레이더 사례 프로필
   - [[트레이더/0x492442eab586f242b53bda933fd5de859c8a3782]] — 월간 리더보드 1위, $848k PnL, 출처 6건, 7개 cross-link
+- 데이터/
+  - [[데이터/수집-파이프라인]] — 소스 발견→수집→변환→저장→인덱싱 5단계 아키텍처, Python Collector 클래스
 
 ## 최근 추가된 소스
 
@@ -162,3 +179,11 @@ sources:
 - 작업: Deepen — 개념/프로그램-개요.md 105→643단어 (6.1배): 프로젝트 목적 구체화, 사이클 구조표, 디렉토리 구조 상세, 품질 메트릭스/계산식, 핵심 정책, 우선순위 섹션 추가. 출처 1건 추가 (2026-04-07)
 - 작업: Deepen — 트레이더/0x492442eab586f24.md 187→706단어 (3.8배): PnL/거래량 비율 분석, 팔로우 적합성 평가표, 온체인 분석 계획, Theo 비교표, 권장 모니터링 절차 5단계 추가. sources 3→6건, related 3→7건 (2026-04-07)
 - 작업: Deepen — 개념/CTF.md 48→1072단어 (22배): Split/Merge/Join 연산 상세, ERC-1155 토큰 ID 구조, Neg-Risk 비교표, Copytrade 관점 분석, 아비트리지 불변식, 온체인 디코딩 가이드 추가. sources 2→7건 (2026-04-07)
+- 작업: Deepen — 전략/Copytrade/가중치-최적화.md 266→1143단어 (4.3배): 가중치 산정 4단계 알고리즘(정규화→종합스코어→상관관계보정→최종정규화), Python 의사코드 full pipeline, 운영 가이드(재계산주기/스무딩/변경한도), 백테스트 검증절차 5단계, 모델 유형 비교표(Equal/Kelly/Black-Litterman/ML), Laplace smoothing, 실패시나리오 대응(동시하락/개별급락/신규합류). sources 2→3건, related 3→7건 (2026-04-07)
+- 작업: Deepen — 데이터/수집-파이프라인.md 251→826단어 (3.3배): API 분류표(Gamma/Data/CLOB/WS), 단계별 상세 절차, Python Collector 클래스, Copytrade용 수집 우선순위, Rate Limit/품질 관리 섹션 추가. sources 3→5건, related 2→4건 (2026-04-07)
+- 작업: Deepen — 전략/Copytrade/성과-분석-지표.md 325→937단어 (2.9배): 지표 4개 계열(수익률/리스크-조정/행동패턴/실행품질) 분류표, 트레이더 점수화 Python 함수, 예측마켓 특화 지표 보정, 50→5 선별 시나리오, 종합점수 해석표 추가. sources 형식 표준화, related 4→5건 (2026-04-07)
+- 작업: Deepen — 전략/Copytrade/추종-신호-필터링.md 인라인 각주 제거 + sources 형식 표준화 + 검증 프로세스/가중치 사례표 추가. 261→408단어 (2026-04-07)
+- 작업: Deepen — 전략/Copytrade/자동화-플로우.md 284→852단어 (3.0배): 아키텍처 순서도, Python 자동화 파이프라인(CLOBClient/WS/CircuitBreaker), 재연결·내구성 가이드, 9단계 체크리스트, Neg-Risk vs CTF 라우팅. sources 2→5건, related 6→8건 (2026-04-07)
+- 작업: Deepen — 전략/Copytrade/데이터-기반-트레이더-선별.md 289→886단어 (3.1배): 3단계 필터링(유동성→통계→알파), Bootstrap p-value, Laplace smoothed 승률, Follow Score 알고리즘, 소셜 시그널 교차검증. sources 2→5건, related 3→7건 (2026-04-07)
+- 작업: Deepen — 개념/프로그램-개요.md 646→1029단어: 워크플로우 다이어그램, 품질 게이트 5단계, 오류 처리 정책, 버전 관리 규칙 추가. sources 2→4건, related 3→5건 | 전략/Copytrade/리스크-모니터링.md 352→922단어: HHI 집중도, 실행 지연 코드, 알림 규칙 테이블, 모니터링 스케줄 추가 | 전략/Copytrade/리더보드-조작-탐지.md 370→668단어: wash trading 탐지 코드, 4개 범주 지표 테이블 4개, PnL 조작 패턴 추가. sources 형식 표준화, related 3→6건 (2026-04-07)
+- 작업: Deepen — 전략/Copytrade/리더보드-심화.md 321→1295단어 (4.0배): 리더보드 소스 6종 비교표, 실제 리더보드 스냅샷 기반 PnL/Vol 비율 해석, 5대 핵심 지표 계산식, 3단계 스코어링 워크플로우, 조작 탐지 4개 유형 표, Python 폴링 구현코드, 문서 간 연결 가이드. sources 2→8건, related 6→8건. 부수: 개념/슬리피지.md 인라인 각주 제거 (2026-04-07)

@@ -1,63 +1,79 @@
 # Wiki Health Report
-Date: 2026-04-07 (review cycle 19)
+Date: 2026-04-07 (review cycle 29)
 
 ## Metrics
-- Total Documents: 74 (1 deduplicated)
-- Total Word Count: 38,618
-- Total Internal Links: 796
-- Average Links per Doc: ~10.8
-- Documents with Sources: 74/74 (100%)
-- Quality Score: 71.5/100
+- Total Documents: 69 (no change)
+- Total Word Count: ~47,858
+- Total Content Internal Links: ~918
+- Average Links per Doc: ~13.3
+- Documents with Sources (URLs): 61/69 (88.4%)
+- Quality Score: 69.4/100
 
 ## Changes This Review
 
 ### 1. Duplicate Detection & Removal
 - File-level duplicates: 0
-- `_similar.json` semantic duplicate check:
-  - `전략/Copytrade/리스크-관리.md` vs `전략/리스크-관리-심화.md` (sim 0.78): **유지** — 상위/하위 문서 관계, 주제 구분 명확
-  - `기술/API/Polymarket-API-레퍼런스.md` vs `기술/API/레퍼런스.md` (sim 0.71): **병합** — 동일 curl/Python 예제, 리더보드 워크플로우 중복. `레퍼런스.md`의 Node.js 예제를 `Polymarket-API-레퍼런스.md`에 통합 후 `레퍼런스.md` 삭제
-- **1파일 병합/삭제**
+- Semantic duplicates (`_similar.json` duplicates 0.90+): 0
+- `_similar.json` duplicate candidate: `개념/CTF.md` ↔ `기술/온체인-컨트랙트.md` (similarity 0.79) — below 0.90 threshold, no merge needed
 
 ### 2. Broken Link Fixes
-- **Current broken links: 0** (maintained from prior cycle)
+- No broken links found
+- All `[[링크]]` references resolve to existing files
 
 ### 3. Cross-link Enrichment
-- `_similar.json` `related` pairs 기준 누락 링크 보강:
-  - `개념/Copytrade.md` — `백테스트-사례-2026-04`, `백테스트-가이드` 링크 추가 (기존 `백테스트-사례`에서 → `Copytrade` 방향 누락)
-  - `전략/Copytrade/포지션-사이즈-전략.md` — `리밸런싱` 링크 추가
-  - `전략/Copytrade/트레이더-프로필-분석.md` — `트레이더/새로운-트레이더/프로필-템플릿` 링크 추가
-  - `트레이더/리더보드-분석.md` — `전략/Copytrade/Copytrade-리더보드-심화` 링크 추가
-  - `전략/Copytrade/Copytrade-리더보드-심화.md` — `리밸런싱`, `트레이더/리더보드-분석` 링크 추가
-  - `기술/API/Polymarket-API-레퍼런스.md` — `자동화-플로우` 관련 링크 추가
-- 중복 제거: `개념/Copytrade.md`의 중복된 `Polymarket-API-레퍼런스` 링크 1건 정리
-- Cross-link density: ~10.1 → ~10.8 per doc
+- `_similar.json` `related` pairs: 23 pairs (similarity 0.6~0.9)
+- Links added/updated:
+  - `Copytrade-리더보드-자동화.md` → `[[개념/Copytrade]]`, `[[전략/Copytrade/추종-실행-속도-최적화]]`, `[[전략/Copytrade/리더보드-심층-분석]]`
+  - `리더보드-심층-분석.md` (frontmatter) → `[[전략/Copytrade/Copytrade-리더보드-자동화]]`
+  - `Copytrade-성능-모니터링.md` → `[[전략/Copytrade/성과-분석-지표]]`, `[[전략/Copytrade/알고리즘-선별-체크리스트]]`
+  - `Copytrade-성능-모니터링.md` (related section) → added sim references for 알고리즘-선별-체크리스트, 리스크-모니터링
+  - `알고리즘-선별-체크리스트.md` (frontmatter) → `[[전략/Copytrade/팔로우-선별]]`, `[[전략/Copytrade/리밸런싱]]`
+  - `팔로우-선별.md` (frontmatter) → `[[전략/Copytrade/리밸런싱]]`
+  - `매수-타이밍-심화.md` → `[[전략/Copytrade/Copytrade-리더보드-자동화]]`
+  - `개념/Copytrade.md` (frontmatter) → `[[전략/Copytrade/매수-타이밍-심화]]`
+  - `리더보드-심층-분석.md` → body link for `추종-실행-속도-최적화`
+  - `리스크-모니터링.md` → deduplicated frontmatter entries, added cross-links
+  - `Polymarket-GitHub-리포트.md` → removed duplicate frontmatter entry `[[개념/프로그램-개요]]`
 
 ### 4. Sources Audit
-- 74/74 docs have `sources:` frontmatter (100%)
-- `log.md`가 누락되어 있었음 → 빈 sources 배열로 frontmatter 추가
-
-### 5. Structural Cleanup
-- `기술/API/레퍼런스.md` 삭제 (`Polymarket-API-레퍼런스.md`에 병합)
+- 61/69 docs have `sources:` with URLs (88.4%)
+- No new source gaps introduced
+- No inline footnote `[^N]` migration needed
 
 ## Quality Score Breakdown
 ```
-Coverage:     min(74/100, 1) × 15  = 11.10
-Volume:       min(38618/400000, 1) × 15 = 1.45
+Coverage:     min(69/100, 1) × 15  = 10.35
+Volume:       min(47858/400000, 1) × 15 = 1.79
 Structure:    max(0, 1-0/10) × 15 = 15.00
-Link Density: min(10.8/5, 1) × 15  = 15.00
-Doc Depth:    min(522/2000, 1) × 15 = 3.91
-Trust Score:  (74/74 × 100) × 0.25 = 25.00
+Link Density: min(13.3/5, 1) × 15  = 15.00
+Doc Depth:    min(693/2000, 1) × 15 = 5.20
+Trust Score:  (61/69 × 100) × 0.25 = 22.10
 -----------------------------------------
-Total:                             71.46
+Total:                             69.4/100
 ```
 
+### Score Change from Cycle 28
+| Metric | Cycle 28 | Cycle 29 | Δ |
+|--------|----------|----------|---|
+| Docs | 69 | 69 | 0 |
+| Word Count | ~46,800 | ~47,858 | +1,058 |
+| Avg Words/Doc | 678 | 693 | +15 |
+| Avg Links/Doc | ~12.9 | ~13.3 | +0.4 |
+| Sources % | 88.4% | 88.4% | 0 |
+| Quality Score | 69.3 | 69.4 | +0.1 |
+
+Score improvement driven by cross-link enrichment (+0.4 links/doc) and modest word count growth.
+
 ## Remaining Issues
-- **High**: Average document depth ~522 words — still below 2000 target
-- **Medium**: Volume score low (1.45/15) — needs ~360K more words for max
-- **Low**: No broken links, complete sources coverage
+- **High**: Average document depth ~693 words — still below 2000 target (~5.20/15 score)
+- **Medium**: Volume score low (1.79/15) — needs ~352K more words for max
+- **Medium**: 8 docs still lack URL sources
+- **Low**: `_similar.json` stale entries for deleted files need cleanup
+- **None**: No broken links, good cross-link density (~13.3/doc), frontmatter deduped
 
 ## Priority Tasks (Next)
-1. **Document depth**: Target 800+ avg words per doc (currently 522)
-2. **Content expansion**: Short documents (<200 words) should be merged or expanded
-3. **Volume growth**: Add more comprehensive guides and case studies
-4. **Wiki lint check**: Run wiki-lint.sh for structural validation
+1. **Document depth**: Short docs (<300 words) — merge or expand
+2. **Sources coverage**: 8 docs without URL sources — add reference URLs
+3. **_similar.json cleanup**: Remove stale references to deleted files
+4. **Content expansion**: Target 800+ avg words per doc for depth score improvement
+5. **Frontmatter consistency**: Remove duplicate entries in `related` arrays across docs

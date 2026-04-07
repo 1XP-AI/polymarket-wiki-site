@@ -8,6 +8,7 @@ sources: []
 
 시간순 작업 기록. `grep "^## \[" wiki/log.md | tail -10` 으로 최근 항목 조회.
 
+## [2026-04-07] Deepen | 리더보드-심화.md 확장 (321→1295단어): 소스표·스코어링·조작탐지·폴링코드 추가 | 슬리피지.md 인라인 각주 제거
 ## [2026-04-07] Merge | 마켓/엔터테인먼트.md → 마켓/분석.md 병합 (중복 문서 정리) — 엔터테인먼트·게임·시상식 카테고리 내용을 분석.md에 통합 후 삭제
 ## [2026-04-05] setup | 초기 위키 구조 생성
 - 100+ 문서, 폴더 구조(개념/마켓/트레이더/전략/기술/데이터) 확립
@@ -79,9 +80,31 @@ sources: []
 - **확장**: 트레이더/리더보드-분석.md (120→645단어) — 5.4배. 리더보드 함정(운좋음/워시/Risk왜곡), 주요 플랫폼 비교표, 3단계 필터(정량/포지션패턴/교차검증), Follow Score 가중치표, Copytrade 연결 섹션 추가. 출처 3건 추가 (총 5건).
 - **확장**: 개념/프로그램-개요.md (105→643단어) — 6.1배. 프로젝트 목적 구체화, 사이클 구조표, 디렉토리 구조 상세, 품질 메트릭스/계산식, 핵심 정책 요약, 다음 우선순위 섹션 추가. 출처 1건 추가 (총 2건).
 
+## [2026-04-07] Deepen | 3개 문서 심화 (INDEX-요약, INDEX-요약-추가, Polymarket-개요)
+- **확장**: 개념/INDEX-요약.md (200→350단어, 1.75배): raw/ 시드 문서 매핑표 8개 항목 추가, 사용법/확장가이드 보완, frontmatter 중복 sources 키 제거 및 category 개념으로 변경
+- **확장**: 개념/INDEX-요약-추가.md (80→230단어, 2.9배): 카테고리 매핑 판단 기준(6개 분야), 품질 기준 섹션, 사이클 작업 기록 가이드 테이블 추가, frontmatter 중복 sources 키 제거 및 category 개념으로 변경
+- **확장**: 개념/Polymarket-개요.md (2005→2250단어): Negative Risk 마켓 섹션 신규 추가 — CTF vs Neg-Risk 비교표, NegRiskAdapter contract 구조, Neg-Risk 거래량 ($14B+), Copytrade 관점 적용 가이드
+
 ## [2026-04-07] Deepen | 개념/CTF.md 심화 (48→1072단어)
 - 기존 48단어(병합 리디렉션) → 1072단어로 22배 확장
 - 추가 섹션: CTF 개요 및 핵심 불변식, Split/Merge/Join 연산 상세설명, Polymarket 실제 동작, Copytrade 관점(포지션 식별/Neg-Risk헤징/아비트리지/슬리피지관리), ERC-1155 토큰 ID 구조, CTF vs Neg-Risk 비교표, Copytrade에 미치는 영향
 - 출처 2→7건 추가 (docs.polymarket.com, neg-risk-ctf-adapter, Cryptoslate 분석, DeepWiki 토큰 생명주기)
 - 교차 링크 6개: [[개념/Negative-Risk]], [[개념/CLOB]], [[개념/Copytrade]], [[기술/온체인-컨트랙트]], [[전략/Copytrade/리스크-헤징]], [[개념/슬리피지]]
 - _index.md 및 _registry.md 업데이트
+
+## [2026-04-07] Deepen | 전략/Copytrade/가중치-최적화.md 심화 (266→1143단어)
+- 기존 266단어 → 1143단어로 4.3배 확장
+- 추가 섹션: 가중치 산정 4단계 알고리즘(정규화/종합스코어/상관관계보정/최종정규화), Python 의사코드 full pipeline, 운영 가이드(재계산 주기표/스무딩/변경한도), 백테스트 검증절차 5단계, 모델 유형 비교표(Equal/Kelly/Black-Litterman/ML), Laplace smoothing, 실패시나리오 대응(동시하락/개별급락/신규합류)
+- sources 2→3건, related 3→7건
+## [2026-04-07] Deepen | 두 문서 심화 (자동화-플로우 284→852, 데이터-기반-트레이더-선별 289→886)
+- **확장**: 전략/Copytrade/자동화-플로우.md (284→852단어, 3.0배): 아키텍처 순서도, 4단계 파이프라인 상세화, Python 자동화 파이프라인 코드(CLOBClient, WebSocket, CircuitBreaker), 재연결/내구성 가이드(WS disconnect, rate limit, on-chain mismatch, Neg-Risk 변경), 9단계 체크리스트, Neg-Risk vs CTF 라우팅, Debounce 처리. sources 2→5건, related 6→8건
+- **확장**: 전략/Copytrade/데이터-기반-트레이더-선별.md (289→886단어, 3.1배): 3단계 필터링 파이프라인(유동성→통계→알파), Bootstrap p-value 검증, Laplace smoothed 승률, Follow Score 알고리즘 가중치표, 소셜 시그널 교차검증, Python 의사코드. sources 2→5건, related 3→7건
+
+## [2026-04-07] Deepen | 세 문서 심화 (프로그램-개요 646→1029, 리스크-모니터링 352→922, 리더보드-조작-탐지 370→668)
+- **확장**: 개념/프로그램-개요.md (646→1029단어): 워크플로우 다이어그램(Fetch→Embed→Review), 에이전트 역할 구분표, 품질 게이트 5단계, 오류 처리 정책 테이블 (API rate limit, 임베딩 실패, 파일 잠김, 디스크 부족, broken link), 버전 관리 규칙. sources 2→4건, related 3→5건
+- **확장**: 전략/Copytrade/리스크-모니터링.md (352→922단어): HHI 기반 포지션 집중도 Python 코드, 실행 지연 계산 함수, Drawdown 트리거 메트릭, 알림 규칙 8종 테이블, 주기별 모니터링 스케줄 테이블. 관련 문서 4→6건
+- **확장**: 전략/Copytrade/리더보드-조작-탐지.md (370→668단어): 4개 범주 분류(거래패턴/지갑네트워크/PnL조작/소셜불일치), 지표 테이블 5종 (시간주기성/CV/승률-거래량/주문-취소/진입-청산간격), wash trading 탐지 Python 코드, 자기 거래/마스터-슬레이브/Sharpe ratio 이상 패턴 설명. sources 형식 표준화, related 3→6건
+
+## [2026-04-07] Deepen | 전략/Copytrade/팔로우-스코어링-모델.md 심화 (302→1170단어)
+- **확장**: 302→1170단어 (3.9배): 7개 변수 정의표, 가중치 프로파일 테이블(보수적/균형/공격적), Laplace smoothing (N<15), Python 스코어 계산 함수 + 상관관계 페널티 함수, 임계값 의사결정 매트릭스(4단계), 모델-드리프트 개선 주기(Weekly/Monthly/Quarterly), IC 추적
+- sources 2→4건 (investopedia sharpe ratio, wikipedia laplace smoothing 추가), related 4→6건
