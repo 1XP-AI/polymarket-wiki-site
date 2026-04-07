@@ -35,3 +35,4 @@
   * 개념/Copytrade-심화.md (4개 추가, source→sources 구조 변경)
 - _index.md frontmatter에 10개 신규 소스 추가
 - sources 비율: 19% (18/92) → 44% (구현 진행 중)
+## [2026-04-07] Link | Copytrade 관련 문서 교차 링크 강화
