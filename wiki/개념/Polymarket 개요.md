@@ -4,21 +4,23 @@ title: Polymarket 개요
 type: concept
 status: draft
 created_at: '2026-04-09T14:10:09Z'
-last_updated: '2026-04-09T14:48:24Z'
+last_updated: '2026-04-09T15:00:12Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
-source_count: 4
+source_count: 5
 evidence_coverage: 1.0
 confidence: medium
 related_pages:
 - legacy_raw_01_polymarket_b75012
 - legacy_wiki_polymarket_aa7ff7
 - legacy_wiki_polymarket_b06656
+- legacy_wiki_polymarket_fd0553
 - source_summary_src_raw_01_polymarket_md_b7501253
 - source_summary_src_wiki_polymarket_md_aa7ff7f8
 - source_summary_src_wiki_polymarket_md_b0665680
 - source_summary_src_wiki_polymarket_md_cd5a0827
+- source_summary_src_wiki_polymarket_md_fd0553d1
 tags:
 - concept
 - internal
@@ -108,3 +110,8 @@ Gamma API 응답에서 확인되는 주요 필드:
 `Polymarket 개요` 문서의 핵심 내용을 `Polymarket 개요`에 병합했다. 요약: > Polymarket은 Polygon 기반의 주요 예측시장 플랫폼으로, 이벤트/마켓/오더북을 제공한다.
 
 ## 핵심 사실 Polymarket은 이벤트별 결과에 베팅하는 예측시장으로 CLOB(중앙지정가주문장)를 통해 거래가 이루어지고, Yes/No 토큰을 사용해 결과를 정산한다.
+
+<!-- para: para_001 -->
+`Polymarket 개요 — 심화` 문서의 핵심 내용을 `Polymarket 개요`에 병합했다. 요약: > Polymarket의 핵심 구성요소와 실무에서 copytrade에 활용하는 방법을 예제와 함께 설명합니다.
+
+## 핵심 사실 Polymarket은 Gamma API(마켓/이벤트), Data API(포지션/트레이드), CLOB(오더북)으로 구성되며, copytrade 전략은 리더보드·실시간 데이터·오더북 신호의 결합으로 설계한다.
