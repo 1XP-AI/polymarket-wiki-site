@@ -56,6 +56,67 @@
       "confidence": "medium",
       "conflict_flag": false,
       "source_urls": []
+    },
+    "para_008": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_행동편향의_심리학___왜_우리는_비합리적인_선택을_할까_5c4811e8#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://psychology-money.com/111"
+      ]
+    },
+    "para_009": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_bias_43326c66#chunk_001",
+        "src_20260409_bias_43326c66#chunk_002"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://m.blog.naver.com/unicycle/223008018504"
+      ]
+    },
+    "para_010": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_machine_learning_google_for_developers_ff66c702#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://developers.google.com/machine-learning/crash-course/fairness/types-of-bias?hl=ko"
+      ]
+    },
+    "para_011": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_확증편향과_선택노출_심리_실험_비교__인지편향__실험분석__이론정리_38f608e3#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://newllmskll.com/entry/%ED%99%95%EC%A6%9D%ED%8E%B8%ED%96%A5%EA%B3%BC-%EC%84%A0%ED%83%9D%EB%85%B8%EC%B6%9C-%EC%8B%AC%EB%A6%AC-%EC%8B%A4%ED%97%98-%EB%B9%84%EA%B5%90-%EC%9D%B8%EC%A7%80%ED%8E%B8%ED%96%A5-%EC%8B%A4%ED%97%98%EB%B6%84%EC%84%9D-%EC%9D%B4%EB%A1%A0%EC%A0%95%EB%A6%AC"
+      ]
+    },
+    "para_012": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_ai_2026_ai_ed7ae075#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://aitoolsbee.com/ko/news/ai-%ED%8E%B8%ED%96%A5-%EA%B0%90%EC%82%AC-2026%EB%85%84-%EA%B8%B0%EC%97%85-%EA%B3%A0%EC%9A%A9-%EC%9D%98%EC%82%AC%EA%B2%B0%EC%A0%95%EC%9D%98-%ED%95%B5%EC%8B%AC-%EA%B3%BC%EC%A0%9C/"
+      ]
     }
   }
 }

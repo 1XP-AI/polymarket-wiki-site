@@ -4,11 +4,11 @@ title: 심리적 편향(Behavioral Bias) 분석
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:11Z'
-last_updated: '2026-04-09T16:13:32Z'
+last_updated: '2026-04-09T17:03:17Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
-source_count: 6
+source_count: 5
 evidence_coverage: 1.0
 confidence: medium
 related_pages:
@@ -17,12 +17,11 @@ related_pages:
 tags:
 - concept
 sources:
-- url: https://polymarket.com/leaderboard?period=monthly
-- url: https://polymarketanalytics.com/traders
-- url: https://data.polymarket.com/leaderboard
-- url: https://gamma-api.polymarket.com/markets
-- url: https://docs.polymarket.com/api
-- url: https://www.investopedia.com/terms/b/behavioral-bias.asp
+- url: https://aitoolsbee.com/ko/news/ai-%ED%8E%B8%ED%96%A5-%EA%B0%90%EC%82%AC-2026%EB%85%84-%EA%B8%B0%EC%97%85-%EA%B3%A0%EC%9A%A9-%EC%9D%98%EC%82%AC%EA%B2%B0%EC%A0%95%EC%9D%98-%ED%95%B5%EC%8B%AC-%EA%B3%BC%EC%A0%9C/
+- url: https://m.blog.naver.com/unicycle/223008018504
+- url: https://developers.google.com/machine-learning/crash-course/fairness/types-of-bias?hl=ko
+- url: https://psychology-money.com/111
+- url: https://newllmskll.com/entry/%ED%99%95%EC%A6%9D%ED%8E%B8%ED%96%A5%EA%B3%BC-%EC%84%A0%ED%83%9D%EB%85%B8%EC%B6%9C-%EC%8B%AC%EB%A6%AC-%EC%8B%A4%ED%97%98-%EB%B9%84%EA%B5%90-%EC%9D%B8%EC%A7%80%ED%8E%B8%ED%96%A5-%EC%8B%A4%ED%97%98%EB%B6%84%EC%84%9D-%EC%9D%B4%EB%A1%A0%EC%A0%95%EB%A6%AC
 ---
 # 심리적 편향(Behavioral Bias) 분석
 
@@ -53,3 +52,249 @@ sources:
 - [[Copytrade 데이터 수집 가이드]] — 팔로우 대상 선정 기준
 - [[Copytrade 데이터 수집 가이드]] — 편향 기반 리스크 완화 기법
 - [[Copytrade 데이터 수집 가이드]] — 편향 점수를 통합한 트레이더 평가 모델
+
+## 세부 내용
+
+<!-- para: para_008 -->
+행동편향의 심리학 - 왜 우리는 비합리적인 선택을 할까? 본문 바로가기
+심리학
+블로그 내 검색
+검색
+관리
+글쓰기
+로그인
+로그아웃
+메뉴
+홈
+태그
+심리학
+행동편향의 심리학 - 왜 우리는 비합리적인 선택을 할까?
+
+<!-- para: para_009 -->
+인지편향(Bias)의 심리학 : 네이버 블로그
+본문 바로가기
+블로그
+카테고리 이동
+SK뷰공인중개사사무소 - debelief
+검색
+MY메뉴 열기
+낙서장
+인지편향(Bias)의 심리학
+debelief
+2023. 2.
+
+<!-- para: para_010 -->
+공정성: 편향의 유형
+
+|Machine Learning  |  Google for Developers
+기본 콘텐츠로 건너뛰기
+Machine Learning
+ML 개념
+소개
+ML 입문을 위한 교육 과정
+ML 모델
+선형 회귀
+로지스틱 회귀
+분류
+데이터
+숫자 데이터 작업
+범주형 데이터 작업
+데이터 세트, 일반화, 과적합
+고급 ML 모델
+신경망
+임베딩
+대규모 언어 모델 소개
+실제 ML
+프로덕션 ML 시스템
+자동화된 머신러닝
+공정성
+기초 과정
+고급 과정
+가이드
+용어집
+모든 약관
+클러스터링
+결정 포레스트
+기본사항
+GCP
+생성형 AI
+측정항목
+책임감 있는 AI
+TensorFlow
+/
+English
+Deutsch
+Español
+Español – América Latina
+Français
+Indonesia
+Italiano
+Polski
+Português – Brasil
+Tiếng Việt
+Türkçe
+Русский
+Українська
+עברית
+العربيّة
+فارسی
+हिंदी
+বাংলা
+ภาษาไทย
+中文 – 简体
+中文 – 繁體
+日本語
+한국어
+로그인
+ML 개념
+홈
+Crash Course
+Machine Learning
+ML 개념
+더보기
+홈
+Crash Course
+기초 과정
+고급 과정
+가이드
+용어집
+더보기
+빠른 링크
+기본 요건
+연습
+고객센터
+ML 모델
+선형 회귀 (80분)
+선형 회귀 (10분)
+손실 (10분)
+대화형 연습: 매개변수 (5분)
+경사하강법 (10분)
+초매개변수 (10분)
+대화형 연습: 경사하강법 (5분)
+프로그래밍 실습 (20분)
+지식 테스트 (10분)
+다음 단계
+로지스틱 회귀 (35분)
+소개 (5분)
+확률 계산 (10분)
+손실 및 정규화 (10분)
+지식 테스트 (10분)
+다음 단계
+분류 (70분)
+소개 (3분)
+임곗값 및 혼동 행렬 (12분)
+정확도, 재현율, 정밀도, 관련 측정항목 (15분)
+ROC 및 AUC (10분)
+예측 편향 (3분)
+다중 클래스 분류 (2분)
+프로그래밍 연습 (15분)
+지식 테스트 (10분)
+다음 단계
+데이터
+숫자 데이터 작업 (85분)
+소개 (3분)
+모델이 특성 벡터로 데이터를 처리하는 방법 (5분)
+첫 단계 (5분)
+프로그래밍 연습 (10분)
+정규화 (20분)
+비닝 (15분)
+스크러빙 (5분)
+좋은 숫자형 특성의 품질 (5분)
+다항식 변환 (5분)
+지식 테스트 (10분)
+결론 (2분)
+다음 단계
+범주형 데이터 작업 (50분)
+소개 (5분)
+어휘 및 원-핫 인코딩 (10분)
+카테고리 데이터와 관련된 일반적인 문제 (5분)
+특성 교차 (5분)
+특성 교차 연습 (15분)
+지식 테스트 (10분)
+다음 단계
+데이터 세트, 일반화, 과적합 (105분)
+소개 (5분)
+데이터 특성 (10분)
+라벨 (10분)
+불균형 데이터 세트 (10분)
+원본 데이터 세트 분할 (10분)
+데이터 변환 (5분)
+일반화 (5분)
+과적합 (10분)
+모델 복잡도 (10분)
+L2 정규화 (10분)
+손실 곡선 해석 (10분)
+지식 테스트 (10분)
+다음 단계
+고급 ML 모델
+신경망 (75분)
+소개 (5분)
+노드 및 숨겨진 레이어 (15분)
+활성화 함수 (10분)
+역전파를 사용한 학습 (10분)
+대화형 연습 (15분)
+다중 클래스 분류 (10분)
+지식 테스트 (10분)
+다음 단계
+임베딩 (45분)
+소개 (5분)
+임베딩 공간 및 정적 임베딩 (10분)
+대화형 연습 (15분)
+임베딩 가져오기 (15분)
+지식 테스트 (10분)
+다음 단계
+대규모 언어 모델 소개 (45분)
+언어 모델이란 무엇인가요? (10분)
+대규모 언어 모델이란 무엇인가요?
+
+<!-- para: para_011 -->
+확증편향과 선택노출 심리 실험 비교 (인지편향, 실험분석, 이론정리)
+본문 바로가기
+유익 팩토리
+블로그 내 검색
+검색
+관리
+글쓰기
+로그인
+로그아웃
+메뉴
+홈
+태그
+방명록
+카테고리 없음
+확증편향과 선택노출 심리 실험 비교 (인지편향, 실험분석, 이론정리)
+by 유익팩토리
+2026. 1.
+
+<!-- para: para_012 -->
+AI 편향 감사, 2026년 기업 고용 의사결정의 핵심 과제 - AI툴즈비
+홈
+AI 툴즈
+AI 프롬프트
+이미지
+생산성
+AI 뉴스
+한국어
+일본어
+영어
+로그인
+내 활동
+내 정보
+로그아웃
+홈
+AI 툴즈
+프롬프트
+이미지
+비디오
+생산성
+AI 뉴스
+로그인
+가입하기
+홈
+AI 뉴스
+AI 뉴스
+AI 편향 감사, 2026년 기업 고용 의사결정의 핵심 과제
+작성일:
+                                2026년 1월 8일. 04:16
+Lena Choi
+Fisher Phillips는 2026년 채용과 평가, 리스크 예측에서 알고리즘 차별 위험 대응을 촉구했다.
