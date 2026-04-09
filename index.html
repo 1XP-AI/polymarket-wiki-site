@@ -108,8 +108,23 @@ body {
 
 /* Frontmatter */
 .frontmatter { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius); padding: 0.8rem 1rem; margin-bottom: 1.5rem; font-size: 0.82rem; color: var(--text-secondary); }
-.frontmatter dt { font-weight: 600; display: inline; }
-.frontmatter dd { display: inline; margin-left: 4px; margin-right: 16px; }
+.frontmatter-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; }
+.frontmatter-item { background: var(--bg); border: 1px solid var(--border); border-radius: 6px; padding: 10px 12px; }
+.frontmatter-label { font-size: 0.72rem; color: var(--text-secondary); margin-bottom: 4px; }
+.frontmatter-value { font-size: 0.9rem; font-weight: 600; color: var(--text); word-break: break-word; }
+.source-summary { display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom: 0.9rem; }
+.source-badge { display:inline-block; border-radius:12px; padding:2px 10px; font-size:0.75rem; font-weight:600; }
+.source-badge.ok { background:#2563eb22; color:#2563eb; }
+.source-badge.warn { background:#ef444422; color:#ef4444; }
+.reference-note { font-size: 0.78rem; color: var(--text-secondary); }
+.citation { margin-left: 4px; white-space: nowrap; }
+.citation a { font-size: 0.78em; vertical-align: super; margin-right: 2px; }
+.references { border-top: 1px solid var(--border); margin-top: 2rem; padding-top: 1rem; }
+.references h2 { margin-top: 0; }
+.references ol { padding-left: 1.4rem; }
+.references li { margin: 0.45rem 0; }
+.reference-link { font-weight: 600; }
+.reference-url { font-size: 0.78rem; color: var(--text-secondary); word-break: break-all; }
 .breadcrumb { font-size: 0.78rem; color: var(--text-secondary); margin-bottom: 0.8rem; }
 .breadcrumb span { cursor: pointer; color: var(--link); }
 
@@ -213,6 +228,222 @@ function normalizeLinkKey(text) {
     .replace(/\s+/g, ' ')
     .trim()
     .toLowerCase();
+}
+
+function stripYamlValue(value) {
+  return String(value || '').trim().replace(/^["']|["']$/g, '');
+}
+
+function splitFrontmatter(text) {
+  const match = String(text || '').match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?/);
+  if (!match) return { meta: {}, sources: [], body: String(text || '') };
+  const parsed = parseFrontmatterBlock(match[1]);
+  return {
+    meta: parsed.meta,
+    sources: parsed.sources,
+    body: String(text || '').slice(match[0].length),
+  };
+}
+
+function parseFrontmatterBlock(text) {
+  const lines = text.split('\n');
+  const meta = {};
+  const sources = [];
+  let inSources = false;
+
+  for (const rawLine of lines) {
+    const line = rawLine.replace(/\r$/, '');
+
+    if (/^sources:\s*$/.test(line)) {
+      inSources = true;
+      continue;
+    }
+    if (inSources && /^\s*-\s*url:\s*/.test(line)) {
+      const url = stripYamlValue(line.replace(/^\s*-\s*url:\s*/, ''));
+      if (url) sources.push(url);
+      continue;
+    }
+    if (inSources && /^[A-Za-z_][A-Za-z0-9_]*:\s*/.test(line)) {
+      inSources = false;
+    }
+
+    const scalar = line.match(/^([A-Za-z_][A-Za-z0-9_]*):\s*(.+?)\s*$/);
+    if (scalar) {
+      meta[scalar[1]] = stripYamlValue(scalar[2]);
+    }
+  }
+
+  return { meta, sources: [...new Set(sources)] };
+}
+
+function formatMetaValue(key, value) {
+  const typeMap = {
+    concept: '개념',
+    comparison: '비교',
+    timeline: '타임라인',
+    project: '프로젝트',
+    entity: '엔티티',
+    glossary: '용어',
+    report: '리포트',
+  };
+  const statusMap = {
+    verified: '검증됨',
+    draft: '초안',
+  };
+  const confidenceMap = {
+    high: '높음',
+    medium: '중간',
+    low: '낮음',
+  };
+
+  if (!value) return '-';
+  if (key === 'type') return typeMap[value] || value;
+  if (key === 'status') return statusMap[value] || value;
+  if (key === 'confidence') return confidenceMap[value] || value;
+  if (key === 'evidence_coverage') {
+    const num = Number(value);
+    if (Number.isFinite(num)) return `${Math.round(num * 100)}%`;
+  }
+  if (/_at$/.test(key) || key === 'as_of') {
+    return String(value).replace('T', ' ').replace('Z', '');
+  }
+  return value;
+}
+
+function renderFrontmatter(meta, sourceUrls) {
+  const fields = [
+    ['type', '분류'],
+    ['status', '상태'],
+    ['as_of', '기준일'],
+    ['last_updated', '수정일'],
+    ['confidence', '신뢰도'],
+    ['evidence_coverage', '근거 커버리지'],
+  ];
+
+  const sourceCount = sourceUrls.length > 0
+    ? sourceUrls.length
+    : Number(meta.source_count || 0);
+
+  const cards = fields
+    .filter(([key]) => meta[key])
+    .map(([key, label]) => (
+      `<div class="frontmatter-item">` +
+      `<div class="frontmatter-label">${label}</div>` +
+      `<div class="frontmatter-value">${formatMetaValue(key, meta[key])}</div>` +
+      `</div>`
+    ))
+    .join('');
+
+  const badge = sourceCount > 0
+    ? `<span class="source-badge ok">📎 출처 ${sourceCount}건</span>`
+    : `<span class="source-badge warn">⚠️ 출처 없음</span>`;
+
+  return (
+    `<div class="frontmatter">` +
+    `<div class="source-summary">${badge}<span class="reference-note">출처는 문서 하단 참고문헌에서 확인할 수 있습니다.</span></div>` +
+    `<div class="frontmatter-grid">${cards}</div>` +
+    `</div>`
+  );
+}
+
+function renderReferences(sourceUrls) {
+  if (!sourceUrls || sourceUrls.length === 0) return '';
+  const items = [...new Set(sourceUrls)];
+  return (
+    `<section class="references">` +
+    `<h2>참고문헌</h2>` +
+    `<ol>` +
+    items.map((url, index) => renderReferenceItem(url, index + 1)).join('') +
+    `</ol>` +
+    `</section>`
+  );
+}
+
+function renderReferenceItem(url, index) {
+  const label = formatSourceLabel(url);
+  if (isExternalUrl(url)) {
+    return (
+      `<li id="ref-${index}">` +
+      `<a class="reference-link" href="${url}" target="_blank" rel="noopener">[${index}] ${label}</a>` +
+      `<div class="reference-url">${url}</div>` +
+      `</li>`
+    );
+  }
+  return (
+    `<li id="ref-${index}">` +
+    `<span class="reference-link">[${index}] ${label}</span>` +
+    `<div class="reference-url">${url}</div>` +
+    `</li>`
+  );
+}
+
+function formatSourceLabel(url) {
+  const text = String(url || '').trim();
+  if (!text) return '출처';
+  if (!isExternalUrl(text)) {
+    if (text.startsWith('raw/')) return `내부 자료: ${text}`;
+    return text;
+  }
+  try {
+    const parsed = new URL(text);
+    return `${parsed.hostname}${parsed.pathname === '/' ? '' : parsed.pathname}`;
+  } catch (_error) {
+    return text;
+  }
+}
+
+function isExternalUrl(url) {
+  return /^https?:\/\//i.test(String(url || '').trim());
+}
+
+function buildReferenceIndex(sourceUrls) {
+  const index = new Map();
+  [...new Set(sourceUrls || [])].forEach((url, i) => index.set(url, i + 1));
+  return index;
+}
+
+async function fetchSidecar(path) {
+  const sidecarPath = 'wiki/' + path.replace(/\.md$/i, '.meta.json');
+  try {
+    const res = await fetch(sidecarPath);
+    if (!res.ok) return null;
+    return await res.json();
+  } catch (_error) {
+    return null;
+  }
+}
+
+function injectCitations(html, sidecar, referenceIndex) {
+  if (!html) return html;
+  const container = document.createElement('div');
+  container.innerHTML = html;
+  const paragraphMap = (sidecar && sidecar.paragraphs) || {};
+
+  container.querySelectorAll('.para-anchor').forEach(anchor => {
+    const paraId = anchor.getAttribute('data-para-id') || '';
+    const paragraph = paragraphMap[paraId] || {};
+    const sourceUrls = [...new Set(paragraph.source_urls || [])];
+    const citationNumbers = sourceUrls
+      .map(url => referenceIndex.get(url))
+      .filter(num => Number.isInteger(num));
+
+    if (citationNumbers.length > 0) {
+      const citation = document.createElement('span');
+      citation.className = 'citation';
+      citationNumbers.forEach(num => {
+        const link = document.createElement('a');
+        link.href = `#ref-${num}`;
+        link.textContent = `[${num}]`;
+        citation.appendChild(link);
+      });
+      const target = anchor.closest('p, li, blockquote') || anchor.parentElement;
+      if (target) target.appendChild(citation);
+    }
+
+    anchor.remove();
+  });
+
+  return container.innerHTML;
 }
 
 function tokenizeLink(text) {
@@ -354,46 +585,16 @@ async function showDoc(path) {
   location.hash = encodeURIComponent(path);
   
   let content = await fetchDoc(path);
+  let sourceUrls = [];
+  const sidecar = await fetchSidecar(path);
   let frontmatter = '';
   
   // YAML frontmatter
-  const fmMatch = content.match(/^---\n([\s\S]*?)\n---\n/);
-  if (fmMatch) {
-    content = content.slice(fmMatch[0].length);
-    const entries = fmMatch[1].split('\n').filter(l => l.includes(':'));
-    // sources 배열 파싱
-    let sourceCount = 0;
-    let sourceUrls = [];
-    const fmLines = fmMatch[1].split('\n');
-    let inSources = false;
-    for (const line of fmLines) {
-      if (line.match(/^sources:/)) { inSources = true; continue; }
-      if (inSources && line.match(/^\s+-\s*url:/)) {
-        sourceCount++;
-        const url = line.replace(/.*url:\s*["']?/, '').replace(/["']?\s*$/, '');
-        if (url) sourceUrls.push(url);
-      }
-      if (inSources && line.match(/^\w/) && !line.match(/^\s/)) inSources = false;
-    }
-    
-    const sourceBadge = sourceCount > 0
-      ? `<span style="display:inline-block;background:#2563eb22;color:#2563eb;border-radius:12px;padding:2px 10px;font-size:0.75rem;font-weight:600;margin-left:8px">📎 출처 ${sourceCount}건</span>`
-      : `<span style="display:inline-block;background:#ef444422;color:#ef4444;border-radius:12px;padding:2px 10px;font-size:0.75rem;font-weight:600;margin-left:8px">⚠️ 출처 없음</span>`;
-    
-    const hiddenFrontmatterKeys = new Set(['id', 'owners', 'related_pages', 'sources']);
-    const simpleEntries = entries.filter(l => {
-      if (l.match(/^\s+-/) || l.match(/^sources:/)) return false;
-      const key = (l.split(':', 1)[0] || '').trim();
-      return !hiddenFrontmatterKeys.has(key);
-    });
-    frontmatter = '<dl class="frontmatter">' +
-      simpleEntries.map(l => {
-        const [k, ...v] = l.split(':');
-        return `<dt>${k.trim()}:</dt><dd>${v.join(':').trim().replace(/^["']|["']$/g,'')}</dd>`;
-      }).join('') + sourceBadge + '</dl>' +
-      (sourceUrls.length > 0 ? '<details style="margin-bottom:1rem;font-size:0.78rem"><summary style="cursor:pointer;color:var(--text-secondary)">📎 출처 목록</summary><ul>' +
-        sourceUrls.map(u => `<li><a href="${u}" target="_blank" rel="noopener" style="color:var(--accent)">${u.length>60?u.slice(0,60)+'…':u}</a></li>`).join('') +
-        '</ul></details>' : '');
+  const parsedContent = splitFrontmatter(content);
+  content = parsedContent.body;
+  sourceUrls = parsedContent.sources;
+  if (Object.keys(parsedContent.meta).length > 0 || sourceUrls.length > 0) {
+    frontmatter = renderFrontmatter(parsedContent.meta, sourceUrls);
   }
   
   // Breadcrumb
@@ -403,6 +604,7 @@ async function showDoc(path) {
     '</div>';
   
   // Pre-process wikilinks before marked
+  content = content.replace(/<!--\s*para:\s*([a-zA-Z0-9_:-]+)\s*-->/g, '<span class="para-anchor" data-para-id="$1"></span>');
   content = content.replace(/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g, (_, target, alias) => {
     const entry = resolveWikiTarget(target);
     const label = alias || (entry ? entry.name : target);
@@ -412,7 +614,9 @@ async function showDoc(path) {
     return `<span class="wikilink broken">${label}</span>`;
   });
   
-  const html = marked.parse(content);
+  const referenceIndex = buildReferenceIndex(sourceUrls);
+  const html = injectCitations(marked.parse(content), sidecar, referenceIndex);
+  const referencesHtml = renderReferences(sourceUrls || []);
   
   // 임베딩 기반 관련 문서 추천
   let relatedHtml = '';
@@ -433,7 +637,7 @@ async function showDoc(path) {
     }
   }
   
-  document.getElementById('article').innerHTML = breadcrumb + frontmatter + '<div class="article">' + html + relatedHtml + '</div>';
+  document.getElementById('article').innerHTML = breadcrumb + frontmatter + '<div class="article">' + html + relatedHtml + referencesHtml + '</div>';
   renderTree(MANIFEST, searchQuery);
   
   if (window.innerWidth <= 768) toggleSidebar();
