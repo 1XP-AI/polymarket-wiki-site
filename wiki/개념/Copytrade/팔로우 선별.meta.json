@@ -7,7 +7,9 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://docs.revealdata.com/docs/2026-2-3-30-patch-release-notes-reveal"
+      ]
     },
     "para_002": {
       "evidence_type": "synthesized",
@@ -15,7 +17,9 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://docs.revealdata.com/docs/2026-2-3-30-patch-release-notes-reveal"
+      ]
     },
     "para_003": {
       "evidence_type": "synthesized",
@@ -23,7 +27,9 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://docs.revealdata.com/docs/2026-2-3-30-patch-release-notes-reveal"
+      ]
     },
     "para_004": {
       "evidence_type": "synthesized",
@@ -31,7 +37,9 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://docs.revealdata.com/docs/2026-2-3-30-patch-release-notes-reveal"
+      ]
     },
     "para_005": {
       "evidence_type": "synthesized",
@@ -39,7 +47,9 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://docs.revealdata.com/docs/2026-2-3-30-patch-release-notes-reveal"
+      ]
     },
     "para_006": {
       "evidence_type": "synthesized",
@@ -47,7 +57,21 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://docs.revealdata.com/docs/2026-2-3-30-patch-release-notes-reveal"
+      ]
+    },
+    "para_007": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_2026_2_3_30_patch_release_notes_4c5c9852#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://docs.revealdata.com/docs/2026-2-3-30-patch-release-notes-reveal"
+      ]
     }
   }
 }
