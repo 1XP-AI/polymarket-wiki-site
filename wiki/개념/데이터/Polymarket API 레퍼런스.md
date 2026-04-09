@@ -8,7 +8,7 @@ last_updated: '2026-04-09T15:11:57Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
-source_count: 9
+source_count: 4
 evidence_coverage: 1.0
 confidence: medium
 related_pages:
@@ -19,22 +19,10 @@ related_pages:
 tags:
 - concept
 sources:
-- url: https://gamma-api.polymarket.com/markets?limit=50
-  raw: raw/fetched/2026-04-07-leaderboard-and-risk.md
-- url: https://www.polyverify.com/leaderboard
-  raw: raw/fetched/2026-04-07-leaderboard-and-risk.md
-- url: https://polymarket-bot.co/polymarket-api-tutorial
-  raw: raw/fetched/2026-04-07-negative-risk-and-api.md
-- url: https://docs.polymarket.com/api-reference/clients-sdks
-  raw: raw/fetched/2026-04-07-negative-risk-and-api.md
-- url: https://www.alphascope.app/blog/polymarket-bot-tutorial
-  raw: raw/fetched/2026-04-07-negative-risk-and-api.md
-- url: https://www.predictengine.ai/blog/polymarket-api-tutorial
-  raw: raw/fetched/2026-04-07-negative-risk-and-api.md
-- url: https://github.com/sambergo/quick-polymarket-api-setup-tutorial
-  raw: raw/fetched/2026-04-07-negative-risk-and-api.md
-- url: https://gamma-api.polymarket.com/markets?limit=10
-- url: https://clob.polymarket.com/rewards/leaderboard
+- url: https://docs.polymarket.us/trader-guide/api-overview
+- url: https://api.polymarketanalytics.com/
+- url: https://docs.polymarket.com/api-reference/introduction
+- url: https://pypi.org/project/polymarket-apis/
 ---
 # Polymarket API 레퍼런스
 
@@ -96,3 +84,50 @@ GET https://gamma-api.polymarket.com/events?limit=20&active=true
 - **Public (인증 불필요)**: 마켓 데이터 조회, 가격 조회, 오더북 조회
 - **L1 Auth (지갑 서명만)**: 초기 설정, API 키 생성
 - **L2 Auth (API 키)**: 주문 생성/취소, 트레이드 조회, 포지션 관리
+
+## 세부 내용
+
+<!-- para: para_012 -->
+Introduction - Polymarket Documentation
+Skip to main content
+Polymarket Documentation
+home page
+English
+Search... ⌘
+K
+Changelog
+Get Help
+Main Site
+Main Site
+Search...
+
+<!-- para: para_013 -->
+Falcon API – The Infrastructure Layer of Prediction Markets
+Join Community
+The Infrastructure Layer of
+Prediction Markets
+Real-time market data, trader intelligence, and predictive signals for developers and AI agents. By:
+Get Your API Key
+Get Started
+Choose how you want to access prediction market intelligence.
+
+<!-- para: para_014 -->
+API Overview - Polymarket US Documentation
+Skip to main content
+You are viewing documentation for Polymarket US 🇺🇸
+Polymarket US Documentation
+home page
+Search... ⌘
+K
+Ask AI
+Join Discord
+Main Site
+Main Site
+Search...
+
+<!-- para: para_015 -->
+polymarket-apis · PyPI
+Skip to main content
+Switch to mobile version
+Warning
+Some features may not work without JavaScript. Please try enabling it if you encounter problems.
