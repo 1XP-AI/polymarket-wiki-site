@@ -641,7 +641,9 @@ async function showDoc(path) {
     const entry = resolveWikiTarget(target);
     const label = alias || (entry ? entry.name : target);
     if (entry) {
-      return `<span class="wikilink" onclick="showDoc('${entry.path.replace(/'/g, "\\'")}')">${label}</span>`;
+      const path = entry.path.replace(/'/g, "\\'");
+      const href = `#${encodeURIComponent(entry.path)}`;
+      return `<a class="wikilink" href="${href}" onclick="showDoc('${path}'); return false;">${label}</a>`;
     }
     return `<span class="wikilink broken">${label}</span>`;
   });
@@ -665,7 +667,9 @@ async function showDoc(path) {
         matches.map(m => {
           const name = m.path.split('/').pop().replace('.md','');
           const pct = Math.round(m.sim * 100);
-          return `<div style="padding:3px 0"><span class="wikilink" onclick="showDoc('${m.path.replace(/'/g,"\\'")}')">${name}</span> <span style="font-size:0.7rem;color:var(--text-secondary)">${pct}%</span></div>`;
+          const path = m.path.replace(/'/g,"\\'");
+          const href = `#${encodeURIComponent(m.path)}`;
+          return `<div style="padding:3px 0"><a class="wikilink" href="${href}" onclick="showDoc('${path}'); return false;">${name}</a> <span style="font-size:0.7rem;color:var(--text-secondary)">${pct}%</span></div>`;
         }).join('') + '</div>';
     }
   }
