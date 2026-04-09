@@ -48,6 +48,54 @@
       "confidence": "medium",
       "conflict_flag": false,
       "source_urls": []
+    },
+    "para_007": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_주문가랑_체결가가_달라요__주문과_체결_사이의_미끄러짐__슬리피지_완벽_대응법_85a8570e#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://namcheomji1102.tistory.com/entry/%EC%A3%BC%EB%AC%B8%EA%B0%80%EB%9E%91-%EC%B2%B4%EA%B2%B0%EA%B0%80%EA%B0%80-%EB%8B%AC%EB%9D%BC%EC%9A%94-%EC%A3%BC%EB%AC%B8%EA%B3%BC-%EC%B2%B4%EA%B2%B0-%EC%82%AC%EC%9D%B4%EC%9D%98-%EB%AF%B8%EB%81%84%EB%9F%AC%EC%A7%90-%EC%8A%AC%EB%A6%AC%ED%94%BC%EC%A7%80-%EC%99%84%EB%B2%BD-%EB%8C%80%EC%9D%91%EB%B2%95"
+      ]
+    },
+    "para_008": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_5_d33eaca3#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://www.haeseonhae.com/post/%EC%B2%B4%EA%B2%B0-%EC%98%A4%EB%A5%98%EB%8A%94-%EB%A9%88%EC%B6%B0%EC%95%BC-%ED%95%A0-%EC%8B%A0%ED%98%B8%EB%8B%A4"
+      ]
+    },
+    "para_009": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_orca_documentation_0dd0e353#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://docs.orca.so/ko/trade/slippage"
+      ]
+    },
+    "para_010": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_체결_지연_원인_총정리_슬리피지_서버렉_대응법___대여계좌정보___굿모닝해선___안전한_해외선물_대여업체_4a483d2e#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://goodmorninghs.com/rentalaccount/%EC%B2%B4%EA%B2%B0-%EC%A7%80%EC%97%B0-%EC%9B%90%EC%9D%B8-%EC%B4%9D%EC%A0%95%EB%A6%AC%EC%8A%AC%EB%A6%AC%ED%94%BC%EC%A7%80%EC%84%9C%EB%B2%84%EB%A0%89-%EB%8C%80%EC%9D%91%EB%B2%95/"
+      ]
     }
   }
 }
