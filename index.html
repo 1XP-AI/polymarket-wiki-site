@@ -235,7 +235,7 @@ function stripYamlValue(value) {
 }
 
 function splitFrontmatter(text) {
-  const match = String(text || '').match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?/);
+  const match = String(text || '').match(/^\uFEFF?---\r?\n([\s\S]*?)\r?\n---\r?\n?/);
   if (!match) return { meta: {}, sources: [], body: String(text || '') };
   const parsed = parseFrontmatterBlock(match[1]);
   return {
@@ -313,11 +313,10 @@ function formatMetaValue(key, value) {
 function renderFrontmatter(meta, sourceUrls) {
   const fields = [
     ['type', '분류'],
-    ['status', '상태'],
     ['as_of', '기준일'],
     ['last_updated', '수정일'],
     ['confidence', '신뢰도'],
-    ['evidence_coverage', '근거 커버리지'],
+    ['status', '상태'],
   ];
 
   const sourceCount = sourceUrls.length > 0
@@ -336,11 +335,15 @@ function renderFrontmatter(meta, sourceUrls) {
 
   const badge = sourceCount > 0
     ? `<span class="source-badge ok">📎 출처 ${sourceCount}건</span>`
-    : `<span class="source-badge warn">⚠️ 출처 없음</span>`;
+    : '';
+
+  const sourceSummary = badge
+    ? `<div class="source-summary">${badge}<span class="reference-note">출처는 문서 하단 참고문헌에서 확인할 수 있습니다.</span></div>`
+    : '';
 
   return (
     `<div class="frontmatter">` +
-    `<div class="source-summary">${badge}<span class="reference-note">출처는 문서 하단 참고문헌에서 확인할 수 있습니다.</span></div>` +
+    sourceSummary +
     `<div class="frontmatter-grid">${cards}</div>` +
     `</div>`
   );
@@ -418,7 +421,6 @@ function injectCitations(html, sidecar, referenceIndex) {
   const container = document.createElement('div');
   container.innerHTML = html;
   const paragraphMap = (sidecar && sidecar.paragraphs) || {};
-  const totalReferences = referenceIndex.size;
 
   container.querySelectorAll('.para-anchor').forEach(anchor => {
     const paraId = anchor.getAttribute('data-para-id') || '';
@@ -437,15 +439,6 @@ function injectCitations(html, sidecar, referenceIndex) {
         link.textContent = `[${num}]`;
         citation.appendChild(link);
       });
-      const target = anchor.closest('p, li, blockquote') || anchor.parentElement;
-      if (target) target.appendChild(citation);
-    } else if (totalReferences > 0) {
-      const citation = document.createElement('span');
-      citation.className = 'citation';
-      const link = document.createElement('a');
-      link.href = '#references';
-      link.textContent = totalReferences > 1 ? `[1–${totalReferences}]` : '[1]';
-      citation.appendChild(link);
       const target = anchor.closest('p, li, blockquote') || anchor.parentElement;
       if (target) target.appendChild(citation);
     }
