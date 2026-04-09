@@ -56,6 +56,55 @@
       "confidence": "medium",
       "conflict_flag": false,
       "source_urls": []
+    },
+    "para_008": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_phemex_2c468b36#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://phemex.com/ko/help-center/introduction-to-the-market-maker-incentive-program"
+      ]
+    },
+    "para_009": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_1_crypto_6b65c971#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://www.minsimnews.com/news/articleView.html?idxno=27702"
+      ]
+    },
+    "para_010": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_introduction_to_the_market_maker_incentive_program_66251621#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://www.bybit.com/en/help-center/article/Introduction-to-the-Market-Maker-Incentive-Program"
+      ]
+    },
+    "para_011": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_iotex_depin_scan_6959ecd2#chunk_001",
+        "src_20260409_iotex_depin_scan_6959ecd2#chunk_002"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://depinscan.io/ko/news/2026-03-03/iotex-launches-token-buyback-program-following-market-maker-incident"
+      ]
     }
   }
 }
