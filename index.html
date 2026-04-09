@@ -168,6 +168,7 @@ let SIMILAR = null;
 let docCache = {};
 let currentPath = null;
 let searchQuery = '';
+let LINK_INDEX = null;
 
 // marked.js 설정
 const renderer = new marked.Renderer();
@@ -186,6 +187,7 @@ async function init() {
   
   const res = await fetch('manifest.json');
   MANIFEST = await res.json();
+  LINK_INDEX = buildLinkIndex(MANIFEST);
   
   // 임베딩 유사도 데이터 로드 (없으면 무시)
   try {
@@ -200,6 +202,85 @@ async function init() {
     const path = decodeURIComponent(location.hash.slice(1));
     if (MANIFEST.find(m => m.path === path)) await showDoc(path);
   }
+}
+
+function normalizeLinkKey(text) {
+  return String(text || '')
+    .replace(/\.md$/i, '')
+    .replace(/^wiki\//i, '')
+    .replace(/[\/_-]+/g, ' ')
+    .replace(/[^A-Za-z0-9가-힣\s&]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .toLowerCase();
+}
+
+function tokenizeLink(text) {
+  const tokens = String(text || '').match(/[A-Za-z0-9가-힣]+/g);
+  return new Set((tokens || []).map(token => token.toLowerCase()));
+}
+
+function buildLinkIndex(items) {
+  const entries = items.map(item => {
+    const pathNoExt = item.path.replace(/\.md$/i, '');
+    const name = pathNoExt.split('/').pop() || pathNoExt;
+    const keys = new Set([
+      normalizeLinkKey(pathNoExt),
+      normalizeLinkKey(name),
+    ]);
+    const tokens = new Set([
+      ...tokenizeLink(pathNoExt),
+      ...tokenizeLink(name),
+    ]);
+    return { path: item.path, name, keys, tokens };
+  });
+  return { entries };
+}
+
+function resolveWikiTarget(target) {
+  if (!LINK_INDEX) return null;
+  const raw = String(target || '').trim();
+  if (!raw) return null;
+
+  const last = raw.split('/').pop() || raw;
+  const candidates = [
+    raw,
+    last,
+    raw.replace(/[._-]+/g, ' '),
+    last.replace(/[._-]+/g, ' '),
+  ];
+  const keys = new Set(candidates.map(normalizeLinkKey).filter(Boolean));
+
+  for (const entry of LINK_INDEX.entries) {
+    for (const key of keys) {
+      if (entry.keys.has(key)) return entry;
+    }
+  }
+
+  const queryTokens = new Set();
+  for (const candidate of candidates) {
+    for (const token of tokenizeLink(candidate)) queryTokens.add(token);
+  }
+  if (queryTokens.size === 0) return null;
+
+  let best = null;
+  let bestScore = 0;
+  let bestOverlap = 0;
+  for (const entry of LINK_INDEX.entries) {
+    let overlap = 0;
+    for (const token of queryTokens) {
+      if (entry.tokens.has(token)) overlap += 1;
+    }
+    if (!overlap) continue;
+    const score = overlap / queryTokens.size;
+    if (score > bestScore || (score === bestScore && overlap > bestOverlap)) {
+      best = entry;
+      bestScore = score;
+      bestOverlap = overlap;
+    }
+  }
+  if (best && bestScore >= 0.5 && bestOverlap >= 2) return best;
+  return null;
 }
 
 async function fetchDoc(path) {
@@ -299,7 +380,12 @@ async function showDoc(path) {
       ? `<span style="display:inline-block;background:#2563eb22;color:#2563eb;border-radius:12px;padding:2px 10px;font-size:0.75rem;font-weight:600;margin-left:8px">📎 출처 ${sourceCount}건</span>`
       : `<span style="display:inline-block;background:#ef444422;color:#ef4444;border-radius:12px;padding:2px 10px;font-size:0.75rem;font-weight:600;margin-left:8px">⚠️ 출처 없음</span>`;
     
-    const simpleEntries = entries.filter(l => !l.match(/^\s+-/) && !l.match(/^sources:/));
+    const hiddenFrontmatterKeys = new Set(['id', 'owners', 'related_pages', 'sources']);
+    const simpleEntries = entries.filter(l => {
+      if (l.match(/^\s+-/) || l.match(/^sources:/)) return false;
+      const key = (l.split(':', 1)[0] || '').trim();
+      return !hiddenFrontmatterKeys.has(key);
+    });
     frontmatter = '<dl class="frontmatter">' +
       simpleEntries.map(l => {
         const [k, ...v] = l.split(':');
@@ -317,15 +403,13 @@ async function showDoc(path) {
     '</div>';
   
   // Pre-process wikilinks before marked
-  content = content.replace(/\[\[([^\]]+)\]\]/g, (_, target) => {
-    const entry = MANIFEST.find(m => {
-      const name = m.path.split('/').pop().replace('.md','');
-      return name === target;
-    });
+  content = content.replace(/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g, (_, target, alias) => {
+    const entry = resolveWikiTarget(target);
+    const label = alias || (entry ? entry.name : target);
     if (entry) {
-      return `<span class="wikilink" onclick="showDoc('${entry.path.replace(/'/g, "\\'")}')">${target}</span>`;
+      return `<span class="wikilink" onclick="showDoc('${entry.path.replace(/'/g, "\\'")}')">${label}</span>`;
     }
-    return `<span class="wikilink broken">${target}</span>`;
+    return `<span class="wikilink broken">${label}</span>`;
   });
   
   const html = marked.parse(content);
