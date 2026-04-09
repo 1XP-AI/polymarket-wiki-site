@@ -1,13 +1,7 @@
 {
-  "total_docs": 68,
+  "total_docs": 67,
   "search_engine": "ir (hybrid: BM25 + vector + rerank)",
   "duplicates": [
-    {
-      "a": "개념/Copytrade.md",
-      "b": "전략/Copytrade/Copytrade-리더보드-자동화.md",
-      "similarity": 0.8044,
-      "action": "merge"
-    },
     {
       "a": "전략/Copytrade/리스크-관리.md",
       "b": "전략/리스크-관리-심화.md",
@@ -18,20 +12,26 @@
   "related": [
     {
       "a": "개념/Copytrade.md",
-      "b": "전략/Copytrade/매수-타이밍-심화.md",
-      "similarity": 0.75,
+      "b": "전략/Copytrade/자동화-플로우.md",
+      "similarity": 0.7516,
       "action": "link"
     },
     {
       "a": "개념/Copytrade.md",
-      "b": "전략/Copytrade/자동화-플로우.md",
-      "similarity": 0.7345,
+      "b": "전략/Copytrade/매수-타이밍-심화.md",
+      "similarity": 0.7511,
       "action": "link"
     },
     {
       "a": "개념/Copytrade.md",
       "b": "전략/Copytrade/리밸런싱.md",
-      "similarity": 0.7313,
+      "similarity": 0.7329,
+      "action": "link"
+    },
+    {
+      "a": "개념/Copytrade.md",
+      "b": "전략/Copytrade/Copytrade-성능-모니터링.md",
+      "similarity": 0.7252,
       "action": "link"
     },
     {
@@ -41,15 +41,9 @@
       "action": "link"
     },
     {
-      "a": "전략/Copytrade/Copytrade-리더보드-자동화.md",
-      "b": "전략/Copytrade/리더보드-심층-분석.md",
-      "similarity": 0.7169,
-      "action": "link"
-    },
-    {
       "a": "전략/Copytrade/리스크-모니터링.md",
       "b": "전략/Copytrade/리스크-시나리오.md",
-      "similarity": 0.7149,
+      "similarity": 0.7153,
       "action": "link"
     },
     {
@@ -72,8 +66,8 @@
     },
     {
       "a": "개념/Copytrade.md",
-      "b": "전략/Copytrade/Copytrade-성능-모니터링.md",
-      "similarity": 0.7106,
+      "b": "트레이더/리더보드-분석.md",
+      "similarity": 0.7112,
       "action": "link"
     },
     {
@@ -83,69 +77,51 @@
       "action": "link"
     },
     {
-      "a": "전략/Copytrade/Copytrade-리더보드-자동화.md",
-      "b": "전략/Copytrade/추종-실행-속도-최적화.md",
-      "similarity": 0.7039,
-      "action": "link"
-    },
-    {
       "a": "마켓/법률/사건.md",
       "b": "마켓/스포츠.md",
-      "similarity": 0.7037,
+      "similarity": 0.7032,
       "action": "link"
     },
     {
       "a": "마켓/법률/사건.md",
       "b": "마켓/크립토.md",
-      "similarity": 0.6998,
+      "similarity": 0.6993,
       "action": "link"
     },
     {
       "a": "마켓/법률/사건.md",
       "b": "마켓/정치.md",
-      "similarity": 0.6954,
-      "action": "link"
-    },
-    {
-      "a": "전략/Copytrade/Copytrade-리더보드-자동화.md",
-      "b": "전략/Copytrade/자동화-플로우.md",
-      "similarity": 0.6936,
+      "similarity": 0.6948,
       "action": "link"
     },
     {
       "a": "트레이더/리더보드-분석.md",
-      "b": "전략/Copytrade/Copytrade-리더보드-자동화.md",
-      "similarity": 0.6935,
+      "b": "전략/Copytrade/알고리즘-선별-체크리스트.md",
+      "similarity": 0.6948,
       "action": "link"
     },
     {
       "a": "전략/Copytrade/리밸런싱.md",
       "b": "전략/Copytrade/포지션-사이즈-전략.md",
-      "similarity": 0.6903,
+      "similarity": 0.6896,
       "action": "link"
     },
     {
       "a": "데이터/Polymarket-GitHub-리포트.md",
       "b": "개념/프로그램-개요.md",
-      "similarity": 0.6892,
-      "action": "link"
-    },
-    {
-      "a": "전략/Link-사이클-노트-2026-04-05.md",
-      "b": "log.md",
-      "similarity": 0.6863,
+      "similarity": 0.6888,
       "action": "link"
     },
     {
       "a": "전략/Copytrade/리스크-모니터링.md",
       "b": "전략/리스크-관리-심화.md",
-      "similarity": 0.686,
+      "similarity": 0.6864,
       "action": "link"
     },
     {
-      "a": "데이터/Polymarket-GitHub-리포트.md",
-      "b": "기술/온체인-컨트랙트.md",
-      "similarity": 0.6802,
+      "a": "전략/Link-사이클-노트-2026-04-05.md",
+      "b": "log.md",
+      "similarity": 0.6861,
       "action": "link"
     }
   ]
