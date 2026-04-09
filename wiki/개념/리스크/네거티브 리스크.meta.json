@@ -64,6 +64,30 @@
       "confidence": "medium",
       "conflict_flag": false,
       "source_urls": []
+    },
+    "para_009": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_2024_q_a_23818239#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://korean.shanghai.gov.cn/ko-PolicyInsights/20240920/21fc4f772b5d470fa71d3d30c4b4aa10.html"
+      ]
+    },
+    "para_010": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_cybersecurity_framework_nist_17c14f21#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://www.nist.gov/cyberframework"
+      ]
     }
   }
 }
