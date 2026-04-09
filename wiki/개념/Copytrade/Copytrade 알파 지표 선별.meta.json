@@ -56,6 +56,62 @@
       "confidence": "medium",
       "conflict_flag": false,
       "source_urls": []
+    },
+    "para_008": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_알파스퀘어_공식_블로그___네이버_블로그_97a27765#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://blog.naver.com/anthouse28/222910339786"
+      ]
+    },
+    "para_009": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_tilnote_6074a06f#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://tilnote.io/pages/689956d2df13c4ef330970a3"
+      ]
+    },
+    "para_010": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_알파스퀘어_기술적지표_41bc0b96#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://alphasquare.oopy.io/board/technical-indicator"
+      ]
+    },
+    "para_011": {
+      "evidence_type": "direct",
+      "source_refs": [],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": []
+    },
+    "para_012": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_알파스퀘어___올인원_스마트_트레이딩_플랫폼_bdcf7987#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://alphasquare.co.kr/home/market-summary?code=kospi"
+      ]
     }
   }
 }

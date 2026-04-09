@@ -8,18 +8,17 @@ last_updated: '2026-04-09T15:09:33Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
-source_count: 5
+source_count: 4
 evidence_coverage: 1.0
 confidence: medium
 related_pages: []
 tags:
 - concept
 sources:
-- url: https://polymarket.com/leaderboard?period=monthly
-- url: https://polymarketanalytics.com/traders
-- url: https://data.polymarket.com/leaderboard
-- url: https://gamma-api.polymarket.com/markets
-- url: https://docs.polymarket.com/api
+- url: https://tilnote.io/pages/689956d2df13c4ef330970a3
+- url: https://alphasquare.co.kr/home/market-summary?code=kospi
+- url: https://blog.naver.com/anthouse28/222910339786
+- url: https://alphasquare.oopy.io/board/technical-indicator
 ---
 # Copytrade 알파 지표 선별
 
@@ -58,3 +57,98 @@ sources:
 2. 베이스라인 수립
    - 랜덤 추종(random-follow) 및 시장 베타(시장 평균 성과) 대비 초과수익 계산
    - 샤프비율, 승률, 평균 손익 등을 베이스라인으로 설정
+
+## 세부 내용
+
+<!-- para: para_008 -->
+알파스퀘어 공식 블로그 : 네이버 블로그
+
+<!-- para: para_009 -->
+옵션 트레이딩 알파 발굴의 모든 것: 실전과 데이터, 그리고 자동화 - TILNOTE
+메인 콘텐츠로 건너뛰기
+NOTE
+CLIP
+NEWS
+CARD
+knarchive의 노트 검색
+Ctrl/⌘ K
+KR
+▼
+로그인
+틸노트로 만들기
+MY SPACE
+K
+knarchive
+링크 복사
+공개 노트
+옵션 트레이딩 알파 발굴의 모든 것: 실전과 데이터, 그리고 자동화
+2025-08-11
+조회수
+236
+약
+4
+분
+좋아요
+요약
+복사
+금융 시장에서 ‘알파’란 단순한 운이 아닌, 데이터와 전략을 통해 지속적으로 수익을 창출할 수 있는 특별한 우위를 뜻합니다. 시스템 트레이딩과 옵션을 활용한 알파 추출은 최근 인공지능, 대규모 데이터 분석, 자동화 툴의 발전 덕분에 더욱 손쉬워졌습니다.
+
+<!-- para: para_010 -->
+알파스퀘어 기술적지표
+튜토리얼
+이벤트
+콘텐츠
+채용안내
+기타
+서비스 소개
+PC
+모바일
+FAQ
+이벤트 전체보기
+기술적분석
+기본적분석
+차트패턴
+주식 테마 정보
+채용 중인 직무
+서비스 소개
+팀 소개
+근무환경
+예정 업데이트
+신규 업데이트
+알파프라임 소식
+Share
+튜토리얼
+서비스 소개
+PC
+모바일
+FAQ
+이벤트
+이벤트 전체보기
+콘텐츠
+기술적분석
+기본적분석
+차트패턴
+주식 테마 정보
+채용안내
+채용 중인 직무
+서비스 소개
+팀 소개
+근무환경
+기타
+예정 업데이트
+신규 업데이트
+알파프라임 소식
+알파스퀘어 기술적지표
+Gallery
+Search
+알파스퀘어 기술적지표
+1. 개요
+볼린저 밴드는 주가의 변동을 분석하기 위해, 중심이 되는 이동평균선을 기준으로 일정한 표준편차 범위만큼  설정한 그래프를 말한다.
+
+<!-- para: para_011 -->
+web page
+
+<!-- para: para_012 -->
+알파스퀘어 | 올인원 스마트 트레이딩 플랫폼
+We're sorry but alphasquare-frontend doesn't work properly without JavaScript
+        enabled. Please enable it to continue.
