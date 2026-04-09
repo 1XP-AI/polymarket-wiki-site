@@ -4,16 +4,50 @@ title: Polymarket 마켓 분석
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:10Z'
-last_updated: '2026-04-09T15:09:33Z'
+last_updated: '2026-04-09T16:13:32Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
-source_count: 1
+source_count: 16
 evidence_coverage: 1.0
 confidence: medium
-related_pages: []
+related_pages:
+- legacy_wiki_253745
 tags:
 - concept
+sources:
+- url: https://www.polymarket.com
+  raw: raw/fetched/2026-04-05-polymarket-markets.md
+- url: https://gamma-api.polymarket.com/events
+  raw: raw/fetched/2026-04-05-polymarket-events.md
+- url: https://gamma-api.polymarket.com/markets
+  raw: raw/fetched/2026-04-07-negative-risk-and-api.md
+- url: https://docs.polymarket.com/api
+  raw: raw/fetched/2026-04-06-polymarket-docs.md
+- url: https://polymarket.com/
+  raw: raw/fetched/2026-04-05-polymarket-home.md
+- url: https://polymarket.com/faq
+  raw: raw/fetched/2026-04-05-polymarket-faq.md
+- url: https://gamma-api.polymarket.com/leaderboard
+  raw: raw/fetched/2026-04-05-polymarket-leaderboard-api.md
+- url: https://polymarket.com
+  raw: raw/fetched/2026-04-06-polymarket-home.md
+- url: https://gamma-api.polymarket.com/markets?limit=50
+  raw: raw/fetched/2026-04-05-polymarket-markets.md
+- url: https://blog.polymarket.com
+  raw: raw/sources.md
+- url: https://polycopy.app/polymarket-trading-strategies
+  raw: raw/fetched/2026-04-07-leaderboard-and-risk.md
+- url: https://docs.polymarket.com
+  raw: raw/01-Polymarket-개요.md
+- url: https://gamma-api.polymarket.com/events?limit=5&active=true
+  raw: raw/fetched/2026-04-07-leaderboard-and-risk.md
+- url: https://github.com/agc-desarrollo/polymarket-trading-bot
+  raw: raw/fetched/2026-04-06-copytrade-sources.md
+- url: https://github.com/Fabianhvandijk/polymarket-copytrade
+  raw: raw/fetched/2026-04-07-leaderboard-and-risk.md
+- url: https://vitalik.eth.limo
+  raw: raw/sources.md
 ---
 # Polymarket 마켓 분석
 
@@ -52,7 +86,7 @@ Polymarket의 예측 시장은 **이벤트(Event)** 와 **마켓(Market)** 의 �
 <!-- para: para_007 -->
 - BTC, ETH 가격 예측, 특정 날짜 기준 가격
 - 예: "BTC가 2026년 말까지 $100k 넘을까?"
-- [[마켓/크립토]] 참고: BTC $1M 마켓이 $3.8M+ 거래량으로 Polymarket 최대 크립토 마켓
+- [[크립토 예측 마켓]] 참고: BTC $1M 마켓이 $3.8M+ 거래량으로 Polymarket 최대 크립토 마켓
 
 <!-- para: para_008 -->
 - **이벤트**: 하나의 질문/주제 (예: "2024년 미국 대선 승자는?")

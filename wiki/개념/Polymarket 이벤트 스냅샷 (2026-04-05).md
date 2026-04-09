@@ -4,18 +4,23 @@ title: Polymarket 이벤트 스냅샷 (2026-04-05)
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:09Z'
-last_updated: '2026-04-09T15:09:33Z'
+last_updated: '2026-04-09T16:13:32Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
-source_count: 1
+source_count: 2
 evidence_coverage: 1.0
 confidence: medium
 related_pages:
+- legacy_raw_05_badd78
 - legacy_raw_fetched_2026_04_05_polymarket_markets_a295cb
 - legacy_wiki_copytrade_e7d623
+- legacy_wiki_polymarket_cd5a08
 tags:
 - concept
+sources:
+- url: https://gamma-api.polymarket.com/markets
+- url: https://docs.polymarket.com/api
 ---
 # Polymarket 이벤트 스냅샷 (2026-04-05)
 
@@ -36,5 +41,5 @@ tags:
 원본: raw/fetched/2026-04-05-polymarket-events.md — API 엔드포인트: https://gamma-api.polymarket.com/events?limit=10&active=true
 
 <!-- para: para_005 -->
-- [[개념/Polymarket-개요]] — 플랫폼·이벤트 개념 설명
-- [[트레이더/리더보드/데이터]] — 이벤트 기반 트레이더 행동 분석 연결
+- [[Polymarket 개요]] — 플랫폼·이벤트 개념 설명
+- [[리더보드 & 트레이더 데이터]] — 이벤트 기반 트레이더 행동 분석 연결

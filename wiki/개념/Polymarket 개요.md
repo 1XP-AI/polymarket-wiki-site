@@ -4,17 +4,55 @@ title: Polymarket 개요
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:09Z'
-last_updated: '2026-04-09T15:11:57Z'
+last_updated: '2026-04-09T16:13:32Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
-source_count: 5
+source_count: 16
 evidence_coverage: 1.0
 confidence: medium
 related_pages:
+- legacy_raw_00_index_ec3366
 - legacy_wiki_clob_064e27
+- legacy_wiki_copytrade_698574
+- legacy_wiki_index_925404
+- legacy_wiki_index_aa489a
+- legacy_wiki_polymarket_2026_04_05_d5da53
 tags:
 - concept
+sources:
+- url: https://www.polymarket.com
+  raw: raw/fetched/2026-04-05-polymarket-markets.md
+- url: https://gamma-api.polymarket.com/events
+  raw: raw/fetched/2026-04-05-polymarket-events.md
+- url: https://gamma-api.polymarket.com/markets
+  raw: raw/fetched/2026-04-07-negative-risk-and-api.md
+- url: https://docs.polymarket.com/api
+  raw: raw/fetched/2026-04-06-polymarket-docs.md
+- url: https://polymarket.com/
+  raw: raw/fetched/2026-04-05-polymarket-home.md
+- url: https://polymarket.com/faq
+  raw: raw/fetched/2026-04-05-polymarket-faq.md
+- url: https://gamma-api.polymarket.com/leaderboard
+  raw: raw/fetched/2026-04-05-polymarket-leaderboard-api.md
+- url: https://polymarket.com
+  raw: raw/fetched/2026-04-06-polymarket-home.md
+- url: https://gamma-api.polymarket.com/markets?limit=50
+  raw: raw/fetched/2026-04-05-polymarket-markets.md
+- url: https://blog.polymarket.com
+  raw: raw/sources.md
+- url: https://polycopy.app/polymarket-trading-strategies
+  raw: raw/fetched/2026-04-07-leaderboard-and-risk.md
+- url: https://docs.polymarket.com
+  raw: raw/01-Polymarket-개요.md
+- url: https://gamma-api.polymarket.com/events?limit=5&active=true
+  raw: raw/fetched/2026-04-07-leaderboard-and-risk.md
+- url: https://github.com/agc-desarrollo/polymarket-trading-bot
+  raw: raw/fetched/2026-04-06-copytrade-sources.md
+- url: https://github.com/Fabianhvandijk/polymarket-copytrade
+  raw: raw/fetched/2026-04-07-leaderboard-and-risk.md
+- url: https://vitalik.eth.limo
+  raw: raw/sources.md
 ---
 # Polymarket 개요
 
@@ -66,7 +104,7 @@ Gamma API 응답에서 확인되는 주요 필드:
 <!-- para: para_007 -->
 - 가격 범위: **$0.00 ~ $1.00** (확률을 나타냄)
 - $0.60 = 60% 확률이라는 시장 합의
-- **[[개념/CLOB]]** (Central Limit Order Book): P2P 매칭 방식
+- **[[CLOB]]** (Central Limit Order Book): P2P 매칭 방식
 - Bid(매수)와 Ask(매도)가 호가로 쌓임
 - **Spread** = Best Ask - Best Bid (호간 격차)
 

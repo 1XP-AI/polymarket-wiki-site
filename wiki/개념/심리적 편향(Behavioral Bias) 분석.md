@@ -4,17 +4,25 @@ title: 심리적 편향(Behavioral Bias) 분석
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:11Z'
-last_updated: '2026-04-09T15:09:33Z'
+last_updated: '2026-04-09T16:13:32Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
-source_count: 1
+source_count: 6
 evidence_coverage: 1.0
 confidence: medium
 related_pages:
 - legacy_wiki_copytrade_copytrade_5e34e9
+- legacy_wiki_copytrade_eff435
 tags:
 - concept
+sources:
+- url: https://polymarket.com/leaderboard?period=monthly
+- url: https://polymarketanalytics.com/traders
+- url: https://data.polymarket.com/leaderboard
+- url: https://gamma-api.polymarket.com/markets
+- url: https://docs.polymarket.com/api
+- url: https://www.investopedia.com/terms/b/behavioral-bias.asp
 ---
 # 심리적 편향(Behavioral Bias) 분석
 
@@ -38,10 +46,10 @@ tags:
 <!-- para: para_006 -->
 - 예시 지표: 평균 포지션 지속시간, 포지션 사이즈 분포, 최근 10건의 승률 편차, 평균 손절 시점(설정 대비 실제)
 - 활용 예: Theo 트레이더 프로필과 교차분석하여 Theo의 포지션 지속시간이 짧고 빠른 스캘핑 성향이면, 레버리지 노출을 줄이는 규칙 적용
-- 편향 점수 시스템: 각 편향 유형에 0~10 점수를 부여. 총 편향 점수 25+인 트레이더는 팔로우 제한 또는 사이징 50% 감액 적용. [[전략/Copytrade/팔로우-스코어링-모델]]과 연동 가능.
+- 편향 점수 시스템: 각 편향 유형에 0~10 점수를 부여. 총 편향 점수 25+인 트레이더는 팔로우 제한 또는 사이징 50% 감액 적용. [[Copytrade 데이터 수집 가이드]]과 연동 가능.
 
 <!-- para: para_007 -->
-- [[전략/Copytrade/자동화-플로우]] — 전략 전반과의 연계
-- [[전략/Copytrade/팔로우-선별]] — 팔로우 대상 선정 기준
-- [[전략/Copytrade/리스크-관리]] — 편향 기반 리스크 완화 기법
-- [[전략/Copytrade/팔로우-스코어링-모델]] — 편향 점수를 통합한 트레이더 평가 모델
+- [[Copytrade 데이터 수집 가이드]] — 전략 전반과의 연계
+- [[Copytrade 데이터 수집 가이드]] — 팔로우 대상 선정 기준
+- [[Copytrade 데이터 수집 가이드]] — 편향 기반 리스크 완화 기법
+- [[Copytrade 데이터 수집 가이드]] — 편향 점수를 통합한 트레이더 평가 모델

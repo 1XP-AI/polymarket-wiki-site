@@ -8,7 +8,7 @@ last_updated: '2026-04-09T15:11:57Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
-source_count: 2
+source_count: 3
 evidence_coverage: 1.0
 confidence: medium
 related_pages:
@@ -16,6 +16,13 @@ related_pages:
 - legacy_wiki_copytrade_6a6853
 tags:
 - concept
+sources:
+- url: https://gamma-api.polymarket.com/events?limit=20&active=true
+  raw: raw/fetched/2026-04-07-leaderboard-and-risk.md
+- url: https://docs.polymarket.com
+  raw: raw/06-WebSocket-실시간데이터.md
+- url: https://docs.polymarket.com/websocket
+  raw: raw/fetched/2026-04-07-websocket-details.md
 ---
 # WebSocket & 실시간 데이터
 

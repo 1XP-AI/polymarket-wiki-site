@@ -4,26 +4,47 @@ title: CLOB
 type: comparison
 status: verified
 created_at: '2026-04-09T14:10:09Z'
-last_updated: '2026-04-09T15:09:33Z'
+last_updated: '2026-04-09T16:13:32Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
-source_count: 1
+source_count: 9
 evidence_coverage: 1.0
 confidence: medium
 related_pages:
+- legacy_raw_05_badd78
 - legacy_raw_fetched_2026_04_05_polymarket_markets_a295cb
 - legacy_wiki_394666
+- legacy_wiki_923782
 - legacy_wiki_96e938
 - legacy_wiki_api_polymarket_api_62ef40
 - legacy_wiki_copytrade_698574
 - legacy_wiki_copytrade_6a6853
 - legacy_wiki_copytrade_copytrade_5e34e9
 - legacy_wiki_copytrade_e7d623
+- legacy_wiki_copytrade_eff435
 - legacy_wiki_index_925404
 - legacy_wiki_polymarket_cd5a08
 tags:
 - comparison
+sources:
+- url: https://gamma-api.polymarket.com/markets?limit=10
+- url: https://polymarket-bot.co/polymarket-api-tutorial
+  raw: raw/fetched/2026-04-07-negative-risk-and-api.md
+- url: https://docs.polymarket.com/api-reference/clients-sdks
+  raw: raw/fetched/2026-04-07-negative-risk-and-api.md
+- url: https://polyblock.trade/info/tools/polymarket-api-guide
+  raw: raw/fetched/2026-04-07-negative-risk-and-api.md
+- url: https://rekko.ai/docs/guides/polymarket-api-guide
+  raw: raw/fetched/2026-04-07-negative-risk-and-api.md
+- url: https://pm.wiki/learn/polymarket-api
+  raw: raw/fetched/2026-04-07-negative-risk-and-api.md
+- url: https://www.alphascope.app/blog/polymarket-bot-tutorial
+  raw: raw/fetched/2026-04-07-negative-risk-and-api.md
+- url: https://agentbets.ai/guides/polymarket-api-guide/
+  raw: raw/fetched/2026-04-07-negative-risk-and-api.md
+- url: https://deepwiki.com/polymarket-arbitrage-bot/polymarket-arbitrage-bot/2.2-polymarket-clob-api-client
+  raw: raw/fetched/2026-04-07-negative-risk-and-api.md
 ---
 # CLOB
 
@@ -50,10 +71,10 @@ CLOB는 주문이 가격-수량 형태로 쌓이고, 매칭 엔진이 호가를 
 - 진입 규모 제한 및 분할 주문: 원 트레이더 주문의 일정 비율로만 진입하여 슬리피지 노출을 줄인다. - 사전 유동성 검사: 거래 전 호가 깊이와 최근 체결량을 검사해 예상 슬리피지를 추정한다. - 리스크 모니터링: 실행 후 실제 체결가와 기대가의 편차를 로깅하여 복제 전략의 성능을 지속적으로 보정한다.
 
 <!-- para: para_007 -->
-- [[개념/Polymarket]] — Polymarket의 전체 구조와 CLOB의 위치 설명
-- [[전략/Copytrade/자동화-플로우]] — CLOB 특성이 Copytrade 실행리스크에 미치는 영향
-- [[기술/API/Polymarket-API-레퍼런스]] — CLOB 읽기·모니터링을 위한 엔드포인트 참조
-- [[트레이더/리더보드/데이터]] — 리더보드 트레이더의 대규모 주문이 오더북에 미치는 사례 분석
-- [[개념/Copytrade]] — CLOB 기반 실시간 포지션 복제
-- [[개념/슬리피지]] — 슬리피지 정의와 완화 전략
-- [[기술/API/Polymarket-API-레퍼런스]] — Polymarket API와 리더보드 연동 예제
+- [[Polymarket 개요]] — Polymarket의 전체 구조와 CLOB의 위치 설명
+- [[Copytrade 데이터 수집 가이드]] — CLOB 특성이 Copytrade 실행리스크에 미치는 영향
+- [[Polymarket API 레퍼런스]] — CLOB 읽기·모니터링을 위한 엔드포인트 참조
+- [[리더보드 & 트레이더 데이터]] — 리더보드 트레이더의 대규모 주문이 오더북에 미치는 사례 분석
+- [[Copytrade 데이터 수집 가이드]] — CLOB 기반 실시간 포지션 복제
+- [[슬리피지(Slippage)]] — 슬리피지 정의와 완화 전략
+- [[Polymarket API 레퍼런스]] — Polymarket API와 리더보드 연동 예제

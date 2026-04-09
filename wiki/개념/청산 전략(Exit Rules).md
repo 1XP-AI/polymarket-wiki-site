@@ -4,17 +4,24 @@ title: 청산 전략(Exit Rules)
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:11Z'
-last_updated: '2026-04-09T15:09:33Z'
+last_updated: '2026-04-09T16:13:32Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
-source_count: 1
+source_count: 5
 evidence_coverage: 1.0
 confidence: medium
 related_pages:
 - legacy_wiki_copytrade_copytrade_5e34e9
+- legacy_wiki_copytrade_eff435
 tags:
 - concept
+sources:
+- url: https://www.polymarket.com
+- url: https://gamma-api.polymarket.com/markets
+- url: https://docs.polymarket.com/api
+- url: https://www.quantstart.com/articles/market-impact-slippage/
+- url: https://www.investopedia.com/terms/h/hedge.asp
 ---
 # 청산 전략(Exit Rules)
 
@@ -39,6 +46,6 @@ Copytrade는 타인의 포지션을 복제하는 특성상 진입보다 청산(E
 - 신규 트레이더 A를 1:100 비율로 복제. 진입 후 -7% 하락 발생 → 자동으로 50% 청산(지정가), 이후 추가 하락 시 전체 청산. 트레이더 A의 30일 누적손실이 -12%로 떨어지면 추종 중단 규칙 발동.
 
 <!-- para: para_007 -->
-- [[전략/Copytrade/포지션-사이즈-전략]] — 포지션 크기 및 청산 타이밍의 연계
-- [[전략/Copytrade/리스크-관리]] — 포트폴리오 레벨 리스크 한도 설정
-- [[전략/Copytrade/추종-중단-규칙]] — 트레이더 성과 기반 중단 규칙
+- [[Copytrade 데이터 수집 가이드]] — 포지션 크기 및 청산 타이밍의 연계
+- [[Copytrade 데이터 수집 가이드]] — 포트폴리오 레벨 리스크 한도 설정
+- [[Copytrade 데이터 수집 가이드]] — 트레이더 성과 기반 중단 규칙

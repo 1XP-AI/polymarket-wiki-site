@@ -8,15 +8,33 @@ last_updated: '2026-04-09T15:11:57Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
-source_count: 2
+source_count: 9
 evidence_coverage: 1.0
 confidence: medium
 related_pages:
+- legacy_raw_00_index_ec3366
 - legacy_wiki_clob_064e27
 - legacy_wiki_copytrade_0c3a80
 - legacy_wiki_copytrade_698574
 tags:
 - concept
+sources:
+- url: https://gamma-api.polymarket.com/markets?limit=50
+  raw: raw/fetched/2026-04-07-leaderboard-and-risk.md
+- url: https://www.polyverify.com/leaderboard
+  raw: raw/fetched/2026-04-07-leaderboard-and-risk.md
+- url: https://polymarket-bot.co/polymarket-api-tutorial
+  raw: raw/fetched/2026-04-07-negative-risk-and-api.md
+- url: https://docs.polymarket.com/api-reference/clients-sdks
+  raw: raw/fetched/2026-04-07-negative-risk-and-api.md
+- url: https://www.alphascope.app/blog/polymarket-bot-tutorial
+  raw: raw/fetched/2026-04-07-negative-risk-and-api.md
+- url: https://www.predictengine.ai/blog/polymarket-api-tutorial
+  raw: raw/fetched/2026-04-07-negative-risk-and-api.md
+- url: https://github.com/sambergo/quick-polymarket-api-setup-tutorial
+  raw: raw/fetched/2026-04-07-negative-risk-and-api.md
+- url: https://gamma-api.polymarket.com/markets?limit=10
+- url: https://clob.polymarket.com/rewards/leaderboard
 ---
 # Polymarket API 레퍼런스
 
