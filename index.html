@@ -276,6 +276,33 @@ function parseFrontmatterBlock(text) {
   return { meta, sources: [...new Set(sources)] };
 }
 
+function protectCodeSegments(markdown) {
+  const placeholders = [];
+  let protectedMarkdown = String(markdown || '');
+
+  protectedMarkdown = protectedMarkdown.replace(/```[\s\S]*?```/g, match => {
+    const token = `@@CODE_SEGMENT_${placeholders.length}@@`;
+    placeholders.push(match);
+    return token;
+  });
+
+  protectedMarkdown = protectedMarkdown.replace(/`[^`\n]+`/g, match => {
+    const token = `@@CODE_SEGMENT_${placeholders.length}@@`;
+    placeholders.push(match);
+    return token;
+  });
+
+  return { markdown: protectedMarkdown, placeholders };
+}
+
+function restoreCodeSegments(markdown, placeholders) {
+  let restored = String(markdown || '');
+  placeholders.forEach((value, index) => {
+    restored = restored.replaceAll(`@@CODE_SEGMENT_${index}@@`, value);
+  });
+  return restored;
+}
+
 function formatMetaValue(key, value) {
   const typeMap = {
     concept: '개념',
@@ -606,7 +633,9 @@ async function showDoc(path) {
     parts.map((p,i) => i < parts.length-1 ? `<span>${p}</span>` : `<strong>${p}</strong>`).join(' / ') +
     '</div>';
   
-  // Pre-process wikilinks before marked
+  // Pre-process wikilinks before marked, but do not rewrite code spans/blocks.
+  const protectedContent = protectCodeSegments(content);
+  content = protectedContent.markdown;
   content = content.replace(/<!--\s*para:\s*([a-zA-Z0-9_:-]+)\s*-->/g, '<span class="para-anchor" data-para-id="$1"></span>');
   content = content.replace(/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g, (_, target, alias) => {
     const entry = resolveWikiTarget(target);
@@ -616,6 +645,7 @@ async function showDoc(path) {
     }
     return `<span class="wikilink broken">${label}</span>`;
   });
+  content = restoreCodeSegments(content, protectedContent.placeholders);
   
   const referenceIndex = buildReferenceIndex(sourceUrls);
   const html = injectCitations(marked.parse(content), sidecar, referenceIndex);

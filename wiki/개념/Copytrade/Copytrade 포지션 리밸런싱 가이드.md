@@ -94,4 +94,4 @@ place_order(size=target_size)
 운용 단계에서는 Polymarket API로 프로파일과 포지션을 조회하고, 주문장 깊이를 확인한 뒤 진입 시점을 조정해야 한다. Rate limit을 고려해 배치 주문을 쓰고, 유동성 얕은 마켓에서는 리밸런싱 빈도 자체를 낮추는 편이 안전하다.
 
 <!-- para: para_012 -->
-- 관련 문서: `[[Copytrade 자동화 플로우]]`, `[[포지션 사이즈 전략]]`, `[[Copytrade 리스크 관리]]`, `[[Copytrade]]`, `[[팔로우 선별]]`
+- 관련 문서: [[Copytrade 자동화 플로우]], [[포지션 사이즈 전략]], [[Copytrade 리스크 관리]], [[Copytrade]], [[팔로우 선별]]
