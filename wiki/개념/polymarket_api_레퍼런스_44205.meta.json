@@ -99,6 +99,23 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false
+    },
+    "para_012": {
+      "evidence_type": "synthesized",
+      "source_refs": [
+        "src_raw_02_api_md_fbe99e01#chunk_001",
+        "src_raw_02_api_md_fbe99e01#chunk_002",
+        "src_raw_02_api_md_fbe99e01#chunk_003",
+        "src_raw_02_api_md_fbe99e01#chunk_004",
+        "src_raw_02_api_md_fbe99e01#chunk_005",
+        "src_raw_02_api_md_fbe99e01#chunk_006",
+        "src_raw_02_api_md_fbe99e01#chunk_007",
+        "src_raw_02_api_md_fbe99e01#chunk_008",
+        "src_raw_02_api_md_fbe99e01#chunk_009"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false
     }
   }
 }

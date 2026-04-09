@@ -22,7 +22,6 @@
 - [Link 사이클 노트 (2026-04-05)](개념/link_사이클_노트__2026_04_05_7787f.md)
 - [Negative-Risk](개념/negative_risk_e778d.md)
 - [Polymarket API 레퍼런스](개념/polymarket_api_레퍼런스_44205.md)
-- [Polymarket API 레퍼런스](개념/polymarket_api_레퍼런스_dc73d.md)
 - [Polymarket Copytrade 위키 — Raw 자료 인덱스](개념/polymarket_copytrade_위키___raw_자료_인덱스_3ff76.md)
 - [Polymarket Copytrade 전략 분석](개념/polymarket_copytrade_전략_분석_ca152.md)
 - [Polymarket GitHub 리포트](개념/polymarket_github_리포트_f6877.md)

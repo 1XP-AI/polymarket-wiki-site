@@ -4,14 +4,16 @@ title: Polymarket API 레퍼런스
 type: concept
 status: draft
 created_at: '2026-04-09T14:10:09Z'
-last_updated: '2026-04-09T14:10:09Z'
+last_updated: '2026-04-09T14:43:38Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
-source_count: 1
+source_count: 2
 evidence_coverage: 1.0
 confidence: medium
 related_pages:
+- legacy_raw_02_api_fbe99e
+- source_summary_src_raw_02_api_md_fbe99e01
 - source_summary_src_wiki_api_polymarket_api_md_62ef406d
 tags:
 - concept
@@ -88,3 +90,10 @@ GET https://gamma-api.polymarket.com/events?limit=20&active=true
 
 <!-- para: para_011 -->
 소스 요약: source_summary_src_wiki_api_polymarket_api_md_62ef406d
+
+<!-- para: para_012 -->
+`Polymarket API 레퍼런스` 문서의 핵심 내용을 `Polymarket API 레퍼런스`에 병합했다. 요약: > 출처: docs.polymarket.com API Reference (2026-04-04 수집)
+
+## 핵심 사실 - **Public (인증 불필요)**: 마켓 데이터 조회, 가격 조회, 오더북 조회
+- **L1 Auth (지갑 서명만)**: 초기 설정, API 키 생성
+- **L2 Auth (API 키)**: 주문 생성/취소, 트레이드 조회, 포지션 관리
