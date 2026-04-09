@@ -8,13 +8,14 @@ last_updated: '2026-04-09T15:09:33Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
-source_count: 1
+source_count: 2
 evidence_coverage: 1.0
 confidence: medium
 related_pages: []
 tags:
 - concept
 sources:
+- url: https://polynoob.com/copytrading-on-polymarket/
 - url: https://github.com/Polymarket-copy-trader/polymarket-copy-trading-bot
 ---
 # 2026-04-06 Copytrade 외부 소스 수집
