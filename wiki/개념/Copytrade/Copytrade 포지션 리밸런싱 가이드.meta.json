@@ -56,6 +56,62 @@
       "confidence": "medium",
       "conflict_flag": false,
       "source_urls": []
+    },
+    "para_008": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_포트폴리오_리밸런싱_완전_가이드__언제__어떻게_자산_배분을_재조정할까_7fedf7c2#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://rich-flow.com/ko/investment-guide/portfolio-rebalancing-guide"
+      ]
+    },
+    "para_009": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_카피_트레이드의_원리는__팔로워___프로바이더를_위한_완벽한_가이드_3471f366#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://www.atfx.com/ko/analysis/trading-strategies/how-copytrade-works"
+      ]
+    },
+    "para_010": {
+      "evidence_type": "direct",
+      "source_refs": [],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": []
+    },
+    "para_011": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_documentation_comprehensive_guide_for_copy_trading_success_513a41f4#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://www.copytrade.net/documentation"
+      ]
+    },
+    "para_012": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_2026_ai_f5921209#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://vylorgroup.com/stock-ai-portfolio-quarterly-rebalancing/"
+      ]
     }
   }
 }
