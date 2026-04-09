@@ -4,11 +4,11 @@ title: 2026-04-07 Negative Risk & CLOB API 외부 소스 수집
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:09Z'
-last_updated: '2026-04-09T15:09:33Z'
+last_updated: '2026-04-09T17:01:40Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
-source_count: 0
+source_count: 3
 evidence_coverage: 1.0
 confidence: medium
 related_pages:
@@ -17,6 +17,10 @@ related_pages:
 - legacy_wiki_e92c88
 tags:
 - concept
+sources:
+- url: https://deepwiki.com/tdergouzi/rs-clob-client/9.2-negative-risk-markets
+- url: https://knvd.krcert.or.kr/
+- url: https://blog.naver.com/moonchulrang/224241068796
 ---
 # 2026-04-07 Negative Risk & CLOB API 외부 소스 수집
 
@@ -60,3 +64,26 @@ tags:
 - URL: https://docs.polymarket.com/trading/orders/overview
 - Title: Overview - Polymarket Documentation
 - Description: Neg-Risk Multi-outcome events use NegRisk Exchange. Must pass negRisk: true in order options.
+
+## 세부 내용
+
+<!-- para: para_008 -->
+픽세미 : 네이버 블로그
+
+<!-- para: para_009 -->
+Negative Risk Markets
+
+|tdergouzi/rs-clob-client | DeepWiki
+Loading... Index your code with Devin
+DeepWiki
+DeepWiki
+tdergouzi/rs-clob-client
+Index your code with
+Devin
+Edit Wiki
+Share
+Loading...
+
+<!-- para: para_010 -->
+사이버 보안 취약점 정보 포털
+한국인터넷진흥원은 사이버 보안 취약점 정보 포털을 통해 취약점 제보와 조치 등 취약점 관리 업무를 운영합니다.

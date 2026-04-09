@@ -56,6 +56,42 @@
       "confidence": "medium",
       "conflict_flag": false,
       "source_urls": []
+    },
+    "para_008": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_픽세미___네이버_블로그_f1a0d7c5#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://blog.naver.com/moonchulrang/224241068796"
+      ]
+    },
+    "para_009": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_negative_risk_markets_tdergouzi_rs_clob_client_deepwiki_18c6976c#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://deepwiki.com/tdergouzi/rs-clob-client/9.2-negative-risk-markets"
+      ]
+    },
+    "para_010": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_사이버_보안_취약점_정보_포털_1a38f8a1#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://knvd.krcert.or.kr/"
+      ]
     }
   }
 }
