@@ -80,6 +80,66 @@
       "confidence": "medium",
       "conflict_flag": false,
       "source_urls": []
+    },
+    "para_011": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_polymarket_macro_note_blog_f2472f2f#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://macro-note.com/blog/polymarket-guide"
+      ]
+    },
+    "para_012": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_polymarket_44a801e6#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://ylood.tistory.com/41"
+      ]
+    },
+    "para_013": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_overview_polymarket_documentation_4d044dbd#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://docs.polymarket.com/"
+      ]
+    },
+    "para_014": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_welcome_polymarket_us_documentation_dd4cf43e#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://docs.polymarket.us/getting-started/welcome"
+      ]
+    },
+    "para_015": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_intercontinental_exchange_intercontinental_exchange_announces_new_600_million_investment_in_polymarket_f06370cf#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://ir.theice.com/press/news-details/2026/Intercontinental-Exchange-Announces-New-600-Million-Investment-in-Polymarket/default.aspx"
+      ]
     }
   }
 }
