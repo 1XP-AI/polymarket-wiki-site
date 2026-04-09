@@ -64,6 +64,139 @@
       "confidence": "medium",
       "conflict_flag": false,
       "source_urls": []
+    },
+    "para_009": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_2025_2026_mavis_digital_8599fd32#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://mavisdigital.com/ko/blog/market-maker-crypto-monetization-mechanism-and-operational-strategy-2025-2026"
+      ]
+    },
+    "para_010": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_거래소_수수료_구조_이해__숨겨진_비용__리베이트_및_마켓_메이커_상태_d06548a0#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://cryptogambling.com/ko/guides/professional-playbook/exchange-fee-structures-market-making"
+      ]
+    },
+    "para_011": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_opinion_labs_50_maker_opinion_labs_maker_aaacd7ef#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://www.hosu-news.com/news/articleView.html?idxno=25924"
+      ]
+    },
+    "para_012": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_the_heim_05d8426a#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://blog.naver.com/haseobang83/223718983923"
+      ]
+    },
+    "para_013": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_market_maker_program_bitget_exchange_1ad11b63#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://www.bitget.com/market-maker"
+      ]
+    },
+    "para_014": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_introduction_to_the_market_maker_incentive_program_66251621#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://www.bybit.com/en/help-center/article/Introduction-to-the-Market-Maker-Incentive-Program"
+      ]
+    },
+    "para_015": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_돈이_일하게_하라___네이버_블로그_06af7256#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://blog.naver.com/guimoon2024/223801599919"
+      ]
+    },
+    "para_016": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_designated_market_maker_programme_26329ee2#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://www.bitmex.com/market-maker-programme"
+      ]
+    },
+    "para_017": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_phemex_e03c3668#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://phemex.com/ko/announcements/phemex-market-maker-program-is-here-calling-all-liquidity-providers"
+      ]
+    },
+    "para_018": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_마켓_메이커와_마켓_테이커_개념_정리_a17cbc27#chunk_001",
+        "src_20260409_마켓_메이커와_마켓_테이커_개념_정리_a17cbc27#chunk_002"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://academy.gopax.co.kr/makes-meikeowa-makes-teikeo-gaenyeom-jeongri/"
+      ]
+    },
+    "para_019": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_maker_rebates_program_polymarket_documentation_a7907032#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://docs.polymarket.com/market-makers/maker-rebates"
+      ]
     }
   }
 }
