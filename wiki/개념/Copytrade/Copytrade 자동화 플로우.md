@@ -16,6 +16,7 @@ related_pages:
 - legacy_raw_06_websocket_506430
 - legacy_wiki_api_polymarket_api_62ef40
 - legacy_wiki_copytrade_copytrade_5e34e9
+- legacy_wiki_copytrade_e81931
 - legacy_wiki_copytrade_eff435
 tags:
 - concept

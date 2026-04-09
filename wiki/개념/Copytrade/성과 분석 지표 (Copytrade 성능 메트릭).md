@@ -14,6 +14,7 @@ confidence: medium
 related_pages:
 - legacy_wiki_923782
 - legacy_wiki_copytrade_copytrade_5e34e9
+- legacy_wiki_copytrade_e81931
 - legacy_wiki_copytrade_eff435
 tags:
 - concept
