@@ -1,0 +1,81 @@
+---
+id: source_summary_src_wiki_md_be68fc57
+title: 'Source Summary: 법률/사건 예측 마켓'
+type: source_summary
+status: verified
+created_at: '2026-04-09T14:10:10Z'
+last_updated: '2026-04-09T14:10:10Z'
+as_of: '2026-04-09'
+owners:
+- wiki-system
+source_count: 1
+evidence_coverage: 1.0
+confidence: high
+related_pages:
+- legacy_wiki_be68fc
+tags:
+- internal
+- internal
+---
+
+# Source Summary: 법률/사건 예측 마켓
+
+## Summary
+
+<!-- para: para_001 -->
+> Polymarket에서 법조 events와 사회 사건 결과를 예측하는 마켓 카테고리.
+
+## Key Facts
+
+<!-- para: para_002 -->
+法律/사회 events의 결과를 예측하는 마켓으로, 전통적인 예측 시장의 가장純粋한 형태입니다.
+
+<!-- para: para_003 -->
+Harvey Weinstein 판결 관련 6개 마켓이 동시에 운영됨:
+
+| sentencing 범위 | 확률 | 거래량 |
+|----------------|------|--------|
+| no prison time | 27.2% | $304,383 |
+| less than 5 years | 9.35% | $61,251 |
+| 5-10 years | 8.05% | $42,665 |
+| 10-20 years | 17.9% | $128,126 |
+| 20-30 years | 26.95% | $158,889 |
+| more than 30 years | 7.65% | $42,090 |
+
+**합산 검증**: 27.2 + 9.35 + 8.05 + 17.9 + 26.95 + 7.65 ≈ 97.1%
+→ 확률 합이 100%를 넘지 않음 — 일부 마켓의 결과가 상호排他的이지 않을 가능성 존재
+
+## Details
+
+<!-- para: para_004 -->
+하나의 사건에 대해 **복수의 마켓**을 동시에 운영:
+
+```
+사건: Harvey Weinstein 판결
+  ├── 마켓 A: 징역 없음 (0년)
+  ├── 마켓 B: 5년 미만
+  ├── 마켓 C: 5-10년
+  ├── 마켓 D: 10-20년
+  ├── 마켓 E: 20-30년
+  └── 마켓 F: 30년 이상
+```
+
+이는 [[개념/CTF]]와 유사한 다중 결과 마켓 구조를 따릅니다.
+
+<!-- para: para_005 -->
+- **단독 사건 마켓**: 결과가 Binary (유형/무죄, 징역 여부 등)
+- **범위 마켓**: 결과가 연속적 (년수 범위)
+- **확률 검증**: 상호排他的 사건의 확률 합 = 100%
+
+<!-- para: para_006 -->
+```python
+
+<!-- para: para_007 -->
+p_20_30 = 0.2695
+p_30_plus = 0.0765
+p_above_20 = p_20_30 + p_30_plus  # ≈ 34.6%
+
+## Open Questions
+
+<!-- para: para_008 -->
+No open questions extracted.

@@ -1,0 +1,121 @@
+---
+id: legacy_wiki_copytrade_e81931
+title: 팔로우-스코어링 모델
+type: concept
+status: draft
+created_at: '2026-04-09T14:10:11Z'
+last_updated: '2026-04-09T14:10:11Z'
+as_of: '2026-04-09'
+owners:
+- wiki-system
+source_count: 1
+evidence_coverage: 1.0
+confidence: medium
+related_pages:
+- source_summary_src_wiki_copytrade_md_e819314f
+tags:
+- concept
+- internal
+---
+
+# 팔로우-스코어링 모델
+
+## Summary
+
+<!-- para: para_001 -->
+> 트레이더를 팔로우할지 결정하기 위한 계량화된 점수 모델 구조와 구현 가이드
+
+## Key Facts
+
+<!-- para: para_002 -->
+팔로우-스코어링은 리더보드나 온체인/오프체인 데이터를 바탕으로 특정 트레이더를 "팔로우 가치"로 정량화하는 절차입니다. 본 문서는 최소한의 입력(승률, 평균 베팅 크기, 유동성 민감도, 리스크 노출 등)을 받아 팔로우 여부와 노출 크기를 추천하는 모델을 제시합니다.
+
+<!-- para: para_003 -->
+| 변수 | 기호 | 의미 | 데이터 소스 |
+|------|------|------|-------------|
+| 승률(WinRate) | WR | 지난 N건 중 정답 비율 | 리더보드, 포지션 히스토리 |
+| 평균 베팅 크기 | AvgSize | 트레이더 평균 베팅 규모(USD) | 트레이더 포지션 API |
+| 변동성 민감도 | VolSens | 시장 변동성에 따른 포지션 변동성 | 30일 포지션 StdDev |
+| 청산/오버나이트 리스크 | LiquidRisk | 청산 빈도 또는 급격한 포지션 변경 비율 | 포지션 스냅샷 |
+| 행동 일관성 | Consistency | 진입/청산 패턴의 일관성 지표 | 거래 히스토리 분석 |
+| 샘플 크기 | N | 관측 거래 수 | 리더보드 기간 필터 |
+| 최근성 | Recency | 최근 활동 집중도 (EMA 가중) | 거래 타임스탬프 |
+
+## Details
+
+<!-- para: para_004 -->
+```
+FollowScore = w1·Norm(WinRate) + w2·Norm(Consistency) + w3·Norm(Recency)
+            - w4·Norm(LiquidRisk) - w5·Norm(VolSens)
+```
+
+<!-- para: para_005 -->
+| 변수 | 보수적(Conservative) | 균형(Balanced) | 공격적(Aggressive) |
+|------|---------------------|----------------|-------------------|
+| w1 (WinRate) | 0.35 | 0.25 | 0.20 |
+| w2 (Consistency) | 0.25 | 0.20 | 0.15 |
+| w3 (Recency) | 0.10 | 0.20 | 0.25 |
+| w4 (LiquidRisk) | 0.20 | 0.25 | 0.25 |
+| w5 (VolSens) | 0.10 | 0.10 | 0.15 |
+
+- **보수적**: 리스크 항(w4, w5)이 크고, 과거 일관성에 높은 가중치
+- **균형**: 5개 변수를 고르게 배분 — 기본 권장
+- **공격적**: 최근성과 승률을 우선 — 단기 변동성 높은 트레이더에도 진출
+
+<!-- para: para_006 -->
+```
+Norm(x) = (x - min_x) / (max_x - min_x)     # 후보군 내에서 0~1 정규화
+LaplaceWinRate = (wins + 1) / (total + 2)   # N < 15 시 편향 보정
+```
+
+N이 작은 표본(특히 신규 트레이더)은 Laplace smoothing 없이 승률이 100% 또는 0%로 왜곡되기 쉽다. 15회 미만 거래 트레이더는 반드시 보정 적용.
+
+<!-- para: para_007 -->
+```python
+import numpy as np
+import pandas as pd
+from scipy.stats import pearsonr
+from datetime import datetime, timedelta
+
+def laplace_smooth(wins, total, alpha=1.0):
+    """N이 작을 때 승률 편향 보정"""
+    return (wins + alpha) / (total + 2 * alpha)
+
+def minmax_normalize(series):
+    r = series - series.min()
+    d = series.max() - series.min()
+    return r / d if d > 0 else pd.Series(0.5, index=series.index)
+
+def compute_follow_score(df, profile='balanced'):
+    """
+    트레이더 DataFrame에 FollowScore 컬럼 추가. Parameters
+    ----------
+    df : pd.DataFrame
+        필요한 컬럼: win_rate, consistency, recency_ema,
+                      liquid_risk, vol_sens, trades_30d
+    profile : str
+        'conservative', 'balanced', 'aggressive'
+
+Returns
+    -------
+    pd.DataFrame (score 컬럼 추가)
+    """
+    weights = {
+        'conservative': {'wr': 0.35, 'cons': 0.25, 'rec': 0.10,
+                         'liq': 0.20, 'vol': 0.10},
+        'balanced':     {'wr': 0.25, 'cons': 0.20, 'rec': 0.20,
+                         'liq': 0.25, 'vol': 0.10},
+        'aggressive':   {'wr': 0.20, 'cons': 0.15, 'rec': 0.25,
+                         'liq': 0.25, 'vol': 0.15},
+    }
+    w = weights.get(profile, weights['balanced'])
+
+## Open Questions
+
+<!-- para: para_008 -->
+Pending review.
+
+## Related Pages
+
+<!-- para: para_009 -->
+Source summary: source_summary_src_wiki_copytrade_md_e819314f

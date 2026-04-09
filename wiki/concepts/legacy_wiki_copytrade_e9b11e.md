@@ -1,0 +1,72 @@
+---
+id: legacy_wiki_copytrade_e9b11e
+title: 시장 충격 측정
+type: concept
+status: draft
+created_at: '2026-04-09T14:10:11Z'
+last_updated: '2026-04-09T14:10:11Z'
+as_of: '2026-04-09'
+owners:
+- wiki-system
+source_count: 1
+evidence_coverage: 1.0
+confidence: medium
+related_pages:
+- source_summary_src_wiki_copytrade_md_e9b11e17
+tags:
+- concept
+- internal
+---
+
+# 시장 충격 측정
+
+## Summary
+
+<!-- para: para_001 -->
+> Copytrade 실행 시 시장 충격(market impact)을 정의하고, 간단한 측정 방법과 완화 아이디어를 제시합니다.
+
+## Key Facts
+
+<!-- para: para_002 -->
+시장 충격(market impact)은 대규모 매수/매도 또는 연속 주문이 호가에 미치는 영향과 이후 가격 복구 패턴을 의미합니다. Copytrade에서는 리드 트레이더의 포지션 크기가 클수록, 그리고 추종자들이 동시에 진입할수록 시장 충격이 증폭됩니다.
+
+<!-- para: para_003 -->
+주문이 체결되는 순간 발생하는 가격 이동입니다. 오더북의 얇은 레벨을 먹어치우며 Best Ask/Bid가 멀어집니다.
+
+## Details
+
+<!-- para: para_004 -->
+주문 이후에도 가격이 원래 수준으로 돌아오지 않는 현상입니다. 이는 시장이 주문의 정보를 반영했기 때문일 수 있으며, Copytrade에서는 추종자들이 리드 트레이더의 진입 신호를 보고 함께 진입하면서 잔류 충격이 더 커집니다.
+
+<!-- para: para_005 -->
+```
+Impact Cost = (체결가 - 주문 전 Mid Price) / 주문 전 Mid Price
+```
+
+- Buy 주문: 체결가가 Mid보다 높을수록 양수 (불리)
+- Sell 주문: 체결가가 Mid보다 낮을수록 음수 (불리)
+
+<!-- para: para_006 -->
+```
+PRI = (충격 후 가격 - N분 후 가격) / (충격 후 가격 - 주문 전 Mid Price)
+```
+
+- PRI ≈ 1.0: 완전 복구 (충격이 일시적, 유동성 충분)
+- PRI ≈ 0.0: 복구 없음 (충격이 시장 정보로 흡수됨)
+- PRI < 0: 추가 이동 (충격이 연쇄 반응 유발)
+
+<!-- para: para_007 -->
+체결 시점에서 기대 가격과 실제 체결가의 차이를 주문 크기로 나누어 정규화합니다.
+
+## Open Questions
+
+<!-- para: para_008 -->
+curl -s "https://gamma-api.polymarket.com/trades?market=${MARKET_ID}&limit=100" \
+
+<!-- para: para_009 -->
+curl -s "https://gamma-api.polymarket.com/book?market=${MARKET_ID}" \
+
+## Related Pages
+
+<!-- para: para_010 -->
+Source summary: source_summary_src_wiki_copytrade_md_e9b11e17

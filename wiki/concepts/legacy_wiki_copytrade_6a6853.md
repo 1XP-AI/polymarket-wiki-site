@@ -1,0 +1,82 @@
+---
+id: legacy_wiki_copytrade_6a6853
+title: 매수 타이밍 전략
+type: concept
+status: draft
+created_at: '2026-04-09T14:10:10Z'
+last_updated: '2026-04-09T14:10:10Z'
+as_of: '2026-04-09'
+owners:
+- wiki-system
+source_count: 1
+evidence_coverage: 1.0
+confidence: medium
+related_pages:
+- source_summary_src_wiki_copytrade_md_6a685308
+tags:
+- concept
+- internal
+---
+
+# 매수 타이밍 전략
+
+## Summary
+
+<!-- para: para_001 -->
+> Polymarket에서 Copytrade 시점(Entry timing)을 체계화하여 손실 위험을 줄이고 수익률을 개선하는 전략 모음.
+
+## Key Facts
+
+<!-- para: para_002 -->
+매수 타이밍은 단순한 직관 대신 규칙화된 신호(온체인 이벤트, 리더보드 활동, 가격/볼륨 스파이크, 외부 뉴스 등)를 기반으로 정해야 합니다. Copytrade 환경에서는 원 트레이더의 주문 집행 시점과 우리 복제 실행의 지연이 곧 성과 차이를 만듭니다.
+
+<!-- para: para_003 -->
+백테스트는 신호의 통계적 유효성을 확인하는 핵심 단계입니다. 권장 절차:
+
+1) 기간: 최소 6개월~24개월의 시장 데이터를 사용.
+
+## Details
+
+<!-- para: para_004 -->
+1) 신호 스트림 수집(리더보드, 이벤트 API, 트윗/뉴스 크롤러)
+2) 필터링(최소 볼륨/유동성 임계치)
+3) 우선순위 스코어링(트레이더 신뢰도, 신호 동시 발생 여부)
+4) 슬리피지/비용 추정 → 진입 여부 결정
+5) 주문 실행(시장가/리미트 보정) 및 모니터링
+
+의사코드 예시:
+
+- on_event(event):
+  - if event.type == "leaderboard_new_position" and volume_last24h > vol_thresh:
+    - score = trader_score(event.trader)*w1 + volume_spike_score()*w2
+    - if score > entry_thresh and est_slippage < slippage_limit:
+      - place_order(size=calc_size(account, risk_pct))
+
+<!-- para: para_005 -->
+- 실행지연(Latency): 신호 발생~주문 체결까지의 평균/분위수
+- 슬리피지 분포: 평균/표준편차/90펄센타일
+- 복제성공률: 완전체결/부분체결/실패 비율
+- 전략퍼포먼스: 기간별 누적수익, 샤프, MDD
+
+<!-- para: para_006 -->
+- 포지션 크기: 계정 총액의 %로 제한(예: 1-2%)
+- 스톱로스/손절: 시장 특성에 따라 고정 또는 동적 손절 적용
+- 복제 실패 모니터링: 미체결/부분체결 발생 시 자동 알림 및 롤백 정책
+
+<!-- para: para_007 -->
+- [[전략/Copytrade/포지션-사이즈-전략]] — 포지션 크기와 청산 규칙
+- [[전략/Copytrade/리스크-관리]] — 전반적 위험 통제 원칙
+- [[전략/Copytrade/Copytrade-성능-모니터링]] — 실행 지연과 슬리피지 계측 방법
+- [[개념/CLOB]] — 주문장 관련 고려 (슬리피지/호가 깊이 관점)
+- [[개념/슬리피지]] — 진입 지연이 비용에 미치는 영향
+- [[기술/WebSocket-실시간데이터]] — 실시간 신호 수집 관련 기술적 고려
+
+## Open Questions
+
+<!-- para: para_008 -->
+Pending review.
+
+## Related Pages
+
+<!-- para: para_009 -->
+Source summary: source_summary_src_wiki_copytrade_md_6a685308

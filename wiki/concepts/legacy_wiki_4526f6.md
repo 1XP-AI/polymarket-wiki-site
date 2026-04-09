@@ -1,0 +1,87 @@
+---
+id: legacy_wiki_4526f6
+title: 리더보드 데이터
+type: concept
+status: draft
+created_at: '2026-04-09T14:10:12Z'
+last_updated: '2026-04-09T14:10:12Z'
+as_of: '2026-04-09'
+owners:
+- wiki-system
+source_count: 1
+evidence_coverage: 1.0
+confidence: medium
+related_pages:
+- source_summary_src_wiki_md_4526f6b8
+tags:
+- concept
+- internal
+---
+
+# 리더보드 데이터
+
+## Summary
+
+<!-- para: para_001 -->
+> 리더보드의 구조와 트레이더 메트릭스. Copytrade 전략의 핵심인 상위 트레이더 정보 수집.
+
+## Key Facts
+
+<!-- para: para_002 -->
+리더보드는 수익률, 활동량, 보상 포인트 등을 표시한다. 트레이더 프로필과 주소를 얻어 포지션을 추적하면 copytrade 후보를 식별할 수 있다.
+
+<!-- para: para_003 -->
+```
+GET https://data-api.polymarket.com/v1/leaderboard
+```
+
+## Details
+
+<!-- para: para_004 -->
+| 파라미터 | 값 | 설명 |
+|----------|-----|------|
+| `window` | `all` \| `daily` \| `weekly` \| `monthly` | 기간 필터 |
+| `limit` | 정수 (기본 50) | 결과 수 |
+| `offset` | 정수 | 페이지네이션 |
+
+<!-- para: para_005 -->
+| 순위 | 사용자명 | 지갑 주소 | PnL (USDC) | 거래량 (USDC) |
+|------|----------|----------|------------|---------------|
+| 1 | 0x492442E...1766317541188 | `0x492442eab586f242b53bda933fd5de859c8a3782` | $848,046 | $823,673 |
+| 2 | Countryside | `0xbddf61af533ff524d27154e589d2d7a81510c684` | $666,795 | $21,585 |
+| 3 | BBPK | `0xee0d153c17fe82b8866b484753b56a700ab457ab` | $356,683 | $1,322,967 |
+| 4 | timoty20 | `0x23221712c1a21c104c5d32d82ae4b4f79e2913a3` | $219,032 | $510,118 |
+| 5 | Feveey | `0xe934f2d7d6358c6c86bfdd5848f1e90412e9640b` | $191,873 | $32,856 |
+| 6 | YT-JuicySlots | `0xc257ea7e3a81ca8e16df8935d44d513959fa358e` | $122,658 | $799,693 |
+| 7 | gatorr | `0x93abbc022ce98d6f45d4444b594791cc4b7a9723` | $120,324 | $104,419 |
+| 8 | ferrariChampions2026 | `0xfe787d2da716d60e8acff57fb87eb13cd4d10319` | $114,419 | $1,429,638 |
+| 9 | Mentallyillgambld | `0x2bff45c91540e46fae1e0c72f61f4b049453446` | $99,602 | $0 |
+| 10 | Suertudo1 | `0x5bec79df9add70a3892041ab1a5516b60f53b215` | $91,836 | $106,834 |
+
+<!-- para: para_006 -->
+- **#1 트레이더** (`0x4924...`): PnL $848K로 압도적 1위. 거래량 대비 PnL 효율성이 매우 높음 (거래량 $823K → 수익 $848K)
+- **#3 BBPK**: 거래량 $1.32M로 가장 많지만 PnL은 $356K — 고거래량·중수익 스타일
+- **#8 ferrariChampions2026**: 거래량 $1.43M로 전체 최고, PnL $114K — 규모의 비효율성 시사
+- **#9 Mentallyillgambld**: 거래량 $0인데 수익 $99K — 아마 비유동성 마켓 트레이딩 또는 대형 포지션 홀드
+
+<!-- para: para_007 -->
+- **PnL / 거래량 비율**: 효율성 지표
+- **승률**: 수익 거래 / 전체 거래
+- **샤프 비율**: 위험 대비 수익
+- **MDD (Maximum Drawdown)**: 최대 손실폭
+
+## Open Questions
+
+<!-- para: para_008 -->
+GET https://gamma-api.polymarket.com/public-profile?address={wallet}
+
+<!-- para: para_009 -->
+GET https://data-api.polymarket.com/positions?address={wallet}
+
+<!-- para: para_010 -->
+curl -s "https://data-api.polymarket.com/positions?address=0xbddf61af533ff524d27154e589d2d7a81510c684"
+
+## Related Pages
+
+<!-- para: para_011 -->
+Source summary: source_summary_src_wiki_md_4526f6b8

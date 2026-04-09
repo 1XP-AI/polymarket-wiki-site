@@ -1,0 +1,98 @@
+---
+id: source_summary_src_wiki_copytrade_md_bb99a4f5
+title: 'Source Summary: 트레이더 프로필 분석'
+type: source_summary
+status: verified
+created_at: '2026-04-09T14:10:11Z'
+last_updated: '2026-04-09T14:10:11Z'
+as_of: '2026-04-09'
+owners:
+- wiki-system
+source_count: 1
+evidence_coverage: 1.0
+confidence: high
+related_pages:
+- legacy_wiki_copytrade_bb99a4
+tags:
+- internal
+- internal
+---
+
+# Source Summary: 트레이더 프로필 분석
+
+## Summary
+
+<!-- para: para_001 -->
+> 리더보드에서 발견된 트레이더를 copytrade 대상으로 평가하는 기준과 분석 템플릿
+
+## Key Facts
+
+<!-- para: para_002 -->
+이 문서는 Polymarket 리더보드에서 상위 트레이더를 발굴하여 "팔로우 가치"를 정량·정성으로 평가하는 템플릿을 제공합니다. 목표는 copytrade에서의 리스크를 감소시키고, 자동화된 선별 파이프라인에 투입 가능한 명확한 지표를 만드는 것입니다.
+
+<!-- para: para_003 -->
+1. 기본정보
+   - 활동 기간, 지갑주소, 공개 소셜(트위터 등), 계정 생성일.
+
+## Details
+
+<!-- para: para_004 -->
+- 팔로우 점수(0-100) = 0.4 * 성과점수 + 0.3 * 리스크점수 + 0.2 * 재현가능성 + 0.1 * 신뢰성
+  - 성과점수: 승률(종료된 포지션 기준), 누적수익률, 샤프비율을 가중합으로 변환
+  - 리스크점수: 최대 드로다운·평균 손실 대비 최대손실 비율 역수 등을 사용
+  - 재현가능성: 규칙화 가능한 전략이면 높은 점수
+  - 신뢰성: 공개 소셜·외부 근거의 존재 여부
+
+- 최소 요건(필터)
+  - 승률 >= 50% (최근 90일 기준)
+  - 평균 포지션 보유기간이 지나치게 짧거나 긴 경우엔 재검토
+  - 계정에 비해 포지션 규모가 지나치게 큰 트레이더는 리스크 조정 필요
+
+<!-- para: para_005 -->
+1) 승률 계산 (종료된 포지션 기준)
+
+- API: GET https://data-api.polymarket.com/closed-positions?address={wallet}
+- 로직: 종료된 포지션에서 PnL > 0 비율
+
+예: curl을 이용한 간단한 수집
+
+```bash
+curl -s "https://data-api.polymarket.com/closed-positions?address=0xABC..." | jq '.[] | select(.pnl > 0) | .id' | wc -l
+```
+
+2) 평균 포지션 크기 및 보유기간
+
+- API: GET https://data-api.polymarket.com/positions?address={wallet}
+- 보유기간: 포지션 생성 시간 ~ 청산 시간(청산된 경우)
+
+3) 팔로우 점수 계산 (파이썬 의사코드)
+
+```python
+
+<!-- para: para_006 -->
+metrics = {
+  'win_rate': 0.6,
+  'sharpe': 1.2,
+  'max_drawdown': 0.12,
+  'rule_score': 0.8,
+  'social_score': 0.7,
+}
+score = 0.4 * (metrics['win_rate']*100 * 0.6 + metrics['sharpe']*10 * 0.4) \
+      + 0.3 * (1 - metrics['max_drawdown']) \
+      + 0.2 * metrics['rule_score']*100 \
+      + 0.1 * metrics['social_score']*100
+
+<!-- para: para_007 -->
+score = min(max(score, 0), 100)
+```
+
+## Open Questions
+
+<!-- para: para_008 -->
+- API: GET https://data-api.polymarket.com/closed-positions?address={wallet}
+
+<!-- para: para_009 -->
+curl -s "https://data-api.polymarket.com/closed-positions?address=0xABC..." | jq '.[] | select(.pnl > 0) | .id' | wc -l
+
+<!-- para: para_010 -->
+- API: GET https://data-api.polymarket.com/positions?address={wallet}

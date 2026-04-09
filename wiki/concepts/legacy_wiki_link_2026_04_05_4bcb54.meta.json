@@ -1,0 +1,64 @@
+{
+  "page_id": "legacy_wiki_link_2026_04_05_4bcb54",
+  "paragraphs": {
+    "para_001": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_wiki_link_2026_04_05_md_4bcb54a5#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false
+    },
+    "para_002": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_wiki_link_2026_04_05_md_4bcb54a5#chunk_002"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false
+    },
+    "para_003": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_wiki_link_2026_04_05_md_4bcb54a5#chunk_003"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false
+    },
+    "para_004": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_wiki_link_2026_04_05_md_4bcb54a5#chunk_004"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false
+    },
+    "para_005": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_wiki_link_2026_04_05_md_4bcb54a5#chunk_005"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false
+    },
+    "para_006": {
+      "evidence_type": "direct",
+      "source_refs": [],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false
+    },
+    "para_007": {
+      "evidence_type": "direct",
+      "source_refs": [],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false
+    }
+  }
+}

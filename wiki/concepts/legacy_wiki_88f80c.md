@@ -1,0 +1,72 @@
+---
+id: legacy_wiki_88f80c
+title: 트레이더 프로필 템플릿
+type: concept
+status: draft
+created_at: '2026-04-09T14:10:12Z'
+last_updated: '2026-04-09T14:10:12Z'
+as_of: '2026-04-09'
+owners:
+- wiki-system
+source_count: 1
+evidence_coverage: 1.0
+confidence: medium
+related_pages:
+- source_summary_src_wiki_md_88f80caf
+tags:
+- concept
+- internal
+---
+
+# 트레이더 프로필 템플릿
+
+## Summary
+
+<!-- para: para_001 -->
+> 한 줄 요약: 리더보드에서 발견한 트레이더를 분석할 때 사용하는 표준 프로필 템플릿
+
+## Key Facts
+
+<!-- para: para_002 -->
+- 이름/핸들: 
+- 지갑주소: 
+- 활동 기간: 
+- 추종 권고 (예/아니오) 및 가중치:
+
+<!-- para: para_003 -->
+트레이더의 공개 소셜(트위터/X 등), 지갑주소, 첫 활동일 등을 기록한다. 가능하면 리더보드 내 순위 추이와 주요 포지션 히스토리를 포함한다.
+
+## Details
+
+<!-- para: para_004 -->
+- 리더보드는 트레이더의 성과 지표(수익률, 거래 빈도 등)를 제공한다. Copytrade 선별 시 다음 항목을 반드시 확인한다:
+  - 일관성(기간별 승률)
+  - 포지션 크기 및 마켓 선호도
+  - 공개 소셜(트윗)과의 일치 여부
+- 데이터 수집 예제: raw/fetched/2026-04-05-leaderboard-monthly.md
+
+<!-- para: para_005 -->
+- 선호 마켓(스포츠/크립토/정치 등)
+- 평균 포지션 보유 시간
+- 레버리지/포지션 규모 특성
+- 자주 사용하는 이벤트 유형
+
+<!-- para: para_006 -->
+- 총 수익률(가능하면 기간별)
+- 승률 / 평균 수익-손실 비율
+- 최대 드로우다운
+
+<!-- para: para_007 -->
+- 과거 급격한 포지션 변경 빈도
+- 다른 트레이더와의 포지션 유사도 (군집성)
+- 의심스러운 패턴(조작 가능성) 유무
+
+## Open Questions
+
+<!-- para: para_008 -->
+Pending review.
+
+## Related Pages
+
+<!-- para: para_009 -->
+Source summary: source_summary_src_wiki_md_88f80caf

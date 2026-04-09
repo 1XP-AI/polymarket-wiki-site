@@ -18,10 +18,1030 @@
     "size": 1185
   },
   {
+    "path": "comparisons/legacy_wiki_0b6323.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2071
+  },
+  {
+    "path": "comparisons/legacy_wiki_clob_064e27.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 3190
+  },
+  {
+    "path": "comparisons/legacy_wiki_copytrade_bde177.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2270
+  },
+  {
+    "path": "comparisons/legacy_wiki_copytrade_copytrade_5e34e9.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 1778
+  },
+  {
+    "path": "concepts/legacy_raw_00_index_ec3366.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2035
+  },
+  {
+    "path": "concepts/legacy_raw_01_polymarket_b75012.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2325
+  },
+  {
+    "path": "concepts/legacy_raw_02_api_fbe99e.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2651
+  },
+  {
+    "path": "concepts/legacy_raw_03_copytrade_c17abe.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2090
+  },
+  {
+    "path": "concepts/legacy_raw_04_a93c30.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 1922
+  },
+  {
+    "path": "concepts/legacy_raw_05_badd78.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 1639
+  },
+  {
+    "path": "concepts/legacy_raw_06_websocket_506430.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 1466
+  },
+  {
+    "path": "concepts/legacy_raw_07_48e6ec.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 1320
+  },
+  {
+    "path": "concepts/legacy_raw_fetched_2026_04_05_fetch_polymarket_f95e6d.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 1754
+  },
+  {
+    "path": "concepts/legacy_raw_fetched_2026_04_05_github_polymarket_e3c24d.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 889
+  },
+  {
+    "path": "concepts/legacy_raw_fetched_2026_04_05_leaderboard_monthly_43010c.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2963
+  },
+  {
+    "path": "concepts/legacy_raw_fetched_2026_04_05_market_trends_ea1f3a.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2059
+  },
+  {
+    "path": "concepts/legacy_raw_fetched_2026_04_05_markets_cycle15_a11eaa.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2111
+  },
+  {
+    "path": "concepts/legacy_raw_fetched_2026_04_05_polymarket_events_59a37c.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 145729
+  },
+  {
+    "path": "concepts/legacy_raw_fetched_2026_04_05_polymarket_markets_a295cb.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 283920
+  },
+  {
+    "path": "concepts/legacy_raw_fetched_2026_04_05_reddit_polymarket_16d476.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2113
+  },
+  {
+    "path": "concepts/legacy_raw_fetched_2026_04_06_copytrade_sources_5404e6.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2993
+  },
+  {
+    "path": "concepts/legacy_raw_fetched_2026_04_07_negative_risk_and_api_9f21d1.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2954
+  },
+  {
+    "path": "concepts/legacy_raw_sources_f2899c.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2267
+  },
+  {
+    "path": "concepts/legacy_wiki_00_index_3809cd.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2877
+  },
+  {
+    "path": "concepts/legacy_wiki_072e61.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 4477
+  },
+  {
+    "path": "concepts/legacy_wiki_0x492442eab586f242b53bda933fd5de859c8a3782_e83e3b.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2986
+  },
+  {
+    "path": "concepts/legacy_wiki_104389.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2624
+  },
+  {
+    "path": "concepts/legacy_wiki_253745.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2299
+  },
+  {
+    "path": "concepts/legacy_wiki_394666.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 3450
+  },
+  {
+    "path": "concepts/legacy_wiki_4526f6.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 3293
+  },
+  {
+    "path": "concepts/legacy_wiki_7acc18.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2361
+  },
+  {
+    "path": "concepts/legacy_wiki_88f80c.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 1929
+  },
+  {
+    "path": "concepts/legacy_wiki_923782.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 3564
+  },
+  {
+    "path": "concepts/legacy_wiki_96e938.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 3161
+  },
+  {
+    "path": "concepts/legacy_wiki_a01f7f.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2501
+  },
+  {
+    "path": "concepts/legacy_wiki_api_polymarket_api_62ef40.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2446
+  },
+  {
+    "path": "concepts/legacy_wiki_be68fc.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2209
+  },
+  {
+    "path": "concepts/legacy_wiki_c2a67b.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2232
+  },
+  {
+    "path": "concepts/legacy_wiki_copytrade_01e411.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 3470
+  },
+  {
+    "path": "concepts/legacy_wiki_copytrade_0c3a80.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 5177
+  },
+  {
+    "path": "concepts/legacy_wiki_copytrade_1f98b0.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 3543
+  },
+  {
+    "path": "concepts/legacy_wiki_copytrade_27d56b.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2982
+  },
+  {
+    "path": "concepts/legacy_wiki_copytrade_2ce18d.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2809
+  },
+  {
+    "path": "concepts/legacy_wiki_copytrade_37aa3c.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2657
+  },
+  {
+    "path": "concepts/legacy_wiki_copytrade_3f7013.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2876
+  },
+  {
+    "path": "concepts/legacy_wiki_copytrade_4d0fc3.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2279
+  },
+  {
+    "path": "concepts/legacy_wiki_copytrade_506e4c.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2326
+  },
+  {
+    "path": "concepts/legacy_wiki_copytrade_511614.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 1647
+  },
+  {
+    "path": "concepts/legacy_wiki_copytrade_53511b.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2914
+  },
+  {
+    "path": "concepts/legacy_wiki_copytrade_59552d.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 3372
+  },
+  {
+    "path": "concepts/legacy_wiki_copytrade_698574.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 1784
+  },
+  {
+    "path": "concepts/legacy_wiki_copytrade_6a6853.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 3048
+  },
+  {
+    "path": "concepts/legacy_wiki_copytrade_7d1d61.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 3007
+  },
+  {
+    "path": "concepts/legacy_wiki_copytrade_8c09ff.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 5736
+  },
+  {
+    "path": "concepts/legacy_wiki_copytrade_a22c55.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2115
+  },
+  {
+    "path": "concepts/legacy_wiki_copytrade_ac0967.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2062
+  },
+  {
+    "path": "concepts/legacy_wiki_copytrade_bb61e6.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 3159
+  },
+  {
+    "path": "concepts/legacy_wiki_copytrade_bb99a4.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 3280
+  },
+  {
+    "path": "concepts/legacy_wiki_copytrade_bf1303.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 3530
+  },
+  {
+    "path": "concepts/legacy_wiki_copytrade_bfb3cf.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2584
+  },
+  {
+    "path": "concepts/legacy_wiki_copytrade_c6dea0.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2889
+  },
+  {
+    "path": "concepts/legacy_wiki_copytrade_cbba22.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 1801
+  },
+  {
+    "path": "concepts/legacy_wiki_copytrade_copytrade_4b2b9f.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 3909
+  },
+  {
+    "path": "concepts/legacy_wiki_copytrade_d6deb5.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2699
+  },
+  {
+    "path": "concepts/legacy_wiki_copytrade_e140b9.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2464
+  },
+  {
+    "path": "concepts/legacy_wiki_copytrade_e2e01c.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2292
+  },
+  {
+    "path": "concepts/legacy_wiki_copytrade_e7d623.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2596
+  },
+  {
+    "path": "concepts/legacy_wiki_copytrade_e81931.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 4384
+  },
+  {
+    "path": "concepts/legacy_wiki_copytrade_e9b11e.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2444
+  },
+  {
+    "path": "concepts/legacy_wiki_copytrade_eff435.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 1820
+  },
+  {
+    "path": "concepts/legacy_wiki_e92c88.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 3341
+  },
+  {
+    "path": "concepts/legacy_wiki_index_80e0c9.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 1915
+  },
+  {
+    "path": "concepts/legacy_wiki_index_925404.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 1546
+  },
+  {
+    "path": "concepts/legacy_wiki_index_aa489a.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 3305
+  },
+  {
+    "path": "concepts/legacy_wiki_link_2026_04_05_4bcb54.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2093
+  },
+  {
+    "path": "concepts/legacy_wiki_negative_risk_7a5dd0.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2939
+  },
+  {
+    "path": "concepts/legacy_wiki_polymarket_2026_04_05_d5da53.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 1975
+  },
+  {
+    "path": "concepts/legacy_wiki_polymarket_aa7ff7.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 3862
+  },
+  {
+    "path": "concepts/legacy_wiki_polymarket_b06656.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2939
+  },
+  {
+    "path": "concepts/legacy_wiki_polymarket_cd5a08.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2946
+  },
+  {
+    "path": "concepts/legacy_wiki_polymarket_fd0553.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 3241
+  },
+  {
+    "path": "concepts/legacy_wiki_polymarket_github_2f7358.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2712
+  },
+  {
+    "path": "concepts/legacy_wiki_theo_e3e7fe.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2899
+  },
+  {
+    "path": "concepts/legacy_wiki_websocket_175ba8.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 3060
+  },
+  {
     "path": "log.md",
     "mtime": "2026-04-07T23:10:58+09:00",
     "ctime": "2026-04-06T00:00:00+09:00",
     "size": 11676
+  },
+  {
+    "path": "source_summaries/source_summary_src_raw_00_index_md_ec336627.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 1988
+  },
+  {
+    "path": "source_summaries/source_summary_src_raw_01_polymarket_md_b7501253.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2260
+  },
+  {
+    "path": "source_summaries/source_summary_src_raw_02_api_md_fbe99e01.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2606
+  },
+  {
+    "path": "source_summaries/source_summary_src_raw_03_copytrade_md_c17abe9e.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2026
+  },
+  {
+    "path": "source_summaries/source_summary_src_raw_04_md_a93c304a.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 1868
+  },
+  {
+    "path": "source_summaries/source_summary_src_raw_05_md_badd7884.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 1585
+  },
+  {
+    "path": "source_summaries/source_summary_src_raw_06_websocket_md_50643061.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 1402
+  },
+  {
+    "path": "source_summaries/source_summary_src_raw_07_md_48e6ece0.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 1279
+  },
+  {
+    "path": "source_summaries/source_summary_src_raw_fetched_2026_04_05_fetch_polymarket_md_f95e6d60.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 1289
+  },
+  {
+    "path": "source_summaries/source_summary_src_raw_fetched_2026_04_05_github_polymarket_md_e3c24d0c.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 795
+  },
+  {
+    "path": "source_summaries/source_summary_src_raw_fetched_2026_04_05_leaderboard_monthly_md_43010c44.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 1854
+  },
+  {
+    "path": "source_summaries/source_summary_src_raw_fetched_2026_04_05_market_trends_md_ea1f3a08.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 1975
+  },
+  {
+    "path": "source_summaries/source_summary_src_raw_fetched_2026_04_05_markets_cycle15_md_a11eaaab.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2025
+  },
+  {
+    "path": "source_summaries/source_summary_src_raw_fetched_2026_04_05_polymarket_events_md_59a37ce2.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 133181
+  },
+  {
+    "path": "source_summaries/source_summary_src_raw_fetched_2026_04_05_polymarket_markets_md_a295cb3f.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 282852
+  },
+  {
+    "path": "source_summaries/source_summary_src_raw_fetched_2026_04_05_reddit_polymarket_md_16d4761e.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2038
+  },
+  {
+    "path": "source_summaries/source_summary_src_raw_fetched_2026_04_06_copytrade_sources_md_5404e622.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2905
+  },
+  {
+    "path": "source_summaries/source_summary_src_raw_fetched_2026_04_07_leaderboard_and_risk_md_bd37ef99.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2776
+  },
+  {
+    "path": "source_summaries/source_summary_src_raw_fetched_2026_04_07_negative_risk_and_api_md_9f21d1cd.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2875
+  },
+  {
+    "path": "source_summaries/source_summary_src_raw_sources_md_f2899c78.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2208
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_00_index_md_3809cdf9.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2829
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_0x492442eab586f242b53bda933fd5de859c8a3782_md_e83e3b98.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2904
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_api_polymarket_api_md_62ef406d.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2375
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_clob_md_064e2731.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 3140
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_copytrade_copytrade_md_4b2b9fdc.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 3837
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_copytrade_copytrade_md_5e34e985.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 1713
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_copytrade_md_01e411ba.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 3421
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_copytrade_md_0c3a8011.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 5128
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_copytrade_md_1f98b023.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 3494
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_copytrade_md_27d56bb4.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2933
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_copytrade_md_2ce18d7f.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2760
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_copytrade_md_37aa3c31.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2608
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_copytrade_md_3f701359.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2827
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_copytrade_md_4d0fc319.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2217
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_copytrade_md_506e4c67.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2277
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_copytrade_md_5116148f.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 1598
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_copytrade_md_53511b22.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2863
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_copytrade_md_59552dfc.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 3323
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_copytrade_md_698574ee.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 1735
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_copytrade_md_6a685308.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2999
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_copytrade_md_7d1d6197.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2945
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_copytrade_md_8c09ff8b.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 5687
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_copytrade_md_a22c55b6.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2066
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_copytrade_md_ac0967df.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2013
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_copytrade_md_bb61e608.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 3110
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_copytrade_md_bb99a4f5.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 3218
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_copytrade_md_bde17783.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2215
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_copytrade_md_bf130397.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 3481
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_copytrade_md_bfb3cf0e.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2535
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_copytrade_md_c6dea01d.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2840
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_copytrade_md_cbba22d3.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 1752
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_copytrade_md_d6deb5bb.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2650
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_copytrade_md_e140b9ee.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2415
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_copytrade_md_e2e01cd3.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2243
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_copytrade_md_e7d62341.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2547
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_copytrade_md_e819314f.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 4335
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_copytrade_md_e9b11e17.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2382
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_copytrade_md_eff43591.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 1228
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_index_md_80e0c963.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 1868
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_index_md_925404d5.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 1058
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_index_md_aa489a04.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 3260
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_link_2026_04_05_md_4bcb54a5.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2038
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_md_072e61a4.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 4438
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_md_0b63238b.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2013
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_md_10438914.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2572
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_md_25374589.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2247
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_md_39466620.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 3398
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_md_4526f6b8.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 3241
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_md_7acc18f5.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2309
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_md_88f80caf.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 1890
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_md_923782dc.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 3525
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_md_96e938d1.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 3122
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_md_a01f7fb5.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2449
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_md_be68fc57.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2170
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_md_c2a67bf6.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2180
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_md_e92c882e.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 3302
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_negative_risk_md_7a5dd068.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2873
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_polymarket_2026_04_05_md_d5da534f.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 1901
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_polymarket_github_md_2f735820.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2655
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_polymarket_md_aa7ff7f8.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 3799
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_polymarket_md_b0665680.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2876
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_polymarket_md_cd5a0827.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2883
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_polymarket_md_fd0553d1.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 3178
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_theo_md_e3e7fed7.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2855
+  },
+  {
+    "path": "source_summaries/source_summary_src_wiki_websocket_md_175ba89f.md",
+    "mtime": "2026-04-09T23:11:05+09:00",
+    "ctime": "2026-04-09T23:11:05+09:00",
+    "size": 2998
+  },
+  {
+    "path": "timelines/legacy_raw_fetched_2026_04_07_leaderboard_and_risk_bd37ef.md",
+    "mtime": "2026-04-09T23:12:54+09:00",
+    "ctime": "2026-04-09T23:12:54+09:00",
+    "size": 2869
   },
   {
     "path": "개념/00-INDEX.md",

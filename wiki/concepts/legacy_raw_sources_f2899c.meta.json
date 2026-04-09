@@ -1,0 +1,104 @@
+{
+  "page_id": "legacy_raw_sources_f2899c",
+  "paragraphs": {
+    "para_001": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_raw_sources_md_f2899c78#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false
+    },
+    "para_002": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_raw_sources_md_f2899c78#chunk_002"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false
+    },
+    "para_003": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_raw_sources_md_f2899c78#chunk_003"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false
+    },
+    "para_004": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_raw_sources_md_f2899c78#chunk_004"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false
+    },
+    "para_005": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_raw_sources_md_f2899c78#chunk_005"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false
+    },
+    "para_006": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_raw_sources_md_f2899c78#chunk_006"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false
+    },
+    "para_007": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_raw_sources_md_f2899c78#chunk_007"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false
+    },
+    "para_008": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_raw_sources_md_f2899c78#chunk_008"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false
+    },
+    "para_009": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_raw_sources_md_f2899c78#chunk_009"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false
+    },
+    "para_010": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_raw_sources_md_f2899c78#chunk_010"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false
+    },
+    "para_011": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_raw_sources_md_f2899c78#chunk_011"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false
+    }
+  }
+}

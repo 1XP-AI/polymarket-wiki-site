@@ -1,0 +1,66 @@
+---
+id: source_summary_src_wiki_index_md_aa489a04
+title: 'Source Summary: INDEX 요약'
+type: source_summary
+status: verified
+created_at: '2026-04-09T14:10:09Z'
+last_updated: '2026-04-09T14:10:09Z'
+as_of: '2026-04-09'
+owners:
+- wiki-system
+source_count: 1
+evidence_coverage: 1.0
+confidence: high
+related_pages:
+- legacy_wiki_index_aa489a
+tags:
+- internal
+- internal
+---
+
+# Source Summary: INDEX 요약
+
+## Summary
+
+<!-- para: para_001 -->
+> 프로젝트의 원래 시드 목록(문서 인덱스) 요약
+
+## Key Facts
+
+<!-- para: para_002 -->
+이 문서는 raw/ 디렉토리에 있는 시드 문서들의 목록과 각 문서가 위키 내에서 어떤 역할을 하는지 요약합니다. 위키 확장 루프의 시작점으로서, 새로 수집된 자료를 어떤 카테고리로 편입할지, 어떤 문서를 우선 확장할지 결정하는 기준을 제공합니다.
+
+<!-- para: para_003 -->
+| 시드 파일 | 매핑 카테고리 | 설명 | 우선순위 |
+|-----------|--------------|------|----------|
+| 00-INDEX.md | 개념 | 프로그램 구조, 사이클 정의 | 높음 |
+| 01-Polymarket-개요.md | 개념 | 플랫폼 개요, CLOB, CTF | 높음 |
+| 02-API-레퍼런스.md | 기술/API | Gamma, Data, CLOB API 엔드포인트 | 높음 |
+| 03-Copytrade-전략분석.md | 전략/Copytrade | 카피트레이드 전략 전반 | 높음 |
+| 04-마켓메이커-리베이트.md | 전략/마켓메이커 | Maker 리베이트 프로그램 | 중간 |
+| 05-리더보드-트레이더-데이터.md | 트레이더 | 리더보드 데이터 구조 | 중간 |
+| 06-WebSocket-실시간데이터.md | 기술 | WebSocket 스트리밍 | 중간 |
+| 07-온체인-컨트랙트.md | 기술 | CTF, Split/Merge, 정산 | 중간 |
+
+## Details
+
+<!-- para: para_004 -->
+1. raw/의 인덱스가 업데이트되면 우선 이 문서를 확인하여 새로운 시드의 주제를 파악합니다. 2.
+
+<!-- para: para_005 -->
+- 시드 문서가 하나의 명확한 주제를 넘어서면 서브폴더(예: `wiki/전략/Copytrade/`)를 만들어 분리합니다. - 시드에 중요한 용어가 포함되어 있으면 `wiki/_registry.md`에 키워드를 추가하고, 관련 개념 문서를 생성합니다. - 시드가 외부 API/데이터 소스를 포함하면 `raw/fetched/`로 수집하고, 해당 출처를 YAML frontmatter의 `sources:` 필드에 기록합니다.
+
+<!-- para: para_006 -->
+raw/의 인덱스 문서는 초기 시드 문서 목록과 위키의 구조 설계를 제공합니다. 이 문서는 위키 확장 루프의 시작점이며, 이후 문서들의 연결과 소스 확장을 관리합니다. 각 시드가 어떤 위키 카테고리에 해당하는지 매핑표를 제공하므로, Writer 에이전트는 이 문서를 참고해 문서 생성·확장 우선순위를 결정합니다.
+
+<!-- para: para_007 -->
+- [[개념/INDEX-요약-추가]] — INDEX 요약의 확장 메모, 우선순위 체크리스트
+- [[개념/프로그램-개요]] — autowiki-mlx 프로젝트의 전체 개요
+- [[개념/Polymarket-개요]] — Polymarket 플랫폼 구조
+- [[_index]] — 현재 위키 인덱스(생성된 문서 목록)
+- [[_health]] — 주기적 건강검진 리포트 및 권장 작업
+
+## Open Questions
+
+<!-- para: para_008 -->
+No open questions extracted.

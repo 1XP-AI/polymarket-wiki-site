@@ -1,0 +1,74 @@
+---
+id: source_summary_src_raw_05_md_badd7884
+title: 'Source Summary: 리더보드 & 트레이더 데이터'
+type: source_summary
+status: verified
+created_at: '2026-04-09T14:10:08Z'
+last_updated: '2026-04-09T14:10:08Z'
+as_of: '2026-04-09'
+owners:
+- wiki-system
+source_count: 1
+evidence_coverage: 1.0
+confidence: high
+related_pages:
+- legacy_raw_05_badd78
+tags:
+- internal
+- internal
+---
+
+# Source Summary: 리더보드 & 트레이더 데이터
+
+## Summary
+
+<!-- para: para_001 -->
+> 출처: Polymarket Data API + Gamma API (2026-04-04 수집)
+
+## Key Facts
+
+<!-- para: para_002 -->
+```
+GET https://data-api.polymarket.com/v1/leaderboard
+```
+
+<!-- para: para_003 -->
+- `window`: all | daily | weekly | monthly
+- `limit`: 결과 수 (기본 50)
+- `offset`: 페이지네이션
+
+## Details
+
+<!-- para: para_004 -->
+- `address`: 트레이더 지갑 주소
+- `profit`: 수익 (USDC)
+- `volume`: 거래량
+- `marketsTraded`: 거래한 마켓 수
+- `rank`: 순위
+
+<!-- para: para_005 -->
+```
+GET https://gamma-api.polymarket.com/public-profile?address={wallet}
+```
+
+<!-- para: para_006 -->
+- `username`: 사용자명
+- `profileImage`: 프로필 이미지
+- `bio`: 자기소개
+- 기타 공개 정보
+
+<!-- para: para_007 -->
+```
+GET https://data-api.polymarket.com/positions?address={wallet}
+```
+
+## Open Questions
+
+<!-- para: para_008 -->
+GET https://gamma-api.polymarket.com/public-profile?address={wallet}
+
+<!-- para: para_009 -->
+GET https://data-api.polymarket.com/positions?address={wallet}
+
+<!-- para: para_010 -->
+GET https://data-api.polymarket.com/closed-positions?address={wallet}

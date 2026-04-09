@@ -1,0 +1,62 @@
+---
+id: legacy_wiki_copytrade_e2e01c
+title: 팔로우-선별
+type: concept
+status: draft
+created_at: '2026-04-09T14:10:11Z'
+last_updated: '2026-04-09T14:10:11Z'
+as_of: '2026-04-09'
+owners:
+- wiki-system
+source_count: 1
+evidence_coverage: 1.0
+confidence: medium
+related_pages:
+- source_summary_src_wiki_copytrade_md_e2e01cd3
+tags:
+- concept
+- internal
+---
+
+# 팔로우-선별
+
+## Summary
+
+<!-- para: para_001 -->
+> Copytrade에서 누구를 팔로우(복제거래)할지 판단하는 기준과 실무 절차
+
+## Key Facts
+
+<!-- para: para_002 -->
+팔로우-선별은 단순히 리더보드 상위자를 따르는 것을 넘어서, 트레이더의 전략 일관성, 리스크 프로필, 포지션 사이즈 관리, 시장 상황에 대한 반응성 등을 종합적으로 평가하는 과정입니다. 본 문서는 Copytrade 대상 선별을 위한 실무적 체크리스트와 예시를 제공합니다.
+
+<!-- para: para_003 -->
+1. 성능 일관성: 단기적 수익률이 아닌 중장기(예: 30~90일) 승률과 샤프비율 유사 지표를 확인합니다.
+
+## Details
+
+<!-- para: para_004 -->
+- 최근 90일 수익곡선의 기울기와 변동성 검토
+- 최대 드로다운이 계정 허용 범위 내인지 확인(예: 10% 이하)
+- 평균 포지션 보유시간과 거래 빈도 파악
+- 동일 포지션이 대형 비중으로 반복되는지 확인(집중 위험 경고)
+- 트레이더의 프로필과 과거 포지션 로그([[데이터/수집-파이프라인]] 참조)에서 패턴 추출
+
+<!-- para: para_005 -->
+- [[전략/Copytrade/자동화-플로우]] — 트레이더 성향 분석 방법론
+- [[전략/Copytrade/리스크-관리]] — 포지션 규모와 손실제한 규칙
+- [[전략/Copytrade/포지션-사이즈-전략]] — 주문 배분과 리밸런싱 가이드
+- [[전략/Copytrade/리더보드-알파-탐지]] — 리더보드 기반 알파 탐지 방법론
+
+<!-- para: para_006 -->
+- Theo 같은 고빈도 복제 대상의 경우, 포지션 노출을 분할하여 리스크를 낮추고, 일정 손실 임계값 도달 시 자동 언팔로우 규칙을 적용하는 것이 추천됩니다. (끝)
+
+## Open Questions
+
+<!-- para: para_007 -->
+Pending review.
+
+## Related Pages
+
+<!-- para: para_008 -->
+Source summary: source_summary_src_wiki_copytrade_md_e2e01cd3
