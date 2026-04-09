@@ -2,7 +2,7 @@
 id: legacy_raw_fetched_2026_04_06_copytrade_sources_5404e6
 title: 2026-04-06 Copytrade 외부 소스 수집
 type: concept
-status: draft
+status: verified
 created_at: '2026-04-09T14:10:09Z'
 last_updated: '2026-04-09T15:09:33Z'
 as_of: '2026-04-09'
@@ -14,7 +14,6 @@ confidence: medium
 related_pages: []
 tags:
 - concept
-- internal
 ---
 # 2026-04-06 Copytrade 외부 소스 수집
 

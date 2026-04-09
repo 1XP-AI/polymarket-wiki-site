@@ -2,7 +2,7 @@
 id: legacy_raw_fetched_2026_04_05_fetch_polymarket_f95e6d
 title: '수집 원본: Polymarket snapshot — 2026-04-05'
 type: concept
-status: draft
+status: verified
 created_at: '2026-04-09T14:10:08Z'
 last_updated: '2026-04-09T15:09:33Z'
 as_of: '2026-04-09'
@@ -14,7 +14,6 @@ confidence: medium
 related_pages: []
 tags:
 - concept
-- internal
 ---
 # 수집 원본: Polymarket snapshot — 2026-04-05
 

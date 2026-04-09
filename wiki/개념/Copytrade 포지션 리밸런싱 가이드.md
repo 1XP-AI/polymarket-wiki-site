@@ -2,7 +2,7 @@
 id: legacy_wiki_copytrade_c6dea0
 title: Copytrade 포지션 리밸런싱 가이드
 type: concept
-status: draft
+status: verified
 created_at: '2026-04-09T14:10:10Z'
 last_updated: '2026-04-09T15:09:33Z'
 as_of: '2026-04-09'
@@ -14,7 +14,6 @@ confidence: medium
 related_pages: []
 tags:
 - concept
-- internal
 ---
 # Copytrade 포지션 리밸런싱 가이드
 

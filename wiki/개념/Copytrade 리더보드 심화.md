@@ -2,7 +2,7 @@
 id: legacy_wiki_copytrade_copytrade_4b2b9f
 title: Copytrade 리더보드 심화
 type: concept
-status: draft
+status: verified
 created_at: '2026-04-09T14:10:10Z'
 last_updated: '2026-04-09T15:11:57Z'
 as_of: '2026-04-09'
@@ -12,10 +12,10 @@ source_count: 2
 evidence_coverage: 1.0
 confidence: medium
 related_pages:
-- legacy_wiki_copytrade_53511b
+- legacy_wiki_0x492442eab586f242b53bda933fd5de859c8a3782_e83e3b
+- legacy_wiki_copytrade_copytrade_5e34e9
 tags:
 - concept
-- internal
 ---
 # Copytrade 리더보드 심화
 

@@ -2,7 +2,7 @@
 id: legacy_wiki_theo_e3e7fe
 title: Theo — 트레이더 프로필 사례
 type: concept
-status: draft
+status: verified
 created_at: '2026-04-09T14:10:12Z'
 last_updated: '2026-04-09T15:09:33Z'
 as_of: '2026-04-09'
@@ -11,10 +11,12 @@ owners:
 source_count: 1
 evidence_coverage: 1.0
 confidence: medium
-related_pages: []
+related_pages:
+- legacy_wiki_copytrade_copytrade_5e34e9
+- legacy_wiki_copytrade_e7d623
+- legacy_wiki_link_2026_04_05_4bcb54
 tags:
 - concept
-- internal
 ---
 # Theo — 트레이더 프로필 사례
 

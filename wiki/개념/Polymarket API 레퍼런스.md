@@ -2,7 +2,7 @@
 id: legacy_wiki_api_polymarket_api_62ef40
 title: Polymarket API 레퍼런스
 type: concept
-status: draft
+status: verified
 created_at: '2026-04-09T14:10:09Z'
 last_updated: '2026-04-09T15:11:57Z'
 as_of: '2026-04-09'
@@ -12,10 +12,11 @@ source_count: 2
 evidence_coverage: 1.0
 confidence: medium
 related_pages:
-- legacy_raw_02_api_fbe99e
+- legacy_wiki_clob_064e27
+- legacy_wiki_copytrade_0c3a80
+- legacy_wiki_copytrade_698574
 tags:
 - concept
-- internal
 ---
 # Polymarket API 레퍼런스
 

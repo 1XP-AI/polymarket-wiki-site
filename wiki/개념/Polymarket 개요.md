@@ -2,7 +2,7 @@
 id: legacy_wiki_polymarket_cd5a08
 title: Polymarket 개요
 type: concept
-status: draft
+status: verified
 created_at: '2026-04-09T14:10:09Z'
 last_updated: '2026-04-09T15:11:57Z'
 as_of: '2026-04-09'
@@ -12,13 +12,9 @@ source_count: 5
 evidence_coverage: 1.0
 confidence: medium
 related_pages:
-- legacy_raw_01_polymarket_b75012
-- legacy_wiki_polymarket_aa7ff7
-- legacy_wiki_polymarket_b06656
-- legacy_wiki_polymarket_fd0553
+- legacy_wiki_clob_064e27
 tags:
 - concept
-- internal
 ---
 # Polymarket 개요
 

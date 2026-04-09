@@ -2,7 +2,7 @@
 id: legacy_wiki_copytrade_1f98b0
 title: 리스크 모니터링(Copytrade)
 type: concept
-status: draft
+status: verified
 created_at: '2026-04-09T14:10:10Z'
 last_updated: '2026-04-09T15:11:57Z'
 as_of: '2026-04-09'
@@ -14,7 +14,6 @@ confidence: medium
 related_pages: []
 tags:
 - concept
-- internal
 ---
 # 리스크 모니터링(Copytrade)
 

@@ -2,7 +2,7 @@
 id: legacy_raw_fetched_2026_04_05_polymarket_markets_a295cb
 title: Polymarket 질문 원본 스냅샷
 type: concept
-status: draft
+status: verified
 created_at: '2026-04-09T14:10:09Z'
 last_updated: '2026-04-09T15:09:33Z'
 as_of: '2026-04-09'
@@ -11,10 +11,14 @@ owners:
 source_count: 1
 evidence_coverage: 1.0
 confidence: medium
-related_pages: []
+related_pages:
+- legacy_wiki_clob_064e27
+- legacy_wiki_copytrade_698574
+- legacy_wiki_index_925404
+- legacy_wiki_index_aa489a
+- legacy_wiki_polymarket_2026_04_05_d5da53
 tags:
 - concept
-- internal
 ---
 # Polymarket 질문 원본 스냅샷
 

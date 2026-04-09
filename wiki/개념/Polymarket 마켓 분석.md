@@ -2,7 +2,7 @@
 id: legacy_wiki_c2a67b
 title: Polymarket 마켓 분석
 type: concept
-status: draft
+status: verified
 created_at: '2026-04-09T14:10:10Z'
 last_updated: '2026-04-09T15:09:33Z'
 as_of: '2026-04-09'
@@ -14,7 +14,6 @@ confidence: medium
 related_pages: []
 tags:
 - concept
-- internal
 ---
 # Polymarket 마켓 분석
 

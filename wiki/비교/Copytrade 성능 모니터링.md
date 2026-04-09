@@ -2,7 +2,7 @@
 id: legacy_wiki_copytrade_copytrade_5e34e9
 title: Copytrade 성능 모니터링
 type: comparison
-status: draft
+status: verified
 created_at: '2026-04-09T14:10:10Z'
 last_updated: '2026-04-09T15:09:33Z'
 as_of: '2026-04-09'
@@ -11,10 +11,28 @@ owners:
 source_count: 1
 evidence_coverage: 1.0
 confidence: medium
-related_pages: []
+related_pages:
+- legacy_wiki_0x492442eab586f242b53bda933fd5de859c8a3782_e83e3b
+- legacy_wiki_923782
+- legacy_wiki_clob_064e27
+- legacy_wiki_copytrade_01e411
+- legacy_wiki_copytrade_0c3a80
+- legacy_wiki_copytrade_3f7013
+- legacy_wiki_copytrade_511614
+- legacy_wiki_copytrade_6a6853
+- legacy_wiki_copytrade_8c09ff
+- legacy_wiki_copytrade_a22c55
+- legacy_wiki_copytrade_bb61e6
+- legacy_wiki_copytrade_cbba22
+- legacy_wiki_copytrade_copytrade_4b2b9f
+- legacy_wiki_copytrade_e140b9
+- legacy_wiki_copytrade_e2e01c
+- legacy_wiki_copytrade_e7d623
+- legacy_wiki_index_925404
+- legacy_wiki_negative_risk_7a5dd0
+- legacy_wiki_theo_e3e7fe
 tags:
 - comparison
-- internal
 ---
 # Copytrade 성능 모니터링
 

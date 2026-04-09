@@ -2,7 +2,7 @@
 id: legacy_wiki_copytrade_d6deb5
 title: Copytrade 알파 지표 선별
 type: concept
-status: draft
+status: verified
 created_at: '2026-04-09T14:10:11Z'
 last_updated: '2026-04-09T15:09:33Z'
 as_of: '2026-04-09'
@@ -14,7 +14,6 @@ confidence: medium
 related_pages: []
 tags:
 - concept
-- internal
 ---
 # Copytrade 알파 지표 선별
 

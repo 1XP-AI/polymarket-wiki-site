@@ -2,7 +2,7 @@
 id: legacy_raw_03_copytrade_c17abe
 title: Polymarket Copytrade 전략 분석
 type: concept
-status: draft
+status: verified
 created_at: '2026-04-09T14:10:08Z'
 last_updated: '2026-04-09T15:09:33Z'
 as_of: '2026-04-09'
@@ -14,7 +14,6 @@ confidence: medium
 related_pages: []
 tags:
 - concept
-- internal
 ---
 # Polymarket Copytrade 전략 분석
 

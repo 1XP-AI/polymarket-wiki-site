@@ -2,7 +2,7 @@
 id: legacy_wiki_clob_064e27
 title: CLOB
 type: comparison
-status: draft
+status: verified
 created_at: '2026-04-09T14:10:09Z'
 last_updated: '2026-04-09T15:09:33Z'
 as_of: '2026-04-09'
@@ -11,10 +11,19 @@ owners:
 source_count: 1
 evidence_coverage: 1.0
 confidence: medium
-related_pages: []
+related_pages:
+- legacy_raw_fetched_2026_04_05_polymarket_markets_a295cb
+- legacy_wiki_394666
+- legacy_wiki_96e938
+- legacy_wiki_api_polymarket_api_62ef40
+- legacy_wiki_copytrade_698574
+- legacy_wiki_copytrade_6a6853
+- legacy_wiki_copytrade_copytrade_5e34e9
+- legacy_wiki_copytrade_e7d623
+- legacy_wiki_index_925404
+- legacy_wiki_polymarket_cd5a08
 tags:
 - comparison
-- internal
 ---
 # CLOB
 
