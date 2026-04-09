@@ -4,7 +4,7 @@ title: Copytrade 포지션 리밸런싱 가이드
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:10Z'
-last_updated: '2026-04-09T23:19:48Z'
+last_updated: '2026-04-09T23:20:14Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -81,6 +81,8 @@ What is CopyTrade? CopyTrade is a platform for copy (mirror) trading.
 <!-- para: para_012 -->
 2026 분기별 포트폴리오 리밸런싱 가이드: AI 금융 에이전트 통합 전략
 
+```json
 [2026 분기별 포트폴리오 리밸런싱 가이드] : 연준 최종 금리 하단 3.50% 타겟, 중립 금리 회귀에 따른 자산 배분의 대전환
+```
 
 연준 리더십 교체와 여덟 차례 FOMC 정책 경로 분석에 따른 2026 분기별 포트폴리오 리밸런싱 가이드
