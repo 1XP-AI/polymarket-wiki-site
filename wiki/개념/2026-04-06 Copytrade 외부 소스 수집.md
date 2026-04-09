@@ -4,20 +4,18 @@ title: 2026-04-06 Copytrade 외부 소스 수집
 type: concept
 status: draft
 created_at: '2026-04-09T14:10:09Z'
-last_updated: '2026-04-09T14:10:09Z'
+last_updated: '2026-04-09T15:09:33Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
 source_count: 1
 evidence_coverage: 1.0
 confidence: medium
-related_pages:
-- source_summary_src_raw_fetched_2026_04_06_copytrade_sources_md_5404e622
+related_pages: []
 tags:
 - concept
 - internal
 ---
-
 # 2026-04-06 Copytrade 외부 소스 수집
 
 ## 요약
@@ -26,8 +24,6 @@ tags:
 - URL: https://www.holypoly.io/blog/how-to-copy-trade-polymarket
 - Title: How to Copy Trade on Polymarket - Step-by-Step | HolyPoly
 - Description: Copy trading on Polymarket means following the same positions as top-performing wallets. Guide on finding best wallets to copy and getting copy-ready instructions.
-
-## 핵심 사실
 
 <!-- para: para_002 -->
 - URL: https://www.ai-polymarket.com/polytrader/copy-trading.html
@@ -38,8 +34,6 @@ tags:
 - URL: https://www.polycopy.dev/guides/how-to-copy-trade-polymarket
 - Title: How to Copy Trade on Polymarket — Complete Guide (2025)
 - Description: Polymarket copy trading strategy where you automatically replicate trades of experienced traders in real-time.
-
-## 세부 내용
 
 <!-- para: para_004 -->
 - URL: https://www.alphascope.app/blog/polymarket-copy-trading
@@ -61,8 +55,6 @@ tags:
 - Title: What is Copy Trading? Automate Your Polymarket Strategy
 - Description: Guide on how copy trading works and how to maximize prediction market returns.
 
-## 열린 질문
-
 <!-- para: para_008 -->
 - Title: What is Copy Trading? Automate Your Polymarket Strategy
 
@@ -71,8 +63,3 @@ tags:
 
 <!-- para: para_010 -->
 API Endpoint: https://gamma-api.polymarket.com/events?limit=20&active=true
-
-## 관련 페이지
-
-<!-- para: para_011 -->
-소스 요약: source_summary_src_raw_fetched_2026_04_06_copytrade_sources_md_5404e622

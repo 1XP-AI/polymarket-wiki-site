@@ -4,20 +4,18 @@ title: '수집 원본: Polymarket snapshot — 2026-04-05'
 type: concept
 status: draft
 created_at: '2026-04-09T14:10:08Z'
-last_updated: '2026-04-09T14:10:08Z'
+last_updated: '2026-04-09T15:09:33Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
 source_count: 1
 evidence_coverage: 1.0
 confidence: medium
-related_pages:
-- source_summary_src_raw_fetched_2026_04_05_fetch_polymarket_md_f95e6d60
+related_pages: []
 tags:
 - concept
 - internal
 ---
-
 # 수집 원본: Polymarket snapshot — 2026-04-05
 
 ## 요약
@@ -31,31 +29,11 @@ tags:
 요약:
 - Polymarket markets endpoint (limit=50)에서 활성 마켓 스냅샷을 요청했습니다. 응답에는 다수의 binary markets와 각 마켓의 id, description, status 필드가 포함되어 있었습니다.
 
-## 핵심 사실
-
 <!-- para: para_002 -->
 No key facts extracted.
 
-## 세부 내용
-
 <!-- para: para_003 -->
-출처 목록:
 - https://gamma-api.polymarket.com/markets?limit=50
-- https://gamma-api.polymarket.com/events?limit=20&active=true
-- DuckDuckGo query: "polymarket copytrade" (top results)
-
-요약:
-- Polymarket markets endpoint (limit=50)에서 활성 마켓 스냅샷을 요청했습니다. 응답에는 다수의 binary markets와 각 마켓의 id, description, status 필드가 포함되어 있었습니다.
-
-## 열린 질문
 
 <!-- para: para_004 -->
-- https://gamma-api.polymarket.com/markets?limit=50
-
-<!-- para: para_005 -->
 - https://gamma-api.polymarket.com/events?limit=20&active=true
-
-## 관련 페이지
-
-<!-- para: para_006 -->
-소스 요약: source_summary_src_raw_fetched_2026_04_05_fetch_polymarket_md_f95e6d60

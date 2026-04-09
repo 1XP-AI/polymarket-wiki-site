@@ -4,20 +4,18 @@ title: Polymarket Copytrade 위키 — Raw 자료 인덱스
 type: concept
 status: draft
 created_at: '2026-04-09T14:10:08Z'
-last_updated: '2026-04-09T14:10:08Z'
+last_updated: '2026-04-09T15:09:33Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
 source_count: 1
 evidence_coverage: 1.0
 confidence: medium
-related_pages:
-- source_summary_src_raw_00_index_md_ec336627
+related_pages: []
 tags:
 - concept
 - internal
 ---
-
 # Polymarket Copytrade 위키 — Raw 자료 인덱스
 
 ## 요약
@@ -25,8 +23,6 @@ tags:
 <!-- para: para_001 -->
 > 생성일: 2026-04-04
 > 수집 대상: Polymarket 공식 문서 (docs.polymarket.com) + Signal Foundry 설계 문서
-
-## 핵심 사실
 
 <!-- para: para_002 -->
 | # | 파일명 | 내용 | 상태 |
@@ -46,17 +42,5 @@ tags:
 - [ ] 실제 리더보드 상위 트레이더 데이터 스냅샷
 - [ ] Negative Risk 마켓 상세 분석
 
-## 세부 내용
-
 <!-- para: para_004 -->
 이 raw 자료를 LM Studio (Gemma 4 26B)에 넣고 → 한글 위키로 컴파일
-
-## 열린 질문
-
-<!-- para: para_005 -->
-Pending review.
-
-## 관련 페이지
-
-<!-- para: para_006 -->
-소스 요약: source_summary_src_raw_00_index_md_ec336627

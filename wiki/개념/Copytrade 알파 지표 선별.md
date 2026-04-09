@@ -4,28 +4,24 @@ title: Copytrade 알파 지표 선별
 type: concept
 status: draft
 created_at: '2026-04-09T14:10:11Z'
-last_updated: '2026-04-09T14:10:11Z'
+last_updated: '2026-04-09T15:09:33Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
 source_count: 1
 evidence_coverage: 1.0
 confidence: medium
-related_pages:
-- source_summary_src_wiki_copytrade_md_d6deb5bb
+related_pages: []
 tags:
 - concept
 - internal
 ---
-
 # Copytrade 알파 지표 선별
 
 ## 요약
 
 <!-- para: para_001 -->
 > 리더보드 기반 copytrade 후보를 정량·정성적으로 선별하고, 발견된 알파를 통계적·데이터 기반으로 검증하여 유의미한 신호만 자동 추종하도록 하는 절차와 체크리스트.
-
-## 핵심 사실
 
 <!-- para: para_002 -->
 리더보드에서 발견된 트레이더를 단순 수익률 기준이 아니라, 안정적 알파(alpha)를 제공할 가능성과 copytrade 대상으로서의 적합성(리스크·운용 편의성)을 종합적으로 평가하여 우선순위를 매깁니다.
@@ -35,14 +31,9 @@ tags:
    - 기간별 승률(예: 지난 30/90/365일)과 평균 수익의 표준편차를 확인
    - 높은 변동성과 단기간 고수익보다 꾸준한 플러스 흐름을 우선
 
-2.
-
-## 세부 내용
-
 <!-- para: para_004 -->
 1. 각 지표에 가중치 부여(예: 일관성 30%, 위험조정성 25%, 최신성 15%, 포지션·빈도 15%, 검증 15%)
 2. 표준화된 점수(0-100)로 변환 후 가중평균 산출
-3.
 
 <!-- para: para_005 -->
 - 리더보드 상위 50명 중 자동 스크리닝으로 1차 후보 12명 추출
@@ -62,15 +53,3 @@ tags:
 2. 베이스라인 수립
    - 랜덤 추종(random-follow) 및 시장 베타(시장 평균 성과) 대비 초과수익 계산
    - 샤프비율, 승률, 평균 손익 등을 베이스라인으로 설정
-
-3.
-
-## 열린 질문
-
-<!-- para: para_008 -->
-Pending review.
-
-## 관련 페이지
-
-<!-- para: para_009 -->
-소스 요약: source_summary_src_wiki_copytrade_md_d6deb5bb

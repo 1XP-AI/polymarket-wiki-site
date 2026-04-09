@@ -4,20 +4,18 @@ title: 2026-04-07 Leaderboard & Risk 관리 외부 소스 수집
 type: timeline
 status: draft
 created_at: '2026-04-09T14:10:09Z'
-last_updated: '2026-04-09T14:10:09Z'
+last_updated: '2026-04-09T15:09:33Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
 source_count: 1
 evidence_coverage: 1.0
 confidence: medium
-related_pages:
-- source_summary_src_raw_fetched_2026_04_07_leaderboard_and_risk_md_bd37ef99
+related_pages: []
 tags:
 - timeline
 - internal
 ---
-
 # 2026-04-07 Leaderboard & Risk 관리 외부 소스 수집
 
 ## 요약
@@ -26,8 +24,6 @@ tags:
 - URL: https://polymarket.com/leaderboard/overall/monthly/profit
 - Title: Leaderboard - Polymarket
 - Description: See top traders and biggest wins on Polymarket
-
-## 핵심 사실
 
 <!-- para: para_002 -->
 - URL: https://polyburg.com/polymarket-top-traders
@@ -38,8 +34,6 @@ tags:
 - URL: https://merlin.trade/leaderboard
 - Title: Polymarket Leaderboard — Top Traders · Merlin
 - Description: Real-time Polymarket leaderboard with top 50 traders by P&L, ROI, and volume.
-
-## 세부 내용
 
 <!-- para: para_004 -->
 - URL: https://laikalabs.ai/prediction-markets/top-polymarket-traders
@@ -61,12 +55,5 @@ tags:
 - Title: Polymarket leaderboard: Find Profitable Wallets, Top PNL Traders in 2026
 - Description: Polymarket leaderboard: Find Profitable Wallets, Top PNL Traders in 2026. Most people lose money on Polymarket... A few wallets keep making money again and again.
 
-## 열린 질문
-
 <!-- para: para_008 -->
 - Endpoint: https://gamma-api.polymarket.com/events?limit=5&active=true
-
-## 관련 페이지
-
-<!-- para: para_009 -->
-소스 요약: source_summary_src_raw_fetched_2026_04_07_leaderboard_and_risk_md_bd37ef99

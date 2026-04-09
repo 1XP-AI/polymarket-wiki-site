@@ -4,20 +4,18 @@ title: Copytrade 자동화 플로우
 type: concept
 status: draft
 created_at: '2026-04-09T14:10:11Z'
-last_updated: '2026-04-09T14:10:11Z'
+last_updated: '2026-04-09T15:11:57Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
 source_count: 1
 evidence_coverage: 1.0
 confidence: medium
-related_pages:
-- source_summary_src_wiki_copytrade_md_0c3a8011
+related_pages: []
 tags:
 - concept
 - internal
 ---
-
 # Copytrade 자동화 플로우
 
 ## 요약
@@ -25,13 +23,10 @@ tags:
 <!-- para: para_001 -->
 > 리더보드 기반 copytrade의 자동화 설계와 모니터링 체크리스트
 
-## 핵심 사실
-
 <!-- para: para_002 -->
 Copytrade 자동화는 크게 1) 트레이더 선별, 2) 포지션 동기화, 3) 리스크 제어, 4) 모니터링·알림의 네 단계로 구성된다.
 
 <!-- para: para_003 -->
-```
 ┌─────────────────┐    ┌──────────────────┐    ┌───────────────────┐
 │  Leaderboard     │    │  Polymarket CLOB │    │  On-chain Data    │
 │  Snapshot Engine │───▶│  WebSocket Feed  │◀───│  (Polygonscan)    │
@@ -48,13 +43,10 @@ Copytrade 자동화는 크게 1) 트레이더 선별, 2) 포지션 동기화, 3)
 │  Weight Engine  │    │  Order Executor   │    │  Risk Monitor     │
 │  (Kelly/Equal)  │───▶│  (CLOB API)       │    │  & Alert System   │
 └─────────────────┘    └──────────────────┘    └───────────────────┘
-```
 
 1) 트레이더 선별
 - 리더보드 및 과거 성과로 후보군을 만들고, 승률· 평균 포지션 크기· 최대 드로우다운을 기준으로 필터링한다. (관련: [[전략/Copytrade/팔로우-선별]], [[전략/Copytrade/알고리즘-선별-체크리스트]])
 - Polycopy 등 서드파티 리더보드(Polycopy: 500K+ 트레이더)를 교차 검증해 단일 플랫폼 편향을 피한다.
-
-## 세부 내용
 
 <!-- para: para_004 -->
 2) 포지션 동기화
@@ -69,6 +61,7 @@ class CopytradePipeline:
         self.ws = WebSocketFeed("wss://ws-api.polymarket.com")
         self.risk_monitor = RiskMonitor(max_drawdown=config.max_dd)
         self.circuit_breaker = CircuitBreaker(threshold=0.05)  # 5% daily loss
+```
 
 async def run(self):
         await self.ws.connect()
@@ -76,11 +69,13 @@ async def run(self):
         self.ws.on("error", self.handle_ws_error)
 
 <!-- para: para_006 -->
+```python
 while True:
             traders = await self.fetch_leaderboard_scores()
             weights = self.calculate_weights(traders)
             await self.rebalance_positions(weights)
             await asyncio.sleep(300)
+```
 
 async def handle_trade_signal(self, trade):
         if self.circuit_breaker.is_open():
@@ -97,19 +92,11 @@ await self.execute_order(normalized)
 def calculate_weights(self, traders):
 
 <!-- para: para_007 -->
+```python
 if len(traders) == 0:
             return {}
         base = 1.0 / len(traders)
         return {t.wallet: base for t in traders}
 
 if __name__ == "__main__":
-
-## 열린 질문
-
-<!-- para: para_008 -->
-Pending review.
-
-## 관련 페이지
-
-<!-- para: para_009 -->
-소스 요약: source_summary_src_wiki_copytrade_md_0c3a8011
+```

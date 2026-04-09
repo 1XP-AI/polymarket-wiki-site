@@ -4,28 +4,24 @@ title: Reddit r/Polymarket Hot Posts (2026-04-05 01:00)
 type: concept
 status: draft
 created_at: '2026-04-09T14:10:09Z'
-last_updated: '2026-04-09T14:10:09Z'
+last_updated: '2026-04-09T15:09:33Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
 source_count: 1
 evidence_coverage: 1.0
 confidence: medium
-related_pages:
-- source_summary_src_raw_fetched_2026_04_05_reddit_polymarket_md_16d4761e
+related_pages: []
 tags:
 - concept
 - internal
 ---
-
 # Reddit r/Polymarket Hot Posts (2026-04-05 01:00)
 
 ## 요약
 
 <!-- para: para_001 -->
 총 10개 포스트 수집.
-
-## 핵심 사실
 
 <!-- para: para_002 -->
 - **서브레딧**: Polymarket
@@ -40,8 +36,6 @@ tags:
 - **점수**: 3
 - **댓글 수**: 12
 - **URL**: https://www.reddit.com/r/Polymarket/comments/1rvehvw/polymarket_starter_pack_a_quick_guide_for_trading/
-
-## 세부 내용
 
 <!-- para: para_004 -->
 - **서브레딧**: Polymarket
@@ -70,13 +64,3 @@ tags:
 - **점수**: 2
 - **댓글 수**: 6
 - **URL**: https://www.reddit.com/r/Polymarket/comments/1sc2pk6/first_time_user_withdrawl_via_apple_pay_how_long/
-
-## 열린 질문
-
-<!-- para: para_008 -->
-Pending review.
-
-## 관련 페이지
-
-<!-- para: para_009 -->
-소스 요약: source_summary_src_raw_fetched_2026_04_05_reddit_polymarket_md_16d4761e

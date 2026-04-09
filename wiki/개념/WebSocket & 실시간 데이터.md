@@ -4,7 +4,7 @@ title: WebSocket & 실시간 데이터
 type: concept
 status: draft
 created_at: '2026-04-09T14:10:08Z'
-last_updated: '2026-04-09T14:57:50Z'
+last_updated: '2026-04-09T15:11:57Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -13,21 +13,16 @@ evidence_coverage: 1.0
 confidence: medium
 related_pages:
 - legacy_wiki_websocket_175ba8
-- source_summary_src_raw_06_websocket_md_50643061
-- source_summary_src_wiki_websocket_md_175ba89f
 tags:
 - concept
 - internal
 ---
-
 # WebSocket & 실시간 데이터
 
 ## 요약
 
 <!-- para: para_001 -->
 > 출처: docs.polymarket.com WebSocket (2026-04-04 수집)
-
-## 핵심 사실
 
 <!-- para: para_002 -->
 Polymarket은 실시간 데이터 스트리밍을 위해 여러 WebSocket 채널을 제공한다.
@@ -36,8 +31,6 @@ Polymarket은 실시간 데이터 스트리밍을 위해 여러 WebSocket 채널
 - 인증 불필요
 - 실시간 오더북, 가격, 마켓 변경 데이터
 - 구독할 마켓(토큰 ID)을 지정
-
-## 세부 내용
 
 <!-- para: para_004 -->
 - 오더북 업데이트 (bid/ask 변경)
@@ -60,20 +53,15 @@ Polymarket은 실시간 데이터 스트리밍을 위해 여러 WebSocket 채널
 - 크립토 가격
 - 주가 (equity prices)
 
-## 열린 질문
-
 <!-- para: para_008 -->
 - `/trades?address={wallet}` 를 주기적으로 호출
 
-## 관련 페이지
+## 추가 내용
 
 <!-- para: para_009 -->
-소스 요약: source_summary_src_raw_06_websocket_md_50643061
+Polymarket은 4가지 WebSocket 채널을 제공하며, 용도와 인증 요구사항이 다르다.
 
-<!-- para: para_001 -->
-`WebSocket 실시간 데이터` 문서의 핵심 내용을 `WebSocket & 실시간 데이터`에 병합했다. 요약: > 한 줄 요약: Market/User/Sports/RTDS 채널을 통한 실시간 오더북·트레이드 스트림 사용법, 재접속 전략, Copytrade 지연 최소화 패턴.
-
-## 핵심 사실 Polymarket은 4가지 WebSocket 채널을 제공하며, 용도와 인증 요구사항이 다르다. | 채널 | 인증 | 용도 |
+|채널 | 인증 | 용도 |
 |------|------|------|
 | Market | 불필요 | 공개 오더북·가격·거래 실시간 스트림 |
 | User | L2 Auth 필요 | 개인 주문/체결/포지션 이벤트 |
