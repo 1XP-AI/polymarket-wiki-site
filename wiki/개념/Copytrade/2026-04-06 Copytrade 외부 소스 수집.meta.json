@@ -104,6 +104,18 @@
       "source_urls": [
         "https://github.com/Polymarket-copy-trader/polymarket-copy-trading-bot"
       ]
+    },
+    "para_013": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_copytrade_synthesis_documentation_fbd61acf#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://docs.synthesis.trade/features/copytrade"
+      ]
     }
   }
 }

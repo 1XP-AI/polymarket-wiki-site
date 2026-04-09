@@ -4,17 +4,18 @@ title: 2026-04-06 Copytrade 외부 소스 수집
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:09Z'
-last_updated: '2026-04-09T15:09:33Z'
+last_updated: '2026-04-09T23:22:25Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
-source_count: 2
+source_count: 3
 evidence_coverage: 1.0
 confidence: medium
 related_pages: []
 tags:
 - concept
 sources:
+- url: https://docs.synthesis.trade/features/copytrade
 - url: https://polynoob.com/copytrading-on-polymarket/
 - url: https://github.com/Polymarket-copy-trader/polymarket-copy-trading-bot
 ---
@@ -73,3 +74,8 @@ PolyNoob의 글은 Polymarket의 Copytrading을 전통 금융·암호화폐·NFT
 
 <!-- para: para_012 -->
 이 GitHub README는 Polymarket에서 특정 타깃 지갑의 포지션을 추적해 사용자의 포지션을 자동으로 맞추는 copy trading bot을 소개한다. 4초 주기 스캔, 주문 실행, 2시간마다의 자동 리딤, 포지션 한도, 블랙리스트, RPC 로테이션, MongoDB 기록, Safe 멀티시그 연동을 주요 기능으로 설명하며, Node.js, npm/yarn, MongoDB, Polygon RPC, 개인키, USDC 같은 사전 조건과 PM2·Docker 배포, 보안 수칙, 법적 고지도 함께 담고 있다.
+
+<!-- para: para_013 -->
+Skip to main content
+
+Copytrade lets you automatically mirror trades from any wallet address. When your target buys or sells, Synthesis executes the same trade on your behalf using your configured settings.
