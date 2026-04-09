@@ -4,7 +4,7 @@ title: Copytrade
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:09Z'
-last_updated: '2026-04-09T15:09:33Z'
+last_updated: '2026-04-09T16:46:07Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -25,139 +25,52 @@ sources:
 ## 요약
 
 <!-- para: para_001 -->
-> 리더보드 트레이더를 따라 거래하는 전략 — 개념, 계량적 평가, 백테스트, 실행, 모니터링을 아우르는 통합 문서
+> 리더보드 상위 트레이더를 따라 거래하는 전략의 개념, 데이터 수집, 실행 구조, 운영 리스크를 정리한 문서
 
 <!-- para: para_002 -->
-Copytrade는 리더보드 상의 검증된 트레이더를 추종해 그들의 포지션 변화를 자동으로 복제하는 전략이다. 이 문서는 카피트레이드의 개념적 기반과 계량적 평가 지표, 백테스트 설계, 실행·슬리피지 고려, 운영 모니터링 체크리스트 및 구현 템플릿을 제시한다.
+Copytrade는 특정 트레이더의 포지션 변화나 체결 신호를 추종해 자신의 계정에서도 유사한 포지션을 자동 또는 반자동으로 재현하는 방식이다. Polymarket에서는 리더보드 데이터, 공개 프로필, 포지션 스냅샷, 체결 내역을 조합해 추종 대상을 선별하고 복제 전략을 설계할 수 있다.
 
 <!-- para: para_003 -->
-GET https://data-api.polymarket.com/v1/leaderboard
-파라미터: window=all
+Polymarket copytrade 구축에서 기본 수집 흐름은 리더보드 조회 -> 트레이더 프로필 확인 -> 현재 포지션 확인 -> 과거 체결 분석 순서다.
 
-|daily|weekly|monthly, limit, offset
-
-- 수익률 기준 트레이더 순위
-- 트레이더 지갑 주소 획득 가능
-- 기간별 필터링 (전체/일간/주간/월간)
+| 목적 | 엔드포인트 | 핵심 파라미터 |
+| --- | --- | --- |
+| 리더보드 조회 | `GET https://data-api.polymarket.com/v1/leaderboard` | `window=daily|weekly|monthly`, `limit`, `offset` |
+| 트레이더 프로필 | `GET https://gamma-api.polymarket.com/public-profile?address={wallet}` | `address` |
+| 현재 포지션 | `GET https://data-api.polymarket.com/positions?address={wallet}` | `address` |
+| 과거 체결 | `GET https://data-api.polymarket.com/trades?address={wallet}` | `address` |
 
 <!-- para: para_004 -->
-GET https://gamma-api.polymarket.com/public-profile?address={wallet}
-
-- 프로필 정보, 거래 통계
+리더보드 데이터는 수익률 기준 상위 트레이더를 찾는 출발점이다. 기간별 성과를 비교해 일간 급등형과 장기 일관형을 구분할 수 있고, 이후 프로필 API로 실제 지갑 주소와 공개 지표를 확인한다.
 
 <!-- para: para_005 -->
-GET https://data-api.polymarket.com/positions?address={wallet}
-
-- 현재 보유 포지션 전체 조회
-- 마켓별 토큰 수량, 방향 (Yes/No)
+포지션 API는 현재 보유 중인 Yes/No 토큰, 마켓별 익스포저, 평균 진입가를 재구성하는 데 유용하다. Copytrade에서는 이 스냅샷을 기준점으로 삼아 내 계정과 추종 대상 간 편차를 계산한다.
 
 <!-- para: para_006 -->
-GET https://data-api.polymarket.com/trades?address={wallet}
-
-- 과거 거래 기록
-- 체결 가격, 수량, 시간, 방향
+트레이드 API는 체결 시각, 수량, 방향을 제공하므로 추종 전략의 반응 속도와 슬리피지 영향을 분석할 수 있다. 실시간 추종은 체결 스트림과 폴링을 함께 사용해야 안정적이다.
 
 <!-- para: para_007 -->
-- Market Channel로 특정 마켓의 거래 실시간 수신
-- 특정 트레이더의 거래를 필터링하려면 trades 폴링 또는 온체인 이벤트 구독
+실행 단계에서는 신호의 지연, 최소 주문 단위, 마켓 유동성, Neg-Risk 여부를 함께 고려해야 한다. 리더보드 성과가 좋아 보여도 진입 시점이 늦으면 동일한 수익률을 재현하지 못할 수 있다.
 
 <!-- para: para_008 -->
-GET https://gamma-api.polymarket.com/public-profile?address={wallet}
+운영 지표로는 누적 수익률보다 최대 드로우다운, 포지션 집중도, 시장 간 상관관계, 평균 보유 시간, 손실 후 회복 속도가 더 중요하다. 추종 대상을 바꿔야 하는 시점을 정하는 데도 이 지표들이 쓰인다.
 
 <!-- para: para_009 -->
-GET https://data-api.polymarket.com/positions?address={wallet}
+리스크 관리 기준은 일별 손실 한도, 단일 트레이더 최대 비중, 동일 이벤트군 중복 노출, 슬리피지 한도, API 장애 시 fail-safe 동작으로 정리하는 편이 좋다.
 
 <!-- para: para_010 -->
-GET https://data-api.polymarket.com/trades?address={wallet}
+결론적으로 Copytrade는 단순히 "잘하는 사람 따라 사기"가 아니라, 데이터 수집 파이프라인과 비중 배분 규칙, 리스크 차단 조건을 함께 설계해야 유지 가능한 전략이 된다.
 
-## 세부 내용
+## 외부 도구와 운영 사례
 
 <!-- para: para_011 -->
-CopyTrade는 복수의 브로커와 트레이딩 플랫폼에서 동작한다고 소개하는 카피 트레이딩 플랫폼의 홈페이지입니다. 핵심 제품은 `CopyTrade Local`, `CopyTrade Cloud`, `Signals Marketplace`, `White-Labeling`이며, 로컬/클라우드 환경에서 계정 간 주문 복제, 전략(Strategy) 관리, 마스터 계정과 카피 계정 연결, 신호 매매 마켓플레이스 운영을 설명합니다. 또한 `MetaTrader 4/5` 호환, 주요 브로커 지원, 중앙 집중식 관리, 위험 고지와 함께 서비스 소개 및 CTA 중심의 마케팅 구성을 갖습니다.
+CopyTrade는 복수 브로커와 플랫폼에서 주문 복제를 지원하는 상용 서비스로 자신을 소개한다. 핵심 제품은 로컬 복제, 클라우드 복제, 시그널 마켓플레이스, 화이트라벨 구성으로 나뉘며, 마스터 계정과 팔로워 계정 연결 및 전략 배포를 중심 기능으로 제시한다.
 
 <!-- para: para_012 -->
-ForexBrokers.com의 2026년 복사 거래(copy trading) 플랫폼 순위 가이드다. eToro를 최상위 추천으로 두고 Vantage, AvaTrade, Pepperstone, IC Markets, Tickmill, Exness, FXCM을 비교하며, 각 브로커의 복사 거래 기능, 지원 플랫폼(MT4/MT5/cTrader/제3자 앱), 최소 예치금, 신뢰 점수, 장단점과 함께 시작 방법, 위험 관리, 합법성, FAQ를 다룬다.
+ForexBrokers.com의 2026년 복사 거래 가이드는 eToro, Vantage, AvaTrade, Pepperstone, IC Markets, Tickmill, Exness, FXCM을 비교하며, 복사 거래에서는 브로커 신뢰도와 플랫폼 제약, 최소 예치금, 지원 자산 범위를 함께 봐야 한다고 정리한다.
 
 <!-- para: para_013 -->
-%PDF-1.7
-%����
-1 0 obj
-<</Type/Catalog/Pages 2 0 R /Outlines 110 0 R /PageLabels<</Kids[ 122 0 R ]>>/Lang(en)/MarkInfo<</Marked true>>/StructTreeRoot 123 0 R /Metadata 406 0 R >>
-endobj
-2 0 obj
-<</Type/Pages/Count 12/Kids[ 17 0 R ]>>
-endobj
-3 0 obj
-<</Producer(Foxit PDF Creator Version 7.3.15.0621)/Author(Lenas Thoma)/Creator(Foxit Software Inc.)/Keywords()/Subject()/Title()/CreationDate(D:20240228165510+02'00')/ModDate(D:20240228165510+02'00')>>
-endobj
-5 0 obj
-<</Type/Page/Parent 17 0 R /Resources<</Font<</F1 18 0 R /F2 22 0 R >>/ExtGState<</GS7 26 0 R /GS8 27 0 R >>/XObject<</Image11 28 0 R >>/ProcSet[/PDF/Text/ImageB/ImageC/ImageI]>>/MediaBox[ 0 0 612 792]/Contents 29 0 R /Group<</Type/Group/S/Transparency/CS/DeviceRGB>>/Tabs/S/StructParents 0>>
-endobj
-6 0 obj
-<</Type/Page/Parent 17 0 R /Resources<</Font<</F1 18 0 R /F3 30 0 R /F2 22 0 R /F4 34 0 R /F5 41 0 R >>/ExtGState<</GS7 26 0 R /GS8 27 0 R >>/XObject<</Image14 44 0 R /Image15 45 0 R >>/ProcSet[/PDF/Text/ImageB/ImageC/ImageI]>>/Annots[ 47 0 R  48 0 R  49 0 R  50 0 R  51 0 R  52 0 R  53 0 R  54 0 R  55 0 R  56 0 R  57 0 R ]/MediaBox[ 0 0 612 792]/Contents 58 0 R /Group<</Type/Group/S/Transparency/CS/DeviceRGB>>/Tabs/S/StructParents 1>>
-endobj
-7 0 obj
-<</Type/Page/Parent 17 0 R /Resources<</Font<</F1 18 0 R /F3 30 0 R /F6 59 0 R /F2 22 0 R /F4 34 0 R /F7 62 0 R /F8 66 0 R >>/ExtGState<</GS7 26 0 R /GS8 27 0 R >>/XObject<</Image14 44 0 R /Image15 45 0 R >>/ProcSet[/PDF/Text/ImageB/ImageC/ImageI]>>/MediaBox[ 0 0 612 792]/Contents 69 0 R /Group<</Type/Group/S/Transparency/CS/DeviceRGB>>/Tabs/S/StructParents 13>>
-endobj
-8 0 obj
-<</Type/Page/Parent 17 0 R /Resources<</Font<</F1 18 0 R /F3 30 0 R /F6 59 0 R /F2 22 0 R /F4 34 0 R >>/ExtGState<</GS7 26 0 R /GS8 27 0 R >>/XObject<</Image14 44 0 R /Image15 45 0 R /Image55 70 0 R /Image56 71 0 R /Image57 72 0 R >>/ProcSet[/PDF/Text/ImageB/ImageC/ImageI]>>/MediaBox[ 0 0 612 792]/Contents 73 0 R /Group<</Type/Group/S/Transparency/CS/DeviceRGB>>/Tabs/S/StructParents 14>>
-endobj
-9 0 obj
-<</Type/Page/Parent 17 0 R /Resources<</Font<</F1 18 0 R /F2 22 0 R /F4 34 0 R /F8 66 0 R >>/ExtGState<</GS7 26 0 R /GS8 27 0 R >>/XObject<</Image14 44 0 R /Image15 45 0 R /Image59 74 0 R /Image60 75 0 R >>/ProcSet[/PDF/Text/ImageB/ImageC/ImageI]>>/MediaBox[ 0 0 612 792]/Contents 76 0 R /Group<</Type/Group/S/Transparency/CS/DeviceRGB>>/Tabs/S/StructParents 15>>
-endobj
-10 0 obj
-<</Type/Page/Parent 17 0 R /Resources<</Font<</F1 18 0 R /F2 22 0 R /F3 30 0 R /F4 34 0 R /F8 66 0 R >>/ExtGState<</GS7 26 0 R /GS8 27 0 R >>/XObject<</Image14 44 0 R /Image15 45 0 R /Image62 77 0 R /Image63 78 0 R >>/ProcSet[/PDF/Text/ImageB/ImageC/ImageI]>>/MediaBox[ 0 0 612 792]/Contents 79 0 R /Group<</Type/Group/S/Transparency/CS/DeviceRGB>>/Tabs/S/StructParents 16>>
-endobj
-11 0 obj
-<</Type/Page/Parent 17 0 R /Resources<</Font<</F1 18 0 R /F3 30 0 R /F6 59 0 R /F9 80 0 R /F2 22 0 R /F10 87 0 R /F11 95 0 R /F4 34 0 R >>/ExtGState<</GS7 26 0 R /GS8 27 0 R >>/XObject<</Image14 44 0 R /Image15 45 0 R >>/ProcSet[/PDF/Text/ImageB/ImageC/ImageI]>>/MediaBox[ 0 0 612 792]/Contents 98 0 R /Group<</Type/Group/S/Transparency/CS/DeviceRGB>>/Tabs/S/StructParents 17>>
-endobj
-12 0 obj
-<</Type/Page/Parent 17 0 R /Resources<</Font<</F1 18 0 R /F3 30 0 R /F6 59 0 R /F9 80 0 R /F2 22 0 R /F4 34 0 R /F8 66 0 R >>/ExtGState<</GS7 26 0 R /GS8 27 0 R >>/XObject<</Image14 44 0 R /Image15 45 0 R /Image55 70 0 R /Image78 99 0 R >>/ProcSet[/PDF/Text/ImageB/ImageC/ImageI]>>/MediaBox[ 0 0 612 792]/Contents 100 0 R /Group<</Type/Group/S/Transparency/CS/DeviceRGB>>/Tabs/S/StructParents 18>>
-endobj
-13 0 obj
-<</Type/Page/Parent 17 0 R /Resources<</Font<</F1 18 0 R /F2 22 0 R /F4 34 0 R /F8 66 0 R >>/ExtGState<</GS7 26 0 R /GS8 27 0 R >>/XObject<</Image14 44 0 R /Image15 45 0 R /Image80 101 0 R /Image81 102 0 R >>/ProcSet[/PDF/Text/ImageB/ImageC/ImageI]>>/MediaBox[ 0 0 612 792]/Contents 103 0 R /Group<</Type/Group/S/Transparency/CS/DeviceRGB>>/Tabs/S/StructParents 19>>
-endobj
-14 0 obj
-<</Type/Page/Parent 17 0 R /Resources<</Font<</F1 18 0 R /F3 30 0 R /F6 59 0 R /F2 22 0 R /F8 66 0 R >>/ExtGState<</GS7 26 0 R /GS8 27 0 R >>/XObject<</Image14 44 0 R /Image15 45 0 R /Image83 104 0 R /Image84 105 0 R >>/ProcSet[/PDF/Text/ImageB/ImageC/ImageI]>>/MediaBox[ 0 0 612 792]/Contents 106 0 R /Group<</Type/Group/S/Transparency/CS/DeviceRGB>>/Tabs/S/StructParents 20>>
-endobj
-15 0 obj
-<</Type/Page/Parent 17 0 R /Resources<</Font<</F1 18 0 R /F2 22 0 R /F3 30 0 R /F6 59 0 R /F4 34 0 R >>/ExtGState<</GS7 26 0 R /GS8 27 0 R >>/XObject<</Image14 44 0 R /Image15 45 0 R /Image86 107 0 R >>/ProcSet[/PDF/Text/ImageB/ImageC/ImageI]>>/MediaBox[ 0 0 612 792]/Contents 108 0 R /Group<</Type/Group/S/Transparency/CS/DeviceRGB>>/Tabs/S/StructParents 21>>
-endobj
-16 0 obj
-<</Type/Page/Parent 17 0 R /Resources<</Font<</F1 18 0 R /F4 34 0 R /F2 22 0 R /F3 30 0 R /F6 59 0 R >>/ExtGState<</GS7 26 0 R /GS8 27 0 R >>/XObject<</Image14 44 0 R /Image15 45 0 R >>/ProcSet[/PDF/Text/ImageB/ImageC/ImageI]>>/MediaBox[ 0 0 612 792]/Contents 109 0 R /Group<</Type/Group/S/Transparency/CS/DeviceRGB>>/Tabs/S/StructParents 22>>
-endobj
-17 0 obj
-<</Kids[ 5 0 R  6 0 R  7 0 R  8 0 R  9 0 R  10 0 R  11 0 R  12 0 R  13 0 R  14 0 R  15 0 R  16 0 R ]/Type/Pages/Count 12/Parent 2 0 R >>
-endobj
-18 0 obj
-<</Type/Font/Subtype/TrueType/Name/F1/BaseFont/BCDEEE+Calibri/Encoding/WinAnsiEncoding/FontDescriptor 19 0 R /FirstChar 32/LastChar 49/Widths 21 0 R >>
-endobj
-19 0 obj
-<</Type/FontDescriptor/FontName/BCDEEE+Calibri/Flags 32/ItalicAngle 0/Ascent 750/Descent -250/CapHeight 750/AvgWidth 521/MaxWidth 1743/FontWeight 400/XHeight 250/StemV 52/FontBBox[ -503 -250 1240 750]/FontFile2 20 0 R >>
-endobj
-20 0 obj
-<</Filter/FlateDecode/Length 20895/Length1 84020>>stream
-x��}x�U��9�;-S23I&�d��
-���B'$)zL�	)
-�(�F�(��+*��],�%`CŮX׺V��Ul��"��>�3�����~��?Or�}������e0�3�
-�б��e�.~�j
-��71��-9���]Š�C�f���~�=\{c�\Ԫ�[X۲kΣ1v�e��)u�,��hy} c�w1����e��3�Q3��v�l��ͧ5�1>���[W3��RSCm�w�O��=+������}H�!�Ӵp��sްtG�XpG���y%3-�=8	ŧ/�=���9�
-�7��oa���k��|
-�= }΢څ
-���f.c_��}��,^�����c<��|�҆�����;�<�&��0do�gw_8�>��nb���d���_�\9��[>5
-B2�)�
-�
-��͛ؿs§ZK],����d����A+�B����A�s9SuA~1�3��j}4�M����+���^Q���>`�;w��ӵ
-��O��X���g���<�"OݮO#e)��#��ϳ������x����؍ǻ�
-3�=�U������a���x�!n��<ͮ>�}�-��W6����߲�_�/q�[���_nʵ���y5l��d_~+�d��>t5��9��3�]?���,��So`V{�r��w?��_��7��Y.nq���3�ì���
-م��ό[�����-nq�[�������ϙq�[�����-nq�[�����-n���㿍
-���-nq�[�����-nq�[����@SZ���3ٜ_V���_�'q�[�����-nq�[�����-nq�[�����-nq�[����I��y�{��
-gScȌ�%����R.d:�^�;�5�ƺ��l<�gK�f�#�ؗ�;+��N��?!��#���<����{yFg�:��
-������bOt�X��1���?�R_
-�����mEKa?m�K{?5����^��)�3~"�_؃�e���Ď
-�X�n���KZ/Z�|�I
-��76�ϛ;g���3���ӦN�<i���Ǝ�
-=����t�P���
+Errante의 CopyTrading 매뉴얼 PDF는 카피트레이딩 서비스의 계정 연결 절차, 전략 구독 흐름, 주문 복제 방식, 위험 고지와 사용자 책임 범위를 설명하는 운영 문서다. 사용자용 위키에는 PDF 원문 바이너리를 그대로 싣지 않고 핵심 내용만 남기는 편이 적절하다.
 
 <!-- para: para_014 -->
-이 문서는 CrossTrade의 `Trade Copier`를 소개하는 제품/기능 페이지입니다. NinjaTrader 8(`NT8`) 계정 간 트레이드를 복사하는 도구로, `Order Mode`와 `Execution Mode` 두 가지 복사 방식을 제공합니다. 핵심 기능으로는 다방향 복사, `trade inversion`, 포지션 비율 조절과 최대 계약 제한, 종목 필터링 및 심볼 대체, `Stealth Mode`, 3초마다 상태를 재동기화하는 `Auto-Sync`, `Reconnect Delay`, `Tandem Mode`, 서버 측 설정 보존이 설명됩니다. 웹훅 없이 NT8에서만 사용할 수 있다고 안내하며, `CrossTrade Pro` 구독에 포함되고 7일 무료 체험이 언급됩니다. 하단에는 `TradingView`와 `NinjaTrader` 관련 상표 고지와 `CFTC Rule 4.41` 면책 문구가 포함됩니다.
+CrossTrade의 Trade Copier 페이지는 NinjaTrader 계정 간 주문 복제를 위한 상용 도구를 설명한다. 주문 방향 반전, 계약 수 비율 조정, 심볼 치환, 재동기화, 장애 복구 같은 기능을 강조하며, 실제 copytrade 운영에서는 이런 "복제 엔진" 계층이 별도 제품으로 존재할 수 있음을 보여준다.

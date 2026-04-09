@@ -4,7 +4,7 @@ title: GitHub 검색 스냅샷 (현재)
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:08Z'
-last_updated: '2026-04-09T15:09:33Z'
+last_updated: '2026-04-09T16:48:05Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -21,6 +21,3 @@ tags:
 
 <!-- para: para_001 -->
 - (샘플) repo: polymarket-tools - trading helpers
-
-<!-- para: para_002 -->
-No key facts extracted.
