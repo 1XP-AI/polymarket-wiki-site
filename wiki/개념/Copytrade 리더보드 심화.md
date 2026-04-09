@@ -1,6 +1,6 @@
 ---
 id: legacy_wiki_copytrade_copytrade_4b2b9f
-title: Copytrade-리더보드-심화
+title: Copytrade 리더보드 심화
 type: concept
 status: draft
 created_at: '2026-04-09T14:10:10Z'
@@ -18,7 +18,7 @@ tags:
 - internal
 ---
 
-# Copytrade-리더보드-심화
+# Copytrade 리더보드 심화
 
 ## 요약
 

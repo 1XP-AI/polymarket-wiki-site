@@ -1,6 +1,6 @@
 ---
 id: legacy_wiki_websocket_175ba8
-title: WebSocket 실시간데이터
+title: WebSocket 실시간 데이터
 type: concept
 status: draft
 created_at: '2026-04-09T14:10:09Z'
@@ -18,7 +18,7 @@ tags:
 - internal
 ---
 
-# WebSocket 실시간데이터
+# WebSocket 실시간 데이터
 
 ## 요약
 

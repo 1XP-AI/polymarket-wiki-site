@@ -1,6 +1,6 @@
 ---
 id: legacy_raw_fetched_2026_04_05_polymarket_events_59a37c
-title: '[{"id":"2890","ticker":"nba-will-the-mavericks-beat-the-grizzlies-by-more-than-5pt5-points-in-their-december-4-matchup",'
+title: Polymarket 이벤트 원본 스냅샷
 type: concept
 status: draft
 created_at: '2026-04-09T14:10:08Z'
@@ -18,7 +18,7 @@ tags:
 - internal
 ---
 
-# [{"id":"2890","ticker":"nba-will-the-mavericks-beat-the-grizzlies-by-more-than-5pt5-points-in-their-december-4-matchup",
+# Polymarket 이벤트 원본 스냅샷
 
 ## 요약
 

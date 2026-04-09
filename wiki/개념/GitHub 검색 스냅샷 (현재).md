@@ -1,6 +1,6 @@
 ---
 id: legacy_raw_fetched_2026_04_05_github_polymarket_e3c24d
-title: GitHub 검색 스냅샷 (${now})
+title: GitHub 검색 스냅샷 (현재)
 type: concept
 status: draft
 created_at: '2026-04-09T14:10:08Z'
@@ -18,7 +18,7 @@ tags:
 - internal
 ---
 
-# GitHub 검색 스냅샷 (${now})
+# GitHub 검색 스냅샷 (현재)
 
 ## 요약
 

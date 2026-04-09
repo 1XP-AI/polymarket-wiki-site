@@ -1,6 +1,6 @@
 ---
 id: legacy_raw_fetched_2026_04_05_polymarket_markets_a295cb
-title: '[{"id":"12","question":"Will Joe Biden get Coronavirus before the election?","conditionId":"0xe3b423dfad8c22ff75c9899c4e'
+title: Polymarket 질문 원본 스냅샷
 type: concept
 status: draft
 created_at: '2026-04-09T14:10:09Z'
@@ -18,7 +18,7 @@ tags:
 - internal
 ---
 
-# [{"id":"12","question":"Will Joe Biden get Coronavirus before the election?","conditionId":"0xe3b423dfad8c22ff75c9899c4e
+# Polymarket 질문 원본 스냅샷
 
 ## 요약
 
