@@ -114,6 +114,18 @@
       "source_urls": [
         "https://www.mnd.go.kr/"
       ]
+    },
+    "para_013": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_github_monoclear_ai_monoclear_ai_llm_github_9a1a24c2#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://github.com/monoclear-ai/monoclear.ai"
+      ]
     }
   }
 }
