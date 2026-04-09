@@ -80,6 +80,66 @@
       "confidence": "medium",
       "conflict_flag": false,
       "source_urls": []
+    },
+    "para_011": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_스포츠_예측시장의_골드러시__단순_베팅을_넘어_핀테크_엔터테인먼트의_신_新__인프라로_b36ae21a#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://contents.premium.naver.com/valuetouch/vtouch/contents/260123140632500sx"
+      ]
+    },
+    "para_012": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_스포츠_베팅은_우리거다_예측시장서_스포츠_베팅_막겠다는_미국_도박기업__주가_일제히_상승___매일경제_7f2cdb91#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://www.mk.co.kr/news/stock/11996524"
+      ]
+    },
+    "para_013": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_32_issue_fecb7638#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://www.womansense.co.kr/news/articleView.html?idxno=62288"
+      ]
+    },
+    "para_014": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_sccg_42d4f843#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://sccgmanagement.com/ko/sccg-news/2026/2/6/the-consensus-shift-how-prediction-markets-are-changing-sports-betting/"
+      ]
+    },
+    "para_015": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_web_page_03f28496#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://x.com/Chartchunam/status/2034646893079470320"
+      ]
     }
   }
 }
