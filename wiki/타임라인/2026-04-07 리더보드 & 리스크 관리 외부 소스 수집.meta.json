@@ -64,6 +64,56 @@
       "confidence": "medium",
       "conflict_flag": false,
       "source_urls": []
+    },
+    "para_009": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_https_alio_go_kr_download_rulefiledown_json_fileno_199141_e6d5d122#chunk_001",
+        "src_20260409_https_alio_go_kr_download_rulefiledown_json_fileno_199141_e6d5d122#chunk_002"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://alio.go.kr/download/rulefiledown.json?fileNo=199141"
+      ]
+    },
+    "para_010": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_isms_p_0251bcb4#chunk_001",
+        "src_20260409_isms_p_0251bcb4#chunk_002"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://www.isms-p.or.kr/"
+      ]
+    },
+    "para_011": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_github_monoclear_ai_monoclear_ai_llm_github_9a1a24c2#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://github.com/monoclear-ai/monoclear.ai"
+      ]
+    },
+    "para_012": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_대한민국_국방부_9bb44f15#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://www.mnd.go.kr/"
+      ]
     }
   }
 }
