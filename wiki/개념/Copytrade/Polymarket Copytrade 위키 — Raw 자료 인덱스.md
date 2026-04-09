@@ -4,11 +4,11 @@ title: Polymarket Copytrade 위키 — Raw 자료 인덱스
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:08Z'
-last_updated: '2026-04-09T16:13:32Z'
+last_updated: '2026-04-09T17:29:17Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
-source_count: 0
+source_count: 4
 evidence_coverage: 1.0
 confidence: medium
 related_pages:
@@ -20,6 +20,11 @@ related_pages:
 - legacy_wiki_polymarket_cd5a08
 tags:
 - concept
+sources:
+- url: https://www.polycopytrade.net/documentation.php
+- url: https://github.com/jhcdx9999/polymarket-copy-trade
+- url: https://deepwiki.com/jhcdx9999/polymarket-copy-trade
+- url: https://docs.polymarket.com/
 ---
 # Polymarket Copytrade 위키 — Raw 자료 인덱스
 
@@ -49,3 +54,184 @@ tags:
 
 <!-- para: para_004 -->
 이 raw 자료를 LM Studio (Gemma 4 26B)에 넣고 → 한글 위키로 컴파일
+
+## 세부 내용
+
+<!-- para: para_005 -->
+jhcdx9999/polymarket-copy-trade | DeepWiki
+Loading... Index your code with Devin
+DeepWiki
+DeepWiki
+jhcdx9999/polymarket-copy-trade
+Index your code with
+Devin
+Edit Wiki
+Share
+Loading...
+
+<!-- para: para_006 -->
+GitHub - jhcdx9999/polymarket-copy-trade: copy trading transactions from smart wallets on Polymarket · GitHub
+Skip to content
+Navigation Menu
+Toggle navigation
+Sign in
+Appearance settings
+Platform
+AI CODE CREATION
+GitHub Copilot
+Write better code with AI
+GitHub Spark
+Build and deploy intelligent apps
+GitHub Models
+Manage and compare prompts
+MCP Registry
+New
+Integrate external tools
+DEVELOPER WORKFLOWS
+Actions
+Automate any workflow
+Codespaces
+Instant dev environments
+Issues
+Plan and track work
+Code Review
+Manage code changes
+APPLICATION SECURITY
+GitHub Advanced Security
+Find and fix vulnerabilities
+Code security
+Secure your code as you build
+Secret protection
+Stop leaks before they start
+EXPLORE
+Why GitHub
+Documentation
+Blog
+Changelog
+Marketplace
+View all features
+Solutions
+BY COMPANY SIZE
+Enterprises
+Small and medium teams
+Startups
+Nonprofits
+BY USE CASE
+App Modernization
+DevSecOps
+DevOps
+CI/CD
+View all use cases
+BY INDUSTRY
+Healthcare
+Financial services
+Manufacturing
+Government
+View all industries
+View all solutions
+Resources
+EXPLORE BY TOPIC
+AI
+Software Development
+DevOps
+Security
+View all topics
+EXPLORE BY TYPE
+Customer stories
+Events & webinars
+Ebooks & reports
+Business insights
+GitHub Skills
+SUPPORT & SERVICES
+Documentation
+Customer support
+Community forum
+Trust center
+Partners
+View all resources
+Open Source
+COMMUNITY
+GitHub Sponsors
+Fund open source developers
+PROGRAMS
+Security Lab
+Maintainer Community
+Accelerator
+GitHub Stars
+Archive Program
+REPOSITORIES
+Topics
+Trending
+Collections
+Enterprise
+ENTERPRISE SOLUTIONS
+Enterprise platform
+AI-powered developer platform
+AVAILABLE ADD-ONS
+GitHub Advanced Security
+Enterprise-grade security features
+Copilot for Business
+Enterprise-grade AI features
+Premium Support
+Enterprise-grade 24/7 support
+Pricing
+Search or jump to... Search code, repositories, users, issues, pull requests...
+
+<!-- para: para_007 -->
+Overview - Polymarket Documentation
+Skip to main content
+Polymarket Documentation
+home page
+English
+Search... ⌘
+K
+Changelog
+Get Help
+Main Site
+Main Site
+Search...
+
+<!-- para: para_008 -->
+Documentation - Polymarket Copy Trade
+Polymarket
+Copy
+Trade
+Smart Trading Protocol
+Home
+Features
+Top Traders
+Pricing
+Blog
+Start Trading
+Menu
+Home
+Features
+Top Traders
+Pricing
+Blog
+Start Trading
+Documentation
+Complete
+User Guide
+Everything you need to know to set up and optimize your automated copy trading bot. Getting Started
+Quick setup guide
+Wallet Setup
+Connect MetaMask
+Copy Trading
+Configure the bot
+Subscription
+Plans & payments
+Contents
+Getting Started
+Wallet Setup
+Dashboard Overview
+Copy Trading Bot
+Wallet Tracking
+Trade Settings
+Trade History
+Subscription Plans
+Security
+FAQ
+Troubleshooting
+Getting Started
+Welcome to Polymarket Copy Trade!
