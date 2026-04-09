@@ -6,28 +6,40 @@
       "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
-      "conflict_flag": false
+      "conflict_flag": false,
+      "source_urls": [
+        "https://polymarket.com"
+      ]
     },
     "para_002": {
       "evidence_type": "synthesized",
       "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
-      "conflict_flag": false
+      "conflict_flag": false,
+      "source_urls": [
+        "https://polymarket.com"
+      ]
     },
     "para_003": {
       "evidence_type": "synthesized",
       "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
-      "conflict_flag": false
+      "conflict_flag": false,
+      "source_urls": [
+        "https://polymarket.com"
+      ]
     },
     "para_004": {
       "evidence_type": "synthesized",
       "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
-      "conflict_flag": false
+      "conflict_flag": false,
+      "source_urls": [
+        "https://polymarket.com"
+      ]
     }
   }
 }

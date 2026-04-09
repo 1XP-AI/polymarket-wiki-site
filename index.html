@@ -350,7 +350,7 @@ function renderReferences(sourceUrls) {
   if (!sourceUrls || sourceUrls.length === 0) return '';
   const items = [...new Set(sourceUrls)];
   return (
-    `<section class="references">` +
+    `<section class="references" id="references">` +
     `<h2>참고문헌</h2>` +
     `<ol>` +
     items.map((url, index) => renderReferenceItem(url, index + 1)).join('') +
@@ -418,6 +418,7 @@ function injectCitations(html, sidecar, referenceIndex) {
   const container = document.createElement('div');
   container.innerHTML = html;
   const paragraphMap = (sidecar && sidecar.paragraphs) || {};
+  const totalReferences = referenceIndex.size;
 
   container.querySelectorAll('.para-anchor').forEach(anchor => {
     const paraId = anchor.getAttribute('data-para-id') || '';
@@ -436,6 +437,15 @@ function injectCitations(html, sidecar, referenceIndex) {
         link.textContent = `[${num}]`;
         citation.appendChild(link);
       });
+      const target = anchor.closest('p, li, blockquote') || anchor.parentElement;
+      if (target) target.appendChild(citation);
+    } else if (totalReferences > 0) {
+      const citation = document.createElement('span');
+      citation.className = 'citation';
+      const link = document.createElement('a');
+      link.href = '#references';
+      link.textContent = totalReferences > 1 ? `[1–${totalReferences}]` : '[1]';
+      citation.appendChild(link);
       const target = anchor.closest('p, li, blockquote') || anchor.parentElement;
       if (target) target.appendChild(citation);
     }

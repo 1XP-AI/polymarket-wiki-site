@@ -6,49 +6,70 @@
       "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
-      "conflict_flag": false
+      "conflict_flag": false,
+      "source_urls": [
+        "raw/fetched/2026-04-05-leaderboard-monthly.md"
+      ]
     },
     "para_002": {
       "evidence_type": "synthesized",
       "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
-      "conflict_flag": false
+      "conflict_flag": false,
+      "source_urls": [
+        "raw/fetched/2026-04-05-leaderboard-monthly.md"
+      ]
     },
     "para_003": {
       "evidence_type": "synthesized",
       "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
-      "conflict_flag": false
+      "conflict_flag": false,
+      "source_urls": [
+        "raw/fetched/2026-04-05-leaderboard-monthly.md"
+      ]
     },
     "para_004": {
       "evidence_type": "synthesized",
       "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
-      "conflict_flag": false
+      "conflict_flag": false,
+      "source_urls": [
+        "raw/fetched/2026-04-05-leaderboard-monthly.md"
+      ]
     },
     "para_005": {
       "evidence_type": "synthesized",
       "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
-      "conflict_flag": false
+      "conflict_flag": false,
+      "source_urls": [
+        "raw/fetched/2026-04-05-leaderboard-monthly.md"
+      ]
     },
     "para_006": {
       "evidence_type": "synthesized",
       "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
-      "conflict_flag": false
+      "conflict_flag": false,
+      "source_urls": [
+        "raw/fetched/2026-04-05-leaderboard-monthly.md"
+      ]
     },
     "para_007": {
       "evidence_type": "synthesized",
       "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
-      "conflict_flag": false
+      "conflict_flag": false,
+      "source_urls": [
+        "raw/fetched/2026-04-05-leaderboard-monthly.md"
+      ]
     }
   }
 }

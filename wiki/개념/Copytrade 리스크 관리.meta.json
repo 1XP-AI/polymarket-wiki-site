@@ -6,49 +6,70 @@
       "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
-      "conflict_flag": false
+      "conflict_flag": false,
+      "source_urls": [
+        "https://help.polymarket.com/en/articles/13364163-geographic-restrictions"
+      ]
     },
     "para_002": {
       "evidence_type": "synthesized",
       "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
-      "conflict_flag": false
+      "conflict_flag": false,
+      "source_urls": [
+        "https://help.polymarket.com/en/articles/13364163-geographic-restrictions"
+      ]
     },
     "para_003": {
       "evidence_type": "synthesized",
       "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
-      "conflict_flag": false
+      "conflict_flag": false,
+      "source_urls": [
+        "https://help.polymarket.com/en/articles/13364163-geographic-restrictions"
+      ]
     },
     "para_004": {
       "evidence_type": "synthesized",
       "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
-      "conflict_flag": false
+      "conflict_flag": false,
+      "source_urls": [
+        "https://help.polymarket.com/en/articles/13364163-geographic-restrictions"
+      ]
     },
     "para_005": {
       "evidence_type": "synthesized",
       "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
-      "conflict_flag": false
+      "conflict_flag": false,
+      "source_urls": [
+        "https://help.polymarket.com/en/articles/13364163-geographic-restrictions"
+      ]
     },
     "para_006": {
       "evidence_type": "synthesized",
       "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
-      "conflict_flag": false
+      "conflict_flag": false,
+      "source_urls": [
+        "https://help.polymarket.com/en/articles/13364163-geographic-restrictions"
+      ]
     },
     "para_007": {
       "evidence_type": "synthesized",
       "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
-      "conflict_flag": false
+      "conflict_flag": false,
+      "source_urls": [
+        "https://help.polymarket.com/en/articles/13364163-geographic-restrictions"
+      ]
     },
     "para_008": {
       "evidence_type": "direct",
@@ -57,7 +78,10 @@
       ],
       "as_of": "2026-04-09",
       "confidence": "medium",
-      "conflict_flag": false
+      "conflict_flag": false,
+      "source_urls": [
+        "https://help.polymarket.com/en/articles/13364163-geographic-restrictions"
+      ]
     }
   }
 }

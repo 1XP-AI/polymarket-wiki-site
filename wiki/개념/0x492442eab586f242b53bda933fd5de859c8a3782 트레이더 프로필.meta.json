@@ -6,49 +6,70 @@
       "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
-      "conflict_flag": false
+      "conflict_flag": false,
+      "source_urls": [
+        "https://polymarket.com/leaderboard/overall/monthly/profit"
+      ]
     },
     "para_002": {
       "evidence_type": "synthesized",
       "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
-      "conflict_flag": false
+      "conflict_flag": false,
+      "source_urls": [
+        "https://polymarket.com/leaderboard/overall/monthly/profit"
+      ]
     },
     "para_003": {
       "evidence_type": "synthesized",
       "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
-      "conflict_flag": false
+      "conflict_flag": false,
+      "source_urls": [
+        "https://polymarket.com/leaderboard/overall/monthly/profit"
+      ]
     },
     "para_004": {
       "evidence_type": "synthesized",
       "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
-      "conflict_flag": false
+      "conflict_flag": false,
+      "source_urls": [
+        "https://polymarket.com/leaderboard/overall/monthly/profit"
+      ]
     },
     "para_005": {
       "evidence_type": "synthesized",
       "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
-      "conflict_flag": false
+      "conflict_flag": false,
+      "source_urls": [
+        "https://polymarket.com/leaderboard/overall/monthly/profit"
+      ]
     },
     "para_006": {
       "evidence_type": "synthesized",
       "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
-      "conflict_flag": false
+      "conflict_flag": false,
+      "source_urls": [
+        "https://polymarket.com/leaderboard/overall/monthly/profit"
+      ]
     },
     "para_007": {
       "evidence_type": "synthesized",
       "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
-      "conflict_flag": false
+      "conflict_flag": false,
+      "source_urls": [
+        "https://polymarket.com/leaderboard/overall/monthly/profit"
+      ]
     },
     "para_008": {
       "evidence_type": "direct",
@@ -57,7 +78,10 @@
       ],
       "as_of": "2026-04-09",
       "confidence": "medium",
-      "conflict_flag": false
+      "conflict_flag": false,
+      "source_urls": [
+        "https://polymarket.com/leaderboard/overall/monthly/profit"
+      ]
     }
   }
 }
