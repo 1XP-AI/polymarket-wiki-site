@@ -72,6 +72,67 @@
       "confidence": "medium",
       "conflict_flag": false,
       "source_urls": []
+    },
+    "para_010": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_k_ics_4_4_9adf81f6#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://m.blog.naver.com/bo159357/222835834763"
+      ]
+    },
+    "para_011": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_4_4_1_gbook_7517d919#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://garchive.gofsolution.com/kics/441/"
+      ]
+    },
+    "para_012": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_pdf_0bced451#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://www.scribd.com/document/650151119/%EC%B6%A9%EA%B2%A9%EC%8B%9C%ED%97%98%EB%B2%95"
+      ]
+    },
+    "para_013": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_2026_ppicpipce_1051b403#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://nightstock-notes.tistory.com/88"
+      ]
+    },
+    "para_014": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_2026_2035_a5c54010#chunk_001",
+        "src_20260409_2026_2035_a5c54010#chunk_002"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://www.businessresearchinsights.com/ko/market-reports/bungee-shock-cord-market-115405"
+      ]
     }
   }
 }
