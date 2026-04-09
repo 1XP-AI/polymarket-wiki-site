@@ -4,7 +4,7 @@ title: Copytrade 자동화 플로우
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:11Z'
-last_updated: '2026-04-09T16:46:07Z'
+last_updated: '2026-04-09T16:51:05Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -41,13 +41,11 @@ sources:
 Copytrade 자동화는 크게 1) 트레이더 선별, 2) 포지션/체결 동기화, 3) 주문 실행, 4) 리스크 모니터링 네 단계로 나눌 수 있다. 핵심은 "좋은 트레이더를 찾는 것"보다 "신호를 지연 없이 표준화하고, 잘못된 복제를 빨리 차단하는 것"에 있다.
 
 <!-- para: para_003 -->
-```text
 ┌─────────────────┐    ┌──────────────────┐    ┌───────────────────┐
 │ Leaderboard     │    │ Polymarket CLOB  │    │ On-chain Data     │
 │ Snapshot Engine │───▶│ WebSocket Feed   │◀───│ (Polygonscan)     │
 └────────┬────────┘    └────────┬─────────┘    └────────┬──────────┘
          │                      │                       │
-```
 
 ▼                      ▼                       ▼
 ┌─────────────────┐    ┌──────────────────┐    ┌───────────────────┐
