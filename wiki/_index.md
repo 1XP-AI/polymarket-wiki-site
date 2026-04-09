@@ -31,7 +31,6 @@
 - [Reddit r/Polymarket Hot Posts (2026-04-05 01:00)](개념/Reddit r Polymarket Hot Posts (2026-04-05 01 00).md)
 - [Theo — 트레이더 프로필 사례](개념/Theo — 트레이더 프로필 사례.md)
 - [WebSocket & 실시간 데이터](개념/WebSocket & 실시간 데이터.md)
-- [WebSocket 실시간 데이터](개념/WebSocket 실시간 데이터.md)
 - [네거티브 리스크](개념/네거티브 리스크.md)
 - [데이터 기반 트레이더 선별](개념/데이터 기반 트레이더 선별.md)
 - [데이터 수집 파이프라인](개념/데이터 수집 파이프라인.md)
