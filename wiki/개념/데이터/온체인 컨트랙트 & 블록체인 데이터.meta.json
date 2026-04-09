@@ -2,90 +2,50 @@
   "page_id": "legacy_raw_07_48e6ec",
   "paragraphs": {
     "para_001": {
-      "evidence_type": "synthesized",
+      "evidence_type": "direct",
       "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://docs.polymarket.com/developer-resources/contracts"
+      ]
     },
     "para_002": {
-      "evidence_type": "synthesized",
+      "evidence_type": "direct",
       "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://docs.polymarket.com/developer-resources/contracts",
+        "https://github.com/gnosis/conditional-tokens-contracts"
+      ]
     },
     "para_003": {
-      "evidence_type": "synthesized",
+      "evidence_type": "direct",
       "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://docs.polymarket.com/developer-resources/contracts",
+        "https://github.com/gnosis/conditional-tokens-contracts"
+      ]
     },
     "para_004": {
-      "evidence_type": "synthesized",
+      "evidence_type": "direct",
       "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://docs.cloud.google.com/blockchain-analytics/docs/overview?hl=ko"
+      ]
     },
     "para_005": {
-      "evidence_type": "synthesized",
-      "source_refs": [],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": []
-    },
-    "para_006": {
-      "evidence_type": "synthesized",
-      "source_refs": [],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": []
-    },
-    "para_007": {
-      "evidence_type": "synthesized",
-      "source_refs": [],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": []
-    },
-    "para_008": {
       "evidence_type": "direct",
-      "source_refs": [
-        "src_20260409_온체인_데이터란__초보자를_위한_블록체인_데이터_분석_완벽_가이드_9fb2e8ef#chunk_001"
-      ],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": [
-        "https://coinstudyhub.kr/entry/%EC%98%A8%EC%B2%B4%EC%9D%B8-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%9E%80-%EC%B4%88%EB%B3%B4%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EB%B8%94%EB%A1%9D%EC%B2%B4%EC%9D%B8-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B6%84%EC%84%9D-%EC%99%84%EB%B2%BD-%EA%B0%80%EC%9D%B4%EB%93%9C"
-      ]
-    },
-    "para_009": {
-      "evidence_type": "direct",
-      "source_refs": [
-        "src_20260409_쟁글_아카데미__온체인_데이터란__온체인_데이터_보는법부터_뜻까지_60bd0591#chunk_001"
-      ],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": [
-        "https://xangle.io/research/detail/757"
-      ]
-    },
-    "para_010": {
-      "evidence_type": "direct",
-      "source_refs": [
-        "src_20260409_ethereum_org_6efe5600#chunk_001"
-      ],
+      "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
@@ -93,17 +53,25 @@
         "https://ethereum.org/ko/developers/docs/data-availability/blockchain-data-storage-strategies/"
       ]
     },
-    "para_011": {
+    "para_006": {
       "evidence_type": "direct",
-      "source_refs": [
-        "src_20260409_blockchain_analytics_google_cloud_documentation_65273428#chunk_001",
-        "src_20260409_blockchain_analytics_google_cloud_documentation_65273428#chunk_002"
-      ],
+      "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
       "source_urls": [
-        "https://docs.cloud.google.com/blockchain-analytics/docs/overview?hl=ko"
+        "https://docs.cloud.google.com/blockchain-analytics/docs/overview?hl=ko",
+        "https://ethereum.org/ko/developers/docs/data-availability/blockchain-data-storage-strategies/"
+      ]
+    },
+    "para_007": {
+      "evidence_type": "direct",
+      "source_refs": [],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://docs.polymarket.com/developer-resources/contracts"
       ]
     }
   }

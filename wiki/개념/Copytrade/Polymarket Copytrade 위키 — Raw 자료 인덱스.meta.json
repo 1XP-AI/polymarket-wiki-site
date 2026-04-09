@@ -2,62 +2,54 @@
   "page_id": "legacy_raw_00_index_ec3366",
   "paragraphs": {
     "para_001": {
-      "evidence_type": "synthesized",
-      "source_refs": [],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": []
-    },
-    "para_002": {
-      "evidence_type": "synthesized",
-      "source_refs": [],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": []
-    },
-    "para_003": {
-      "evidence_type": "synthesized",
-      "source_refs": [],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": []
-    },
-    "para_004": {
-      "evidence_type": "synthesized",
-      "source_refs": [],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": []
-    },
-    "para_005": {
       "evidence_type": "direct",
       "source_refs": [
+        "src_20260409_overview_polymarket_documentation_4d044dbd#chunk_001",
+        "src_20260409_documentation_polymarket_copy_trade_90e1b987#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://docs.polymarket.com/",
+        "https://www.polycopytrade.net/documentation.php"
+      ]
+    },
+    "para_002": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_overview_polymarket_documentation_4d044dbd#chunk_001",
+        "src_20260409_github_jhcdx9999_polymarket_copy_trade_copy_trading_transactions_from_smart_wallets_on_polymarket_github_56ec8e12#chunk_001",
+        "src_20260409_jhcdx9999_polymarket_copy_trade_deepwiki_61dba984#chunk_001",
+        "src_20260409_documentation_polymarket_copy_trade_90e1b987#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://docs.polymarket.com/",
+        "https://github.com/jhcdx9999/polymarket-copy-trade",
+        "https://deepwiki.com/jhcdx9999/polymarket-copy-trade",
+        "https://www.polycopytrade.net/documentation.php"
+      ]
+    },
+    "para_003": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_overview_polymarket_documentation_4d044dbd#chunk_001",
+        "src_20260409_github_jhcdx9999_polymarket_copy_trade_copy_trading_transactions_from_smart_wallets_on_polymarket_github_56ec8e12#chunk_001",
         "src_20260409_jhcdx9999_polymarket_copy_trade_deepwiki_61dba984#chunk_001"
       ],
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
       "source_urls": [
+        "https://docs.polymarket.com/",
+        "https://github.com/jhcdx9999/polymarket-copy-trade",
         "https://deepwiki.com/jhcdx9999/polymarket-copy-trade"
       ]
     },
-    "para_006": {
-      "evidence_type": "direct",
-      "source_refs": [
-        "src_20260409_github_jhcdx9999_polymarket_copy_trade_copy_trading_transactions_from_smart_wallets_on_polymarket_github_56ec8e12#chunk_001"
-      ],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": [
-        "https://github.com/jhcdx9999/polymarket-copy-trade"
-      ]
-    },
-    "para_007": {
+    "para_004": {
       "evidence_type": "direct",
       "source_refs": [
         "src_20260409_overview_polymarket_documentation_4d044dbd#chunk_001"
@@ -69,7 +61,21 @@
         "https://docs.polymarket.com/"
       ]
     },
-    "para_008": {
+    "para_005": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_github_jhcdx9999_polymarket_copy_trade_copy_trading_transactions_from_smart_wallets_on_polymarket_github_56ec8e12#chunk_001",
+        "src_20260409_jhcdx9999_polymarket_copy_trade_deepwiki_61dba984#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://github.com/jhcdx9999/polymarket-copy-trade",
+        "https://deepwiki.com/jhcdx9999/polymarket-copy-trade"
+      ]
+    },
+    "para_006": {
       "evidence_type": "direct",
       "source_refs": [
         "src_20260409_documentation_polymarket_copy_trade_90e1b987#chunk_001"

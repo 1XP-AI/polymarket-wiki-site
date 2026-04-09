@@ -2,60 +2,76 @@
   "page_id": "legacy_wiki_e92c88",
   "paragraphs": {
     "para_001": {
-      "evidence_type": "synthesized",
+      "evidence_type": "direct",
       "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://docs.polymarket.com"
+      ]
     },
     "para_002": {
-      "evidence_type": "synthesized",
+      "evidence_type": "direct",
       "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://docs.polymarket.com"
+      ]
     },
     "para_003": {
-      "evidence_type": "synthesized",
+      "evidence_type": "direct",
       "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://docs.polymarket.com/developer-resources/contracts"
+      ]
     },
     "para_004": {
-      "evidence_type": "synthesized",
+      "evidence_type": "direct",
       "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://docs.polymarket.com"
+      ]
     },
     "para_005": {
-      "evidence_type": "synthesized",
+      "evidence_type": "direct",
       "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://github.com/gnosis/conditional-tokens-contracts",
+        "https://docs.polymarket.com/developer-resources/contracts"
+      ]
     },
     "para_006": {
-      "evidence_type": "synthesized",
+      "evidence_type": "direct",
       "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://docs.polymarket.com/developer-resources/contracts"
+      ]
     },
     "para_007": {
-      "evidence_type": "synthesized",
+      "evidence_type": "direct",
       "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://docs.polymarket.com",
+        "https://docs.polymarket.com/developer-resources/contracts"
+      ]
     }
   }
 }

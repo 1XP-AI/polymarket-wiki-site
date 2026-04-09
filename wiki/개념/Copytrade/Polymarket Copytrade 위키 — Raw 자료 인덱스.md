@@ -4,7 +4,7 @@ title: Polymarket Copytrade 위키 — Raw 자료 인덱스
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:08Z'
-last_updated: '2026-04-09T17:29:17Z'
+last_updated: '2026-04-10T03:10:00Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -13,10 +13,14 @@ evidence_coverage: 1.0
 confidence: medium
 related_pages:
 - legacy_raw_05_badd78
+- legacy_raw_06_websocket_506430
 - legacy_raw_07_48e6ec
 - legacy_raw_fetched_2026_04_05_polymarket_markets_a295cb
 - legacy_wiki_7acc18
 - legacy_wiki_api_polymarket_api_62ef40
+- legacy_wiki_copytrade_0c3a80
+- legacy_wiki_copytrade_4d0fc3
+- legacy_wiki_copytrade_eff435
 - legacy_wiki_polymarket_cd5a08
 tags:
 - concept
@@ -31,207 +35,25 @@ sources:
 ## 요약
 
 <!-- para: para_001 -->
-> 생성일: 2026-04-04
-> 수집 대상: Polymarket 공식 문서 (docs.polymarket.com) + Signal Foundry 설계 문서
+이 문서는 Copytrade 관련 raw 자료를 어떤 축으로 수집했고, 각 자료가 현재 위키의 어떤 문서 묶음으로 이어졌는지 정리한 인덱스다. 원문 덤프 자체를 나열하기보다, 어떤 자료가 설계 문서이고 어떤 자료가 실행 가이드인지 구분해 보여주는 용도로 사용한다.
+
+## 수집 범위
 
 <!-- para: para_002 -->
-| # | 파일명 | 내용 | 상태 |
-|---|--------|------|------|
-| 01 | [[Polymarket 개요]] | Polymarket 플랫폼, 핵심 개념, API 구조 | ✅ 완료 |
-| 02 | [[Polymarket API 레퍼런스]] | 전체 API 엔드포인트 목록 (Events, Markets, Orders, Trades 등) | ✅ 완료 |
-| 03 | [[03-Copytrade-전략분석]] | Copytrade 파이프라인, 트레이더 선별, 리스크 관리 | ✅ 완료 |
-| 04 | [[리베이트(마켓메이커)]] | Maker Rebates, Liquidity Rewards, 인벤토리 관리 | ✅ 완료 |
-| 05 | [[리더보드 & 트레이더 데이터]] | 리더보드, 프로필, 포지션, 거래 내역 API | ✅ 완료 |
-| 06 | [[06-WebSocket-실시간데이터]] | WebSocket 채널, 실시간 감지 방법 | ✅ 완료 |
-| 07 | [[온체인 컨트랙트 & 블록체인 데이터]] | 컨트랙트, Subgraph, 블록체인 데이터 | ✅ 완료 |
+- **공식 문서 축**: Polymarket Docs의 개요, API, WebSocket, 마켓 구조 문서
+- **구현 사례 축**: GitHub 공개 저장소와 DeepWiki 요약을 통한 봇 구조 파악
+- **운영 가이드 축**: Copytrade 서비스 문서와 설정 가이드를 통한 사용자 플로우 확인
 
 <!-- para: para_003 -->
-- [ ] Polymarket Help Center (사용자 가이드)
-- [ ] 커뮤니티 copytrade 전략 글
-- [ ] 경쟁 플랫폼 비교 (Azuro, Overtime 등)
-- [ ] 실제 리더보드 상위 트레이더 데이터 스냅샷
-- [ ] Negative Risk 마켓 상세 분석
+현재 위키에서 이 인덱스를 기준으로 연결되는 핵심 문서는 [[Polymarket 개요]], [[Polymarket API 레퍼런스]], [[Copytrade]], [[Copytrade 데이터 수집 가이드]], [[Copytrade 자동화 플로우]], [[WebSocket & 실시간 데이터]]다. 인덱스 페이지 자체는 전체 원문을 복사해 두는 곳이 아니라, 어떤 raw 묶음이 어느 문서군으로 해석됐는지 추적하는 안내판 역할을 맡는다.
+
+## raw 자료를 읽는 순서
 
 <!-- para: para_004 -->
-이 raw 자료를 LM Studio (Gemma 4 26B)에 넣고 → 한글 위키로 컴파일
-
-## 세부 내용
+가장 먼저 볼 자료는 Polymarket 공식 문서와 API 문서다. 여기서 마켓 구조, 이벤트/마켓 조회, WebSocket, 주문 관련 기본 용어를 맞춰 둬야 이후 Copytrade 설계 문서를 읽을 때 개념이 흔들리지 않는다.
 
 <!-- para: para_005 -->
-jhcdx9999/polymarket-copy-trade | DeepWiki
-Loading... Index your code with Devin
-DeepWiki
-DeepWiki
-jhcdx9999/polymarket-copy-trade
-Index your code with
-Devin
-Edit Wiki
-Share
-Loading...
+그다음 GitHub 구현 사례와 DeepWiki 요약을 보면 실제 자동화 파이프라인이 어떤 모듈로 나뉘는지 빠르게 파악할 수 있다. 이 단계에서는 "정확한 복제"보다 "어떤 데이터와 이벤트를 어디서 받아오는가"를 중심으로 보는 편이 낫다.
 
 <!-- para: para_006 -->
-GitHub - jhcdx9999/polymarket-copy-trade: copy trading transactions from smart wallets on Polymarket · GitHub
-Skip to content
-Navigation Menu
-Toggle navigation
-Sign in
-Appearance settings
-Platform
-AI CODE CREATION
-GitHub Copilot
-Write better code with AI
-GitHub Spark
-Build and deploy intelligent apps
-GitHub Models
-Manage and compare prompts
-MCP Registry
-New
-Integrate external tools
-DEVELOPER WORKFLOWS
-Actions
-Automate any workflow
-Codespaces
-Instant dev environments
-Issues
-Plan and track work
-Code Review
-Manage code changes
-APPLICATION SECURITY
-GitHub Advanced Security
-Find and fix vulnerabilities
-Code security
-Secure your code as you build
-Secret protection
-Stop leaks before they start
-EXPLORE
-Why GitHub
-Documentation
-Blog
-Changelog
-Marketplace
-View all features
-Solutions
-BY COMPANY SIZE
-Enterprises
-Small and medium teams
-Startups
-Nonprofits
-BY USE CASE
-App Modernization
-DevSecOps
-DevOps
-CI/CD
-View all use cases
-BY INDUSTRY
-Healthcare
-Financial services
-Manufacturing
-Government
-View all industries
-View all solutions
-Resources
-EXPLORE BY TOPIC
-AI
-Software Development
-DevOps
-Security
-View all topics
-EXPLORE BY TYPE
-Customer stories
-Events & webinars
-Ebooks & reports
-Business insights
-GitHub Skills
-SUPPORT & SERVICES
-Documentation
-Customer support
-Community forum
-Trust center
-Partners
-View all resources
-Open Source
-COMMUNITY
-GitHub Sponsors
-Fund open source developers
-PROGRAMS
-Security Lab
-Maintainer Community
-Accelerator
-GitHub Stars
-Archive Program
-REPOSITORIES
-Topics
-Trending
-Collections
-Enterprise
-ENTERPRISE SOLUTIONS
-Enterprise platform
-AI-powered developer platform
-AVAILABLE ADD-ONS
-GitHub Advanced Security
-Enterprise-grade security features
-Copilot for Business
-Enterprise-grade AI features
-Premium Support
-Enterprise-grade 24/7 support
-Pricing
-Search or jump to... Search code, repositories, users, issues, pull requests...
-
-<!-- para: para_007 -->
-Overview - Polymarket Documentation
-Skip to main content
-Polymarket Documentation
-home page
-English
-Search... ⌘
-K
-Changelog
-Get Help
-Main Site
-Main Site
-Search...
-
-<!-- para: para_008 -->
-Documentation - Polymarket Copy Trade
-Polymarket
-Copy
-Trade
-Smart Trading Protocol
-Home
-Features
-Top Traders
-Pricing
-Blog
-Start Trading
-Menu
-Home
-Features
-Top Traders
-Pricing
-Blog
-Start Trading
-Documentation
-Complete
-User Guide
-Everything you need to know to set up and optimize your automated copy trading bot. Getting Started
-Quick setup guide
-Wallet Setup
-Connect MetaMask
-Copy Trading
-Configure the bot
-Subscription
-Plans & payments
-Contents
-Getting Started
-Wallet Setup
-Dashboard Overview
-Copy Trading Bot
-Wallet Tracking
-Trade Settings
-Trade History
-Subscription Plans
-Security
-FAQ
-Troubleshooting
-Getting Started
-Welcome to Polymarket Copy Trade!
+마지막으로 Copytrade 서비스 문서를 보면 사용자 입장에서 필요한 설정 흐름과 운영 기능을 확인할 수 있다. 계정 연결, 추종 대상 선택, 위험 제한, 구독 모델 같은 요소는 구현 문서보다 서비스 문서에서 더 분명하게 드러난다.

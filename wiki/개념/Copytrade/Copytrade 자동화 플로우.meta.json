@@ -2,107 +2,106 @@
   "page_id": "legacy_wiki_copytrade_0c3a80",
   "paragraphs": {
     "para_001": {
-      "evidence_type": "synthesized",
-      "source_refs": [],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": []
-    },
-    "para_002": {
-      "evidence_type": "synthesized",
-      "source_refs": [],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": []
-    },
-    "para_003": {
-      "evidence_type": "synthesized",
-      "source_refs": [],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": []
-    },
-    "para_004": {
-      "evidence_type": "synthesized",
-      "source_refs": [],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": []
-    },
-    "para_005": {
-      "evidence_type": "synthesized",
-      "source_refs": [],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": []
-    },
-    "para_006": {
-      "evidence_type": "synthesized",
-      "source_refs": [],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": []
-    },
-    "para_007": {
-      "evidence_type": "synthesized",
-      "source_refs": [],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": []
-    },
-    "para_008": {
       "evidence_type": "direct",
-      "source_refs": [
-        "src_20260409_itopia_6a69883d#chunk_001"
-      ],
+      "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
       "source_urls": [
-        "https://blog.naver.com/hezkylim/224230884630"
+        "https://github.com/Fabianhvandijk/polymarket-copytrade"
+      ]
+    },
+    "para_002": {
+      "evidence_type": "direct",
+      "source_refs": [],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://github.com/Fabianhvandijk/polymarket-copytrade",
+        "https://docs.polymarket.com/api-reference/clients-sdks"
+      ]
+    },
+    "para_003": {
+      "evidence_type": "direct",
+      "source_refs": [],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://github.com/Fabianhvandijk/polymarket-copytrade"
+      ]
+    },
+    "para_004": {
+      "evidence_type": "direct",
+      "source_refs": [],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://github.com/agc-desarrollo/polymarket-trading-bot",
+        "https://gamma-api.polymarket.com/events"
+      ]
+    },
+    "para_005": {
+      "evidence_type": "direct",
+      "source_refs": [],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://polycopy.app/discover"
+      ]
+    },
+    "para_006": {
+      "evidence_type": "direct",
+      "source_refs": [],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://github.com/agc-desarrollo/polymarket-trading-bot"
+      ]
+    },
+    "para_007": {
+      "evidence_type": "direct",
+      "source_refs": [],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://gamma-api.polymarket.com/events",
+        "https://docs.polymarket.com/api-reference/clients-sdks"
+      ]
+    },
+    "para_008": {
+      "evidence_type": "direct",
+      "source_refs": [],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://docs.polymarket.com/api-reference/clients-sdks"
       ]
     },
     "para_009": {
       "evidence_type": "direct",
-      "source_refs": [
-        "src_20260409_copytrade_copy_trading_to_maximize_your_profits_45c490a6#chunk_001"
-      ],
+      "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
       "source_urls": [
-        "https://www.copytrade.net/"
+        "https://github.com/Fabianhvandijk/polymarket-copytrade"
       ]
     },
     "para_010": {
       "evidence_type": "direct",
-      "source_refs": [
-        "src_20260409_copytrade_operation_guide_2025_pdf_subscription_business_model_stocks_ea7c5c96#chunk_001"
-      ],
+      "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
       "source_urls": [
-        "https://www.scribd.com/document/427369960/Copy-trade-Manual"
-      ]
-    },
-    "para_011": {
-      "evidence_type": "direct",
-      "source_refs": [
-        "src_20260409_7_best_copy_trading_platforms_for_2026_forexbrokers_com_008b7d55#chunk_001"
-      ],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": [
-        "https://www.forexbrokers.com/guides/social-copy-trading"
+        "https://polycopy.app/discover"
       ]
     }
   }

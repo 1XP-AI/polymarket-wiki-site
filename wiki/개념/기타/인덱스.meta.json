@@ -2,87 +2,51 @@
   "page_id": "legacy_wiki_index_925404",
   "paragraphs": {
     "para_001": {
-      "evidence_type": "synthesized",
-      "source_refs": [],
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_wiki_index_md_925404d5#chunk_001"
+      ],
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://www.polymarket.com"
+      ]
     },
     "para_002": {
-      "evidence_type": "synthesized",
-      "source_refs": [],
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_wiki_index_md_925404d5#chunk_001"
+      ],
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://www.polymarket.com"
+      ]
     },
     "para_003": {
-      "evidence_type": "synthesized",
-      "source_refs": [],
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_wiki_index_md_925404d5#chunk_001"
+      ],
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://www.polymarket.com"
+      ]
     },
     "para_004": {
       "evidence_type": "direct",
       "source_refs": [
-        "src_20260409_자잘한경제지식___네이버_블로그_518276b7#chunk_001"
+        "src_wiki_index_md_925404d5#chunk_001"
       ],
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
       "source_urls": [
-        "https://blog.naver.com/echi9305/224099033180"
-      ]
-    },
-    "para_005": {
-      "evidence_type": "direct",
-      "source_refs": [
-        "src_20260409_주식_인덱스란__인덱스_뜻__주가지수와_차이점은_무엇인가요_ffb90987#chunk_001"
-      ],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": [
-        "https://ggam2vly.tistory.com/entry/%EC%A3%BC%EC%8B%9D%EC%9D%B8%EB%8D%B1%EC%8A%A4%EB%9E%80"
-      ]
-    },
-    "para_006": {
-      "evidence_type": "direct",
-      "source_refs": [
-        "src_20260409_welcome_to_llamaindex_llamaindex_oss_documentation_dfea4c28#chunk_001"
-      ],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": [
-        "https://developers.llamaindex.ai/python/framework/"
-      ]
-    },
-    "para_007": {
-      "evidence_type": "direct",
-      "source_refs": [
-        "src_20260409_index_archive_platform_09a6bd0f#chunk_001"
-      ],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": [
-        "http://wiki.krx.co.kr/index"
-      ]
-    },
-    "para_008": {
-      "evidence_type": "direct",
-      "source_refs": [
-        "src_20260409_extensiv_2026_q2_release_notes_extensiv_daa59a97#chunk_001"
-      ],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": [
-        "https://help.extensiv.com/en_US/2026/extensiv-2026-q2-release-notes"
+        "https://www.polymarket.com"
       ]
     }
   }
