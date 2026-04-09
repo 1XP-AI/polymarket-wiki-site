@@ -104,6 +104,19 @@
       "source_urls": [
         "https://miraclehub.tistory.com/entry/%ED%88%AC%EC%9E%90-%EB%A6%AC%EC%8A%A4%ED%81%AC-%EA%B4%80%EB%A6%AC-%EB%B0%A9%EB%B2%952026-2%EC%9B%94-%EA%B8%B0%EC%A4%80"
       ]
+    },
+    "para_012": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_https_errante_com_wp_content_uploads_2024_02_errante_copytrading_manual_pdf_e0171476#chunk_001",
+        "src_20260409_https_errante_com_wp_content_uploads_2024_02_errante_copytrading_manual_pdf_e0171476#chunk_002"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://errante.com/wp-content/uploads/2024/02/Errante-CopyTrading-Manual.pdf"
+      ]
     }
   }
 }

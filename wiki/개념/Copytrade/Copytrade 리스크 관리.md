@@ -4,11 +4,11 @@ title: Copytrade 리스크 관리
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:10Z'
-last_updated: '2026-04-09T15:09:33Z'
+last_updated: '2026-04-09T17:02:21Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
-source_count: 4
+source_count: 5
 evidence_coverage: 1.0
 confidence: medium
 related_pages: []
@@ -19,6 +19,7 @@ sources:
 - url: https://www.copytrade.net/documentation
 - url: https://copytrade.co.kr/
 - url: https://help.polymarket.com/en/articles/13364163-geographic-restrictions
+- url: https://errante.com/wp-content/uploads/2024/02/Errante-CopyTrading-Manual.pdf
 ---
 # Copytrade 리스크 관리
 
@@ -106,3 +107,6 @@ What is CopyTrade? CopyTrade is a platform for copy (mirror) trading.
 투자 리스크 관리 방법(2026 .2월 기준)
 정보공유마당
 2026. 2.
+
+<!-- para: para_012 -->
+원문 PDF 바이너리 덤프는 사용자용 위키에서 제거했다. 해당 자료는 카피트레이딩 서비스 설명서와 위험 고지, 주문 복제 방식 같은 운영 정보를 담은 PDF다.
