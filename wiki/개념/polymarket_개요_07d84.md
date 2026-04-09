@@ -4,14 +4,20 @@ title: Polymarket 개요
 type: concept
 status: draft
 created_at: '2026-04-09T14:10:09Z'
-last_updated: '2026-04-09T14:10:09Z'
+last_updated: '2026-04-09T14:48:24Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
-source_count: 1
+source_count: 4
 evidence_coverage: 1.0
 confidence: medium
 related_pages:
+- legacy_raw_01_polymarket_b75012
+- legacy_wiki_polymarket_aa7ff7
+- legacy_wiki_polymarket_b06656
+- source_summary_src_raw_01_polymarket_md_b7501253
+- source_summary_src_wiki_polymarket_md_aa7ff7f8
+- source_summary_src_wiki_polymarket_md_b0665680
 - source_summary_src_wiki_polymarket_md_cd5a0827
 tags:
 - concept
@@ -87,3 +93,18 @@ Gamma API 응답에서 확인되는 주요 필드:
 
 <!-- para: para_010 -->
 소스 요약: source_summary_src_wiki_polymarket_md_cd5a0827
+
+<!-- para: para_011 -->
+`Polymarket 개요` 문서의 핵심 내용을 `Polymarket 개요`에 병합했다. 요약: > Polymarket와 예측 시장의 핵심 구조 및 copytrade 관점에서의 주요 고려사항을 정리합니다.
+
+## 핵심 사실 Polymarket은 사건 결과에 베팅하는 예측시장(prediction market) 플랫폼입니다. 각 마켓은 Yes/No 또는 다중 아웃컴(outcome)을 가지며, 가격은 해당 결과의 암묵적 확률을 반영합니다.
+
+<!-- para: para_012 -->
+`Polymarket 개요` 문서의 핵심 내용을 `Polymarket 개요`에 병합했다. 요약: > 출처: docs.polymarket.com (2026-04-04 수집)
+
+## 핵심 사실 Polymarket은 **세계 최대의 예측 시장(Prediction Market)** 플랫폼이다. 사용자가 실제 세계 이벤트의 결과에 베팅할 수 있으며, Polygon 블록체인 위에서 운영된다.
+
+<!-- para: para_013 -->
+`Polymarket 개요` 문서의 핵심 내용을 `Polymarket 개요`에 병합했다. 요약: > Polymarket은 Polygon 기반의 주요 예측시장 플랫폼으로, 이벤트/마켓/오더북을 제공한다.
+
+## 핵심 사실 Polymarket은 이벤트별 결과에 베팅하는 예측시장으로 CLOB(중앙지정가주문장)를 통해 거래가 이루어지고, Yes/No 토큰을 사용해 결과를 정산한다.
