@@ -7,9 +7,7 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://www.quantstart.com/articles/market-impact-slippage/"
-      ]
+      "source_urls": []
     },
     "para_002": {
       "evidence_type": "direct",
@@ -17,10 +15,7 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://www.quantstart.com/articles/market-impact-slippage/",
-        "https://www.investopedia.com/terms/s/slippage.asp"
-      ]
+      "source_urls": []
     },
     "para_003": {
       "evidence_type": "direct",
@@ -28,9 +23,7 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://gamma-api.polymarket.com/markets"
-      ]
+      "source_urls": []
     },
     "para_004": {
       "evidence_type": "direct",
@@ -38,9 +31,7 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://www.quantstart.com/articles/market-impact-slippage/"
-      ]
+      "source_urls": []
     },
     "para_005": {
       "evidence_type": "direct",
@@ -48,9 +39,7 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://www.quantstart.com/articles/market-impact-slippage/"
-      ]
+      "source_urls": []
     },
     "para_006": {
       "evidence_type": "direct",
@@ -58,9 +47,7 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://www.investopedia.com/terms/s/slippage.asp"
-      ]
+      "source_urls": []
     },
     "para_007": {
       "evidence_type": "direct",
@@ -68,9 +55,7 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://www.quantstart.com/articles/market-impact-slippage/"
-      ]
+      "source_urls": []
     },
     "para_008": {
       "evidence_type": "direct",
@@ -78,9 +63,7 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://docs.polymarket.com/api"
-      ]
+      "source_urls": []
     },
     "para_009": {
       "evidence_type": "direct",
@@ -88,10 +71,7 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://docs.polymarket.com/api",
-        "https://gamma-api.polymarket.com/markets"
-      ]
+      "source_urls": []
     }
   }
 }

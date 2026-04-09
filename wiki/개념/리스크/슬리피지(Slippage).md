@@ -4,7 +4,7 @@ title: 슬리피지(Slippage)
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:09Z'
-last_updated: '2026-04-09T16:13:32Z'
+last_updated: '2026-04-09T23:19:48Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -66,20 +66,7 @@ import pandas as pd
 
 <!-- para: para_007 -->
 df = pd.DataFrame({
-    'expected_price': [0.40, 0.41, 0.39, 0.42],
-    'executed_price': [0.44, 0.405, 0.395, 0.43]
-})
 
-df['abs_slippage'] = df['executed_price'] - df['expected_price']
-df['rel_slippage_pct'] = 100 * df['abs_slippage'] / df['expected_price']
+'expected_price': [0.40, 0.41, 0.39, 0.42],
 
-summary = {
-    'mean_rel_pct': df['rel_slippage_pct'].mean(),
-    'p95_rel_pct': df['rel_slippage_pct'].quantile(0.95),
-    'count': len(df)
-}
-
-print(summary)
-
-운용 팁:
-- 집계 시에는 감지 시점의 타임스탬프와 체결 타임스탬프를 비교해 라그(latency)와의 상관관계를 함께 분석하면 원인 분석에 도움이 된다. - 마켓별로 슬리피지 분포가 크게 다르므로, 동일 트레이더라도 마켓 특성에 맞춘 슬리피지 허용치를 설정해야 한다.
+'executed_price': [0.44, 0.405, 0.395, 0.43]

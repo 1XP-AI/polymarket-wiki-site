@@ -7,9 +7,7 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://docs.polymarket.com/developer-resources/contracts"
-      ]
+      "source_urls": []
     },
     "para_002": {
       "evidence_type": "direct",
@@ -17,10 +15,7 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://docs.polymarket.com/developer-resources/contracts",
-        "https://github.com/gnosis/conditional-tokens-contracts"
-      ]
+      "source_urls": []
     },
     "para_003": {
       "evidence_type": "direct",
@@ -28,10 +23,7 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://docs.polymarket.com/developer-resources/contracts",
-        "https://github.com/gnosis/conditional-tokens-contracts"
-      ]
+      "source_urls": []
     },
     "para_004": {
       "evidence_type": "direct",
@@ -39,9 +31,7 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://docs.cloud.google.com/blockchain-analytics/docs/overview?hl=ko"
-      ]
+      "source_urls": []
     },
     "para_005": {
       "evidence_type": "direct",
@@ -49,9 +39,7 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://ethereum.org/ko/developers/docs/data-availability/blockchain-data-storage-strategies/"
-      ]
+      "source_urls": []
     },
     "para_006": {
       "evidence_type": "direct",
@@ -59,10 +47,7 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://docs.cloud.google.com/blockchain-analytics/docs/overview?hl=ko",
-        "https://ethereum.org/ko/developers/docs/data-availability/blockchain-data-storage-strategies/"
-      ]
+      "source_urls": []
     },
     "para_007": {
       "evidence_type": "direct",
@@ -70,9 +55,7 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://docs.polymarket.com/developer-resources/contracts"
-      ]
+      "source_urls": []
     }
   }
 }

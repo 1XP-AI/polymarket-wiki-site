@@ -7,9 +7,7 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://docs.polymarket.com"
-      ]
+      "source_urls": []
     },
     "para_002": {
       "evidence_type": "direct",
@@ -17,10 +15,7 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://gamma-api.polymarket.com/leaderboard",
-        "https://polymarket.com/leaderboard"
-      ]
+      "source_urls": []
     },
     "para_003": {
       "evidence_type": "direct",
@@ -28,9 +23,7 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://docs.polymarket.com"
-      ]
+      "source_urls": []
     },
     "para_004": {
       "evidence_type": "direct",
@@ -38,10 +31,7 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://gamma-api.polymarket.com/leaderboard",
-        "https://polymarket.com/leaderboard"
-      ]
+      "source_urls": []
     },
     "para_005": {
       "evidence_type": "direct",
@@ -49,10 +39,7 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://prometheus.io/docs/alerting/latest/alertmanager/",
-        "https://grafana.com/docs/grafana/latest/alerting/"
-      ]
+      "source_urls": []
     },
     "para_006": {
       "evidence_type": "direct",
@@ -60,10 +47,7 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://prometheus.io/docs/alerting/latest/alertmanager/",
-        "https://grafana.com/docs/grafana/latest/alerting/"
-      ]
+      "source_urls": []
     },
     "para_007": {
       "evidence_type": "direct",
@@ -71,10 +55,7 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://docs.polymarket.com",
-        "https://gamma-api.polymarket.com/leaderboard"
-      ]
+      "source_urls": []
     },
     "para_008": {
       "evidence_type": "direct",
@@ -82,10 +63,7 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://docs.polymarket.com",
-        "https://prometheus.io/docs/alerting/latest/alertmanager/"
-      ]
+      "source_urls": []
     }
   }
 }

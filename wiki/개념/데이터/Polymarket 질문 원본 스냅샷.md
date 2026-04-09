@@ -4,7 +4,7 @@ title: Polymarket 질문 원본 스냅샷
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:09Z'
-last_updated: '2026-04-09T16:46:07Z'
+last_updated: '2026-04-09T23:19:48Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -35,16 +35,6 @@ sources: []
 <!-- para: para_003 -->
 예시 레코드는 아래처럼 축약해서 보는 편이 이해하기 쉽다.
 
-```json
-{
-  "id": "12",
-  "question": "Will Joe Biden get Coronavirus before the election?",
-  "slug": "will-joe-biden-get-coronavirus-before-the-election",
-  "endDate": "2020-11-04T00:00:00Z",
-  "category": "US-current-affairs",
-  "outcomes": ["Yes", "No"],
-  "volume": "32257.445115",
-  "active": true,
-  "closed": true
-}
-```
+"question": "Will Joe Biden get Coronavirus before the election?",
+
+"slug": "will-joe-biden-get-coronavirus-before-the-election",

@@ -4,7 +4,7 @@ title: Polymarket API 레퍼런스
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:09Z'
-last_updated: '2026-04-09T15:11:57Z'
+last_updated: '2026-04-09T23:19:48Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -16,6 +16,7 @@ related_pages:
 - legacy_wiki_clob_064e27
 - legacy_wiki_copytrade_0c3a80
 - legacy_wiki_copytrade_698574
+- legacy_wiki_index_925404
 tags:
 - concept
 sources:
@@ -89,17 +90,6 @@ GET https://gamma-api.polymarket.com/events?limit=20&active=true
 
 <!-- para: para_012 -->
 Introduction - Polymarket Documentation
-Skip to main content
-Polymarket Documentation
-home page
-English
-Search... ⌘
-K
-Changelog
-Get Help
-Main Site
-Main Site
-Search...
 
 <!-- para: para_013 -->
 Falcon API – The Infrastructure Layer of Prediction Markets
@@ -113,17 +103,8 @@ Choose how you want to access prediction market intelligence.
 
 <!-- para: para_014 -->
 API Overview - Polymarket US Documentation
-Skip to main content
+
 You are viewing documentation for Polymarket US 🇺🇸
-Polymarket US Documentation
-home page
-Search... ⌘
-K
-Ask AI
-Join Discord
-Main Site
-Main Site
-Search...
 
 <!-- para: para_015 -->
 polymarket-apis · PyPI

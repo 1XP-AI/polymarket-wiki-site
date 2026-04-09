@@ -4,7 +4,7 @@ title: 2026-04-07 Negative Risk & CLOB API 외부 소스 수집
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:09Z'
-last_updated: '2026-04-09T17:01:40Z'
+last_updated: '2026-04-09T23:19:48Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -74,15 +74,8 @@ sources:
 Negative Risk Markets
 
 |tdergouzi/rs-clob-client | DeepWiki
+
 Loading... Index your code with Devin
-DeepWiki
-DeepWiki
-tdergouzi/rs-clob-client
-Index your code with
-Devin
-Edit Wiki
-Share
-Loading...
 
 <!-- para: para_010 -->
 사이버 보안 취약점 정보 포털

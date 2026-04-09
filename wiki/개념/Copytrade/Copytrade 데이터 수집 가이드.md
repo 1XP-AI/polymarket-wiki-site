@@ -12,6 +12,7 @@ source_count: 2
 evidence_coverage: 1.0
 confidence: medium
 related_pages:
+- legacy_raw_00_index_ec3366
 - legacy_raw_05_badd78
 - legacy_wiki_0x492442eab586f242b53bda933fd5de859c8a3782_e83e3b
 - legacy_wiki_923782

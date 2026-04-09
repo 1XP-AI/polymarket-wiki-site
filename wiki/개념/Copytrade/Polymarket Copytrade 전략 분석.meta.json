@@ -120,18 +120,6 @@
     "para_014": {
       "evidence_type": "direct",
       "source_refs": [
-        "src_20260409_documentation_polymarket_copy_trade_90e1b987#chunk_001"
-      ],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": [
-        "https://www.polycopytrade.net/documentation.php"
-      ]
-    },
-    "para_015": {
-      "evidence_type": "direct",
-      "source_refs": [
         "src_20260409_how_to_copy_trade_on_polymarket_complete_guide_2025_b3256a5d#chunk_001"
       ],
       "as_of": "2026-04-09",
@@ -141,7 +129,7 @@
         "https://www.polycopy.dev/guides/how-to-copy-trade-polymarket"
       ]
     },
-    "para_016": {
+    "para_015": {
       "evidence_type": "direct",
       "source_refs": [
         "src_20260409_copytrading_on_polymarket_polynoob_3988c3c2#chunk_001"
@@ -153,7 +141,7 @@
         "https://polynoob.com/copytrading-on-polymarket/"
       ]
     },
-    "para_017": {
+    "para_016": {
       "evidence_type": "direct",
       "source_refs": [
         "src_20260409_overview_polymarket_documentation_4d044dbd#chunk_001"

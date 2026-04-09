@@ -4,7 +4,7 @@ title: Copytrade 리더보드 심화
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:10Z'
-last_updated: '2026-04-09T16:13:32Z'
+last_updated: '2026-04-09T23:19:48Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -89,60 +89,21 @@ raw/fetched/2026-04-05-leaderboard-monthly.md에서 상위 10위:
 
 <!-- para: para_010 -->
 - YouTube
-정보
-보도자료
-저작권
-문의하기
-크리에이터
-광고
-개발자
-약관
-개인정보처리방침
-정책 및 안전
-YouTube 작동의 원리
-새로운 기능 테스트하기
+
 © 2026 Google LLC, Sundar Pichai, 1600 Amphitheatre Parkway, Mountain View CA 94043, USA, 0807-882-594 (무료), yt-support-solutions-kr@google.com, 호스팅: Google LLC,
-사업자정보
-,
-불법촬영물 신고
+
 크리에이터들이 유튜브 상에 게시, 태그 또는 추천한 상품들은 판매자들의 약관에 따라 판매됩니다. 유튜브는 이러한 제품들을 판매하지 않으며, 그에 대한 책임을 지지 않습니다.
 
 <!-- para: para_011 -->
 바이비트 카피트레이딩 하는법(방법) 총정리 [Bybit Copy Trading] : 네이버 블로그
-본문 바로가기
-블로그
-카테고리 이동
+
 비트코인 전문가 coinking 코인킹 블로그
-검색
-MY메뉴 열기
-선물/마진 거래소 정보 소식
+
 바이비트 카피트레이딩 하는법(방법) 총정리 [Bybit Copy Trading]
-coinking 코인킹
-2022. 8.
 
 <!-- para: para_012 -->
 Documentation - Comprehensive Guide for Copy Trading Success
-Back to Home
-Nav menu
-Introduction
-What is CopyTrade
-Supported Platforms
-Supported Orders
-Get started
-Your First Strategy
-Add Master Account
-Add Copier Account
-Start copy trading
-Strategies
-Create New Strategy
-Extend Time
-Upgrade Plan
-Remove Strategy
-Accounts
-Connect Troubleshooting
-Account Detail
-Remove Account
-Introduction
+
 What is CopyTrade? CopyTrade is a platform for copy (mirror) trading.
 
 <!-- para: para_013 -->
@@ -150,20 +111,3 @@ web page
 
 <!-- para: para_014 -->
 Copy Trading Leaderboard
-Copy Trading Leaderboard
-Share
-Back to Copy Trading
-Copy Trading Leaderboard
-Followers
-Share
-Date:
---
-Hall of Fame
-Date:
---
-No Records
-没有更多了
-Username
-7-Day Profit
-Master Trader
-No Records
