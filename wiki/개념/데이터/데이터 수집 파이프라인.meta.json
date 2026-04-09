@@ -56,6 +56,67 @@
       "confidence": "medium",
       "conflict_flag": false,
       "source_urls": []
+    },
+    "para_008": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_ibm_cd115c58#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://www.ibm.com/kr-ko/think/topics/data-pipeline"
+      ]
+    },
+    "para_009": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_데이터_파이프라인_거버넌스_구조_정리_30e75340#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://imt-log.tistory.com/entry/ai-data-pipeline"
+      ]
+    },
+    "para_010": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_dataflow_google_cloud_documentation_a1bcda2a#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://docs.cloud.google.com/dataflow/docs/guides/plan-pipelines?hl=ko"
+      ]
+    },
+    "para_011": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_amazon_aws_341bd2eb#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://docs.aws.amazon.com/ko_kr/prescriptive-guidance/latest/strategy-gen-ai-selling-partner-api/ingestion-pipeline.html"
+      ]
+    },
+    "para_012": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_drug_price_kr_github_05a084d3#chunk_001",
+        "src_20260409_drug_price_kr_github_05a084d3#chunk_002"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://gist.github.com/dkmin/dc82c2c58a54b70d24b14e72c44853d0"
+      ]
     }
   }
 }
