@@ -48,6 +48,67 @@
       "confidence": "medium",
       "conflict_flag": false,
       "source_urls": []
+    },
+    "para_007": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_keepamericaaffordable_e702ccbf#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://keepamericaaffordable.com/%EC%8A%B9%EB%B6%80%EC%A1%B0%EC%9E%91-%EC%9E%90%EC%82%B0-%EC%9C%A0%EC%9E%85-%EC%B0%A8%EB%8B%A8/"
+      ]
+    },
+    "para_008": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_copytrade_copy_trading_to_maximize_your_profits_45c490a6#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://www.copytrade.net/"
+      ]
+    },
+    "para_009": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_https_errante_com_wp_content_uploads_2024_02_errante_copytrading_manual_pdf_e0171476#chunk_001",
+        "src_20260409_https_errante_com_wp_content_uploads_2024_02_errante_copytrading_manual_pdf_e0171476#chunk_002"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://errante.com/wp-content/uploads/2024/02/Errante-CopyTrading-Manual.pdf"
+      ]
+    },
+    "para_010": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_2026_big_81deae06#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://www.newswire.co.kr/newsRead.php?no=1028295"
+      ]
+    },
+    "para_011": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_금융감독원_통합홈페이지_5f5391c4#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://fss.or.kr/"
+      ]
     }
   }
 }
