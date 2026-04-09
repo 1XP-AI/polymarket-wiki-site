@@ -72,6 +72,67 @@
       "confidence": "medium",
       "conflict_flag": false,
       "source_urls": []
+    },
+    "para_010": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_bro_it_23452d34#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://blog.naver.com/brotechtalks/224159705271"
+      ]
+    },
+    "para_011": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_websocket_http_y_information_59619e56#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://yinternational.co.kr/websocket-%EC%8B%A4%EC%8B%9C%EA%B0%84-%ED%86%B5%EC%8B%A0%EC%9D%98-%EB%AA%A8%EB%93%A0-%EA%B2%83-http%EC%99%80%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%99%80-%ED%99%9C%EC%9A%A9-%EC%82%AC%EB%A1%80/"
+      ]
+    },
+    "para_012": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_websocket_api_events_methods_properties_websocket_org_c1a1d027#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://websocket.org/reference/websocket-api"
+      ]
+    },
+    "para_013": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_websocket_web_api_mdn_22d0f684#chunk_001",
+        "src_20260409_websocket_web_api_mdn_22d0f684#chunk_002"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://developer.mozilla.org/ko/docs/Web/API/WebSockets_API/Writing_WebSocket_client_applications"
+      ]
+    },
+    "para_014": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_release_notes_uvicorn_67d7bfcd#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://uvicorn.dev/release-notes/"
+      ]
     }
   }
 }
