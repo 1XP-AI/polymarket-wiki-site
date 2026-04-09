@@ -1,1022 +1,518 @@
 [
   {
-    "path": "comparisons/legacy_wiki_0b6323.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2071
+    "path": "_index.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 7607
   },
   {
-    "path": "comparisons/legacy_wiki_clob_064e27.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 3190
+    "path": "개념/0x492442eab586f242b53bda933fd5de859c8a3782_트레이더_프로필_682d93.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2996
   },
   {
-    "path": "comparisons/legacy_wiki_copytrade_bde177.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2270
+    "path": "개념/2026_04_06_copytrade_외부_소스_수집_d3d60d.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 3003
   },
   {
-    "path": "comparisons/legacy_wiki_copytrade_copytrade_5e34e9.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 1778
+    "path": "개념/2026_04_07_negative_risk___clob_api_외부_소스_수집_b1ed94.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2964
   },
   {
-    "path": "concepts/legacy_raw_00_index_ec3366.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2035
+    "path": "개념/copytrade__리더보드_활용_e48631.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2924
   },
   {
-    "path": "concepts/legacy_raw_01_polymarket_b75012.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2325
+    "path": "개념/copytrade_d76266.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2289
   },
   {
-    "path": "concepts/legacy_raw_02_api_fbe99e.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2651
+    "path": "개념/copytrade_데이터_수집_가이드_527041.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 1830
   },
   {
-    "path": "concepts/legacy_raw_03_copytrade_c17abe.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2090
+    "path": "개념/copytrade_리더보드_심화_b65b01.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 3919
   },
   {
-    "path": "concepts/legacy_raw_04_a93c30.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 1922
+    "path": "개념/copytrade_리스크_관리_0095fd.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 3382
   },
   {
-    "path": "concepts/legacy_raw_05_badd78.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 1639
+    "path": "개념/copytrade_링크_강화_fb53a7.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 1794
   },
   {
-    "path": "concepts/legacy_raw_06_websocket_506430.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 1466
+    "path": "개념/copytrade_알파_지표_선별_bcc6b5.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2709
   },
   {
-    "path": "concepts/legacy_raw_07_48e6ec.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 1320
+    "path": "개념/copytrade_자동화_플로우_3960d4.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 5187
   },
   {
-    "path": "concepts/legacy_raw_fetched_2026_04_05_fetch_polymarket_f95e6d.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 1754
-  },
-  {
-    "path": "concepts/legacy_raw_fetched_2026_04_05_github_polymarket_e3c24d.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 889
-  },
-  {
-    "path": "concepts/legacy_raw_fetched_2026_04_05_leaderboard_monthly_43010c.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2963
-  },
-  {
-    "path": "concepts/legacy_raw_fetched_2026_04_05_market_trends_ea1f3a.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2059
-  },
-  {
-    "path": "concepts/legacy_raw_fetched_2026_04_05_markets_cycle15_a11eaa.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2111
-  },
-  {
-    "path": "concepts/legacy_raw_fetched_2026_04_05_polymarket_events_59a37c.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 145729
-  },
-  {
-    "path": "concepts/legacy_raw_fetched_2026_04_05_polymarket_markets_a295cb.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 283920
-  },
-  {
-    "path": "concepts/legacy_raw_fetched_2026_04_05_reddit_polymarket_16d476.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2113
-  },
-  {
-    "path": "concepts/legacy_raw_fetched_2026_04_06_copytrade_sources_5404e6.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2993
-  },
-  {
-    "path": "concepts/legacy_raw_fetched_2026_04_07_negative_risk_and_api_9f21d1.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2954
-  },
-  {
-    "path": "concepts/legacy_raw_sources_f2899c.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2267
-  },
-  {
-    "path": "concepts/legacy_wiki_00_index_3809cd.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2877
-  },
-  {
-    "path": "concepts/legacy_wiki_072e61.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 4477
-  },
-  {
-    "path": "concepts/legacy_wiki_0x492442eab586f242b53bda933fd5de859c8a3782_e83e3b.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2986
-  },
-  {
-    "path": "concepts/legacy_wiki_104389.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2624
-  },
-  {
-    "path": "concepts/legacy_wiki_253745.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2299
-  },
-  {
-    "path": "concepts/legacy_wiki_394666.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 3450
-  },
-  {
-    "path": "concepts/legacy_wiki_4526f6.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 3293
-  },
-  {
-    "path": "concepts/legacy_wiki_7acc18.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2361
-  },
-  {
-    "path": "concepts/legacy_wiki_88f80c.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 1929
-  },
-  {
-    "path": "concepts/legacy_wiki_923782.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 3564
-  },
-  {
-    "path": "concepts/legacy_wiki_96e938.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 3161
-  },
-  {
-    "path": "concepts/legacy_wiki_a01f7f.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2501
-  },
-  {
-    "path": "concepts/legacy_wiki_api_polymarket_api_62ef40.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2446
-  },
-  {
-    "path": "concepts/legacy_wiki_be68fc.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2209
-  },
-  {
-    "path": "concepts/legacy_wiki_c2a67b.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2232
-  },
-  {
-    "path": "concepts/legacy_wiki_copytrade_01e411.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 3470
-  },
-  {
-    "path": "concepts/legacy_wiki_copytrade_0c3a80.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 5177
-  },
-  {
-    "path": "concepts/legacy_wiki_copytrade_1f98b0.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 3543
-  },
-  {
-    "path": "concepts/legacy_wiki_copytrade_27d56b.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2982
-  },
-  {
-    "path": "concepts/legacy_wiki_copytrade_2ce18d.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2809
-  },
-  {
-    "path": "concepts/legacy_wiki_copytrade_37aa3c.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2657
-  },
-  {
-    "path": "concepts/legacy_wiki_copytrade_3f7013.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2876
-  },
-  {
-    "path": "concepts/legacy_wiki_copytrade_4d0fc3.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2279
-  },
-  {
-    "path": "concepts/legacy_wiki_copytrade_506e4c.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2326
-  },
-  {
-    "path": "concepts/legacy_wiki_copytrade_511614.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 1647
-  },
-  {
-    "path": "concepts/legacy_wiki_copytrade_53511b.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2914
-  },
-  {
-    "path": "concepts/legacy_wiki_copytrade_59552d.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 3372
-  },
-  {
-    "path": "concepts/legacy_wiki_copytrade_698574.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 1784
-  },
-  {
-    "path": "concepts/legacy_wiki_copytrade_6a6853.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 3048
-  },
-  {
-    "path": "concepts/legacy_wiki_copytrade_7d1d61.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 3007
-  },
-  {
-    "path": "concepts/legacy_wiki_copytrade_8c09ff.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 5736
-  },
-  {
-    "path": "concepts/legacy_wiki_copytrade_a22c55.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2115
-  },
-  {
-    "path": "concepts/legacy_wiki_copytrade_ac0967.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2062
-  },
-  {
-    "path": "concepts/legacy_wiki_copytrade_bb61e6.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 3159
-  },
-  {
-    "path": "concepts/legacy_wiki_copytrade_bb99a4.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 3280
-  },
-  {
-    "path": "concepts/legacy_wiki_copytrade_bf1303.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 3530
-  },
-  {
-    "path": "concepts/legacy_wiki_copytrade_bfb3cf.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2584
-  },
-  {
-    "path": "concepts/legacy_wiki_copytrade_c6dea0.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2889
-  },
-  {
-    "path": "concepts/legacy_wiki_copytrade_cbba22.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 1801
-  },
-  {
-    "path": "concepts/legacy_wiki_copytrade_copytrade_4b2b9f.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 3909
-  },
-  {
-    "path": "concepts/legacy_wiki_copytrade_d6deb5.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2699
-  },
-  {
-    "path": "concepts/legacy_wiki_copytrade_e140b9.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2464
-  },
-  {
-    "path": "concepts/legacy_wiki_copytrade_e2e01c.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2292
-  },
-  {
-    "path": "concepts/legacy_wiki_copytrade_e7d623.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2596
-  },
-  {
-    "path": "concepts/legacy_wiki_copytrade_e81931.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 4384
-  },
-  {
-    "path": "concepts/legacy_wiki_copytrade_e9b11e.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2444
-  },
-  {
-    "path": "concepts/legacy_wiki_copytrade_eff435.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 1820
-  },
-  {
-    "path": "concepts/legacy_wiki_e92c88.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 3341
-  },
-  {
-    "path": "concepts/legacy_wiki_index_80e0c9.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 1915
-  },
-  {
-    "path": "concepts/legacy_wiki_index_925404.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 1546
-  },
-  {
-    "path": "concepts/legacy_wiki_index_aa489a.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 3305
-  },
-  {
-    "path": "concepts/legacy_wiki_link_2026_04_05_4bcb54.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2093
-  },
-  {
-    "path": "concepts/legacy_wiki_negative_risk_7a5dd0.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2939
-  },
-  {
-    "path": "concepts/legacy_wiki_polymarket_2026_04_05_d5da53.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 1975
-  },
-  {
-    "path": "concepts/legacy_wiki_polymarket_aa7ff7.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 3862
-  },
-  {
-    "path": "concepts/legacy_wiki_polymarket_b06656.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2939
-  },
-  {
-    "path": "concepts/legacy_wiki_polymarket_cd5a08.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2946
-  },
-  {
-    "path": "concepts/legacy_wiki_polymarket_fd0553.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 3241
-  },
-  {
-    "path": "concepts/legacy_wiki_polymarket_github_2f7358.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2712
-  },
-  {
-    "path": "concepts/legacy_wiki_theo_e3e7fe.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
+    "path": "개념/copytrade_포지션_리밸런싱_가이드_ea3684.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
     "size": 2899
   },
   {
-    "path": "concepts/legacy_wiki_websocket_175ba8.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 3060
+    "path": "개념/github_검색_스냅샷__now_c56740.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 901
   },
   {
-    "path": "source_summaries/source_summary_src_raw_00_index_md_ec336627.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 1988
+    "path": "개념/id_12_question_will_joe_biden_get_coronavirus_before_the_election_conditionid_0xe3b423dfad8c22ff75c9899c4e_5ff8cd.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 283930
   },
   {
-    "path": "source_summaries/source_summary_src_raw_01_polymarket_md_b7501253.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2260
+    "path": "개념/id_2890_ticker_nba_will_the_mavericks_beat_the_grizzlies_by_more_than_5pt5_points_in_their_december_4_matchup_06e3f2.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 145739
   },
   {
-    "path": "source_summaries/source_summary_src_raw_02_api_md_fbe99e01.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
+    "path": "개념/index_fc31e3.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 1556
+  },
+  {
+    "path": "개념/index_요약__확장_메모_764b57.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 1925
+  },
+  {
+    "path": "개념/index_요약_f7dcf9.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 3315
+  },
+  {
+    "path": "개념/link_사이클_노트__2026_04_05_7787f3.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2103
+  },
+  {
+    "path": "개념/negative_risk_e778d6.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2949
+  },
+  {
+    "path": "개념/polymarket_api_레퍼런스_442055.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2456
+  },
+  {
+    "path": "개념/polymarket_api_레퍼런스_dc73d6.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2661
+  },
+  {
+    "path": "개념/polymarket_copytrade_위키___raw_자료_인덱스_3ff765.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2045
+  },
+  {
+    "path": "개념/polymarket_copytrade_전략_분석_ca1522.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2100
+  },
+  {
+    "path": "개념/polymarket_github_리포트_f6877f.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2722
+  },
+  {
+    "path": "개념/polymarket_개요_07d84f.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2956
+  },
+  {
+    "path": "개념/polymarket_개요_0d8587.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2949
+  },
+  {
+    "path": "개념/polymarket_개요_4451cc.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 3872
+  },
+  {
+    "path": "개념/polymarket_개요_7caa92.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2335
+  },
+  {
+    "path": "개념/polymarket_개요___심화_59c18c.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 3251
+  },
+  {
+    "path": "개념/polymarket_리더보드_스냅샷__2026_04_05_01_00_b3523c.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2973
+  },
+  {
+    "path": "개념/polymarket_마켓_분석_d288c6.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2242
+  },
+  {
+    "path": "개념/polymarket_마켓_스냅샷__사이클_15__2026_04_05_01_10_94e38d.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2121
+  },
+  {
+    "path": "개념/polymarket_마켓_트렌드_스냅샷__2026_04_05_01_04_282607.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2069
+  },
+  {
+    "path": "개념/polymarket_이벤트_스냅샷__2026_04_05_7d4aad.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 1985
+  },
+  {
+    "path": "개념/reddit_r_polymarket_hot_posts__2026_04_05_01_00_934147.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2123
+  },
+  {
+    "path": "개념/theo___트레이더_프로필_사례_42cd53.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2909
+  },
+  {
+    "path": "개념/websocket___실시간_데이터_2d5021.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 1476
+  },
+  {
+    "path": "개념/websocket_실시간데이터_feacd3.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 3070
+  },
+  {
+    "path": "개념/데이터_기반_트레이더_선별_e2246c.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2992
+  },
+  {
+    "path": "개념/데이터_수집_파이프라인_db413d.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2634
+  },
+  {
+    "path": "개념/리더보드___트레이더_데이터_295383.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 1649
+  },
+  {
+    "path": "개념/리더보드_데이터_319e57.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 3303
+  },
+  {
+    "path": "개념/리더보드_분석_a22c39.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 3171
+  },
+  {
+    "path": "개념/리더보드_심층_분석_53e31b.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 3017
+  },
+  {
+    "path": "개념/리더보드_알파_탐지_053a96.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 1657
+  },
+  {
+    "path": "개념/리더보드_조작_탐지_947ea7.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 3540
+  },
+  {
+    "path": "개념/리베이트_마켓메이커_5c8b95.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2371
+  },
+  {
+    "path": "개념/리스크_모니터링_copytrade_e5bec6.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 3553
+  },
+  {
+    "path": "개념/리스크_시나리오_9525e3.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2594
+  },
+  {
+    "path": "개념/리스크_알림_규칙_142f66.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2819
+  },
+  {
+    "path": "개념/마켓_메이커___리베이트_프로그램_b77e03.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 1932
+  },
+  {
+    "path": "개념/매수_타이밍_심화_63467b.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
     "size": 2606
   },
   {
-    "path": "source_summaries/source_summary_src_raw_03_copytrade_md_c17abe9e.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2026
+    "path": "개념/매수_타이밍_전략_e85ce7.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 3058
   },
   {
-    "path": "source_summaries/source_summary_src_raw_04_md_a93c304a.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 1868
+    "path": "개념/법률_사건_예측_마켓_5a9286.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2219
   },
   {
-    "path": "source_summaries/source_summary_src_raw_05_md_badd7884.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 1585
+    "path": "개념/성과_분석_지표__copytrade_성능_메트릭_103fd9.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 3480
   },
   {
-    "path": "source_summaries/source_summary_src_raw_06_websocket_md_50643061.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 1402
-  },
-  {
-    "path": "source_summaries/source_summary_src_raw_07_md_48e6ece0.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 1279
-  },
-  {
-    "path": "source_summaries/source_summary_src_raw_fetched_2026_04_05_fetch_polymarket_md_f95e6d60.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 1289
-  },
-  {
-    "path": "source_summaries/source_summary_src_raw_fetched_2026_04_05_github_polymarket_md_e3c24d0c.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 795
-  },
-  {
-    "path": "source_summaries/source_summary_src_raw_fetched_2026_04_05_leaderboard_monthly_md_43010c44.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 1854
-  },
-  {
-    "path": "source_summaries/source_summary_src_raw_fetched_2026_04_05_market_trends_md_ea1f3a08.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 1975
-  },
-  {
-    "path": "source_summaries/source_summary_src_raw_fetched_2026_04_05_markets_cycle15_md_a11eaaab.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2025
-  },
-  {
-    "path": "source_summaries/source_summary_src_raw_fetched_2026_04_05_polymarket_events_md_59a37ce2.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 133181
-  },
-  {
-    "path": "source_summaries/source_summary_src_raw_fetched_2026_04_05_polymarket_markets_md_a295cb3f.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 282852
-  },
-  {
-    "path": "source_summaries/source_summary_src_raw_fetched_2026_04_05_reddit_polymarket_md_16d4761e.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2038
-  },
-  {
-    "path": "source_summaries/source_summary_src_raw_fetched_2026_04_06_copytrade_sources_md_5404e622.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2905
-  },
-  {
-    "path": "source_summaries/source_summary_src_raw_fetched_2026_04_07_leaderboard_and_risk_md_bd37ef99.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2776
-  },
-  {
-    "path": "source_summaries/source_summary_src_raw_fetched_2026_04_07_negative_risk_and_api_md_9f21d1cd.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2875
-  },
-  {
-    "path": "source_summaries/source_summary_src_raw_sources_md_f2899c78.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2208
-  },
-  {
-    "path": "source_summaries/source_summary_src_wiki_00_index_md_3809cdf9.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2829
-  },
-  {
-    "path": "source_summaries/source_summary_src_wiki_0x492442eab586f242b53bda933fd5de859c8a3782_md_e83e3b98.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2904
-  },
-  {
-    "path": "source_summaries/source_summary_src_wiki_api_polymarket_api_md_62ef406d.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2375
-  },
-  {
-    "path": "source_summaries/source_summary_src_wiki_clob_md_064e2731.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 3140
-  },
-  {
-    "path": "source_summaries/source_summary_src_wiki_copytrade_copytrade_md_4b2b9fdc.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 3837
-  },
-  {
-    "path": "source_summaries/source_summary_src_wiki_copytrade_copytrade_md_5e34e985.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 1713
-  },
-  {
-    "path": "source_summaries/source_summary_src_wiki_copytrade_md_01e411ba.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 3421
-  },
-  {
-    "path": "source_summaries/source_summary_src_wiki_copytrade_md_0c3a8011.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 5128
-  },
-  {
-    "path": "source_summaries/source_summary_src_wiki_copytrade_md_1f98b023.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 3494
-  },
-  {
-    "path": "source_summaries/source_summary_src_wiki_copytrade_md_27d56bb4.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2933
-  },
-  {
-    "path": "source_summaries/source_summary_src_wiki_copytrade_md_2ce18d7f.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2760
-  },
-  {
-    "path": "source_summaries/source_summary_src_wiki_copytrade_md_37aa3c31.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2608
-  },
-  {
-    "path": "source_summaries/source_summary_src_wiki_copytrade_md_3f701359.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2827
-  },
-  {
-    "path": "source_summaries/source_summary_src_wiki_copytrade_md_4d0fc319.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2217
-  },
-  {
-    "path": "source_summaries/source_summary_src_wiki_copytrade_md_506e4c67.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
+    "path": "개념/소스_레지스트리_093e7f.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
     "size": 2277
   },
   {
-    "path": "source_summaries/source_summary_src_wiki_copytrade_md_5116148f.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 1598
+    "path": "개념/수집_원본__polymarket_snapshot___2026_04_05_5ffafc.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 1772
   },
   {
-    "path": "source_summaries/source_summary_src_wiki_copytrade_md_53511b22.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2863
+    "path": "개념/슬리피지_slippage_f7d78d.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 3574
   },
   {
-    "path": "source_summaries/source_summary_src_wiki_copytrade_md_59552dfc.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 3323
+    "path": "개념/시드_인덱스_316128.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2887
   },
   {
-    "path": "source_summaries/source_summary_src_wiki_copytrade_md_698574ee.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 1735
+    "path": "개념/시장_충격_완화_전략_9e02f5.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2125
   },
   {
-    "path": "source_summaries/source_summary_src_wiki_copytrade_md_6a685308.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2999
+    "path": "개념/시장_충격_측정_e34057.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2454
   },
   {
-    "path": "source_summaries/source_summary_src_wiki_copytrade_md_7d1d6197.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2945
+    "path": "개념/실행_비용_execution_cost____copytrade_고려사항_275f2e.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2474
   },
   {
-    "path": "source_summaries/source_summary_src_wiki_copytrade_md_8c09ff8b.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 5687
+    "path": "개념/심리적_편향_behavioral_bias__분석_3841fb.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 3169
   },
   {
-    "path": "source_summaries/source_summary_src_wiki_copytrade_md_a22c55b6.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2066
+    "path": "개념/알고리즘_선별_체크리스트_7fe719.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 1811
   },
   {
-    "path": "source_summaries/source_summary_src_wiki_copytrade_md_ac0967df.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2013
+    "path": "개념/온체인_컨트랙트_27d31d.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 3351
   },
   {
-    "path": "source_summaries/source_summary_src_wiki_copytrade_md_bb61e608.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 3110
+    "path": "개념/온체인_컨트랙트___블록체인_데이터_6b4d64.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 1330
   },
   {
-    "path": "source_summaries/source_summary_src_wiki_copytrade_md_bb99a4f5.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 3218
+    "path": "개념/정치_예측_마켓_744f21.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2511
   },
   {
-    "path": "source_summaries/source_summary_src_wiki_copytrade_md_bde17783.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2215
+    "path": "개념/청산_전략_exit_rules_c204d3.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2886
   },
   {
-    "path": "source_summaries/source_summary_src_wiki_copytrade_md_bf130397.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 3481
+    "path": "개념/추종_신호_필터링_068b1a.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2072
   },
   {
-    "path": "source_summaries/source_summary_src_wiki_copytrade_md_bfb3cf0e.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2535
+    "path": "개념/추종_실행_속도_최적화_328186.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2667
   },
   {
-    "path": "source_summaries/source_summary_src_wiki_copytrade_md_c6dea01d.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2840
+    "path": "개념/추종_중단_규칙_0764d3.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2336
   },
   {
-    "path": "source_summaries/source_summary_src_wiki_copytrade_md_cbba22d3.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 1752
-  },
-  {
-    "path": "source_summaries/source_summary_src_wiki_copytrade_md_d6deb5bb.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2650
-  },
-  {
-    "path": "source_summaries/source_summary_src_wiki_copytrade_md_e140b9ee.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2415
-  },
-  {
-    "path": "source_summaries/source_summary_src_wiki_copytrade_md_e2e01cd3.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2243
-  },
-  {
-    "path": "source_summaries/source_summary_src_wiki_copytrade_md_e7d62341.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2547
-  },
-  {
-    "path": "source_summaries/source_summary_src_wiki_copytrade_md_e819314f.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 4335
-  },
-  {
-    "path": "source_summaries/source_summary_src_wiki_copytrade_md_e9b11e17.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2382
-  },
-  {
-    "path": "source_summaries/source_summary_src_wiki_copytrade_md_eff43591.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 1228
-  },
-  {
-    "path": "source_summaries/source_summary_src_wiki_index_md_80e0c963.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 1868
-  },
-  {
-    "path": "source_summaries/source_summary_src_wiki_index_md_925404d5.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 1058
-  },
-  {
-    "path": "source_summaries/source_summary_src_wiki_index_md_aa489a04.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 3260
-  },
-  {
-    "path": "source_summaries/source_summary_src_wiki_link_2026_04_05_md_4bcb54a5.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2038
-  },
-  {
-    "path": "source_summaries/source_summary_src_wiki_md_072e61a4.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 4438
-  },
-  {
-    "path": "source_summaries/source_summary_src_wiki_md_0b63238b.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2013
-  },
-  {
-    "path": "source_summaries/source_summary_src_wiki_md_10438914.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2572
-  },
-  {
-    "path": "source_summaries/source_summary_src_wiki_md_25374589.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2247
-  },
-  {
-    "path": "source_summaries/source_summary_src_wiki_md_39466620.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 3398
-  },
-  {
-    "path": "source_summaries/source_summary_src_wiki_md_4526f6b8.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 3241
-  },
-  {
-    "path": "source_summaries/source_summary_src_wiki_md_7acc18f5.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
+    "path": "개념/크립토_예측_마켓_422f5b.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
     "size": 2309
   },
   {
-    "path": "source_summaries/source_summary_src_wiki_md_88f80caf.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 1890
+    "path": "개념/트레이더_프로필_분석_31808d.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 3290
   },
   {
-    "path": "source_summaries/source_summary_src_wiki_md_923782dc.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 3525
+    "path": "개념/트레이더_프로필_템플릿_419f64.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 1939
   },
   {
-    "path": "source_summaries/source_summary_src_wiki_md_96e938d1.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 3122
+    "path": "개념/팔로우_선별_fe55e2.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2302
   },
   {
-    "path": "source_summaries/source_summary_src_wiki_md_a01f7fb5.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2449
+    "path": "개념/팔로우_스코어링_모델_91d8de.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 4394
   },
   {
-    "path": "source_summaries/source_summary_src_wiki_md_be68fc57.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2170
+    "path": "개념/포지션_사이즈_전략_503579.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 5746
   },
   {
-    "path": "source_summaries/source_summary_src_wiki_md_c2a67bf6.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2180
+    "path": "개념/폴리마켓_개요_6c329a.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 3460
   },
   {
-    "path": "source_summaries/source_summary_src_wiki_md_e92c882e.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 3302
+    "path": "개념/프로그램_개요_e2c545.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 4487
   },
   {
-    "path": "source_summaries/source_summary_src_wiki_negative_risk_md_7a5dd068.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2873
+    "path": "비교/clob_8de9a8.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 3200
   },
   {
-    "path": "source_summaries/source_summary_src_wiki_polymarket_2026_04_05_md_d5da534f.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 1901
+    "path": "비교/copytrade_성능_모니터링_cb6003.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 1788
   },
   {
-    "path": "source_summaries/source_summary_src_wiki_polymarket_github_md_2f735820.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2655
+    "path": "비교/딜레이_지연__분석_및_슬리피지_대응_dd60b7.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2280
   },
   {
-    "path": "source_summaries/source_summary_src_wiki_polymarket_md_aa7ff7f8.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 3799
+    "path": "비교/스포츠_예측_마켓_91a413.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2081
   },
   {
-    "path": "source_summaries/source_summary_src_wiki_polymarket_md_b0665680.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2876
-  },
-  {
-    "path": "source_summaries/source_summary_src_wiki_polymarket_md_cd5a0827.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2883
-  },
-  {
-    "path": "source_summaries/source_summary_src_wiki_polymarket_md_fd0553d1.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 3178
-  },
-  {
-    "path": "source_summaries/source_summary_src_wiki_theo_md_e3e7fed7.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2855
-  },
-  {
-    "path": "source_summaries/source_summary_src_wiki_websocket_md_175ba89f.md",
-    "mtime": "2026-04-09T23:11:05+09:00",
-    "ctime": "2026-04-09T23:11:05+09:00",
-    "size": 2998
-  },
-  {
-    "path": "timelines/legacy_raw_fetched_2026_04_07_leaderboard_and_risk_bd37ef.md",
-    "mtime": "2026-04-09T23:12:54+09:00",
-    "ctime": "2026-04-09T23:12:54+09:00",
-    "size": 2869
+    "path": "타임라인/2026_04_07_leaderboard___risk_관리_외부_소스_수집_73404d.md",
+    "mtime": "2026-04-09T23:31:01+09:00",
+    "ctime": "2026-04-09T23:31:01+09:00",
+    "size": 2879
   }
 ]
