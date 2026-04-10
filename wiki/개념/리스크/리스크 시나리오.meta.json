@@ -7,7 +7,9 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://airisk.mit.edu/"
+      ]
     },
     "para_002": {
       "evidence_type": "synthesized",
@@ -15,7 +17,9 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://airisk.mit.edu/"
+      ]
     },
     "para_003": {
       "evidence_type": "synthesized",
@@ -23,7 +27,9 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://airisk.mit.edu/"
+      ]
     },
     "para_004": {
       "evidence_type": "synthesized",
@@ -31,7 +37,9 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://airisk.mit.edu/"
+      ]
     },
     "para_005": {
       "evidence_type": "synthesized",
@@ -39,7 +47,9 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://airisk.mit.edu/"
+      ]
     },
     "para_006": {
       "evidence_type": "synthesized",
@@ -47,7 +57,9 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://airisk.mit.edu/"
+      ]
     },
     "para_007": {
       "evidence_type": "synthesized",
@@ -55,7 +67,21 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://airisk.mit.edu/"
+      ]
+    },
+    "para_008": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260410_mit_ai_risk_repository_fc52f4ba#chunk_001"
+      ],
+      "as_of": "2026-04-10",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://airisk.mit.edu/"
+      ]
     }
   }
 }
