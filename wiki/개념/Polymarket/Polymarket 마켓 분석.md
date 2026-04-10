@@ -13,6 +13,7 @@ evidence_coverage: 1.0
 confidence: medium
 related_pages:
 - legacy_wiki_253745
+- legacy_wiki_polymarket_cd5a08
 tags:
 - concept
 sources:

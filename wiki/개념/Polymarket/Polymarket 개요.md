@@ -4,7 +4,7 @@ title: Polymarket 개요
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:09Z'
-last_updated: '2026-04-10T15:39:11Z'
+last_updated: '2026-04-10T16:09:24Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -14,6 +14,9 @@ confidence: medium
 related_pages:
 - concept_데이터
 - legacy_raw_00_index_ec3366
+- legacy_wiki_253745
+- legacy_wiki_be68fc
+- legacy_wiki_c2a67b
 - legacy_wiki_clob_064e27
 - legacy_wiki_copytrade_698574
 - legacy_wiki_index_925404
@@ -44,67 +47,40 @@ sources:
   raw: raw/01-Polymarket-개요.md
 - url: https://gamma-api.polymarket.com/events?limit=5&active=true
   raw: raw/fetched/2026-04-07-leaderboard-and-risk.md
-cluster: 데이터
-doc_role: concept
+cluster: Polymarket
+doc_role: hub
+cluster_group: 플랫폼 개요
 ---
-# Polymarket 개요
-
 ## 요약
 
 <!-- para: para_001 -->
-> 한 줄 요약: Polymarket 플랫폼의 핵심 구조, 개념(이벤트/마켓/토큰)과 데이터/오더북 구성 요약.
+> Polymarket 플랫폼을 이해하기 위한 대표 허브 문서
 
 <!-- para: para_002 -->
-Polymarket은 **세계 최대의 예측시장(Prediction Market)** 플랫폼으로, Polygon 블록체인 위에서 운영된다. 사용자가 실제 세계 이벤트의 결과에 USDC.e를 사용하여 베팅하며, 모든 정산은 온체인에서 이루어진다.
+Polymarket 군집은 플랫폼 개요, 마켓 구조, 카테고리별 대표 시장, 유동성·리베이트, 외부 반응과 시점성 문서를 함께 읽어야 전체 그림이 보인다.
+
+## 문서 지도
 
 <!-- para: para_003 -->
-| API | Base URL | 용도 | 인증 |
-|-----|----------|------|------|
-| **Gamma API** | `gamma-api.polymarket.com` | 마켓/이벤트/프로필/검색 | 불필요 (Public) |
-| **Data API** | `data-api.polymarket.com` | 포지션/트레이드/활동/리더보드 | 불필요 (Public) |
-| **CLOB API** | `clob.polymarket.com` | 오더북/가격/주문/거래 | 읽기: Public / 쓰기: L1/L2 Auth |
+이 허브는 Polymarket 문서군을 플랫폼 구조와 시장 해석 관점으로 나눠서 보여준다.
+
+## 마켓 구조/거래 메커니즘
 
 <!-- para: para_004 -->
-- TypeScript: `@polymarket/clob-client`
-- Python: `py-clob-client`
-- Rust: `polymarket-rs`
+마켓 구조/거래 메커니즘 문서군: [[Polymarket 마켓 분석]]
 
 <!-- para: para_005 -->
-- **트레이더 추적**: Data API (`/v1/leaderboard`)로 상위 지갑 확인 → Gamma API로 해당 지갑의 이벤트/마켓 매핑
-- **실시간 복제**: CLOB API WebSocket으로 오더북 구독 → 주문 체결 감지
-- **마켓 발견**: Gamma API의 `?active=true` 필터로 신규/활성 마켓 스캔
+이 그룹은 이벤트/마켓/CLOB 같은 거래 메커니즘을 설명한다.
+
+## 카테고리/대표 마켓
 
 <!-- para: para_006 -->
-- **이벤트**: 하나의 질문/주제 (예: "2024 미국 대선 승자는?")
-
-- **마켓**: 이벤트 내 개별 결과 옵션 (예: "트럼프 당선" / "바이든 당선")
-
-- 하나의 이벤트에 여러 마켓이 존재
+카테고리/대표 마켓 문서군: [[법률/사건 예측 마켓]], [[크립토 예측 마켓]]
 
 <!-- para: para_007 -->
-- 가격 범위: **$0.00 ~ $1.00** (확률을 나타냄)
-- $0.60 = 60% 확률이라는 시장 합의
-- **[[CLOB]]** (Central Limit Order Book): P2P 매칭 방식
-- Bid(매수)와 Ask(매도)가 호가로 쌓임
-- **Spread** = Best Ask
-- Best Bid (호간 격차)
+카테고리 문서군은 정치·크립토·스포츠·법률처럼 대표 질문 영역을 비교해서 읽는 데 적합하다.
+
+## 탐색 경로
 
 <!-- para: para_008 -->
-- **마켓 발견**: Gamma API의 `?active=true` 필터로 신규/활성 마켓 스캔
-
-<!-- para: para_009 -->
-- **이벤트**: 하나의 질문/주제 (예: "2024 미국 대선 승자는?")
-
-## 추가 내용
-
-<!-- para: para_010 -->
-Polymarket은 사건 결과에 베팅하는 예측시장(prediction market) 플랫폼입니다. 각 마켓은 Yes/No 또는 다중 아웃컴(outcome)을 가지며, 가격은 해당 결과의 암묵적 확률을 반영합니다.
-
-<!-- para: para_011 -->
-Polymarket은 **세계 최대의 예측 시장(Prediction Market)** 플랫폼이다. 사용자가 실제 세계 이벤트의 결과에 베팅할 수 있으며, Polygon 블록체인 위에서 운영된다.
-
-<!-- para: para_012 -->
-Polymarket은 이벤트별 결과에 베팅하는 예측시장으로 CLOB(중앙지정가주문장)를 통해 거래가 이루어지고, Yes/No 토큰을 사용해 결과를 정산한다.
-
-<!-- para: para_013 -->
-Polymarket은 Gamma API(마켓/이벤트), Data API(포지션/트레이드), CLOB(오더북)으로 구성되며, copytrade 전략은 리더보드·실시간 데이터·오더북 신호의 결합으로 설계한다.
+처음 읽는 경우에는 `Polymarket 개요 -> Polymarket 마켓 분석 -> 정치/크립토/스포츠 예측 마켓 -> 리베이트(마켓메이커)` 순서가 가장 자연스럽다.
