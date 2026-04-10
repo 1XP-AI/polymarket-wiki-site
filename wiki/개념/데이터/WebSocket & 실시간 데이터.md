@@ -4,7 +4,7 @@ title: WebSocket & 실시간 데이터
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:08Z'
-last_updated: '2026-04-10T16:01:53Z'
+last_updated: '2026-04-10T16:33:00Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -102,6 +102,6 @@ Control flow & error handing
 Using the Web animation API
 
 <!-- para: para_014 -->
-Implement websocket keepalive pings for websockets-sansio (
+websockets-sansio에 대해 WebSocket keepalive ping을 구현합니다.
 
-You can quit Uvicorn now. We heard you, @pamelafox - all 47 of your Ctrl+C's (thanks for flagging it, and thanks to @tiangolo for the fix 🙏).
+이제 Uvicorn을 종료해도 됩니다. @pamelafox의 신호를 받았습니다. Ctrl+C를 47번이나 눌러 주신 덕분에 문제를 확인했고, 이를 수정해 준 @tiangolo에게도 감사드립니다.

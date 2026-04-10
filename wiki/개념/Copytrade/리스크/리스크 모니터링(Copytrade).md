@@ -4,7 +4,7 @@ title: 리스크 모니터링(Copytrade)
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:10Z'
-last_updated: '2026-04-10T15:39:11Z'
+last_updated: '2026-04-10T16:28:05Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -88,9 +88,7 @@ def measure_execution_delay(trader_timestamp, follower_timestamp, market_snapsho
 승부조작 의심 자산 유입의 위험성과 관리의 중요성
 
 <!-- para: para_008 -->
-CopyTrade - Copy Trading to Maximize Your Profits
-
-Built for copy traders and account managers, CopyTrade offers a complete solution for
+CopyTrade는 복사 거래를 활용해 수익을 높이려는 사용자와 계정 관리자를 위해 설계된 기능으로, 복사 거래 운영에 필요한 주요 요소를 한곳에서 다룰 수 있도록 구성되어 있습니다.
 
 <!-- para: para_009 -->
 원문 PDF 바이너리 덤프는 사용자용 위키에서 제거했다. 해당 자료는 카피트레이딩 서비스 설명서와 위험 고지, 주문 복제 방식 같은 운영 정보를 담은 PDF다.

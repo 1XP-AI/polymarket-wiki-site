@@ -4,7 +4,7 @@ title: Copytrade 알파 지표 선별
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:11Z'
-last_updated: '2026-04-10T15:39:11Z'
+last_updated: '2026-04-10T16:27:47Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -80,6 +80,4 @@ doc_role: analysis
 볼린저 밴드는 주가의 변동을 분석하기 위해, 중심이 되는 이동평균선을 기준으로 일정한 표준편차 범위만큼 설정한 그래프를 말한다.
 
 <!-- para: para_011 -->
-알파스퀘어 | 올인원 스마트 트레이딩 플랫폼
-We're sorry but alphasquare-frontend doesn't work properly without JavaScript
-        enabled. Please enable it to continue.
+Copytrade에서 사용할 알파 지표를 선별하는 내용입니다. 다만 원문에는 실제 설명 대신 alphasquare-frontend가 JavaScript가 없으면 정상적으로 동작하지 않는다는 안내만 포함되어 있어, 사용자에게 전달할 핵심 정보는 제한적입니다.

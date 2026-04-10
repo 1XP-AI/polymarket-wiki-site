@@ -4,7 +4,7 @@ title: Polymarket 질문 원본 스냅샷
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:09Z'
-last_updated: '2026-04-09T23:19:48Z'
+last_updated: '2026-04-10T16:32:51Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -37,7 +37,7 @@ doc_role: snapshot
 실무적으로 자주 보는 핵심 필드는 `question`, `slug`, `endDate`, `category`, `outcomes`, `volume`, `active`, `closed`다. 위키에서는 대용량 JSON 전체를 노출하기보다, 어떤 필드가 들어 있고 무엇을 확인할 수 있는지 요약하는 편이 더 적절하다.
 
 <!-- para: para_003 -->
-예시 레코드는 아래처럼 축약해서 보는 편이 이해하기 쉽다.
+예시 레코드는 핵심만 줄여서 보면 더 이해하기 쉽다.
 
 "question": "Will Joe Biden get Coronavirus before the election?",
 

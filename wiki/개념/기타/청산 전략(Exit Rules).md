@@ -4,7 +4,7 @@ title: 청산 전략(Exit Rules)
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:11Z'
-last_updated: '2026-04-10T15:39:11Z'
+last_updated: '2026-04-10T16:31:14Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -79,8 +79,4 @@ Latest updates
 What's new on Viewpoint?
 
 <!-- para: para_012 -->
-Germany's Overlooked Exit Rule: Men Aged 17 to 45 Now Need Bundeswehr Permission to Leave - IMI Daily
-
-IM People in The News
-
-Germany’s Overlooked Exit Rule: Men Aged 17 to 45 Now Need Bundeswehr Permission to Leave
+독일에서는 17세에서 45세 사이의 남성이 출국할 때 Bundeswehr의 허가가 필요하다는 점이 잘 알려지지 않았다.

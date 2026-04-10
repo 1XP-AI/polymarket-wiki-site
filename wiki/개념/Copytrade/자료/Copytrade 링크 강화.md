@@ -4,7 +4,7 @@ title: Copytrade 링크 강화
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:12Z'
-last_updated: '2026-04-10T16:12:01Z'
+last_updated: '2026-04-10T16:28:13Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -31,5 +31,5 @@ doc_role: source-note
 ## 세부 내용
 
 <!-- para: para_001 -->
-Our bot allows you to immediately copy the buys and sells of up to 3 wallets (10 wallets for ⭐️Premium users). Before we delve into the details of this powerful functionality, always remember:
-Always track the wallet RECEIVING the tokens.
+이 봇을 사용하면 최대 3개의 지갑 거래를 즉시 따라할 수 있으며, ⭐️Premium 사용자는 최대 10개 지갑까지 가능합니다. 이 기능의 세부 사항을 살펴보기 전에, 항상 다음 점을 기억하세요.
+토큰을 받는 지갑을 추적해야 합니다.

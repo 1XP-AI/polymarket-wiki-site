@@ -4,7 +4,7 @@ title: Polymarket 마켓 분석
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:10Z'
-last_updated: '2026-04-10T16:02:18Z'
+last_updated: '2026-04-10T16:28:52Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -92,8 +92,4 @@ ylood
 Welcome - Polymarket US Documentation
 
 <!-- para: para_014 -->
-Intercontinental Exchange - Intercontinental Exchange Announces New $600 Million Investment in Polymarket
-
-Board of Directors & Committee Composition
-
-Intercontinental Exchange Announces New $600 Million Investment in Polymarket
+Intercontinental Exchange는 Polymarket에 6억 달러 규모의 신규 투자를 발표했다. 이 문서는 Intercontinental Exchange의 이사회와 위원회 구성 정보를 함께 다루는 내용이며, 핵심은 Polymarket에 대한 대규모 투자 발표이다.

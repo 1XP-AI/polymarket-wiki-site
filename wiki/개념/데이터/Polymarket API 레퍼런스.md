@@ -4,7 +4,7 @@ title: Polymarket API 레퍼런스
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:09Z'
-last_updated: '2026-04-10T16:01:53Z'
+last_updated: '2026-04-10T16:31:53Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -51,9 +51,11 @@ GET https://gamma-api.polymarket.com/events?limit=20&active=true
 curl -s "https://gamma-api.polymarket.com/events?limit=20&active=true" | jq '.'
 
 <!-- para: para_005 -->
-curl -s "https://gamma-api.polymarket.com/markets?limit=50"
+Polymarket의 `markets` 엔드포인트에서 최대 50개의 시장 데이터를 가져오는 예시입니다.
 
-|jq '.results[] | {id: .id, name: .name, state: .state, price: .price}'
+```bash
+curl -s "https://gamma-api.polymarket.com/markets?limit=50" | jq '.results[] | {id: .id, name: .name, state: .state, price: .price}'
+```
 
 <!-- para: para_006 -->
 curl -s "https://gamma-api.polymarket.com/profiles/0x1234..." | jq '.'
@@ -93,12 +95,7 @@ GET https://gamma-api.polymarket.com/events?limit=20&active=true
 Introduction - Polymarket Documentation
 
 <!-- para: para_013 -->
-Falcon API – The Infrastructure Layer of Prediction Markets
-The Infrastructure Layer of
-Prediction Markets
-Real-time market data, trader intelligence, and predictive signals for developers and AI agents. By:
-Choose how you want to access prediction market intelligence.
+Falcon API는 예측 시장에 필요한 실시간 시장 데이터, 거래자 분석, 예측 신호를 개발자와 AI 에이전트가 활용할 수 있도록 제공하는 인프라 계층입니다. 예측 시장 정보를 어떤 방식으로 사용할지 선택할 수 있습니다.
 
 <!-- para: para_014 -->
-polymarket-apis · PyPI
-Some features may not work without JavaScript. Please try enabling it if you encounter problems.
+Polymarket APIs는 PyPI에서 제공됩니다. 일부 기능은 JavaScript가 꺼져 있으면 제대로 동작하지 않을 수 있으니, 문제가 발생하면 JavaScript를 활성화해 보세요.

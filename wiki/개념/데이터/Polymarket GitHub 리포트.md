@@ -4,7 +4,7 @@ title: Polymarket GitHub 리포트
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:09Z'
-last_updated: '2026-04-10T16:01:53Z'
+last_updated: '2026-04-10T16:32:01Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -31,9 +31,7 @@ doc_role: concept
 이 문서는 raw/fetched/2026-04-05-github-polymarket.md에서 수집한 GitHub 검색 결과를 요약합니다. 목적은 Polymarket 및 관련 오픈소스 프로젝트(데이터 파이프라인, 시뮬레이터, 봇 등)가 copytrade 전략 구현에 어떻게 기여할 수 있는지를 평가하는 것입니다.
 
 <!-- para: para_003 -->
-- GitHub API로 `polymarket` 키워드 및 관련 조직/프로젝트를 검색
-- README와 주요 코드(스크립트, Dockerfile, CI)를 스캔하여 기능 분류
-- copytrade 관련 모듈(leaderboard 파싱, trade stream, simulation adapter 등)을 우선적으로 식별
+GitHub API를 사용해 `polymarket` 키워드와 관련 조직, 프로젝트를 검색합니다. 이어서 README와 핵심 코드, 예를 들어 스크립트, Dockerfile, CI 설정 등을 살펴 기능을 분류합니다. 이 과정에서는 특히 copytrade 관련 모듈, 예를 들면 leaderboard 파싱, trade stream, simulation adapter 등을 우선적으로 식별합니다.
 
 <!-- para: para_004 -->
 1. 데이터 파이프라인

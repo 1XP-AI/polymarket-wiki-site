@@ -4,7 +4,7 @@ title: '수집 원본: Polymarket snapshot — 2026-04-05'
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:08Z'
-last_updated: '2026-04-10T16:01:53Z'
+last_updated: '2026-04-10T16:33:28Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -24,10 +24,9 @@ doc_role: concept
 ## 요약
 
 <!-- para: para_001 -->
-출처 목록:
+Polymarket의 `markets` 엔드포인트에 `limit=50`을 적용해 활성 마켓의 스냅샷을 조회했습니다. 응답에는 여러 개의 binary market가 포함되어 있었고, 각 마켓의 `id`, `description`, `status` 값도 함께 확인할 수 있었습니다.
+
+출처:
 - https://gamma-api.polymarket.com/markets?limit=50
 - https://gamma-api.polymarket.com/events?limit=20&active=true
-- DuckDuckGo query: "polymarket copytrade" (top results)
-
-요약:
-- Polymarket markets endpoint (limit=50)에서 활성 마켓 스냅샷을 요청했습니다. 응답에는 다수의 binary markets와 각 마켓의 id, description, status 필드가 포함되어 있었습니다.
+- DuckDuckGo 검색어: "polymarket copytrade"
