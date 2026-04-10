@@ -4,7 +4,7 @@ title: Polymarket GitHub 리포트
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:09Z'
-last_updated: '2026-04-09T15:09:33Z'
+last_updated: '2026-04-10T16:01:53Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -46,7 +46,9 @@ doc_role: concept
 - WebSocket/Stream 클라이언트: 실시간 거래 감지용
 
 <!-- para: para_006 -->
-- 일부 프로젝트는 비공식 API 사용으로 rate limit/정책 변경에 민감합니다. - 라이선스 확인 필요(상업적 사용 제한 가능성). - 외부 코드를 그대로 실행하지 말고, 로컬 샌드박스에서 코드 리뷰 후 적용할 것.
+- 일부 프로젝트는 비공식 API 사용으로 rate limit/정책 변경에 민감합니다.
+- 라이선스 확인 필요(상업적 사용 제한 가능성).
+- 외부 코드를 그대로 실행하지 말고, 로컬 샌드박스에서 코드 리뷰 후 적용할 것.
 
 <!-- para: para_007 -->
 - [ ] 리더보드 파서로 상위 100명 메타데이터 수집 자동화

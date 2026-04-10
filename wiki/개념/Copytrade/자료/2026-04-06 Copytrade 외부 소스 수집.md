@@ -4,7 +4,7 @@ title: 2026-04-06 Copytrade 외부 소스 수집
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:09Z'
-last_updated: '2026-04-10T15:39:11Z'
+last_updated: '2026-04-10T16:01:53Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -21,5 +21,3 @@ cluster_group: 자료
 doc_role: source-note
 ---
 # 2026-04-06 Copytrade 외부 소스 수집
-
-## 세부 내용

@@ -4,7 +4,7 @@ title: WebSocket & 실시간 데이터
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:08Z'
-last_updated: '2026-04-09T23:19:48Z'
+last_updated: '2026-04-10T16:01:53Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -92,22 +92,16 @@ WebSocket 실시간 통신의 모든 것, HTTP와의 차이와 활용 사례 - Y
 여러분의 일상에 작지만 소중한 변화를 드리고자 합니다. 이곳에서 발견하는 정보가 조금이나마 도움이 되기를 바랍니다.
 
 <!-- para: para_012 -->
-WebSocket API: Events, Methods & Properties | WebSocket.org
-
 WebSocket vs SSE vs HTTP
 
 📖 Once Upon a Socket
 
 <!-- para: para_013 -->
-WebSocket을 이용하여 클라이언트 애플리케이션 작성하기 - Web API | MDN
-
 Control flow & error handing
 
 Using the Web animation API
 
 <!-- para: para_014 -->
-Release Notes - Uvicorn
-
 Implement websocket keepalive pings for websockets-sansio (
 
 You can quit Uvicorn now. We heard you, @pamelafox - all 47 of your Ctrl+C's (thanks for flagging it, and thanks to @tiangolo for the fix 🙏).

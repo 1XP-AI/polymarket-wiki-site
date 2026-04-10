@@ -4,7 +4,7 @@ title: Copytrade 링크 강화
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:12Z'
-last_updated: '2026-04-10T15:39:11Z'
+last_updated: '2026-04-10T16:01:53Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system

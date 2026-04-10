@@ -4,7 +4,7 @@ title: Polymarket API 레퍼런스
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:09Z'
-last_updated: '2026-04-09T23:19:48Z'
+last_updated: '2026-04-10T16:01:53Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -94,22 +94,11 @@ Introduction - Polymarket Documentation
 
 <!-- para: para_013 -->
 Falcon API – The Infrastructure Layer of Prediction Markets
-Join Community
 The Infrastructure Layer of
 Prediction Markets
 Real-time market data, trader intelligence, and predictive signals for developers and AI agents. By:
-Get Your API Key
-Get Started
 Choose how you want to access prediction market intelligence.
 
 <!-- para: para_014 -->
-API Overview - Polymarket US Documentation
-
-You are viewing documentation for Polymarket US 🇺🇸
-
-<!-- para: para_015 -->
 polymarket-apis · PyPI
-Skip to main content
-Switch to mobile version
-Warning
 Some features may not work without JavaScript. Please try enabling it if you encounter problems.

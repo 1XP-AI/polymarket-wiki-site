@@ -4,7 +4,7 @@ title: Polymarket 마켓 분석
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:10Z'
-last_updated: '2026-04-10T15:39:11Z'
+last_updated: '2026-04-10T16:01:53Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -86,7 +86,7 @@ ylood
 2
 0
 2
-6. 2.
+6.
 
 <!-- para: para_013 -->
 Welcome - Polymarket US Documentation
