@@ -1,4 +1,17 @@
 {
   "page_id": "legacy_wiki_copytrade_698574",
-  "paragraphs": {}
+  "paragraphs": {
+    "para_001": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260410_copytrade_sniper_manual_71c3722b#chunk_001"
+      ],
+      "as_of": "2026-04-10",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://docs.maestrobots.com/copytrade"
+      ]
+    }
+  }
 }

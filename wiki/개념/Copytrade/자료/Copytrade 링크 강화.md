@@ -4,7 +4,7 @@ title: Copytrade 링크 강화
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:12Z'
-last_updated: '2026-04-10T16:01:53Z'
+last_updated: '2026-04-10T16:12:01Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -21,12 +21,15 @@ related_pages:
 tags:
 - concept
 sources:
-- url: https://polymarket.com
-  raw: raw/fetched/2026-04-06-polymarket-home.md
+- url: https://docs.maestrobots.com/copytrade
 cluster: Copytrade
 cluster_group: 자료
 doc_role: source-note
 ---
 # Copytrade 링크 강화
 
-## 요약
+## 세부 내용
+
+<!-- para: para_001 -->
+Our bot allows you to immediately copy the buys and sells of up to 3 wallets (10 wallets for ⭐️Premium users). Before we delve into the details of this powerful functionality, always remember:
+Always track the wallet RECEIVING the tokens.
