@@ -7,7 +7,9 @@
       "as_of": "2026-04-10",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://docs.databricks.com/aws/en/"
+      ]
     },
     "para_002": {
       "evidence_type": "synthesized",
@@ -15,7 +17,9 @@
       "as_of": "2026-04-10",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://docs.databricks.com/aws/en/"
+      ]
     },
     "para_003": {
       "evidence_type": "synthesized",
@@ -23,7 +27,9 @@
       "as_of": "2026-04-10",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://docs.databricks.com/aws/en/"
+      ]
     },
     "para_004": {
       "evidence_type": "synthesized",
@@ -31,7 +37,9 @@
       "as_of": "2026-04-10",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://docs.databricks.com/aws/en/"
+      ]
     },
     "para_005": {
       "evidence_type": "synthesized",
@@ -39,7 +47,9 @@
       "as_of": "2026-04-10",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://docs.databricks.com/aws/en/"
+      ]
     }
   }
 }
