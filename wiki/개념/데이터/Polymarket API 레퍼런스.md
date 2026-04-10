@@ -8,7 +8,7 @@ last_updated: '2026-04-09T23:19:48Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
-source_count: 4
+source_count: 3
 evidence_coverage: 1.0
 confidence: medium
 related_pages:
@@ -20,10 +20,11 @@ related_pages:
 tags:
 - concept
 sources:
-- url: https://docs.polymarket.us/trader-guide/api-overview
 - url: https://api.polymarketanalytics.com/
 - url: https://docs.polymarket.com/api-reference/introduction
 - url: https://pypi.org/project/polymarket-apis/
+cluster: Copytrade
+doc_role: data-reference
 ---
 # Polymarket API 레퍼런스
 

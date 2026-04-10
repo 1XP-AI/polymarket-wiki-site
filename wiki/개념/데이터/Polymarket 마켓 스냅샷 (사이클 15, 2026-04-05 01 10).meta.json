@@ -74,29 +74,20 @@
       "source_urls": []
     },
     "para_010": {
-      "evidence_type": "direct",
-      "source_refs": [
-        "src_20260409_polymarket_the_world_s_largest_prediction_markettm_0fc95f9b#chunk_001",
-        "src_20260409_polymarket_the_world_s_largest_prediction_markettm_0fc95f9b#chunk_002"
-      ],
+      "evidence_type": "synthesized",
+      "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://polymarket.com/"
-      ]
+      "source_urls": []
     },
     "para_011": {
-      "evidence_type": "direct",
-      "source_refs": [
-        "src_20260409_polymarket_analytics_prediction_market_data_analytics_and_dashboards_86aef827#chunk_001"
-      ],
+      "evidence_type": "synthesized",
+      "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://polymarketanalytics.com/"
-      ]
+      "source_urls": []
     }
   }
 }

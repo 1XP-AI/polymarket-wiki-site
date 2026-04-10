@@ -12,6 +12,7 @@ source_count: 9
 evidence_coverage: 1.0
 confidence: medium
 related_pages:
+- comparison_데이터
 - legacy_raw_05_badd78
 - legacy_raw_fetched_2026_04_05_polymarket_markets_a295cb
 - legacy_wiki_394666
@@ -45,6 +46,9 @@ sources:
   raw: raw/fetched/2026-04-07-negative-risk-and-api.md
 - url: https://deepwiki.com/polymarket-arbitrage-bot/polymarket-arbitrage-bot/2.2-polymarket-clob-api-client
   raw: raw/fetched/2026-04-07-negative-risk-and-api.md
+cluster: 데이터
+cluster_group: API/레퍼런스
+doc_role: data-reference
 ---
 # CLOB
 

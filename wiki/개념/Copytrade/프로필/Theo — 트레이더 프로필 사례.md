@@ -31,6 +31,9 @@ sources:
   raw: raw/fetched/2026-04-06-copytrade-sources.md
 - url: https://alphawhale.trade/blog/posts/polymarket-copy-trading-guide
   raw: raw/fetched/2026-04-06-copytrade-sources.md
+cluster: Copytrade
+cluster_group: 프로필
+doc_role: example
 ---
 # Theo — 트레이더 프로필 사례
 

@@ -80,18 +80,6 @@
       "source_urls": [
         "https://copytrade.co.kr/"
       ]
-    },
-    "para_010": {
-      "evidence_type": "direct",
-      "source_refs": [
-        "src_20260409_documentation_comprehensive_guide_for_copy_trading_success_513a41f4#chunk_001"
-      ],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": [
-        "https://www.copytrade.net/documentation"
-      ]
     }
   }
 }

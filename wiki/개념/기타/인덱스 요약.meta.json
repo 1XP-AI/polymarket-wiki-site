@@ -32,30 +32,6 @@
       "confidence": "medium",
       "conflict_flag": false,
       "source_urls": []
-    },
-    "para_005": {
-      "evidence_type": "synthesized",
-      "source_refs": [],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": []
-    },
-    "para_006": {
-      "evidence_type": "synthesized",
-      "source_refs": [],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": []
-    },
-    "para_007": {
-      "evidence_type": "synthesized",
-      "source_refs": [],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": []
     }
   }
 }

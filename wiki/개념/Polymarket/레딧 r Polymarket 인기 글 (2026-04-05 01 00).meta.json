@@ -7,81 +7,11 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://www.coindesk.com/policy/2026/04/05/polymarket-pulls-controversial-iran-rescue-markets-after-intense-backlash"
+      ]
     },
     "para_002": {
-      "evidence_type": "synthesized",
-      "source_refs": [],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": []
-    },
-    "para_003": {
-      "evidence_type": "synthesized",
-      "source_refs": [],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": []
-    },
-    "para_004": {
-      "evidence_type": "synthesized",
-      "source_refs": [],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": []
-    },
-    "para_005": {
-      "evidence_type": "synthesized",
-      "source_refs": [],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": []
-    },
-    "para_006": {
-      "evidence_type": "synthesized",
-      "source_refs": [],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": []
-    },
-    "para_007": {
-      "evidence_type": "synthesized",
-      "source_refs": [],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": []
-    },
-    "para_008": {
-      "evidence_type": "direct",
-      "source_refs": [
-        "src_20260409_reddit_please_wait_for_verification_b3b3f19c#chunk_001"
-      ],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": [
-        "https://www.reddit.com/r/Polymarket/"
-      ]
-    },
-    "para_009": {
-      "evidence_type": "direct",
-      "source_refs": [
-        "src_20260409_breaking_news_polymarket_999379a6#chunk_001"
-      ],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": [
-        "https://polymarket.com/breaking"
-      ]
-    },
-    "para_010": {
       "evidence_type": "direct",
       "source_refs": [
         "src_20260409_polymarket_pulls_controversial_iran_rescue_markets_after_intense_backlash_b215b258#chunk_001"

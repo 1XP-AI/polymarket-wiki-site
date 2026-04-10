@@ -38,6 +38,9 @@ sources:
   raw: raw/fetched/2026-04-05-leaderboard-monthly.md
 - url: https://polyburg.com/polymarket-top-traders
   raw: raw/fetched/2026-04-07-leaderboard-and-risk.md
+cluster: Copytrade
+cluster_group: 리더보드
+doc_role: analysis
 ---
 # Copytrade 리더보드 심화
 

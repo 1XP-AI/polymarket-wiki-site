@@ -7,7 +7,9 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://github.com/modelcontextprotocol/registry"
+      ]
     },
     "para_002": {
       "evidence_type": "synthesized",
@@ -15,7 +17,9 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://github.com/modelcontextprotocol/registry"
+      ]
     },
     "para_003": {
       "evidence_type": "synthesized",
@@ -23,7 +27,9 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://github.com/modelcontextprotocol/registry"
+      ]
     },
     "para_004": {
       "evidence_type": "synthesized",
@@ -31,7 +37,9 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://github.com/modelcontextprotocol/registry"
+      ]
     },
     "para_005": {
       "evidence_type": "synthesized",
@@ -39,7 +47,9 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://github.com/modelcontextprotocol/registry"
+      ]
     },
     "para_006": {
       "evidence_type": "synthesized",
@@ -47,7 +57,9 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://github.com/modelcontextprotocol/registry"
+      ]
     },
     "para_007": {
       "evidence_type": "synthesized",
@@ -55,7 +67,9 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://github.com/modelcontextprotocol/registry"
+      ]
     },
     "para_008": {
       "evidence_type": "synthesized",
@@ -63,7 +77,9 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://github.com/modelcontextprotocol/registry"
+      ]
     },
     "para_009": {
       "evidence_type": "synthesized",
@@ -71,42 +87,11 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://github.com/modelcontextprotocol/registry"
+      ]
     },
     "para_010": {
-      "evidence_type": "synthesized",
-      "source_refs": [],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": []
-    },
-    "para_011": {
-      "evidence_type": "direct",
-      "source_refs": [
-        "src_20260409_harbor_8a8c6541#chunk_001"
-      ],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": [
-        "https://goharbor.io/"
-      ]
-    },
-    "para_012": {
-      "evidence_type": "direct",
-      "source_refs": [
-        "src_20260409_private_docker_registry_harbor_865b5ace#chunk_001",
-        "src_20260409_private_docker_registry_harbor_865b5ace#chunk_002"
-      ],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": [
-        "https://engineering.linecorp.com/ko/blog/harbor-for-private-docker-registry"
-      ]
-    },
-    "para_013": {
       "evidence_type": "direct",
       "source_refs": [
         "src_20260409_github_modelcontextprotocol_registry_a_community_driven_registry_service_for_model_context_protocol_mcp_servers_github_1f23d696#chunk_001"
@@ -116,30 +101,6 @@
       "conflict_flag": false,
       "source_urls": [
         "https://github.com/modelcontextprotocol/registry"
-      ]
-    },
-    "para_014": {
-      "evidence_type": "direct",
-      "source_refs": [
-        "src_20260409_home_sonar_documentation_1cfbfa84#chunk_001"
-      ],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": [
-        "https://docs.sonarsource.com/"
-      ]
-    },
-    "para_015": {
-      "evidence_type": "direct",
-      "source_refs": [
-        "src_20260409_visual_studio_2026_microsoft_learn_5b89e974#chunk_001"
-      ],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": [
-        "https://learn.microsoft.com/ko-kr/visualstudio/releases/2026/release-notes"
       ]
     }
   }

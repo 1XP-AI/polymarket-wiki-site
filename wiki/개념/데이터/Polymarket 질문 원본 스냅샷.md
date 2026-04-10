@@ -12,6 +12,7 @@ source_count: 0
 evidence_coverage: 1.0
 confidence: medium
 related_pages:
+- concept_데이터
 - legacy_raw_00_index_ec3366
 - legacy_wiki_clob_064e27
 - legacy_wiki_copytrade_698574
@@ -21,6 +22,9 @@ related_pages:
 tags:
 - concept
 sources: []
+cluster: 데이터
+cluster_group: 자료
+doc_role: snapshot
 ---
 # Polymarket 질문 원본 스냅샷
 

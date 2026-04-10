@@ -22,6 +22,9 @@ related_pages:
 tags:
 - concept
 sources: []
+cluster: Copytrade
+cluster_group: 실행
+doc_role: analysis
 ---
 # Polymarket Copytrade 전략 분석
 

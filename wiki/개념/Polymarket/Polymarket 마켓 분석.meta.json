@@ -108,18 +108,6 @@
     "para_013": {
       "evidence_type": "direct",
       "source_refs": [
-        "src_20260409_overview_polymarket_documentation_4d044dbd#chunk_001"
-      ],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": [
-        "https://docs.polymarket.com/"
-      ]
-    },
-    "para_014": {
-      "evidence_type": "direct",
-      "source_refs": [
         "src_20260409_welcome_polymarket_us_documentation_dd4cf43e#chunk_001"
       ],
       "as_of": "2026-04-09",
@@ -129,7 +117,7 @@
         "https://docs.polymarket.us/getting-started/welcome"
       ]
     },
-    "para_015": {
+    "para_014": {
       "evidence_type": "direct",
       "source_refs": [
         "src_20260409_intercontinental_exchange_intercontinental_exchange_announces_new_600_million_investment_in_polymarket_f06370cf#chunk_001"

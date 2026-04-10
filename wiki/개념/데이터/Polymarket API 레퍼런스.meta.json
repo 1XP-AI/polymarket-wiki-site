@@ -116,24 +116,28 @@
     "para_014": {
       "evidence_type": "direct",
       "source_refs": [
-        "src_20260409_api_overview_polymarket_us_documentation_a89c9acc#chunk_001"
-      ],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": [
-        "https://docs.polymarket.us/trader-guide/api-overview"
-      ]
-    },
-    "para_015": {
-      "evidence_type": "direct",
-      "source_refs": [
         "src_20260409_polymarket_apis_pypi_58878a89#chunk_001"
       ],
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
       "source_urls": [
+        "https://pypi.org/project/polymarket-apis/"
+      ]
+    },
+    "para_015": {
+      "evidence_type": "synthesized",
+      "source_refs": [
+        "src_20260409_falcon_api_the_infrastructure_layer_of_prediction_markets_25cb233e#chunk_001",
+        "src_20260409_introduction_polymarket_documentation_d122fa84#chunk_001",
+        "src_20260409_polymarket_apis_pypi_58878a89#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://api.polymarketanalytics.com/",
+        "https://docs.polymarket.com/api-reference/introduction",
         "https://pypi.org/project/polymarket-apis/"
       ]
     }

@@ -38,6 +38,9 @@ sources:
   raw: raw/fetched/2026-04-07-negative-risk-and-api.md
 - url: https://polycopy.app/discover
   raw: raw/fetched/2026-04-07-leaderboard-and-risk.md
+cluster: Copytrade
+cluster_group: 실행
+doc_role: playbook
 ---
 # Copytrade 자동화 플로우
 

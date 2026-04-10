@@ -12,6 +12,7 @@ source_count: 3
 evidence_coverage: 1.0
 confidence: medium
 related_pages:
+- concept_리스크
 - legacy_wiki_clob_064e27
 - legacy_wiki_copytrade_01e411
 - legacy_wiki_copytrade_6a6853
@@ -28,6 +29,9 @@ sources:
   raw: raw/fetched/2026-04-06-copytrade-sources.md
 - url: https://www.polycopy.dev/guides/how-to-copy-trade-polymarket
   raw: raw/fetched/2026-04-06-copytrade-sources.md
+cluster: 리스크
+cluster_group: 핵심 리스크
+doc_role: analysis
 ---
 # 슬리피지(Slippage)
 

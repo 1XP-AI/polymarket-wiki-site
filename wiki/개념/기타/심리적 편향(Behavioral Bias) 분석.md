@@ -22,6 +22,8 @@ sources:
 - url: https://developers.google.com/machine-learning/crash-course/fairness/types-of-bias?hl=ko
 - url: https://psychology-money.com/111
 - url: https://newllmskll.com/entry/%ED%99%95%EC%A6%9D%ED%8E%B8%ED%96%A5%EA%B3%BC-%EC%84%A0%ED%83%9D%EB%85%B8%EC%B6%9C-%EC%8B%AC%EB%A6%AC-%EC%8B%A4%ED%97%98-%EB%B9%84%EA%B5%90-%EC%9D%B8%EC%A7%80%ED%8E%B8%ED%96%A5-%EC%8B%A4%ED%97%98%EB%B6%84%EC%84%9D-%EC%9D%B4%EB%A1%A0%EC%A0%95%EB%A6%AC
+cluster: Copytrade
+doc_role: analysis
 ---
 # 심리적 편향(Behavioral Bias) 분석
 

@@ -14,10 +14,14 @@
 - [리더보드 조작 탐지](개념/Copytrade/리더보드/리더보드 조작 탐지.md)
 
 #### 리스크
+##### 리스크
 - [Copytrade 리스크 관리](개념/Copytrade/리스크/Copytrade 리스크 관리.md)
 - [리스크 모니터링(Copytrade)](개념/Copytrade/리스크/리스크 모니터링(Copytrade).md)
 - [성과 분석 지표 (Copytrade 성능 메트릭)](개념/Copytrade/리스크/성과 분석 지표 (Copytrade 성능 메트릭).md)
+
+##### 실행
 - [실행 비용(Execution Cost) — Copytrade 고려사항](개념/Copytrade/리스크/실행 비용(Execution Cost) — Copytrade 고려사항.md)
+
 
 #### 실행
 - [Copytrade 데이터 수집 가이드](개념/Copytrade/실행/Copytrade 데이터 수집 가이드.md)
@@ -44,14 +48,18 @@
 
 
 ### Polymarket
-- [Polymarket 개요](개념/Polymarket/Polymarket 개요.md)
+#### 마켓 구조/거래 메커니즘
 - [Polymarket 마켓 분석](개념/Polymarket/Polymarket 마켓 분석.md)
+
+#### 카테고리/대표 마켓
+- [법률/사건 예측 마켓](개념/Polymarket/법률 사건 예측 마켓.md)
+- [크립토 예측 마켓](개념/Polymarket/크립토 예측 마켓.md)
+
+- [Polymarket 개요](개념/Polymarket/Polymarket 개요.md)
 - [레딧 r/Polymarket 인기 글 (2026-04-05 01:00)](개념/Polymarket/레딧 r Polymarket 인기 글 (2026-04-05 01 00).md)
 - [리베이트(마켓메이커)](개념/Polymarket/리베이트(마켓메이커).md)
 - [마켓 메이커 & 리베이트 프로그램](개념/Polymarket/마켓 메이커 & 리베이트 프로그램.md)
-- [법률/사건 예측 마켓](개념/Polymarket/법률 사건 예측 마켓.md)
 - [정치 예측 마켓](개념/Polymarket/정치 예측 마켓.md)
-- [크립토 예측 마켓](개념/Polymarket/크립토 예측 마켓.md)
 - [폴리마켓 개요](개념/Polymarket/폴리마켓 개요.md)
 
 ### 기타
@@ -70,26 +78,40 @@
 - [프로그램 개요](개념/기타/프로그램 개요.md)
 
 ### 데이터
-- [2026-04-07 Negative Risk & CLOB API 외부 소스 수집](개념/데이터/2026-04-07 Negative Risk & CLOB API 외부 소스 수집.md)
+- [데이터](개념/데이터/데이터.md)
+#### 스냅샷
 - [GitHub 검색 스냅샷 (현재)](개념/데이터/GitHub 검색 스냅샷 (현재).md)
-- [Polymarket API 레퍼런스](개념/데이터/Polymarket API 레퍼런스.md)
-- [Polymarket GitHub 리포트](개념/데이터/Polymarket GitHub 리포트.md)
 - [Polymarket 마켓 스냅샷 (사이클 15, 2026-04-05 01:10)](개념/데이터/Polymarket 마켓 스냅샷 (사이클 15, 2026-04-05 01 10).md)
 - [Polymarket 마켓 트렌드 스냅샷 (2026-04-05 01:04)](개념/데이터/Polymarket 마켓 트렌드 스냅샷 (2026-04-05 01 04).md)
+
+#### 실시간/파이프라인
+- [WebSocket & 실시간 데이터](개념/데이터/WebSocket & 실시간 데이터.md)
+
+#### 실행
+- [데이터 수집 파이프라인](개념/데이터/데이터 수집 파이프라인.md)
+
+#### 자료
+- [2026-04-07 Negative Risk & CLOB API 외부 소스 수집](개념/데이터/2026-04-07 Negative Risk & CLOB API 외부 소스 수집.md)
 - [Polymarket 이벤트 스냅샷 (2026-04-05)](개념/데이터/Polymarket 이벤트 스냅샷 (2026-04-05).md)
 - [Polymarket 이벤트 원본 스냅샷](개념/데이터/Polymarket 이벤트 원본 스냅샷.md)
 - [Polymarket 질문 원본 스냅샷](개념/데이터/Polymarket 질문 원본 스냅샷.md)
-- [WebSocket & 실시간 데이터](개념/데이터/WebSocket & 실시간 데이터.md)
-- [데이터 수집 파이프라인](개념/데이터/데이터 수집 파이프라인.md)
 - [수집 원본: Polymarket snapshot — 2026-04-05](개념/데이터/수집 원본 Polymarket snapshot — 2026-04-05.md)
+
+- [Polymarket API 레퍼런스](개념/데이터/Polymarket API 레퍼런스.md)
+- [Polymarket GitHub 리포트](개념/데이터/Polymarket GitHub 리포트.md)
 - [온체인 컨트랙트 & 블록체인 데이터](개념/데이터/온체인 컨트랙트 & 블록체인 데이터.md)
 - [온체인 컨트랙트](개념/데이터/온체인 컨트랙트.md)
 
 ### 리스크
-- [네거티브 리스크](개념/리스크/네거티브 리스크.md)
+#### 리스크
 - [리스크 시나리오](개념/리스크/리스크 시나리오.md)
 - [리스크 알림 규칙](개념/리스크/리스크 알림 규칙.md)
+- [리스크](개념/리스크/리스크.md)
+
+#### 핵심 리스크
+- [네거티브 리스크](개념/리스크/네거티브 리스크.md)
 - [슬리피지(Slippage)](개념/리스크/슬리피지(Slippage).md)
+
 - [시장 충격 완화 전략](개념/리스크/시장 충격 완화 전략.md)
 - [시장 충격 측정](개념/리스크/시장 충격 측정.md)
 
@@ -102,12 +124,15 @@
 
 ## 비교
 ### Copytrade
+- [Copytrade](비교/Copytrade/Copytrade.md)
 - [Copytrade 성능 모니터링](비교/Copytrade/Copytrade 성능 모니터링.md)
 
 ### Polymarket
+- [Polymarket](비교/Polymarket/Polymarket.md)
 - [스포츠 예측 마켓](비교/Polymarket/스포츠 예측 마켓.md)
 
 ### 데이터
+- [데이터](비교/데이터/데이터.md)
 - [CLOB](비교/데이터/CLOB.md)
 
 ### 리스크

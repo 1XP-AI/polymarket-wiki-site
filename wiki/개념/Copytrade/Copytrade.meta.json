@@ -172,6 +172,30 @@
       "source_urls": [
         "https://www.copytrade.net/"
       ]
+    },
+    "para_017": {
+      "evidence_type": "synthesized",
+      "source_refs": [
+        "src_20260409_copytrade_copy_trading_to_maximize_your_profits_45c490a6#chunk_001"
+      ],
+      "as_of": "2026-04-10",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://www.copytrade.net/"
+      ]
+    },
+    "para_018": {
+      "evidence_type": "synthesized",
+      "source_refs": [
+        "src_20260409_copytrade_copy_trading_to_maximize_your_profits_45c490a6#chunk_001"
+      ],
+      "as_of": "2026-04-10",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://www.copytrade.net/"
+      ]
     }
   }
 }

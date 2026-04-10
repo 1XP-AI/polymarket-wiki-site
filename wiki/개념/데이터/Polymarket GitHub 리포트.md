@@ -17,6 +17,8 @@ tags:
 sources:
 - url: https://github.com/polymarket
 - url: https://raw/fetched/2026-04-05-github-polymarket.md
+cluster: Copytrade
+doc_role: concept
 ---
 # Polymarket GitHub 리포트
 

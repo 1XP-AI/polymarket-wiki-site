@@ -66,41 +66,28 @@
       "source_urls": []
     },
     "para_009": {
-      "evidence_type": "direct",
-      "source_refs": [
-        "src_20260409_polymarket_pulls_controversial_iran_rescue_markets_after_intense_backlash_b215b258#chunk_001"
-      ],
+      "evidence_type": "synthesized",
+      "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://www.coindesk.com/policy/2026/04/05/polymarket-pulls-controversial-iran-rescue-markets-after-intense-backlash"
-      ]
+      "source_urls": []
     },
     "para_010": {
-      "evidence_type": "direct",
-      "source_refs": [
-        "src_20260409_polymarket_took_down_wagers_tied_to_rescue_of_downed_air_force_officer_techcrunch_10a2d896#chunk_001"
-      ],
+      "evidence_type": "synthesized",
+      "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://techcrunch.com/2026/04/05/polymarket-took-down-wagers-tied-to-rescue-of-downed-air-force-officer/"
-      ]
+      "source_urls": []
     },
     "para_011": {
-      "evidence_type": "direct",
-      "source_refs": [
-        "src_20260409_new_prediction_markets_live_odds_polymarket_f88d370f#chunk_001",
-        "src_20260409_new_prediction_markets_live_odds_polymarket_f88d370f#chunk_002"
-      ],
+      "evidence_type": "synthesized",
+      "source_refs": [],
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://polymarket.com/new"
-      ]
+      "source_urls": []
     }
   }
 }

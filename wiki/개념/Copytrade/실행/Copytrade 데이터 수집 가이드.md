@@ -43,6 +43,9 @@ sources:
   raw: raw/fetched/2026-04-07-leaderboard-and-risk.md
 - url: https://polycopy.app/discover
   raw: raw/fetched/2026-04-07-leaderboard-and-risk.md
+cluster: Copytrade
+cluster_group: 실행
+doc_role: playbook
 ---
 # Copytrade 데이터 수집 가이드
 

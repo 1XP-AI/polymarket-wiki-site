@@ -28,6 +28,9 @@ sources:
 - url: https://www.quantstart.com/articles/market-impact-slippage/
 - url: https://polymarketanalytics.com/traders
 - url: https://www.investopedia.com/terms/h/hedge.asp
+cluster: Copytrade
+cluster_group: 실행
+doc_role: playbook
 ---
 # Copytrade 포지션 리밸런싱 가이드
 

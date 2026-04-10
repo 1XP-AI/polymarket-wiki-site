@@ -11,9 +11,13 @@ owners:
 source_count: 0
 evidence_coverage: 1.0
 confidence: medium
-related_pages: []
+related_pages:
+- legacy_wiki_copytrade_4d0fc3
 tags:
 - concept
+cluster: Copytrade
+cluster_group: 자료
+doc_role: concept
 ---
 # 수집 원본: Polymarket snapshot — 2026-04-05
 

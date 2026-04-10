@@ -12,12 +12,14 @@ source_count: 2
 evidence_coverage: 1.0
 confidence: medium
 related_pages:
+- comparison_copytrade
 - legacy_wiki_0x492442eab586f242b53bda933fd5de859c8a3782_e83e3b
 - legacy_wiki_923782
 - legacy_wiki_clob_064e27
 - legacy_wiki_copytrade_01e411
 - legacy_wiki_copytrade_0c3a80
 - legacy_wiki_copytrade_3f7013
+- legacy_wiki_copytrade_4d0fc3
 - legacy_wiki_copytrade_511614
 - legacy_wiki_copytrade_6a6853
 - legacy_wiki_copytrade_8c09ff
@@ -37,6 +39,9 @@ tags:
 sources:
 - url: https://polymarketcopytrading.com/risk-management
 - url: https://www.polycopytrade.net/blog/polymarket-copy-trading-risk-management.php
+cluster: Copytrade
+cluster_group: 리스크
+doc_role: analysis
 ---
 # Copytrade 성능 모니터링
 

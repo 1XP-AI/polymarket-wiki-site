@@ -14,6 +14,7 @@ confidence: medium
 related_pages:
 - legacy_raw_05_badd78
 - legacy_raw_fetched_2026_04_05_polymarket_markets_a295cb
+- legacy_wiki_copytrade_4d0fc3
 - legacy_wiki_copytrade_e7d623
 - legacy_wiki_polymarket_cd5a08
 tags:
@@ -21,6 +22,9 @@ tags:
 sources:
 - url: https://gamma-api.polymarket.com/markets
 - url: https://docs.polymarket.com/api
+cluster: Copytrade
+cluster_group: 자료
+doc_role: snapshot
 ---
 # Polymarket 이벤트 스냅샷 (2026-04-05)
 

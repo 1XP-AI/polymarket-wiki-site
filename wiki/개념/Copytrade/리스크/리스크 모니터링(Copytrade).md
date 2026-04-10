@@ -4,7 +4,7 @@ title: 리스크 모니터링(Copytrade)
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:10Z'
-last_updated: '2026-04-09T23:20:14Z'
+last_updated: '2026-04-10T15:39:11Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -23,6 +23,9 @@ sources:
 - url: https://errante.com/wp-content/uploads/2024/02/Errante-CopyTrading-Manual.pdf
 - url: https://keepamericaaffordable.com/%EC%8A%B9%EB%B6%80%EC%A1%B0%EC%9E%91-%EC%9E%90%EC%82%B0-%EC%9C%A0%EC%9E%85-%EC%B0%A8%EB%8B%A8/
 - url: https://fss.or.kr/
+cluster: Copytrade
+cluster_group: 리스크
+doc_role: analysis
 ---
 # 리스크 모니터링(Copytrade)
 
@@ -80,8 +83,6 @@ def measure_execution_delay(trader_timestamp, follower_timestamp, market_snapsho
 ## 세부 내용
 
 <!-- para: para_007 -->
-승부조작 의심 자산 유입 원천 차단 및 관리자의 리스크 모니터링 공수 제거 - keepamericaaffordable
-
 승부조작 의심 자산 유입 원천 차단 및 관리자의 리스크 모니터링 공수 제거
 
 승부조작 의심 자산 유입의 위험성과 관리의 중요성
@@ -90,8 +91,6 @@ def measure_execution_delay(trader_timestamp, follower_timestamp, market_snapsho
 CopyTrade - Copy Trading to Maximize Your Profits
 
 Built for copy traders and account managers, CopyTrade offers a complete solution for
-
-hassle-free managed accounts and efficient copy trades. Get started
 
 <!-- para: para_009 -->
 원문 PDF 바이너리 덤프는 사용자용 위키에서 제거했다. 해당 자료는 카피트레이딩 서비스 설명서와 위험 고지, 주문 복제 방식 같은 운영 정보를 담은 PDF다.
@@ -104,6 +103,4 @@ hassle-free managed accounts and efficient copy trades. Get started
 글로벌 금융기관의 규제 문서화에 맞춰 신속한 모델 혁신 지원하는 익스피리언 AI 역량 강조
 
 <!-- para: para_011 -->
-금융감독원 통합홈페이지
-
 불법사금융 이자부담을 계산해보세요 (불법사금융 이자율 계산기)

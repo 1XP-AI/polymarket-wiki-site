@@ -12,6 +12,7 @@ source_count: 5
 evidence_coverage: 1.0
 confidence: medium
 related_pages:
+- concept_데이터
 - legacy_raw_00_index_ec3366
 - legacy_wiki_copytrade_0c3a80
 - legacy_wiki_copytrade_6a6853
@@ -23,6 +24,9 @@ sources:
 - url: https://websocket.org/reference/websocket-api
 - url: https://yinternational.co.kr/websocket-%EC%8B%A4%EC%8B%9C%EA%B0%84-%ED%86%B5%EC%8B%A0%EC%9D%98-%EB%AA%A8%EB%93%A0-%EA%B2%83-http%EC%99%80%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%99%80-%ED%99%9C%EC%9A%A9-%EC%82%AC%EB%A1%80/
 - url: https://developer.mozilla.org/ko/docs/Web/API/WebSockets_API/Writing_WebSocket_client_applications
+cluster: 데이터
+cluster_group: 실시간/파이프라인
+doc_role: data-reference
 ---
 # WebSocket & 실시간 데이터
 

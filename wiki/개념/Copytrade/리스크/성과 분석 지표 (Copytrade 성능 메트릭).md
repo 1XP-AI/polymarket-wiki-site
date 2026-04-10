@@ -31,6 +31,9 @@ sources:
   raw: raw/fetched/2026-04-06-polymarket-docs.md
 - url: https://www.quantstart.com/articles/market-impact-slippage/
   raw: raw/fetched/2026-04-06-quantstart-slippage.md
+cluster: Copytrade
+cluster_group: 리스크
+doc_role: analysis
 ---
 # 성과 분석 지표 (Copytrade 성능 메트릭)
 
