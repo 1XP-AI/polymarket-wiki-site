@@ -4,7 +4,7 @@ title: Polymarket
 type: comparison
 status: verified
 created_at: '2026-04-10T15:39:12Z'
-last_updated: '2026-04-10T16:04:45Z'
+last_updated: '2026-04-10T16:05:08Z'
 as_of: '2026-04-10'
 owners:
 - wiki-system
