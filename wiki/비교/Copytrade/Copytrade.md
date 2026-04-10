@@ -4,7 +4,7 @@ title: Copytrade
 type: comparison
 status: verified
 created_at: '2026-04-10T15:39:12Z'
-last_updated: '2026-04-10T16:03:12Z'
+last_updated: '2026-04-10T16:03:35Z'
 as_of: '2026-04-10'
 owners:
 - wiki-system
