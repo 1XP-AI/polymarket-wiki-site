@@ -11,7 +11,8 @@ owners:
 source_count: 4
 evidence_coverage: 1.0
 confidence: medium
-related_pages: []
+related_pages:
+- legacy_wiki_copytrade_4d0fc3
 tags:
 - concept
 sources:

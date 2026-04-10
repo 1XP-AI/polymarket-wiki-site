@@ -14,6 +14,7 @@ confidence: medium
 related_pages:
 - legacy_wiki_4526f6
 - legacy_wiki_copytrade_0c3a80
+- legacy_wiki_copytrade_4d0fc3
 - legacy_wiki_copytrade_59552d
 - legacy_wiki_copytrade_bb99a4
 - legacy_wiki_copytrade_c6dea0

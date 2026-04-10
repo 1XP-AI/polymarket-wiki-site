@@ -16,6 +16,7 @@ related_pages:
 - legacy_wiki_88f80c
 - legacy_wiki_api_polymarket_api_62ef40
 - legacy_wiki_clob_064e27
+- legacy_wiki_copytrade_4d0fc3
 - legacy_wiki_polymarket_cd5a08
 tags:
 - concept
