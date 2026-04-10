@@ -1,0 +1,97 @@
+{
+  "page_id": "legacy_wiki_copytrade_59552d",
+  "paragraphs": {
+    "para_001": {
+      "evidence_type": "synthesized",
+      "source_refs": [],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": []
+    },
+    "para_002": {
+      "evidence_type": "synthesized",
+      "source_refs": [],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": []
+    },
+    "para_003": {
+      "evidence_type": "synthesized",
+      "source_refs": [],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": []
+    },
+    "para_004": {
+      "evidence_type": "synthesized",
+      "source_refs": [],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": []
+    },
+    "para_005": {
+      "evidence_type": "synthesized",
+      "source_refs": [],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": []
+    },
+    "para_006": {
+      "evidence_type": "synthesized",
+      "source_refs": [],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": []
+    },
+    "para_007": {
+      "evidence_type": "synthesized",
+      "source_refs": [],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": []
+    },
+    "para_008": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_geographic_restrictions_polymarket_help_center_0fae41be#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://help.polymarket.com/en/articles/13364163-geographic-restrictions"
+      ]
+    },
+    "para_009": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_fx_copytrade_co_kr_9d5fa383#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://copytrade.co.kr/"
+      ]
+    },
+    "para_010": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_documentation_comprehensive_guide_for_copy_trading_success_513a41f4#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://www.copytrade.net/documentation"
+      ]
+    }
+  }
+}

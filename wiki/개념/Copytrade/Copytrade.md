@@ -4,76 +4,109 @@ title: Copytrade
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:09Z'
-last_updated: '2026-04-09T16:46:07Z'
-as_of: '2026-04-09'
+last_updated: '2026-04-10T11:00:57Z'
+as_of: '2026-04-10'
 owners:
 - wiki-system
-source_count: 4
+source_count: 1
 evidence_coverage: 1.0
 confidence: medium
 related_pages:
 - legacy_raw_00_index_ec3366
+- legacy_raw_03_copytrade_c17abe
+- legacy_raw_05_badd78
+- legacy_raw_fetched_2026_04_05_leaderboard_monthly_43010c
+- legacy_raw_fetched_2026_04_06_copytrade_sources_5404e6
+- legacy_wiki_0x492442eab586f242b53bda933fd5de859c8a3782_e83e3b
+- legacy_wiki_4526f6
+- legacy_wiki_88f80c
+- legacy_wiki_96e938
+- legacy_wiki_copytrade_01e411
+- legacy_wiki_copytrade_0c3a80
+- legacy_wiki_copytrade_1f98b0
+- legacy_wiki_copytrade_27d56b
+- legacy_wiki_copytrade_37aa3c
+- legacy_wiki_copytrade_506e4c
+- legacy_wiki_copytrade_511614
+- legacy_wiki_copytrade_59552d
+- legacy_wiki_copytrade_698574
+- legacy_wiki_copytrade_ac0967
+- legacy_wiki_copytrade_bb99a4
+- legacy_wiki_copytrade_bf1303
 - legacy_wiki_copytrade_c6dea0
+- legacy_wiki_copytrade_copytrade_4b2b9f
+- legacy_wiki_copytrade_d6deb5
+- legacy_wiki_copytrade_e140b9
+- legacy_wiki_copytrade_e2e01c
+- legacy_wiki_copytrade_e81931
+- legacy_wiki_copytrade_eff435
 - legacy_wiki_index_925404
+- legacy_wiki_theo_e3e7fe
 tags:
 - concept
 sources:
-- url: https://www.forexbrokers.com/guides/social-copy-trading
 - url: https://www.copytrade.net/
-- url: https://errante.com/wp-content/uploads/2024/02/Errante-CopyTrading-Manual.pdf
-- url: https://crosstrade.io/trade-copier
 ---
-# Copytrade
-
 ## 요약
 
 <!-- para: para_001 -->
-> 리더보드 상위 트레이더를 따라 거래하는 전략의 개념, 데이터 수집, 실행 구조, 운영 리스크를 정리한 문서
+> Polymarket에서 상위 트레이더의 포지션과 체결 패턴을 관찰해 추종 전략으로 전환하는 방법을 정리한 허브 문서
 
 <!-- para: para_002 -->
-Copytrade는 특정 트레이더의 포지션 변화나 체결 신호를 추종해 자신의 계정에서도 유사한 포지션을 자동 또는 반자동으로 재현하는 방식이다. Polymarket에서는 리더보드 데이터, 공개 프로필, 포지션 스냅샷, 체결 내역을 조합해 추종 대상을 선별하고 복제 전략을 설계할 수 있다.
+Copytrade는 리더보드 탐색, 트레이더 프로필 해석, 포지션 재현, 리스크 차단, 운영 자동화를 하나의 루프로 묶는 전략이다. 이 허브는 하위 문서를 역할별로 정리해 어디서부터 읽어야 하는지 안내한다.
 
 <!-- para: para_003 -->
-Polymarket copytrade 구축에서 기본 수집 흐름은 리더보드 조회 -> 트레이더 프로필 확인 -> 현재 포지션 확인 -> 과거 체결 분석 순서다.
+처음 읽는 경우에는 리더보드 데이터와 프로필 분석부터 보고, 실제 운영이 목적이면 자동화 플로우와 리스크 관리 문서를 이어서 읽는 편이 좋다.
 
-| 목적 | 엔드포인트 | 핵심 파라미터 |
-| --- | --- | --- |
-| 리더보드 조회 | `GET https://data-api.polymarket.com/v1/leaderboard` | `window=daily|weekly|monthly`, `limit`, `offset` |
-| 트레이더 프로필 | `GET https://gamma-api.polymarket.com/public-profile?address={wallet}` | `address` |
-| 현재 포지션 | `GET https://data-api.polymarket.com/positions?address={wallet}` | `address` |
-| 과거 체결 | `GET https://data-api.polymarket.com/trades?address={wallet}` | `address` |
+## 문서 지도
 
 <!-- para: para_004 -->
-리더보드 데이터는 수익률 기준 상위 트레이더를 찾는 출발점이다. 기간별 성과를 비교해 일간 급등형과 장기 일관형을 구분할 수 있고, 이후 프로필 API로 실제 지갑 주소와 공개 지표를 확인한다.
+이 문서군은 `리더보드`, `프로필`, `실행`, `리스크`, `자료` 다섯 그룹으로 나뉜다. 각 그룹은 같은 주제를 반복하는 대신 역할이 다른 문서를 묶어 탐색성을 높이는 것을 목표로 한다.
+
+## 리더보드/트레이더 탐색
 
 <!-- para: para_005 -->
-포지션 API는 현재 보유 중인 Yes/No 토큰, 마켓별 익스포저, 평균 진입가를 재구성하는 데 유용하다. Copytrade에서는 이 스냅샷을 기준점으로 삼아 내 계정과 추종 대상 간 편차를 계산한다.
+리더보드/트레이더 탐색 문서군: [[Copytrade 리더보드 심화]], [[Copytrade 알파 지표 선별]], [[데이터 기반 트레이더 선별]], [[리더보드 & 트레이더 데이터]], [[리더보드 데이터]], [[리더보드 분석]], [[리더보드 알파 탐지]], [[리더보드 조작 탐지]]
 
 <!-- para: para_006 -->
-트레이드 API는 체결 시각, 수량, 방향을 제공하므로 추종 전략의 반응 속도와 슬리피지 영향을 분석할 수 있다. 실시간 추종은 체결 스트림과 폴링을 함께 사용해야 안정적이다.
+리더보드 문서군은 후보 발굴과 스코어링에 집중한다. 순위표 자체보다 어떤 거래 습관이 순위를 만들었는지를 읽는 단계다.
+
+## 프로필 분석
 
 <!-- para: para_007 -->
-실행 단계에서는 신호의 지연, 최소 주문 단위, 마켓 유동성, Neg-Risk 여부를 함께 고려해야 한다. 리더보드 성과가 좋아 보여도 진입 시점이 늦으면 동일한 수익률을 재현하지 못할 수 있다.
+프로필 분석 문서군: [[0x492442eab586f242b53bda933fd5de859c8a3782 트레이더 프로필]], [[Theo — 트레이더 프로필 사례]], [[트레이더 프로필 분석]], [[트레이더 프로필 템플릿]]
 
 <!-- para: para_008 -->
-운영 지표로는 누적 수익률보다 최대 드로우다운, 포지션 집중도, 시장 간 상관관계, 평균 보유 시간, 손실 후 회복 속도가 더 중요하다. 추종 대상을 바꿔야 하는 시점을 정하는 데도 이 지표들이 쓰인다.
+프로필 문서군은 개별 트레이더를 팔로우 대상으로 평가하는 데 초점을 둔다. 템플릿, 사례, 평가 기준이 함께 연결되어야 의미가 있다.
+
+## 실행/운영
 
 <!-- para: para_009 -->
-리스크 관리 기준은 일별 손실 한도, 단일 트레이더 최대 비중, 동일 이벤트군 중복 노출, 슬리피지 한도, API 장애 시 fail-safe 동작으로 정리하는 편이 좋다.
+실행/운영 문서군: [[Copytrade 데이터 수집 가이드]], [[Copytrade 자동화 플로우]], [[Copytrade 포지션 리밸런싱 가이드]], [[Polymarket Copytrade 전략 분석]], [[추종 신호 필터링]], [[추종 실행 속도 최적화]], [[추종 중단 규칙]], [[팔로우 선별]], [[팔로우 스코어링 모델]]
 
 <!-- para: para_010 -->
-결론적으로 Copytrade는 단순히 "잘하는 사람 따라 사기"가 아니라, 데이터 수집 파이프라인과 비중 배분 규칙, 리스크 차단 조건을 함께 설계해야 유지 가능한 전략이 된다.
+실행 문서군은 데이터 수집, 신호 필터링, 자동화, 리밸런싱처럼 실제 포지션 반영 로직을 다룬다.
 
-## 외부 도구와 운영 사례
+## 리스크 관리
 
 <!-- para: para_011 -->
-CopyTrade는 복수 브로커와 플랫폼에서 주문 복제를 지원하는 상용 서비스로 자신을 소개한다. 핵심 제품은 로컬 복제, 클라우드 복제, 시그널 마켓플레이스, 화이트라벨 구성으로 나뉘며, 마스터 계정과 팔로워 계정 연결 및 전략 배포를 중심 기능으로 제시한다.
+리스크 관리 문서군: [[Copytrade 리스크 관리]], [[리스크 모니터링(Copytrade)]], [[성과 분석 지표 (Copytrade 성능 메트릭)]], [[실행 비용(Execution Cost) — Copytrade 고려사항]]
 
 <!-- para: para_012 -->
-ForexBrokers.com의 2026년 복사 거래 가이드는 eToro, Vantage, AvaTrade, Pepperstone, IC Markets, Tickmill, Exness, FXCM을 비교하며, 복사 거래에서는 브로커 신뢰도와 플랫폼 제약, 최소 예치금, 지원 자산 범위를 함께 봐야 한다고 정리한다.
+리스크 문서군은 손실 한도, 모니터링, 비용, 중단 규칙처럼 전략을 멈추거나 축소하는 기준을 모은다.
+
+## 시점성 문서와 자료
 
 <!-- para: para_013 -->
-Errante의 CopyTrading 매뉴얼 PDF는 카피트레이딩 서비스의 계정 연결 절차, 전략 구독 흐름, 주문 복제 방식, 위험 고지와 사용자 책임 범위를 설명하는 운영 문서다. 사용자용 위키에는 PDF 원문 바이너리를 그대로 싣지 않고 핵심 내용만 남기는 편이 적절하다.
+시점성 문서와 자료 문서군: [[2026-04-06 Copytrade 외부 소스 수집]], [[Copytrade 링크 강화]], [[Polymarket Copytrade 위키 — Raw 자료 인덱스]], [[Polymarket 리더보드 스냅샷 (2026-04-05 01:00)]]
 
 <!-- para: para_014 -->
-CrossTrade의 Trade Copier 페이지는 NinjaTrader 계정 간 주문 복제를 위한 상용 도구를 설명한다. 주문 방향 반전, 계약 수 비율 조정, 심볼 치환, 재동기화, 장애 복구 같은 기능을 강조하며, 실제 copytrade 운영에서는 이런 "복제 엔진" 계층이 별도 제품으로 존재할 수 있음을 보여준다.
+이 그룹은 스냅샷, 외부 소스 수집, raw 인덱스처럼 참고용 자료를 보관한다. 개념 설명보다 근거 확인과 시점 추적에 가깝기 때문에 핵심 설명 문서와 분리해서 읽는 편이 낫다.
+
+## 탐색 경로
+
+<!-- para: para_015 -->
+입문자는 `리더보드 데이터 -> 트레이더 프로필 분석 -> Copytrade 자동화 플로우 -> Copytrade 리스크 관리` 순서로 읽는 편이 무난하다.
+
+<!-- para: para_016 -->
+운영 점검 목적이라면 `Copytrade 포지션 리밸런싱 가이드 -> 추종 중단 규칙 -> 리스크 모니터링(Copytrade)` 순서가 더 실무적이다.

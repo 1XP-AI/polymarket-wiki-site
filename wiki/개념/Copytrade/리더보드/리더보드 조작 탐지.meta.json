@@ -1,0 +1,129 @@
+{
+  "page_id": "legacy_wiki_copytrade_bf1303",
+  "paragraphs": {
+    "para_001": {
+      "evidence_type": "synthesized",
+      "source_refs": [],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": []
+    },
+    "para_002": {
+      "evidence_type": "synthesized",
+      "source_refs": [],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": []
+    },
+    "para_003": {
+      "evidence_type": "synthesized",
+      "source_refs": [],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": []
+    },
+    "para_004": {
+      "evidence_type": "synthesized",
+      "source_refs": [],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": []
+    },
+    "para_005": {
+      "evidence_type": "synthesized",
+      "source_refs": [],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": []
+    },
+    "para_006": {
+      "evidence_type": "synthesized",
+      "source_refs": [],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": []
+    },
+    "para_007": {
+      "evidence_type": "synthesized",
+      "source_refs": [],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": []
+    },
+    "para_008": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_dacon_data_science_ai_competitions_dacon_454ed1c1#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://dacon.io/"
+      ]
+    },
+    "para_009": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_ai_1_xbow_637e66a6#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://digitalbourgeois.tistory.com/1635"
+      ]
+    },
+    "para_010": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_android_game_development_android_developers_9e0eca7a#chunk_001"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://developer.android.com/games/pgs/leaderboards?hl=ko"
+      ]
+    },
+    "para_011": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260409_what_s_new_in_26r1_veeva_vault_release_notes_17617443#chunk_001",
+        "src_20260409_what_s_new_in_26r1_veeva_vault_release_notes_17617443#chunk_002"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://rn.veevavault.help/ko/gr/whats-new-in-26r1/"
+      ]
+    },
+    "para_012": {
+      "evidence_type": "synthesized",
+      "source_refs": [
+        "src_20260409_ai_1_xbow_637e66a6#chunk_001",
+        "src_20260409_android_game_development_android_developers_9e0eca7a#chunk_001",
+        "src_20260409_dacon_data_science_ai_competitions_dacon_454ed1c1#chunk_001",
+        "src_20260409_what_s_new_in_26r1_veeva_vault_release_notes_17617443#chunk_001",
+        "src_20260409_what_s_new_in_26r1_veeva_vault_release_notes_17617443#chunk_002"
+      ],
+      "as_of": "2026-04-09",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://digitalbourgeois.tistory.com/1635",
+        "https://developer.android.com/games/pgs/leaderboards?hl=ko",
+        "https://dacon.io/",
+        "https://rn.veevavault.help/ko/gr/whats-new-in-26r1/"
+      ]
+    }
+  }
+}

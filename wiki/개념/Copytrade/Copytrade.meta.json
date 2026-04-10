@@ -7,7 +7,9 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://www.copytrade.net/"
+      ]
     },
     "para_002": {
       "evidence_type": "synthesized",
@@ -15,7 +17,9 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://www.copytrade.net/"
+      ]
     },
     "para_003": {
       "evidence_type": "synthesized",
@@ -23,7 +27,9 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://www.copytrade.net/"
+      ]
     },
     "para_004": {
       "evidence_type": "synthesized",
@@ -31,7 +37,9 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://www.copytrade.net/"
+      ]
     },
     "para_005": {
       "evidence_type": "synthesized",
@@ -39,7 +47,9 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://www.copytrade.net/"
+      ]
     },
     "para_006": {
       "evidence_type": "synthesized",
@@ -47,7 +57,9 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://www.copytrade.net/"
+      ]
     },
     "para_007": {
       "evidence_type": "synthesized",
@@ -55,7 +67,9 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://www.copytrade.net/"
+      ]
     },
     "para_008": {
       "evidence_type": "synthesized",
@@ -63,7 +77,9 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://www.copytrade.net/"
+      ]
     },
     "para_009": {
       "evidence_type": "synthesized",
@@ -71,7 +87,9 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://www.copytrade.net/"
+      ]
     },
     "para_010": {
       "evidence_type": "synthesized",
@@ -79,7 +97,9 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": []
+      "source_urls": [
+        "https://www.copytrade.net/"
+      ]
     },
     "para_011": {
       "evidence_type": "direct",
@@ -94,40 +114,63 @@
       ]
     },
     "para_012": {
-      "evidence_type": "direct",
+      "evidence_type": "synthesized",
       "source_refs": [
-        "src_20260409_7_best_copy_trading_platforms_for_2026_forexbrokers_com_008b7d55#chunk_001"
+        "src_20260409_copytrade_copy_trading_to_maximize_your_profits_45c490a6#chunk_001"
       ],
-      "as_of": "2026-04-09",
+      "as_of": "2026-04-10",
       "confidence": "medium",
       "conflict_flag": false,
       "source_urls": [
-        "https://www.forexbrokers.com/guides/social-copy-trading"
+        "https://www.copytrade.net/"
       ]
     },
     "para_013": {
-      "evidence_type": "direct",
+      "evidence_type": "synthesized",
       "source_refs": [
-        "src_20260409_https_errante_com_wp_content_uploads_2024_02_errante_copytrading_manual_pdf_e0171476#chunk_001",
-        "src_20260409_https_errante_com_wp_content_uploads_2024_02_errante_copytrading_manual_pdf_e0171476#chunk_002"
+        "src_20260409_copytrade_copy_trading_to_maximize_your_profits_45c490a6#chunk_001"
       ],
-      "as_of": "2026-04-09",
+      "as_of": "2026-04-10",
       "confidence": "medium",
       "conflict_flag": false,
       "source_urls": [
-        "https://errante.com/wp-content/uploads/2024/02/Errante-CopyTrading-Manual.pdf"
+        "https://www.copytrade.net/"
       ]
     },
     "para_014": {
-      "evidence_type": "direct",
+      "evidence_type": "synthesized",
       "source_refs": [
-        "src_20260409_trade_copier_106a1805#chunk_001"
+        "src_20260409_copytrade_copy_trading_to_maximize_your_profits_45c490a6#chunk_001"
       ],
-      "as_of": "2026-04-09",
+      "as_of": "2026-04-10",
       "confidence": "medium",
       "conflict_flag": false,
       "source_urls": [
-        "https://crosstrade.io/trade-copier"
+        "https://www.copytrade.net/"
+      ]
+    },
+    "para_015": {
+      "evidence_type": "synthesized",
+      "source_refs": [
+        "src_20260409_copytrade_copy_trading_to_maximize_your_profits_45c490a6#chunk_001"
+      ],
+      "as_of": "2026-04-10",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://www.copytrade.net/"
+      ]
+    },
+    "para_016": {
+      "evidence_type": "synthesized",
+      "source_refs": [
+        "src_20260409_copytrade_copy_trading_to_maximize_your_profits_45c490a6#chunk_001"
+      ],
+      "as_of": "2026-04-10",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://www.copytrade.net/"
       ]
     }
   }
