@@ -4,7 +4,7 @@ title: Polymarket 개요
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:09Z'
-last_updated: '2026-04-10T16:09:24Z'
+last_updated: '2026-04-11T11:48:52Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -81,7 +81,12 @@ Polymarket 군집은 플랫폼 개요, 마켓 구조, 카테고리별 대표 시
 <!-- para: para_007 -->
 카테고리 문서군은 정치·크립토·스포츠·법률처럼 대표 질문 영역을 비교해서 읽는 데 적합하다.
 
-## 탐색 경로
+## 핵심 문서
 
 <!-- para: para_008 -->
+핵심 문서 문서군: [[인덱스 요약]]
+
+## 탐색 경로
+
+<!-- para: para_009 -->
 처음 읽는 경우에는 `Polymarket 개요 -> Polymarket 마켓 분석 -> 정치/크립토/스포츠 예측 마켓 -> 리베이트(마켓메이커)` 순서가 가장 자연스럽다.
