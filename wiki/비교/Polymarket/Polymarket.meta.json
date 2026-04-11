@@ -93,7 +93,9 @@
     },
     "para_010": {
       "evidence_type": "synthesized",
-      "source_refs": [],
+      "source_refs": [
+        "src_20260411_maker_rebates_program_polymarket_documentation_a7907032#chunk_001"
+      ],
       "as_of": "2026-04-10",
       "confidence": "medium",
       "conflict_flag": false,
@@ -103,7 +105,9 @@
     },
     "para_011": {
       "evidence_type": "synthesized",
-      "source_refs": [],
+      "source_refs": [
+        "src_20260411_maker_rebates_program_polymarket_documentation_a7907032#chunk_001"
+      ],
       "as_of": "2026-04-10",
       "confidence": "medium",
       "conflict_flag": false,
@@ -112,11 +116,11 @@
       ]
     },
     "para_012": {
-      "evidence_type": "direct",
+      "evidence_type": "synthesized",
       "source_refs": [
         "src_20260411_maker_rebates_program_polymarket_documentation_a7907032#chunk_001"
       ],
-      "as_of": "2026-04-11",
+      "as_of": "2026-04-10",
       "confidence": "medium",
       "conflict_flag": false,
       "source_urls": [
