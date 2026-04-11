@@ -10,26 +10,6 @@
       "source_urls": []
     },
     "para_002": {
-      "evidence_type": "synthesized",
-      "source_refs": [],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": []
-    },
-    "para_003": {
-      "evidence_type": "direct",
-      "source_refs": [
-        "src_20260409_찌유네_리빙로그___네이버_블로그_8d1c8965#chunk_001"
-      ],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": [
-        "https://blog.naver.com/ohna1234/224139159018"
-      ]
-    },
-    "para_004": {
       "evidence_type": "direct",
       "source_refs": [
         "src_20260409_ai_on_chrome_chrome_for_developers_2ebdc303#chunk_001"
@@ -41,7 +21,7 @@
         "https://developer.chrome.com/docs/ai/scale-summarization?hl=ko"
       ]
     },
-    "para_005": {
+    "para_003": {
       "evidence_type": "direct",
       "source_refs": [
         "src_20260409_chatgpt_chrome_2a096a7a#chunk_001",
@@ -52,19 +32,6 @@
       "conflict_flag": false,
       "source_urls": [
         "https://chromewebstore.google.com/detail/article-summary-with-chat/llkgpihjneoghmffllamjfhabmmcddfh?hl=ko-KR"
-      ]
-    },
-    "para_006": {
-      "evidence_type": "direct",
-      "source_refs": [
-        "src_20260409_pageindex_db_llm_reasoning_based_rag_53d27443#chunk_001",
-        "src_20260409_pageindex_db_llm_reasoning_based_rag_53d27443#chunk_002"
-      ],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": [
-        "https://honbul.tistory.com/166"
       ]
     }
   }

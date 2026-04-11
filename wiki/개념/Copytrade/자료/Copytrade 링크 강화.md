@@ -12,6 +12,7 @@ source_count: 1
 evidence_coverage: 1.0
 confidence: medium
 related_pages:
+- concept_copytrade
 - legacy_raw_fetched_2026_04_05_polymarket_markets_a295cb
 - legacy_wiki_88f80c
 - legacy_wiki_api_polymarket_api_62ef40

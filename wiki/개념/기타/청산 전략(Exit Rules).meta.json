@@ -60,18 +60,6 @@
     "para_008": {
       "evidence_type": "direct",
       "source_refs": [
-        "src_20260409_금융_분석가_마에스의_시선___네이버_블로그_68067e2e#chunk_001"
-      ],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": [
-        "https://blog.naver.com/topbuilding/223856763062"
-      ]
-    },
-    "para_009": {
-      "evidence_type": "direct",
-      "source_refs": [
         "src_20260409_trust_company_exit_2026_f6a96af9#chunk_001"
       ],
       "as_of": "2026-04-09",
@@ -81,7 +69,7 @@
         "https://www.thegoodreview.com.au/2026/03/trust-company-exit-%EC%A0%84%EB%9E%B5-%EC%99%84%EC%A0%84-%EA%B0%80%EC%9D%B4%EB%93%9C-2026/"
       ]
     },
-    "para_010": {
+    "para_009": {
       "evidence_type": "direct",
       "source_refs": [
         "src_20260409_interactive_brokers_llc_1ec47d19#chunk_001"
@@ -93,7 +81,7 @@
         "https://portal.mexem.com/ko/trading/exit-strategy.php"
       ]
     },
-    "para_011": {
+    "para_010": {
       "evidence_type": "direct",
       "source_refs": [
         "src_20260409_5_1_2_3_exit_strategy_f22e0437#chunk_001"
@@ -105,7 +93,7 @@
         "https://viewpoint.pwc.com/dt/gx/en/pwc/industry/industry_INT/industry_INT/real_estate__1_INT/Applying-IFRS-for-the-real-est/5-Real-estate-structures-and-tax-considerations/51-Consolidation/512-Definition-of/5123-Exit-strategy.html"
       ]
     },
-    "para_012": {
+    "para_011": {
       "evidence_type": "direct",
       "source_refs": [
         "src_20260409_germany_s_overlooked_exit_rule_men_aged_17_to_45_now_need_bundeswehr_permission_to_leave_imi_daily_3ef2196c#chunk_001"

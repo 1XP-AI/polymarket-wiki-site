@@ -50,6 +50,7 @@ sources:
 cluster: Polymarket
 doc_role: hub
 cluster_group: 플랫폼 개요
+hub_scope: cluster
 ---
 ## 요약
 

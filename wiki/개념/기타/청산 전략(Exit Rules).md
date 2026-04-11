@@ -4,11 +4,11 @@ title: 청산 전략(Exit Rules)
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:11Z'
-last_updated: '2026-04-10T16:31:14Z'
+last_updated: '2026-04-11T11:43:38Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
-source_count: 5
+source_count: 4
 evidence_coverage: 1.0
 confidence: medium
 related_pages:
@@ -21,7 +21,6 @@ sources:
 - url: https://www.imidaily.com/europe/germanys-overlooked-exit-rule-men-aged-17-to-45-now-need-bundeswehr-permission-to-leave/
 - url: https://portal.mexem.com/ko/trading/exit-strategy.php
 - url: https://www.thegoodreview.com.au/2026/03/trust-company-exit-%EC%A0%84%EB%9E%B5-%EC%99%84%EC%A0%84-%EA%B0%80%EC%9D%B4%EB%93%9C-2026/
-- url: https://blog.naver.com/topbuilding/223856763062
 cluster: Copytrade
 doc_role: concept
 ---
@@ -58,25 +57,22 @@ Copytrade는 타인의 포지션을 복제하는 특성상 진입보다 청산(E
 ## 세부 내용
 
 <!-- para: para_008 -->
-금융 분석가 마에스의 시선 : 네이버 블로그
-
-<!-- para: para_009 -->
 Trust & Company Exit 전략 완전 가이드 2026
 
 더굿리뷰 – The Good Review
 
 온라인 광고, SEO, 웹사이트, 여행, 맛집, 호주, 시드니, 전화번호, 교민업소, 리뷰의 모든 것
 
-<!-- para: para_010 -->
+<!-- para: para_009 -->
 정치, 경제 및 기후 예측 계약 실시간 확인 -
 
 개인, 공동 명의 또는 퇴직
 
-<!-- para: para_011 -->
+<!-- para: para_010 -->
 5.1.2.3. Exit strategy
 Latest updates
 Latest updates
 What's new on Viewpoint?
 
-<!-- para: para_012 -->
+<!-- para: para_011 -->
 독일에서는 17세에서 45세 사이의 남성이 출국할 때 Bundeswehr의 허가가 필요하다는 점이 잘 알려지지 않았다.

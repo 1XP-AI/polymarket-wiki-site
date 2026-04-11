@@ -2,8 +2,10 @@
 
 ## 개념
 ### Copytrade
+- [Copytrade 자료](개념/Copytrade/Copytrade 자료.md)
 - [Copytrade](개념/Copytrade/Copytrade.md)
 #### 리더보드
+- [Copytrade 리더보드](개념/Copytrade/리더보드/Copytrade 리더보드.md)
 - [Copytrade 리더보드 심화](개념/Copytrade/리더보드/Copytrade 리더보드 심화.md)
 - [Copytrade 알파 지표 선별](개념/Copytrade/리더보드/Copytrade 알파 지표 선별.md)
 - [데이터 기반 트레이더 선별](개념/Copytrade/리더보드/데이터 기반 트레이더 선별.md)
@@ -14,6 +16,7 @@
 - [리더보드 조작 탐지](개념/Copytrade/리더보드/리더보드 조작 탐지.md)
 
 #### 리스크
+- [Copytrade 리스크](개념/Copytrade/리스크/Copytrade 리스크.md)
 ##### 리스크
 - [Copytrade 리스크 관리](개념/Copytrade/리스크/Copytrade 리스크 관리.md)
 - [리스크 모니터링(Copytrade)](개념/Copytrade/리스크/리스크 모니터링(Copytrade).md)
@@ -24,6 +27,7 @@
 
 
 #### 실행
+- [Copytrade 실행](개념/Copytrade/실행/Copytrade 실행.md)
 - [Copytrade 데이터 수집 가이드](개념/Copytrade/실행/Copytrade 데이터 수집 가이드.md)
 - [Copytrade 자동화 플로우](개념/Copytrade/실행/Copytrade 자동화 플로우.md)
 - [Copytrade 포지션 리밸런싱 가이드](개념/Copytrade/실행/Copytrade 포지션 리밸런싱 가이드.md)
@@ -41,6 +45,7 @@
 - [Polymarket 리더보드 스냅샷 (2026-04-05 01:00)](개념/Copytrade/자료/Polymarket 리더보드 스냅샷 (2026-04-05 01 00).md)
 
 #### 프로필
+- [Copytrade 프로필](개념/Copytrade/프로필/Copytrade 프로필.md)
 - [0x492442eab586f242b53bda933fd5de859c8a3782 트레이더 프로필](개념/Copytrade/프로필/0x492442eab586f242b53bda933fd5de859c8a3782 트레이더 프로필.md)
 - [Theo — 트레이더 프로필 사례](개념/Copytrade/프로필/Theo — 트레이더 프로필 사례.md)
 - [트레이더 프로필 분석](개념/Copytrade/프로필/트레이더 프로필 분석.md)

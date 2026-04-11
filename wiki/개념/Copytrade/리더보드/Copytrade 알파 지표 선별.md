@@ -4,7 +4,7 @@ title: Copytrade 알파 지표 선별
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:11Z'
-last_updated: '2026-04-10T16:27:47Z'
+last_updated: '2026-04-11T11:42:46Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -12,6 +12,7 @@ source_count: 4
 evidence_coverage: 1.0
 confidence: medium
 related_pages:
+- concept_copytrade
 - legacy_wiki_copytrade_4d0fc3
 tags:
 - concept
@@ -65,19 +66,16 @@ doc_role: analysis
 ## 세부 내용
 
 <!-- para: para_008 -->
-알파스퀘어 공식 블로그 : 네이버 블로그
-
-<!-- para: para_009 -->
 옵션 트레이딩 알파 발굴의 모든 것: 실전과 데이터, 그리고 자동화 - TILNOTE
 
 옵션 트레이딩 알파 발굴의 모든 것: 실전과 데이터, 그리고 자동화
 
 금융 시장에서 ‘알파’란 단순한 운이 아닌, 데이터와 전략을 통해 지속적으로 수익을 창출할 수 있는 특별한 우위를 뜻합니다. 시스템 트레이딩과 옵션을 활용한 알파 추출은 최근 인공지능, 대규모 데이터 분석, 자동화 툴의 발전 덕분에 더욱 손쉬워졌습니다.
 
-<!-- para: para_010 -->
+<!-- para: para_009 -->
 알파스퀘어 기술적지표
 
 볼린저 밴드는 주가의 변동을 분석하기 위해, 중심이 되는 이동평균선을 기준으로 일정한 표준편차 범위만큼 설정한 그래프를 말한다.
 
-<!-- para: para_011 -->
+<!-- para: para_010 -->
 Copytrade에서 사용할 알파 지표를 선별하는 내용입니다. 다만 원문에는 실제 설명 대신 alphasquare-frontend가 JavaScript가 없으면 정상적으로 동작하지 않는다는 안내만 포함되어 있어, 사용자에게 전달할 핵심 정보는 제한적입니다.

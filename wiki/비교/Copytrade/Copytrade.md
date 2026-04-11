@@ -84,6 +84,7 @@ tags:
 - hub
 cluster: Copytrade
 doc_role: hub
+hub_scope: cluster
 ---
 ## 요약
 

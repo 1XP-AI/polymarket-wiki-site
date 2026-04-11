@@ -12,6 +12,7 @@ source_count: 5
 evidence_coverage: 1.0
 confidence: medium
 related_pages:
+- concept_copytrade
 - legacy_wiki_copytrade_0c3a80
 - legacy_wiki_copytrade_4d0fc3
 - legacy_wiki_copytrade_59552d

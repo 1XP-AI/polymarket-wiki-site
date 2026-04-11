@@ -4,11 +4,11 @@ title: 심리적 편향(Behavioral Bias) 분석
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:11Z'
-last_updated: '2026-04-09T23:19:48Z'
+last_updated: '2026-04-11T11:43:38Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
-source_count: 5
+source_count: 4
 evidence_coverage: 1.0
 confidence: medium
 related_pages:
@@ -18,7 +18,6 @@ tags:
 - concept
 sources:
 - url: https://aitoolsbee.com/ko/news/ai-%ED%8E%B8%ED%96%A5-%EA%B0%90%EC%82%AC-2026%EB%85%84-%EA%B8%B0%EC%97%85-%EA%B3%A0%EC%9A%A9-%EC%9D%98%EC%82%AC%EA%B2%B0%EC%A0%95%EC%9D%98-%ED%95%B5%EC%8B%AC-%EA%B3%BC%EC%A0%9C/
-- url: https://m.blog.naver.com/unicycle/223008018504
 - url: https://developers.google.com/machine-learning/crash-course/fairness/types-of-bias?hl=ko
 - url: https://psychology-money.com/111
 - url: https://newllmskll.com/entry/%ED%99%95%EC%A6%9D%ED%8E%B8%ED%96%A5%EA%B3%BC-%EC%84%A0%ED%83%9D%EB%85%B8%EC%B6%9C-%EC%8B%AC%EB%A6%AC-%EC%8B%A4%ED%97%98-%EB%B9%84%EA%B5%90-%EC%9D%B8%EC%A7%80%ED%8E%B8%ED%96%A5-%EC%8B%A4%ED%97%98%EB%B6%84%EC%84%9D-%EC%9D%B4%EB%A1%A0%EC%A0%95%EB%A6%AC
@@ -63,19 +62,16 @@ doc_role: analysis
 행동편향의 심리학 - 왜 우리는 비합리적인 선택을 할까?
 
 <!-- para: para_009 -->
-인지편향(Bias)의 심리학 : 네이버 블로그
-
-<!-- para: para_010 -->
 공정성: 편향의 유형
 
 |Machine Learning | Google for Developers
 
 ML 입문을 위한 교육 과정
 
-<!-- para: para_011 -->
+<!-- para: para_010 -->
 확증편향과 선택노출 심리 실험 비교 (인지편향, 실험분석, 이론정리)
 
-<!-- para: para_012 -->
+<!-- para: para_011 -->
 AI 편향 감사, 2026년 기업 고용 의사결정의 핵심 과제 - AI툴즈비
 
 AI 편향 감사, 2026년 기업 고용 의사결정의 핵심 과제

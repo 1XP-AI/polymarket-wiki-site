@@ -13,6 +13,7 @@ evidence_coverage: 1.0
 confidence: medium
 related_pages:
 - comparison_copytrade
+- concept_copytrade
 - legacy_wiki_0x492442eab586f242b53bda933fd5de859c8a3782_e83e3b
 - legacy_wiki_923782
 - legacy_wiki_clob_064e27

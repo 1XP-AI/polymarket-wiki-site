@@ -4,7 +4,7 @@ title: Polymarket API 레퍼런스
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:09Z'
-last_updated: '2026-04-10T16:31:53Z'
+last_updated: '2026-04-11T11:43:47Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -51,10 +51,14 @@ GET https://gamma-api.polymarket.com/events?limit=20&active=true
 curl -s "https://gamma-api.polymarket.com/events?limit=20&active=true" | jq '.'
 
 <!-- para: para_005 -->
-Polymarket의 `markets` 엔드포인트에서 최대 50개의 시장 데이터를 가져오는 예시입니다.
+Polymarket의 `markets` 엔드포인트를 사용해 최대 50개의 시장 데이터를 가져오는 예시입니다.
 
 ```bash
-curl -s "https://gamma-api.polymarket.com/markets?limit=50" | jq '.results[] | {id: .id, name: .name, state: .state, price: .price}'
+curl -s "https://gamma-api.polymarket.com/markets?limit=50"
+```
+
+```bash
+jq '.results[] | {id: .id, name: .name, state: .state, price: .price}'
 ```
 
 <!-- para: para_006 -->

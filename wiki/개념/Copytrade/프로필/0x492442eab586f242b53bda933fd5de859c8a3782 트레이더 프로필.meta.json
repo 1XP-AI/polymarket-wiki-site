@@ -72,18 +72,6 @@
     "para_009": {
       "evidence_type": "direct",
       "source_refs": [
-        "src_20260409_leaderboard_polymarket_e1452943#chunk_001"
-      ],
-      "as_of": "2026-04-09",
-      "confidence": "medium",
-      "conflict_flag": false,
-      "source_urls": [
-        "https://polymarket.com/leaderboard/overall/monthly/profit"
-      ]
-    },
-    "para_010": {
-      "evidence_type": "direct",
-      "source_refs": [
         "src_20260409_get_trader_leaderboard_rankings_polymarket_documentation_f94e0cf5#chunk_001"
       ],
       "as_of": "2026-04-09",
@@ -93,7 +81,7 @@
         "https://docs.polymarket.com/api-reference/core/get-trader-leaderboard-rankings"
       ]
     },
-    "para_011": {
+    "para_010": {
       "evidence_type": "direct",
       "source_refs": [
         "src_20260409_polymarket_leaderboard_2ab45626#chunk_001"
@@ -105,7 +93,7 @@
         "https://polymarket-leaderboard.vercel.app/"
       ]
     },
-    "para_012": {
+    "para_011": {
       "evidence_type": "direct",
       "source_refs": [
         "src_20260409_public_search_polymarket_data_sdk_2658f1e8#chunk_001"

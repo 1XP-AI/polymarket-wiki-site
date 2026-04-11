@@ -12,6 +12,7 @@ source_count: 0
 evidence_coverage: 1.0
 confidence: medium
 related_pages:
+- concept_copytrade
 - legacy_raw_05_badd78
 - legacy_raw_06_websocket_506430
 - legacy_raw_07_48e6ec

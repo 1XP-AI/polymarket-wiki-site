@@ -12,6 +12,7 @@ source_count: 5
 evidence_coverage: 1.0
 confidence: medium
 related_pages:
+- concept_copytrade
 - legacy_raw_00_index_ec3366
 - legacy_raw_03_copytrade_c17abe
 - legacy_raw_06_websocket_506430
