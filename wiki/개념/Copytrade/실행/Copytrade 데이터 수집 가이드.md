@@ -4,7 +4,7 @@ title: Copytrade 데이터 수집 가이드
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:10Z'
-last_updated: '2026-04-11T11:42:46Z'
+last_updated: '2026-04-11T16:12:37Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -65,3 +65,9 @@ doc_role: playbook
 
 <!-- para: para_003 -->
 - [[리더보드 & 트레이더 데이터]] — API 필드 및 활용법
+
+## 열린 질문
+
+- polymarketanalytics.com/traders와 polycopy.app/discover에서 리더보드 데이터를 수집할 때, 트레이더 순위와 점수 산정 기준이 서로 어떻게 다른지 비교할 수 있는가?
+- 카피 후보 선별에 필요한 포지션, 거래내역, 수익률 데이터를 어떤 주기와 단위로 저장해야 전략 패턴 분석과 백테스트에 재사용할 수 있는가?
+- 트레이더 행동 데이터를 검증할 때, 리더보드 수치와 실제 포지션 변화가 불일치하는 사례를 어떤 규칙으로 탐지하고 정제할 수 있는가?

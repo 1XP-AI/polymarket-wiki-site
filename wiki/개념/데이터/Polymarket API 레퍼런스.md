@@ -4,7 +4,7 @@ title: Polymarket API 레퍼런스
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:09Z'
-last_updated: '2026-04-11T11:47:27Z'
+last_updated: '2026-04-11T16:12:37Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -86,6 +86,12 @@ GET https://gamma-api.polymarket.com/events?limit=20&active=true
 - **Public (인증 불필요)**: 마켓 데이터 조회, 가격 조회, 오더북 조회
 - **L1 Auth (지갑 서명만)**: 초기 설정, API 키 생성
 - **L2 Auth (API 키)**: 주문 생성/취소, 트레이드 조회, 포지션 관리
+
+## 열린 질문
+
+- Polymarket Gamma API의 `/events`, `/markets`, `/profiles/{address}` 엔드포인트별 응답 필드와 페이로드 차이는 무엇이며, `limit`·`active` 같은 쿼리 파라미터가 실제 결과에 어떻게 반영되는가?
+- Polymarket API에서 Public, L1 Auth, L2 Auth가 각각 허용하는 작업 범위는 무엇이며, 지갑 서명과 API 키 생성 절차는 어떤 순서로 진행되는가?
+- Polymarket CLOB API의 읽기용 공개 엔드포인트로 오더북과 체결 데이터를 조회할 때 필요한 대표 경로와 요청 형식은 무엇인가?
 
 ## 세부 내용
 

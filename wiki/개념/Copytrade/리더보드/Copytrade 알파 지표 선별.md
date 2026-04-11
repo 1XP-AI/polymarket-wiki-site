@@ -4,7 +4,7 @@ title: Copytrade 알파 지표 선별
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:11Z'
-last_updated: '2026-04-11T11:42:46Z'
+last_updated: '2026-04-11T16:12:37Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -62,6 +62,12 @@ doc_role: analysis
 2. 베이스라인 수립
    - 랜덤 추종(random-follow) 및 시장 베타(시장 평균 성과) 대비 초과수익 계산
    - 샤프비율, 승률, 평균 손익 등을 베이스라인으로 설정
+
+## 열린 질문
+
+- Copytrade 알파 지표 선별의 핵심 동작과 실제 운영 흐름은 무엇인가?
+- Copytrade 알파 지표 선별에서 실무적으로 주의해야 할 제약과 리스크는 무엇인가?
+- Copytrade 알파 지표 선별와 관련해 최신 기준으로 다시 확인해야 할 정보는 무엇인가?
 
 ## 세부 내용
 

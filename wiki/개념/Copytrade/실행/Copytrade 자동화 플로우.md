@@ -4,7 +4,7 @@ title: Copytrade 자동화 플로우
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:11Z'
-last_updated: '2026-04-09T23:59:19Z'
+last_updated: '2026-04-11T16:12:37Z'
 as_of: '2026-04-10'
 owners:
 - wiki-system
@@ -102,3 +102,9 @@ self.ws = WebSocketFeed("wss://ws-api.polymarket.com")
 
 <!-- para: para_010 -->
 Copytrade 자동화의 성패는 체결 속도보다 예외 처리에서 갈린다. 리더보드가 좋아 보여도 급격한 노출 확대, 장중 유동성 붕괴, 시장 상태 전환, API 장애가 겹치면 복제 계정의 손실이 훨씬 커질 수 있다. 따라서 자동화 플로우에는 사람 검토용 로그, 서킷 브레이커, 재동기화 절차가 반드시 포함돼야 한다.
+
+## 열린 질문
+
+- Polymarket Copytrade 자동화에서 리더보드 스냅샷과 WebSocket 체결 스트림을 함께 쓸 때, 연결 단절이나 누락 이벤트를 감지하고 포지션을 재동기화하는 구체적 절차는 어떻게 설계해야 하는가?
+- Copytrade 대상 트레이더를 선별할 때 단순 수익률 대신 승률, 최대 드로우다운, 평균 보유 시간, 거래 빈도, 특정 이벤트군 편중을 어떻게 가중치화해 점수화해야 하는가?
+- 리더의 주문을 그대로 복사하지 않고 내 계정 한도와 슬리피지 한도를 적용해 주문 크기를 축소할 때, Equal weight와 Kelly 방식 중 어떤 기준이 어떤 시장 조건에서 더 적합한가?

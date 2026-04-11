@@ -4,7 +4,7 @@ title: CLOB
 type: comparison
 status: verified
 created_at: '2026-04-09T14:10:09Z'
-last_updated: '2026-04-10T16:01:53Z'
+last_updated: '2026-04-11T16:12:37Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -87,3 +87,9 @@ CLOB는 주문이 가격-수량 형태로 쌓이고, 매칭 엔진이 호가를 
 - [[Copytrade 데이터 수집 가이드]] — CLOB 기반 실시간 포지션 복제
 - [[슬리피지(Slippage)]] — 슬리피지 정의와 완화 전략
 - [[Polymarket API 레퍼런스]] — Polymarket API와 리더보드 연동 예제
+
+## 열린 질문
+
+- Polymarket CLOB에서 호가 깊이(depth)와 실제 체결가의 괴리를 정량화하는 방법은 무엇인가? 특히 주문량 Q, 호가 레벨별 잔량 L_i, 부분 체결 가능성을 포함해 슬리피지를 추정하는 계산식을 찾아보라?
+- Polymarket CLOB의 maker 리베이트와 taker 수수료 구조는 어떻게 구성되어 있으며, 예측시장 거래에서 리베이트가 실질 기대수익률과 주문 유형 선택에 어떤 영향을 주는지 확인하라?
+- Polymarket CLOB에서 마켓 주문과 리미트 주문의 체결 실패 모드가 각각 어떻게 나타나는가? 부분 체결, 미체결, 체결 지연이 발생하는 조건과 이를 감지하는 방법을 조사하라?

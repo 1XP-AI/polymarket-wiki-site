@@ -4,7 +4,7 @@ title: 리스크 모니터링(Copytrade)
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:10Z'
-last_updated: '2026-04-10T16:28:05Z'
+last_updated: '2026-04-11T16:12:37Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -80,6 +80,12 @@ def measure_execution_delay(trader_timestamp, follower_timestamp, market_snapsho
         "slippage_pct": slippage_pct,
         "critical": delay_sec > 30 or slippage_pct > 2.0
     }
+
+## 열린 질문
+
+- Polymarket Copytrade에서 트레이더별·마켓별 리스크 스코어를 산출할 때, 포지션 집중도, 실행 지연, 슬리피지, 청산 기록, 승률을 어떤 가중치로 결합하는 것이 적절한가?
+- Copytrade 리스크 모니터링에서 포지션 집중도가 40%를 초과하거나 특정 마켓의 예상 슬리피지가 평소의 2배로 증가했을 때, 자동 축소·신규 진입 중단·손실 트리거를 어떤 임계값과 단계로 설계해야 하는가?
+- 트레이더 주문 시점과 팔로워 복제 시점의 지연이 수익률에 미치는 영향을 정량화하려면, 시장 스냅샷 기반 슬리피지 계산과 예상 PnL 손실 추정식을 어떻게 구성해야 하는가?
 
 ## 세부 내용
 
