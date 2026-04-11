@@ -4,7 +4,7 @@ title: Polymarket 질문 원본 스냅샷
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:09Z'
-last_updated: '2026-04-11T13:48:53Z'
+last_updated: '2026-04-11T13:53:21Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
