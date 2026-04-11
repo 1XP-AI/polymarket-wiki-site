@@ -4,7 +4,7 @@ title: 성과 분석 지표 (Copytrade 성능 메트릭)
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:10Z'
-last_updated: '2026-04-11T16:12:37Z'
+last_updated: '2026-04-11T16:39:57Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -93,9 +93,3 @@ def compute_trader_score(metrics: dict, weights: dict) -> float:
 metrics keys: win_rate, sharpe, mdd, volume, recency, holding_days
     weights keys: 동일 (총합 1.0)
     """
-
-## 열린 질문
-
-- Polymarket Copytrade에서 리더보드 상위 트레이더의 순위가 특정 월별 이벤트에 얼마나 편향되는지, `data.polymarket.com/leaderboard`와 `polymarket.com/leaderboard?period=monthly`를 비교해 기간별 순위 변동성과 재현성을 검증할 수 있는가?
-- Copytrade 대상 트레이더를 평가할 때 승률이 높은데 거래 수가 적은 계정을 걸러내기 위해, 승률·기대값(EV)·거래 빈도·평균 베팅 사이즈를 결합한 최소 표본 수 기준을 어떻게 설계할 수 있는가?
-- 시장 평균 수익률을 무위험수익 대용 베이스라인으로 쓸 때, 상위 50개 마켓 평균 수익률을 기준으로 한 Sharpe 유사 비율과 Sortino 비율은 실제 Copytrade 성과 비교에서 어떤 분류력 차이를 보이는가?

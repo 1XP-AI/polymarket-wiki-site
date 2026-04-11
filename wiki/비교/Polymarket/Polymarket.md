@@ -4,7 +4,7 @@ title: Polymarket
 type: comparison
 status: verified
 created_at: '2026-04-10T15:39:12Z'
-last_updated: '2026-04-11T16:12:37Z'
+last_updated: '2026-04-11T16:39:57Z'
 as_of: '2026-04-10'
 owners:
 - wiki-system
@@ -79,3 +79,9 @@ Polymarket 비교 문서는 카테고리별 대표 시장, 유동성 특징, 외
 
 <!-- para: para_014 -->
 비교 문서 뒤에는 개념/Polymarket 허브로 이동해 동일 주제를 구조적으로 다시 읽는 편이 좋다.
+
+## 열린 질문
+
+- NFL 시즌, NBA 플레이오프, 월드컵 같은 대형 스포츠 이벤트 기간에 Polymarket의 스포츠 마켓 거래량이 실제로 얼마나 집중되는지, 시기별 데이터로 확인할 수 있는가?
+- Polymarket 스포츠 마켓의 정산 기준은 경기 종료 직후 어떤 공인 데이터 소스나 리그 규칙에 의해 결정되며, 판정 분쟁이 발생한 사례가 있는가?
+- Polymarket의 스포츠 예측 마켓에서 단일 경기 binary 마켓, 점수 차 기반 마켓, 시즌형 마켓의 거래량과 스프레드는 어떻게 다르며, 이를 뒷받침하는 실제 마켓 사례는 무엇인가?

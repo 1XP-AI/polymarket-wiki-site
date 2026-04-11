@@ -4,7 +4,7 @@ title: Copytrade
 type: comparison
 status: verified
 created_at: '2026-04-10T15:39:12Z'
-last_updated: '2026-04-10T16:06:45Z'
+last_updated: '2026-04-11T16:39:57Z'
 as_of: '2026-04-10'
 owners:
 - wiki-system
@@ -108,3 +108,9 @@ hub_scope: cluster
 
 <!-- para: para_005 -->
 성능 모니터링 문서를 읽은 뒤 개념/Copytrade 허브로 내려가면 맥락이 더 선명해진다.
+
+## 열린 질문
+
+- Copytrade 복제 정확도를 90% 미만으로 떨어뜨리는 주요 원인은 무엇이며, 포지션 지연·슬리피지·부분 체결 중 어떤 요인이 가장 큰 비중을 차지하는지 실거래 로그로 검증할 수 있는가?
+- Copytrade 성능 모니터링에 필요한 핵심 대시보드 항목과 리포트 항목은 무엇이며, 리스크 정책과 자동화 파이프라인에 어떤 순서로 연결해야 운영 효율이 높은가?
+- 실시간(WebSocket) 감지와 1시간~1일 주기 집계 중 어떤 모니터링 주기가 Copytrade 성능 저하와 API 오류를 더 빠르게 탐지하는지, 알림 지연과 오탐률 기준으로 비교할 수 있는가?

@@ -4,7 +4,7 @@ title: Polymarket 개요
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:09Z'
-last_updated: '2026-04-11T11:48:52Z'
+last_updated: '2026-04-11T16:39:57Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -90,3 +90,9 @@ Polymarket 군집은 플랫폼 개요, 마켓 구조, 카테고리별 대표 시
 
 <!-- para: para_009 -->
 처음 읽는 경우에는 `Polymarket 개요 -> Polymarket 마켓 분석 -> 정치/크립토/스포츠 예측 마켓 -> 리베이트(마켓메이커)` 순서가 가장 자연스럽다.
+
+## 열린 질문
+
+- ICE의 Polymarket 6억 달러 투자 발표 이후, Polymarket의 시장 구조·규제 리스크·유동성 확대 가능성에 어떤 변화가 예상되는지 후속 자료를 찾아 검증하라?
+- Copytrade 전략에서 카피 대상 트레이더의 거래 마켓을 기준으로 Liquidity Rewards 수익성을 평가하려면 어떤 지표와 검증 절차를 사용해야 하는가?
+- Polymarket에서 동일한 사건(예: Harvey Weinstein 판결)에 대해 복수의 법률/사건 예측 마켓이 동시에 열릴 때, 각 마켓이 서로 상호배타적인지 여부를 어떻게 검증하고 있으며, 확률 합이 100%가 되지 않는 사례는 어떤 규칙 차이에서 발생하는지 조사하기?

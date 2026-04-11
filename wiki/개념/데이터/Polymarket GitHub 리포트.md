@@ -4,7 +4,7 @@ title: Polymarket GitHub 리포트
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:09Z'
-last_updated: '2026-04-11T16:12:37Z'
+last_updated: '2026-04-11T16:39:57Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -49,9 +49,3 @@ GitHub API를 사용해 `polymarket` 키워드와 관련 조직, 프로젝트를
 - [ ] 발견된 시뮬레이터 코드를 SimulationAdapter로 포팅해 백테스트 실행
 - [ ] WebSocket 클라이언트를 테스트 환경에서 실시간 스트리밍 검증
 - [ ] 라이선스 및 보안(의존성) 스캔
-
-## 열린 질문
-
-- Polymarket 공개 GitHub 저장소 중 copytrade 파이프라인에 직접 활용 가능한 레포만 추려서, 리더보드 파서·trade stream·시뮬레이터·WebSocket 클라이언트가 각각 어느 저장소에 구현돼 있는지와 최신 커밋 기준 유지보수 상태를 확인할 수 있는가?
-- `polymarket` 관련 GitHub 저장소들에서 비공식 API 의존 코드가 어떤 엔드포인트와 인증 방식에 붙어 있는지 조사하고, rate limit 또는 정책 변경에 취약한 부분이 어디인지 구체적으로 식별할 수 있는가?
-- 상위 트레이더 메타데이터를 자동 수집하는 리더보드 파서 구현체를 찾아, 수집 필드, 업데이트 주기, 중복 제거 방식, 실패 재시도 로직이 어떻게 설계돼 있는지 검증할 수 있는가?

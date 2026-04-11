@@ -4,7 +4,7 @@ title: 슬리피지(Slippage)
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:09Z'
-last_updated: '2026-04-11T16:12:37Z'
+last_updated: '2026-04-11T16:39:57Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -70,9 +70,3 @@ df = pd.DataFrame({
 'expected_price': [0.40, 0.41, 0.39, 0.42],
 
 'executed_price': [0.44, 0.405, 0.395, 0.43]
-
-## 열린 질문
-
-- Copytrade에서 슬리피지가 실제 수익률에 미치는 영향을 정량화하려면, 원 트레이더의 체결가와 복제자 체결가를 어떤 방식으로 정합하고 비교해야 하는가?
-- Polymarket에서 유동성 부족과 호가 깊이가 슬리피지에 미치는 영향을 측정하기 위해 어떤 시장 지표(최근 체결량, 호가 스프레드, 호가 잔량)를 우선 수집해야 하는가?
-- 지연(Latency)으로 인한 슬리피지를 줄이기 위해 Copytrade 시스템에서 주문 감지, 전송, 체결 각 단계의 시간을 어떻게 계측하고 병목을 찾을 수 있는가?
