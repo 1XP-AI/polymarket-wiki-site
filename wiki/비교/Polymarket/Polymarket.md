@@ -4,12 +4,13 @@ title: Polymarket
 type: comparison
 status: verified
 created_at: '2026-04-10T15:39:12Z'
-last_updated: '2026-04-11T11:54:30Z'
+last_updated: '2026-04-11T11:57:12Z'
 as_of: '2026-04-10'
 owners:
 - wiki-system
-source_count: 0
-sources: []
+source_count: 1
+sources:
+- url: https://docs.polymarket.com/market-makers/maker-rebates
 evidence_coverage: 0.0
 confidence: medium
 related_pages:
