@@ -53,7 +53,9 @@
     },
     "para_006": {
       "evidence_type": "synthesized",
-      "source_refs": [],
+      "source_refs": [
+        "src_20260411_maker_rebates_program_polymarket_documentation_a7907032#chunk_001"
+      ],
       "as_of": "2026-04-10",
       "confidence": "medium",
       "conflict_flag": false,
