@@ -92,6 +92,19 @@
         "https://github.com/monoclear-ai/monoclear.ai",
         "https://alio.go.kr/download/rulefiledown.json?fileNo=199141"
       ]
+    },
+    "para_011": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260412_fetching_markets_polymarket_documentation_5d1e61b5#chunk_001",
+        "src_20260412_fetching_markets_polymarket_documentation_5d1e61b5#chunk_002"
+      ],
+      "as_of": "2026-04-12",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://docs.polymarket.com/market-data/fetching-markets"
+      ]
     }
   }
 }
