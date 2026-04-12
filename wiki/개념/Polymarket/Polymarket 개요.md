@@ -4,7 +4,7 @@ title: Polymarket 개요
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:09Z'
-last_updated: '2026-04-12T06:32:36Z'
+last_updated: '2026-04-12T06:33:15Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
@@ -94,4 +94,3 @@ Polymarket 군집은 플랫폼 개요, 마켓 구조, 카테고리별 대표 시
 ## 열린 질문
 
 - ICE의 Polymarket 6억 달러 투자 발표 이후, Polymarket의 시장 구조·규제 리스크·유동성 확대 가능성에 어떤 변화가 예상되는지 후속 자료를 찾아 검증하라?
-- Copytrade 전략에서 카피 대상 트레이더의 거래 마켓을 기준으로 Liquidity Rewards 수익성을 평가하려면 어떤 지표와 검증 절차를 사용해야 하는가?
