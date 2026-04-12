@@ -4,11 +4,11 @@ title: Polymarket 개요
 type: concept
 status: verified
 created_at: '2026-04-09T14:10:09Z'
-last_updated: '2026-04-12T06:33:15Z'
+last_updated: '2026-04-12T06:34:11Z'
 as_of: '2026-04-09'
 owners:
 - wiki-system
-source_count: 11
+source_count: 1
 evidence_coverage: 1.0
 confidence: medium
 related_pages:
@@ -25,28 +25,7 @@ related_pages:
 tags:
 - concept
 sources:
-- url: https://gamma-api.polymarket.com/events
-  raw: raw/fetched/2026-04-05-polymarket-events.md
-- url: https://gamma-api.polymarket.com/markets
-  raw: raw/fetched/2026-04-05-polymarket-markets.md
-- url: https://polymarket.com/
-  raw: raw/fetched/2026-04-05-polymarket-home.md
-- url: https://polymarket.com/faq
-  raw: raw/fetched/2026-04-05-polymarket-faq.md
-- url: https://gamma-api.polymarket.com/leaderboard
-  raw: raw/fetched/2026-04-05-polymarket-leaderboard-api.md
-- url: https://polymarket.com
-  raw: raw/fetched/2026-04-06-polymarket-home.md
-- url: https://gamma-api.polymarket.com/markets?limit=50
-  raw: raw/fetched/2026-04-05-polymarket-markets.md
-- url: https://blog.polymarket.com
-  raw: raw/sources.md
-- url: https://polycopy.app/polymarket-trading-strategies
-  raw: raw/fetched/2026-04-07-leaderboard-and-risk.md
-- url: https://docs.polymarket.com
-  raw: raw/01-Polymarket-개요.md
-- url: https://gamma-api.polymarket.com/events?limit=5&active=true
-  raw: raw/fetched/2026-04-07-leaderboard-and-risk.md
+- url: https://docs.polymarket.com/polymarket-101
 cluster: Polymarket
 doc_role: hub
 cluster_group: 플랫폼 개요
@@ -90,7 +69,3 @@ Polymarket 군집은 플랫폼 개요, 마켓 구조, 카테고리별 대표 시
 
 <!-- para: para_009 -->
 처음 읽는 경우에는 `Polymarket 개요 -> Polymarket 마켓 분석 -> 정치/크립토/스포츠 예측 마켓 -> 리베이트(마켓메이커)` 순서가 가장 자연스럽다.
-
-## 열린 질문
-
-- ICE의 Polymarket 6억 달러 투자 발표 이후, Polymarket의 시장 구조·규제 리스크·유동성 확대 가능성에 어떤 변화가 예상되는지 후속 자료를 찾아 검증하라?
