@@ -7,9 +7,7 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://www.copytrade.net/"
-      ]
+      "source_urls": []
     },
     "para_002": {
       "evidence_type": "synthesized",
@@ -17,9 +15,7 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://www.copytrade.net/"
-      ]
+      "source_urls": []
     },
     "para_003": {
       "evidence_type": "synthesized",
@@ -27,9 +23,7 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://www.copytrade.net/"
-      ]
+      "source_urls": []
     },
     "para_004": {
       "evidence_type": "synthesized",
@@ -37,9 +31,7 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://www.copytrade.net/"
-      ]
+      "source_urls": []
     },
     "para_005": {
       "evidence_type": "synthesized",
@@ -47,9 +39,7 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://www.copytrade.net/"
-      ]
+      "source_urls": []
     },
     "para_006": {
       "evidence_type": "synthesized",
@@ -57,9 +47,7 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://www.copytrade.net/"
-      ]
+      "source_urls": []
     },
     "para_007": {
       "evidence_type": "synthesized",
@@ -67,9 +55,7 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://www.copytrade.net/"
-      ]
+      "source_urls": []
     },
     "para_008": {
       "evidence_type": "synthesized",
@@ -77,9 +63,7 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://www.copytrade.net/"
-      ]
+      "source_urls": []
     },
     "para_009": {
       "evidence_type": "synthesized",
@@ -87,9 +71,7 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://www.copytrade.net/"
-      ]
+      "source_urls": []
     },
     "para_010": {
       "evidence_type": "synthesized",
@@ -97,9 +79,7 @@
       "as_of": "2026-04-09",
       "confidence": "medium",
       "conflict_flag": false,
-      "source_urls": [
-        "https://www.copytrade.net/"
-      ]
+      "source_urls": []
     },
     "para_011": {
       "evidence_type": "direct",
@@ -195,6 +175,19 @@
       "conflict_flag": false,
       "source_urls": [
         "https://www.copytrade.net/"
+      ]
+    },
+    "para_019": {
+      "evidence_type": "direct",
+      "source_refs": [
+        "src_20260412_github_warproxxx_poly_data_polymarket_data_retriever_that_fetches_processes_and_structures_polymarket_data_including_markets_order_events_and_trades_github_0bb416a6#chunk_001",
+        "src_20260412_github_warproxxx_poly_data_polymarket_data_retriever_that_fetches_processes_and_structures_polymarket_data_including_markets_order_events_and_trades_github_0bb416a6#chunk_002"
+      ],
+      "as_of": "2026-04-12",
+      "confidence": "medium",
+      "conflict_flag": false,
+      "source_urls": [
+        "https://github.com/warproxxx/poly_data"
       ]
     }
   }
