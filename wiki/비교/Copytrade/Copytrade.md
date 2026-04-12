@@ -4,7 +4,7 @@ title: Copytrade
 type: comparison
 status: verified
 created_at: '2026-04-10T15:39:12Z'
-last_updated: '2026-04-12T11:05:50Z'
+last_updated: '2026-04-12T11:06:29Z'
 as_of: '2026-04-10'
 owners:
 - wiki-system
@@ -108,7 +108,3 @@ hub_scope: cluster
 
 <!-- para: para_005 -->
 성능 모니터링 문서를 읽은 뒤 개념/Copytrade 허브로 내려가면 맥락이 더 선명해진다.
-
-## 열린 질문
-
-- Copytrade 복제 정확도를 90% 미만으로 떨어뜨리는 주요 원인은 무엇이며, 포지션 지연·슬리피지·부분 체결 중 어떤 요인이 가장 큰 비중을 차지하는지 실거래 로그로 검증할 수 있는가?
