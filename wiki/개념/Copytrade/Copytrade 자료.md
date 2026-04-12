@@ -3,8 +3,8 @@ id: concept_copytrade
 title: Copytrade 자료
 type: concept
 status: verified
-created_at: '2026-04-12T10:59:42Z'
-last_updated: '2026-04-12T10:59:47Z'
+created_at: '2026-04-12T11:00:09Z'
+last_updated: '2026-04-12T11:00:14Z'
 as_of: '2026-04-12'
 owners:
 - wiki-system
