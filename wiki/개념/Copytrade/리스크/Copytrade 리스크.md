@@ -1,5 +1,5 @@
 ---
-id: concept_copytrade
+id: concept_copytrade_리스크
 title: Copytrade 리스크
 type: concept
 status: verified

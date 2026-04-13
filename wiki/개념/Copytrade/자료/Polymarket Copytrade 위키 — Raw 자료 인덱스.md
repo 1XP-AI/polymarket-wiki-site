@@ -12,7 +12,11 @@ source_count: 0
 evidence_coverage: 1.0
 confidence: medium
 related_pages:
-- concept_copytrade
+- concept_copytrade_리더보드
+- concept_copytrade_리스크
+- concept_copytrade_실행
+- concept_copytrade_자료
+- concept_copytrade_프로필
 - legacy_raw_05_badd78
 - legacy_raw_06_websocket_506430
 - legacy_raw_07_48e6ec

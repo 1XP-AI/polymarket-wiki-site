@@ -1,5 +1,5 @@
 ---
-id: concept_copytrade
+id: concept_copytrade_자료
 title: Copytrade 자료
 type: concept
 status: verified
@@ -54,6 +54,7 @@ tags:
 cluster: Copytrade
 doc_role: hub
 hub_scope: cluster_group
+cluster_group: 자료
 ---
 ## 요약
 

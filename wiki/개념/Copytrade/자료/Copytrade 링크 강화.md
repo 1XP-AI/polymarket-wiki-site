@@ -12,7 +12,11 @@ source_count: 1
 evidence_coverage: 1.0
 confidence: medium
 related_pages:
-- concept_copytrade
+- concept_copytrade_리더보드
+- concept_copytrade_리스크
+- concept_copytrade_실행
+- concept_copytrade_자료
+- concept_copytrade_프로필
 - legacy_raw_fetched_2026_04_05_polymarket_markets_a295cb
 - legacy_wiki_88f80c
 - legacy_wiki_api_polymarket_api_62ef40

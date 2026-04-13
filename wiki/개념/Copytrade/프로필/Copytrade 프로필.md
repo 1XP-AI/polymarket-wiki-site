@@ -1,5 +1,5 @@
 ---
-id: concept_copytrade
+id: concept_copytrade_프로필
 title: Copytrade 프로필
 type: concept
 status: verified

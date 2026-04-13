@@ -1,5 +1,5 @@
 ---
-id: concept_copytrade
+id: concept_copytrade_리더보드
 title: Copytrade 리더보드
 type: concept
 status: verified

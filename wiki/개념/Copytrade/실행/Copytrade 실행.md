@@ -1,5 +1,5 @@
 ---
-id: concept_copytrade
+id: concept_copytrade_실행
 title: Copytrade 실행
 type: concept
 status: verified
